@@ -25,6 +25,7 @@ website:
         contents:
           - href: datasets.md
             text: Available Datasets
+          - datasets_description.md
           - datasets/000-population.ipynb
           - datasets/001-events.ipynb
           - datasets/002-anthropometrics.ipynb
