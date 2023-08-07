@@ -1,0 +1,4604 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.361">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Pheno.AI - 021-medical_conditions</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Pheno.AI</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../datasets.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Available Datasets</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../platform_tutorial.html" rel="" target="">
+ <span class="menu-text">Getting Started</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publications.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datasets.html">Datasets</a></li><li class="breadcrumb-item"><a href="../datasets/021-medical_conditions.html">021-medical_conditions</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../platform_tutorial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting Started</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pheno_utils.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">pheno-utils</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAQ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data_format.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data format</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Datasets</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Available Datasets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets_description.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datasets Description</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/000-population.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">000-population</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/001-events.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">001-events</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/002-anthropometrics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">002-anthropometrics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/003-fundus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">003-fundus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/004-liver_ultrasound.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">004-liver_ultrasound</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/005-diet_logging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">005-diet_logging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/006-hand_grip.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">006-hand_grip</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/007-blood_pressure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">007-blood_pressure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/008-serum_lipidomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">008-serum_lipidomics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/009-sleep.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">009-sleep</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/010-vascular_health.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">010-vascular_health</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/011-body_composition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">011-body_composition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/012-carotid_ultrasound.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">012-carotid_ultrasound</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/013-gut_microbiome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">013-gut_microbiome</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/014-human_genetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">014-human_genetics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/015-ecg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">015-ecg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/016-blood_tests.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">016-blood_tests</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/017-cgm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">017-cgm</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/018-medications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">018-medications</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/021-medical_conditions.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">021-medical_conditions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/022-bone_density.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">022-bone_density</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/040-ukbb_questionnaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">040-ukbb_questionnaire</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/041-ukbb_followup_questionnaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">041-ukbb_followup_questionnaire</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/042-ibs_questionnaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">042-ibs_questionnaire</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/043-covid_questionnaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">043-covid_questionnaire</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#medical-conditions-dataset" id="toc-medical-conditions-dataset" class="nav-link active" data-scroll-target="#medical-conditions-dataset">Medical conditions dataset</a>
+  <ul class="collapse">
+  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability:</a></li>
+  </ul></li>
+  <li><a href="#data-dictionary" id="toc-data-dictionary" class="nav-link" data-scroll-target="#data-dictionary">Data dictionary</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">021-medical_conditions</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="medical-conditions-dataset" class="level1">
+<h1>Medical conditions dataset</h1>
+<p>The The Human Phenotype Project study medical conditions diagnosis data is based on self reported, participant provided information. Self-reported medical diagnosis are coded according to the WHO International Classification of Diseases 11th Revision (ICD-11) codes.</p>
+<p>The medical conditions diagnosis information collection in the Human Phenotype Project is based on self reporting of conditions either through direct questions on specific conditions in self filled online questionnaires or through self recall of conditions diagnosis in an interview with a research staff member.</p>
+<section id="data-availability" class="level3">
+<h3 class="anchored" data-anchor-id="data-availability">Data availability:</h3>
+<p>The information is stored in 1 parquet file: <code>medical_conditions.parquet</code></p>
+<div class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-03T12:41:52.111539Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-03T12:41:52.111378Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-03T12:41:52.855840Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-03T12:41:52.855316Z&quot;}" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pheno_utils <span class="im">import</span> PhenoLoader</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-03T12:41:52.857257Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-03T12:41:52.857144Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-03T12:41:57.401915Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-03T12:41:57.401238Z&quot;}" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dl <span class="op">=</span> PhenoLoader(<span class="st">'medical_conditions'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>DataLoader for medical_conditions with
+245 fields
+2 tables: ['medical_conditions', 'age_sex']</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="data-dictionary" class="level1">
+<h1>Data dictionary</h1>
+<div class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-03T12:41:57.404319Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-03T12:41:57.403971Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-03T12:41:57.445186Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-03T12:41:57.444798Z&quot;}" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dl.<span class="bu">dict</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">field_string</th>
+<th data-quarto-table-cell-role="th">description_string</th>
+<th data-quarto-table-cell-role="th">relative_location</th>
+<th data-quarto-table-cell-role="th">value_type</th>
+<th data-quarto-table-cell-role="th">units</th>
+<th data-quarto-table-cell-role="th">sampling_rate</th>
+<th data-quarto-table-cell-role="th">item_type</th>
+<th data-quarto-table-cell-role="th">array</th>
+<th data-quarto-table-cell-role="th">cohorts</th>
+<th data-quarto-table-cell-role="th">data_type</th>
+<th data-quarto-table-cell-role="th">debut</th>
+<th data-quarto-table-cell-role="th">pandas_dtype</th>
+<th data-quarto-table-cell-role="th">parent_dataframe</th>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">tabular_field_name</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">collection_timestamp</td>
+<td>Collection time</td>
+<td>Collection time</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>datetime64[ns, Asia/Jerusalem]</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">collection_date</td>
+<td>Collection date</td>
+<td>Collection date</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>datetime64[ns]</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">timezone</td>
+<td>Timezone</td>
+<td>Timezone</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">neurological_disorders_dementia</td>
+<td>Neurological disorders dementia</td>
+<td>Neurological disorders dementia</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">neurological_disorders_parkinson</td>
+<td>Neurological disorders parkinson</td>
+<td>Neurological disorders Parkinson's Disease</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">neurological_disorders_amyotrophic_lateral_sclerosis_als</td>
+<td>Neurological disorders ALS</td>
+<td>Neurological disorders ALS</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">neurological_disorders_cerebrovascular_accident_cva_or_transient_ischemic_attack_tia</td>
+<td>Neurological disorders cerebrovascular acciden...</td>
+<td>Neurological disorders cerebrovascular acciden...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">neurological_disorders_ms_multiple_sclerosis</td>
+<td>Neurological disorders ms multiple sclerosis</td>
+<td>Neurological disorders multiple sclerosis (MS)</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">neurological_disorders_schizophrenia</td>
+<td>Neurological disorders schizophrenia</td>
+<td>Neurological disorders schizophrenia</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">neurological_disorders_bipolar_disorder</td>
+<td>Neurological disorders bipolar disorder</td>
+<td>Neurological disorders bipolar disorder</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">neurological_disorders_huntington’s_disease</td>
+<td>Neurological disorders huntington’s disease</td>
+<td>Neurological disorders Huntington’s disease</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">neurological_disorders_eating_disorders</td>
+<td>Neurological disorders eating disorders</td>
+<td>Neurological disorders eating disorders (anore...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">neurological_disorders_myasthenia_gravis</td>
+<td>Neurological disorders myasthenia gravis</td>
+<td>Neurological disorders myasthenia gravis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">neurological_disorders_alcoholism</td>
+<td>Neurological disorders alcoholism</td>
+<td>Neurological disorders alcoholism</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">neurological_disorders_epilepsy</td>
+<td>Neurological disorders epilepsy</td>
+<td>Neurological disorders epilepsy</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">neurological_disorders_minor_depression</td>
+<td>Neurological disorders minor depression</td>
+<td>Neurological disorders minor depression</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">neurological_disorders_anxiety</td>
+<td>Neurological disorders anxiety</td>
+<td>Neurological disorders anxiety</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">neurological_disorders_migraines</td>
+<td>Neurological disorders migraines</td>
+<td>Neurological disorders migraines</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">neurological_disorders_headaches</td>
+<td>Neurological disorders headaches</td>
+<td>Neurological disorders headaches</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">neurological_disorders_syncope</td>
+<td>Neurological disorders syncope</td>
+<td>Neurological disorders fainting or syncope</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">neurological_disorders_insomnia</td>
+<td>Neurological disorders insomnia</td>
+<td>Neurological disorders insomnia</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">neurological_disorders_obstructive_sleep_apnea</td>
+<td>Neurological disorders obstructive sleep apnea</td>
+<td>Neurological disorders obstructive sleep apnea...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">neurological_disorders_minor_depression_year_diagnosis</td>
+<td>Neurological disorders minor depression year d...</td>
+<td>Neurological disorders minor depression year d...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">neurological_disorders_anxiety_year_diagnosis</td>
+<td>Neurological disorders anxiety year diagnosis</td>
+<td>Neurological disorders anxiety year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">neurological_disorders_migraines_year_diagnosis</td>
+<td>Neurological disorders migraines year diagnosis</td>
+<td>Neurological disorders migraines year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">neurological_disorders_headaches_year_diagnosis</td>
+<td>Neurological disorders headaches year diagnosis</td>
+<td>Neurological disorders headaches year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">neurological_disorders_syncope_year_diagnosis</td>
+<td>Neurological disorders syncope year diagnosis</td>
+<td>Neurological disorders syncope year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">neurological_disorders_insomnia_year_diagnosis</td>
+<td>Neurological disorders insomnia year diagnosis</td>
+<td>Neurological disorders insomnia year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">neurological_disorders_obstructive_sleep_apnea_year_diagnosis</td>
+<td>Neurological disorders obstructive sleep apnea...</td>
+<td>Neurological disorders obstructive sleep apnea...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_myocardial_infarction</td>
+<td>Cardiovascular diseases myocardial infarction</td>
+<td>Cardiovascular diseases myocardial infarction ...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_cardiomyopathies</td>
+<td>Cardiovascular diseases cardiomyopathies</td>
+<td>Cardiovascular diseases cardiomyopathies</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_congestive_heart_failure</td>
+<td>Cardiovascular diseases congestive heart failure</td>
+<td>Cardiovascular diseases congestive heart failure</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_aortic_aneurysm</td>
+<td>Cardiovascular diseases aortic aneurysm</td>
+<td>Cardiovascular diseases aortic aneurysm</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_pulmonary_hypertension</td>
+<td>Cardiovascular diseases pulmonary hypertension</td>
+<td>Cardiovascular diseases pulmonary hypertension</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_rheumatic_fever</td>
+<td>Cardiovascular diseases rheumatic fever</td>
+<td>Cardiovascular diseases rheumatic fever</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_stable_angina</td>
+<td>Cardiovascular diseases stable angina</td>
+<td>Cardiovascular diseases stable angina</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_hyperlipidemia</td>
+<td>Cardiovascular diseases hyperlipidemia</td>
+<td>Cardiovascular diseases hyperlipidemia</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_hypertension</td>
+<td>Cardiovascular diseases hypertension</td>
+<td>Cardiovascular diseases hypertension</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_arteriosclerosis</td>
+<td>Cardiovascular diseases arteriosclerosis</td>
+<td>Cardiovascular diseases arteriosclerosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_av_block</td>
+<td>Cardiovascular diseases av block</td>
+<td>Cardiovascular diseases AV block</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_familial_hyperlipidemia</td>
+<td>Cardiovascular diseases familial hyperlipidemia</td>
+<td>Cardiovascular diseases familial hyperlipidemia</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_hyperlipidemia_year_diagnosis</td>
+<td>Cardiovascular diseases hyperlipidemia year di...</td>
+<td>Cardiovascular diseases hyperlipidemia year di...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_hypertension_year_diagnosis</td>
+<td>Cardiovascular diseases hypertension year diag...</td>
+<td>Cardiovascular diseases hypertension year diag...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_arteriosclerosis_year_diagnosis</td>
+<td>Cardiovascular diseases arteriosclerosis year ...</td>
+<td>Cardiovascular diseases arteriosclerosis year ...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_av_block_year_diagnosis</td>
+<td>Cardiovascular diseases av block year diagnosis</td>
+<td>Cardiovascular diseases AV block year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">cardiovascular_diseases_familial_hyperlipidemia_year_diagnosis</td>
+<td>Cardiovascular diseases familial hyperlipidemi...</td>
+<td>Cardiovascular diseases familial hyperlipidemi...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">pulmonary_diseases_cystic_fibrosis</td>
+<td>Pulmonary diseases cystic fibrosis</td>
+<td>Pulmonary diseases cystic fibrosis (CF)</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">pulmonary_diseases_ventilation_need</td>
+<td>Pulmonary diseases ventilation need</td>
+<td>Pulmonary diseases dependency on ventilation</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">pulmonary_diseases_interstitial_lung_diseases</td>
+<td>Pulmonary diseases interstitial lung diseases</td>
+<td>Pulmonary diseases interstitial lung diseases</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">pulmonary_diseases_asthma</td>
+<td>Pulmonary diseases asthma</td>
+<td>Pulmonary diseases asthma</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">pulmonary_diseases_chronic_obstructive_pulmonary_disease_copd</td>
+<td>Pulmonary diseases chronic obstructive pulmona...</td>
+<td>Pulmonary diseases chronic obstructive pulmona...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">pulmonary_diseases_asthma_year_diagnosis</td>
+<td>Pulmonary diseases asthma year diagnosis</td>
+<td>Pulmonary diseases asthma year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">pulmonary_diseases_chronic_obstructive_pulmonary_disease_copd_year_diagnosis</td>
+<td>Pulmonary diseases chronic obstructive pulmona...</td>
+<td>Pulmonary diseases chronic obstructive pulmona...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">kidneys_and_urinary_tract_disorders_urinary_catheter_usage</td>
+<td>Kidneys and urinary tract disorders urinary ca...</td>
+<td>Kidneys and urinary tract disorders urinary ca...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">kidneys_and_urinary_tract_disorders_renal_tubular_acidosis</td>
+<td>Kidneys and urinary tract disorders renal tubu...</td>
+<td>Kidneys and urinary tract disorders renal tubu...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">kidneys_and_urinary_tract_disorders_acute_or_chronic_renal_failure</td>
+<td>Kidneys and urinary tract disorders acute or c...</td>
+<td>Kidneys and urinary tract disorders acute or c...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">kidneys_and_urinary_tract_disorders_polycystic_kidney_disease</td>
+<td>Kidneys and urinary tract disorders polycystic...</td>
+<td>Kidneys and urinary tract disorders polycystic...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">kidneys_and_urinary_tract_disorders_dialysis</td>
+<td>Kidneys and urinary tract disorders dialysis</td>
+<td>Kidneys and urinary tract disorders dependency...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">kidneys_and_urinary_tract_disorders_nephrolithiasis</td>
+<td>Kidneys and urinary tract disorders nephrolith...</td>
+<td>Kidneys and urinary tract disorders nephrolith...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">kidneys_and_urinary_tract_disorders_benign_prostatic_hyperplasia_bph</td>
+<td>Kidneys and urinary tract disorders benign pro...</td>
+<td>Kidneys and urinary tract disorders benign pro...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">kidneys_and_urinary_tract_disorders_nephrolithiasis_year_diagnosis</td>
+<td>Kidneys and urinary tract disorders nephrolith...</td>
+<td>Kidneys and urinary tract disorders nephrolith...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">gastro_inflammatory_bowel_disease_crohn's_disease_or_ulcerative_colitis</td>
+<td>Gastro inflammatory bowel disease crohn's dise...</td>
+<td>Gastro inflammatory bowel disease (IBD) Crohn'...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">gastro_chronic_pancreatitis</td>
+<td>Gastro chronic pancreatitis</td>
+<td>Gastro chronic pancreatitis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">gastro_liver_cirrhosis</td>
+<td>Gastro liver cirrhosis</td>
+<td>Gastro liver cirrhosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">gastro_achalasia</td>
+<td>Gastro achalasia</td>
+<td>Gastro achalasia</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">gastro_peptic_ulcer_disease</td>
+<td>Gastro peptic ulcer disease</td>
+<td>Gastro peptic ulcer disease</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">gastro_gallstones</td>
+<td>Gastro gallstones</td>
+<td>Gastro cholelitiasis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">gastro_fatty_liver</td>
+<td>Gastro fatty liver</td>
+<td>Gastro fatty liver</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">gastro_irritable_bowel_syndrome_ibs</td>
+<td>Gastro irritable bowel syndrome ibs</td>
+<td>Gastro irritable bowel syndrome (IBS)</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">gastro_celiac</td>
+<td>Gastro celiac</td>
+<td>Gastro Celiac disease</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">gastro_peptic_ulcer_disease_year_diagnosis</td>
+<td>Gastro peptic ulcer disease year diagnosis</td>
+<td>Gastro peptic ulcer disease year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">gastro_gallstones_year_diagnosis</td>
+<td>Gastro gallstones year diagnosis</td>
+<td>Gastro cholelitiasis year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">gastro_fatty_liver_year_diagnosis</td>
+<td>Gastro fatty liver year diagnosis</td>
+<td>Gastro fatty liver year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">gastro_irritable_bowel_syndrome_ibs_year_diagnosis</td>
+<td>Gastro irritable bowel syndrome ibs year diagn...</td>
+<td>Gastro irritable bowel syndrome, IBS, year dia...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">gastro_celiac_year_diagnosis</td>
+<td>Gastro celiac year diagnosis</td>
+<td>Gastro Celiac disease year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_diabetes</td>
+<td>Endocrine metabolic disorders diabetes</td>
+<td>Endocrine metabolic disorders diabetes</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_morbid_obesity</td>
+<td>Endocrine metabolic disorders morbid obesity</td>
+<td>Endocrine metabolic disorders morbid obesity</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_cushing</td>
+<td>Endocrine metabolic disorders cushing</td>
+<td>Endocrine metabolic disorders Cushing's syndrome</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_adrenal_insufficiency,_addison_disease</td>
+<td>Endocrine metabolic disorders adrenal insuffic...</td>
+<td>Endocrine metabolic disorders adrenal insuffic...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_diabetes_insipidus</td>
+<td>Endocrine metabolic disorders diabetes insipidus</td>
+<td>Endocrine metabolic disorders diabetes insipidus</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_inappropriate_antidiuretic_hormone_secretion</td>
+<td>Endocrine metabolic disorders inappropriate an...</td>
+<td>Endocrine metabolic disorders inappropriate an...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_porphyria</td>
+<td>Endocrine metabolic disorders porphyria</td>
+<td>Endocrine metabolic disorders porphyria</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_hemochromatosis</td>
+<td>Endocrine metabolic disorders hemochromatosis</td>
+<td>Endocrine metabolic disorders hemochromatosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_willison_disease</td>
+<td>Endocrine metabolic disorders willison disease</td>
+<td>Endocrine metabolic disorders willison disease</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_acromegaly</td>
+<td>Endocrine metabolic disorders acromegaly</td>
+<td>Endocrine metabolic disorders acromegaly</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_pre_diabetes</td>
+<td>Endocrine metabolic disorders pre diabetes</td>
+<td>Endocrine metabolic disorders pre diabetes</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_obesity</td>
+<td>Endocrine metabolic disorders obesity</td>
+<td>Endocrine metabolic disorders obesity</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_osteoporosis</td>
+<td>Endocrine metabolic disorders osteoporosis</td>
+<td>Endocrine metabolic disorders osteoporosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_metabolic_syndrome</td>
+<td>Endocrine metabolic disorders metabolic syndrome</td>
+<td>Endocrine metabolic disorders metabolic syndrome</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_hypothyroidism</td>
+<td>Endocrine metabolic disorders hypothyroidism</td>
+<td>Endocrine metabolic disorders hypothyroidism</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_hyperthyroidism</td>
+<td>Endocrine metabolic disorders hyperthyroidism</td>
+<td>Endocrine metabolic disorders hyperthyroidism</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_hyperparathyroidism</td>
+<td>Endocrine metabolic disorders hyperparathyroidism</td>
+<td>Endocrine metabolic disorders hyperparathyroidism</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_pre_diabetes_year_diagnosis</td>
+<td>Endocrine metabolic disorders pre diabetes yea...</td>
+<td>Endocrine metabolic disorders pre diabetes yea...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_obesity_year_diagnosis</td>
+<td>Endocrine metabolic disorders obesity year dia...</td>
+<td>Endocrine metabolic disorders obesity year dia...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_osteoporosis_year_diagnosis</td>
+<td>Endocrine metabolic disorders osteoporosis yea...</td>
+<td>Endocrine metabolic disorders osteoporosis yea...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_metabolic_syndrome_year_diagnosis</td>
+<td>Endocrine metabolic disorders metabolic syndro...</td>
+<td>Endocrine metabolic disorders metabolic syndro...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_hypothyroidism_year_diagnosis</td>
+<td>Endocrine metabolic disorders hypothyroidism y...</td>
+<td>Endocrine metabolic disorders hypothyroidism y...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_hyperthyroidism_year_diagnosis</td>
+<td>Endocrine metabolic disorders hyperthyroidism ...</td>
+<td>Endocrine metabolic disorders hyperthyroidism ...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">endocrine_metabolic_disorders_hyperparathyroidism_year_diagnosis</td>
+<td>Endocrine metabolic disorders hyperparathyroid...</td>
+<td>Endocrine metabolic disorders hyperparathyroid...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">present_pregnancy</td>
+<td>Present pregnancy</td>
+<td>Present pregnancy</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">present_fertility_treatments</td>
+<td>Present fertility treatments</td>
+<td>Present fertility treatments</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">past_fertility_treatments</td>
+<td>Past fertility treatments</td>
+<td>Past fertility treatments</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">erectile_dysfunction</td>
+<td>Erectile dysfunction</td>
+<td>Erectile dysfunction (ED)</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">erectile_dysfunction_year_diagnosis</td>
+<td>Erectile dysfunction year diagnosis</td>
+<td>Erectile dysfunction year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">eye_diseases_amaurosis_fugax</td>
+<td>Eye diseases amaurosis fugax</td>
+<td>Eye diseases amaurosis fugax</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">eye_diseases_cataract</td>
+<td>Eye diseases cataract</td>
+<td>Eye diseases cataract</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">eye_diseases_uveitis</td>
+<td>Eye diseases uveitis</td>
+<td>Eye diseases uveitis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">eye_diseases_retinal_detachment</td>
+<td>Eye diseases retinal detachment</td>
+<td>Eye diseases retinal detachment</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">eye_diseases_glaucoma</td>
+<td>Eye diseases glaucoma</td>
+<td>Eye diseases glaucoma</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">eye_diseases_cataract_year_diagnosis</td>
+<td>Eye diseases cataract year diagnosis</td>
+<td>Eye diseases cataract year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">eye_diseases_uveitis_year_diagnosis</td>
+<td>Eye diseases uveitis year diagnosis</td>
+<td>Eye diseases uveitis year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">eye_diseases_retinal_detachment_year_diagnosis</td>
+<td>Eye diseases retinal detachment year diagnosis</td>
+<td>Eye diseases retinal detachment year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">eye_diseases_glaucoma_year_diagnosis</td>
+<td>Eye diseases glaucoma year diagnosis</td>
+<td>Eye diseases glaucoma year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">orthopedic_disorders_back_pain</td>
+<td>Orthopedic disorders back pain</td>
+<td>Orthopedic disorders back pain</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">orthopedic_disorders_osteoarthritis</td>
+<td>Orthopedic disorders osteoarthritis</td>
+<td>Orthopedic disorders osteoarthritis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">orthopedic_disorders_fractures</td>
+<td>Orthopedic disorders fractures</td>
+<td>Orthopedic disorders fractures</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">orthopedic_disorders_back_pain_year_diagnosis</td>
+<td>Orthopedic disorders back pain year diagnosis</td>
+<td>Orthopedic disorders back pain year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">orthopedic_disorders_osteoarthritis_year_diagnosis</td>
+<td>Orthopedic disorders osteoarthritis year diagn...</td>
+<td>Orthopedic disorders osteoarthritis year diagn...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">orthopedic_disorders_fractures_year_diagnosis</td>
+<td>Orthopedic disorders fractures year diagnosis</td>
+<td>Orthopedic disorders fractures year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">ear_disorders_hearing_loss</td>
+<td>Ear disorders hearing loss</td>
+<td>Ear disorders hearing loss</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">ear_disorders_benign_paroxysmal_positional_vertigo</td>
+<td>Ear disorders benign paroxysmal positional ver...</td>
+<td>Ear disorders benign paroxysmal positional ver...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">ear_disorders_hearing_loss_year_diagnosis</td>
+<td>Ear disorders hearing loss year diagnosis</td>
+<td>Ear disorders hearing loss year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">ear_disorders_benign_paroxysmal_positional_vertigo_year_diagnosis</td>
+<td>Ear disorders benign paroxysmal positional ver...</td>
+<td>Ear disorders benign paroxysmal positional ver...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">infectious_diseases_hepatitis_c</td>
+<td>Infectious diseases hepatitis C</td>
+<td>Infectious diseases hepatitis C (HCV)</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">infectious_diseases_hiv</td>
+<td>Infectious diseases HIV</td>
+<td>Infectious diseases HIV</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">infectious_diseases_hepatitis_b</td>
+<td>Infectious diseases hepatitis B</td>
+<td>Infectious diseases hepatitis B (HBV)</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">infectious_diseases_tuberculosis</td>
+<td>Infectious diseases tuberculosis</td>
+<td>Infectious diseases tuberculosis (TB)</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">infectious_diseases_immunosuppression</td>
+<td>Infectious diseases immunosuppression</td>
+<td>Infectious diseases immunosuppression</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">infectious_diseases_past_malaria</td>
+<td>Infectious diseases past malaria</td>
+<td>Infectious diseases past malaria</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">infectious_diseases_hepatitis_c_post_treatment</td>
+<td>Infectious diseases hepatitis c post treatment</td>
+<td>Infectious diseases hepatitis c post treatment</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">infectious_diseases_past_malaria_year_diagnosis</td>
+<td>Infectious diseases past malaria year diagnosis</td>
+<td>Infectious diseases past malaria year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">infectious_diseases_hepatitis_c_year_diagnosis</td>
+<td>Infectious diseases hepatitis c year diagnosis</td>
+<td>Infectious diseases hepatitis c year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_scleroderma</td>
+<td>Rheumatic diseases scleroderma</td>
+<td>Rheumatic diseases scleroderma</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_lupus</td>
+<td>Rheumatic diseases lupus</td>
+<td>Rheumatic diseases systemic lupus erythematosu...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_sarcoidosis</td>
+<td>Rheumatic diseases sarcoidosis</td>
+<td>Rheumatic diseases sarcoidosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_primary_biliary_cirrhosis</td>
+<td>Rheumatic diseases primary biliary cirrhosis</td>
+<td>Rheumatic diseases primary biliary cholangitis...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_mixed_connective_tissue_disease</td>
+<td>Rheumatic diseases mixed connective tissue dis...</td>
+<td>Rheumatic diseases mixed connective tissue dis...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_sjogren</td>
+<td>Rheumatic diseases sjogren</td>
+<td>Rheumatic diseases Sjögren's syndrome</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_vasculitis</td>
+<td>Rheumatic diseases vasculitis</td>
+<td>Rheumatic diseases vasculitis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_amyloidosis</td>
+<td>Rheumatic diseases amyloidosis</td>
+<td>Rheumatic diseases amyloidosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_ankylosing_spondylitis</td>
+<td>Rheumatic diseases ankylosing spondylitis</td>
+<td>Rheumatic diseases ankylosing spondylitis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_primary_sclerosing_cholangitis</td>
+<td>Rheumatic diseases primary sclerosing cholangitis</td>
+<td>Rheumatic diseases primary sclerosing cholangi...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_rheumatoid_arthritis</td>
+<td>Rheumatic diseases rheumatoid arthritis</td>
+<td>Rheumatic diseases rheumatoid arthritis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_polymyositis_or_dermatomyositis</td>
+<td>Rheumatic diseases polymyositis or dermatomyos...</td>
+<td>Rheumatic diseases polymyositis or dermatomyos...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_psoriatic_arthritis</td>
+<td>Rheumatic diseases psoriatic arthritis</td>
+<td>Rheumatic diseases psoriatic arthritis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_gout</td>
+<td>Rheumatic diseases gout</td>
+<td>Rheumatic diseases gout</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_familial_mediterranean_fever</td>
+<td>Rheumatic diseases familial mediterranean fever</td>
+<td>Rheumatic diseases familial mediterranean feve...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_fibromyalgia</td>
+<td>Rheumatic diseases fibromyalgia</td>
+<td>Rheumatic diseases fibromyalgia</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_gout_year_diagnosis</td>
+<td>Rheumatic diseases gout year diagnosis</td>
+<td>Rheumatic diseases gout year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_familial_mediterranean_fever_year_diagnosis</td>
+<td>Rheumatic diseases familial mediterranean feve...</td>
+<td>Rheumatic diseases familial mediterranean feve...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">rheumatic_diseases_fibromyalgia_year_diagnosis</td>
+<td>Rheumatic diseases fibromyalgia year diagnosis</td>
+<td>Rheumatic diseases fibromyalgia year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">genetic_disorders_down_syndrome</td>
+<td>Genetic disorders down syndrome</td>
+<td>Genetic disorders Down syndrome</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">genetic_disorders_turner_syndrome</td>
+<td>Genetic disorders turner syndrome</td>
+<td>Genetic disorders Turner syndrome</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_chronic_lymphocytic_leukemia</td>
+<td>Hematology oncology disorders chronic lymphocy...</td>
+<td>Hematology oncology disorders chronic lymphocy...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_idiopathic_thrombocytopenic_purpura_itp</td>
+<td>Hematology oncology disorders idiopathic throm...</td>
+<td>Hematology oncology disorders idiopathic throm...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_major_thalassemia</td>
+<td>Hematology oncology disorders major thalassemia</td>
+<td>Hematology oncology disorders major thalassemia</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_myelodisplastic_syndrome</td>
+<td>Hematology oncology disorders myelodisplastic ...</td>
+<td>Hematology oncology disorders myelodisplastic ...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_thrombocytosis</td>
+<td>Hematology oncology disorders thrombocytosis</td>
+<td>Hematology oncology disorders thrombocytosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_malignancy_mandating_chemo_or_radiotherapy</td>
+<td>Hematology oncology disorders malignancy manda...</td>
+<td>Hematology oncology disorders malignancy manda...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_basal_cell_carcinoma_skin</td>
+<td>Hematology oncology disorders basal cell carci...</td>
+<td>Hematology oncology disorders basal cell carci...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_squamous_cell_carcinoma_skin</td>
+<td>Hematology oncology disorders squamous cell ca...</td>
+<td>Hematology oncology disorders squamous cell ca...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_anemia</td>
+<td>Hematology oncology disorders anemia</td>
+<td>Hematology oncology disorders anemia</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_iron_deficiency</td>
+<td>Hematology oncology disorders iron deficiency</td>
+<td>Hematology oncology disorders iron deficiency ...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_minor_thalassemia</td>
+<td>Hematology oncology disorders minor thalassemia</td>
+<td>Hematology oncology disorders minor thalassemia</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_b12_deficiency</td>
+<td>Hematology oncology disorders b12 deficiency</td>
+<td>Hematology oncology disorders b12 deficiency</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_folate_deficiency</td>
+<td>Hematology oncology disorders folate deficiency</td>
+<td>Hematology oncology disorders folate deficiency</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_mgus</td>
+<td>Hematology oncology disorders mgus</td>
+<td>Hematology oncology disorders Monoclonal gammo...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_g6pd</td>
+<td>Hematology oncology disorders g6pd</td>
+<td>Hematology oncology disorders glucose-6-phosph...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_basal_cell_carcinoma_skin_year_diagnosis</td>
+<td>Hematology oncology disorders basal cell carci...</td>
+<td>Hematology oncology disorders basal cell carci...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_squamous_cell_carcinoma_skin_year_diagnosis</td>
+<td>Hematology oncology disorders squamous cell ca...</td>
+<td>Hematology oncology disorders squamous cell ca...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_anemia_year_diagnosis</td>
+<td>Hematology oncology disorders anemia year diag...</td>
+<td>Hematology oncology disorders anemia year diag...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_iron_deficiency_year_diagnosis</td>
+<td>Hematology oncology disorders iron deficiency ...</td>
+<td>Hematology oncology disorders iron deficiency ...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_minor_thalassemia_year_diagnosis</td>
+<td>Hematology oncology disorders minor thalassemi...</td>
+<td>Hematology oncology disorders minor thalassemi...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_folate_deficiency_year_diagnosis</td>
+<td>Hematology oncology disorders folate deficienc...</td>
+<td>Hematology oncology disorders folate deficienc...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_mgus_year_diagnosis</td>
+<td>Hematology oncology disorders mgus year diagnosis</td>
+<td>Hematology oncology disorders MGUS year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">hematology_oncology_disorders_g6pd_year_diagnosis</td>
+<td>Hematology oncology disorders g6pd year diagnosis</td>
+<td>Hematology oncology disorders G6PD year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">skin_disorders_mycosis_fungoides</td>
+<td>Skin disorders mycosis fungoides</td>
+<td>Skin disorders mycosis fungoides</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">skin_disorders_skin_only_psoriasis</td>
+<td>Skin disorders skin only psoriasis</td>
+<td>Skin disorders skin only psoriasis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">skin_disorders_vitiligo</td>
+<td>Skin disorders vitiligo</td>
+<td>Skin disorders vitiligo</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">skin_disorders_atopic_dermatitis</td>
+<td>Skin disorders atopic dermatitis</td>
+<td>Skin disorders atopic dermatitis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">skin_disorders_skin_only_psoriasis_year_diagnosis</td>
+<td>Skin disorders skin only psoriasis year diagnosis</td>
+<td>Skin disorders skin only psoriasis year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">skin_disorders_vitiligo_year_diagnosis</td>
+<td>Skin disorders vitiligo year diagnosis</td>
+<td>Skin disorders vitiligo year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">skin_disorders_atopic_dermatitis_year_diagnosis</td>
+<td>Skin disorders atopic dermatitis year diagnosis</td>
+<td>Skin disorders atopic dermatitis year diagnosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_increased_blood_lipids</td>
+<td>Historical diagnosis increased blood lipids</td>
+<td>Historical diagnosis hyperlipoproteinaemia</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_high_blood_pressure</td>
+<td>Historical diagnosis high blood pressure</td>
+<td>Historical diagnosis hypertension</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_narrowing_ateriees</td>
+<td>Historical diagnosis narrowing ateriees</td>
+<td>Historical diagnosis peripheral arterial disea...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_aortic_aneurysm</td>
+<td>Historical diagnosis aortic aneurysm</td>
+<td>Historical diagnosis aortic aneurysm</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_angina_pectoris</td>
+<td>Historical diagnosis angina pectoris</td>
+<td>Historical diagnosis angina pectoris</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_coronary_artery_disease</td>
+<td>Historical diagnosis coronary artery disease</td>
+<td>Historical diagnosis coronary artery disease</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_heart_attack</td>
+<td>Historical diagnosis heart attack</td>
+<td>Historical diagnosis myocardial infarction (MI)</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_heart_faliure</td>
+<td>Historical diagnosis heart faliure</td>
+<td>Historical diagnosis heart faliure</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_atrial_fibrillation_or_atrial_flutter</td>
+<td>Historical diagnosis atrial fibrillation or at...</td>
+<td>Historical diagnosis atrial fibrillation or at...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_supraventricular_tachycardia</td>
+<td>Historical diagnosis supraventricular tachycardia</td>
+<td>Historical diagnosis supraventricular tachycardia</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_ventricular_arrhythmia</td>
+<td>Historical diagnosis ventricular arrhythmia</td>
+<td>Historical diagnosis ventricular arrhythmia</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_cardiac_arrest</td>
+<td>Historical diagnosis cardiac arrest</td>
+<td>Historical diagnosis cardiac arrest</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_heart_murmur</td>
+<td>Historical diagnosis heart murmur</td>
+<td>Historical diagnosis heart murmur</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_endocarditis</td>
+<td>Historical diagnosis endocarditis</td>
+<td>Historical diagnosis endocarditis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_heart_blood_clot</td>
+<td>Historical diagnosis heart blood clot</td>
+<td>Historical diagnosis Intracardiac thrombosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_heart_elargement</td>
+<td>Historical diagnosis heart elargement</td>
+<td>Historical diagnosis cardiomyopathy dilated or...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_kawaski_disease</td>
+<td>Historical diagnosis kawaski disease</td>
+<td>Historical diagnosis Kawaski disease</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_congenital_heart_defect</td>
+<td>Historical diagnosis congenital heart defect</td>
+<td>Historical diagnosis congenital heart defect</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_pericarditis</td>
+<td>Historical diagnosis pericarditis</td>
+<td>Historical diagnosis pericarditis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_myocarditis</td>
+<td>Historical diagnosis myocarditis</td>
+<td>Historical diagnosis myocarditis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_pre_diabetes</td>
+<td>Historical diagnosis pre diabetes</td>
+<td>Historical diagnosis pre diabetes</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_recurrent_urinary_tract_infection_childhood</td>
+<td>Historical diagnosis recurrent urinary tract i...</td>
+<td>Historical diagnosis recurrent urinary tract i...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_reflux</td>
+<td>Historical diagnosis reflux</td>
+<td>Historical diagnosis vesico-uretero-renal reflux</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_stone_disease</td>
+<td>Historical diagnosis stone disease</td>
+<td>Historical diagnosis kidney stone disease</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_apthae</td>
+<td>Historical diagnosis apthae</td>
+<td>Historical diagnosis apthae</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_pulmonary_embolism</td>
+<td>Historical diagnosis pulmonary embolism</td>
+<td>Historical diagnosis pulmonary embolism (PE)</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_congenital_iimmunodeficiency.</td>
+<td>Historical diagnosis congenital iimmunodeficie...</td>
+<td>Historical diagnosis congenital immunodeficiency.</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_allergic_rhinitis</td>
+<td>Historical diagnosis allergic rhinitis</td>
+<td>Historical diagnosis allergic rhinitis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_helicobacter_pylori</td>
+<td>Historical diagnosis helicobacter pylori</td>
+<td>Historical diagnosis helicobacter pylori</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_penicillin_throat_infection</td>
+<td>Historical diagnosis penicillin throat infection</td>
+<td>Historical diagnosis repeated penicillin treat...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_ulcer_disease</td>
+<td>Historical diagnosis ulcer disease</td>
+<td>Historical diagnosis peptic ulcer disease</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_hemorrhoids</td>
+<td>Historical diagnosis hemorrhoids</td>
+<td>Historical diagnosis hemorrhoids</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_fissure</td>
+<td>Historical diagnosis fissure</td>
+<td>Historical diagnosis anal fissure</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_perianal_abscess</td>
+<td>Historical diagnosis perianal abscess</td>
+<td>Historical diagnosis perianal abscess</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_gall_bladder_stones</td>
+<td>Historical diagnosis gall bladder stones</td>
+<td>Historical diagnosis cholelithiasis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_pancreatitis</td>
+<td>Historical diagnosis pancreatitis</td>
+<td>Historical diagnosis pancreatitis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_meningitis</td>
+<td>Historical diagnosis meningitis</td>
+<td>Historical diagnosis meningitis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_hydrocephalus</td>
+<td>Historical diagnosis hydrocephalus</td>
+<td>Historical diagnosis hydrocephalus</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_mutiple_moles_over_50</td>
+<td>Historical diagnosis mutiple moles over 50</td>
+<td>Historical diagnosis mutiple moles over 50</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">historical_diagnosis_acne</td>
+<td>Historical diagnosis acne</td>
+<td>Historical diagnosis acne</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">historical_diagnosis_recurrent_sinuse_infections</td>
+<td>Historical diagnosis recurrent sinuse infections</td>
+<td>Historical diagnosis recurrent sinusitis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">oralheatlh_bleeding_gums</td>
+<td>Oralheatlh bleeding gums</td>
+<td>Oral heatlh bleeding gums</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>object</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">oralheatlh_abscess_or_gingivitis</td>
+<td>Oralheatlh abscess or gingivitis</td>
+<td>Oral heatlh periodontal abscess or gingivitis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>object</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">oralheatlh_antibiotics_for_gingivitis</td>
+<td>Oralheatlh antibiotics for gingivitis</td>
+<td>Oral heatlh taken antibiotics for gingivitis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>object</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">oralheatlh_bad_breath</td>
+<td>Oralheatlh bad breath</td>
+<td>Oral heatlh halitosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>object</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">oralheatlh_teeth_mobility_lately</td>
+<td>Oralheatlh teeth mobility lately</td>
+<td>Oral heatlh teeth mobility lately</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>object</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">eye_health_wear_glasses</td>
+<td>Eye health wear glasses</td>
+<td>Eye health wear glasses</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">eye_health_visual_impairment</td>
+<td>Eye health visual impairment</td>
+<td>Eye health visual impairment</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">eye_health_injection_optic_atrophy</td>
+<td>Eye health injection optic atrophy</td>
+<td>Eye health injection due to age-related macula...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">eye_health_allergies</td>
+<td>Eye health allergies</td>
+<td>Eye health allergies</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">eye_health_surgery_improve_vision</td>
+<td>Eye health surgery improve vision</td>
+<td>Eye health laser-assisted in situ keratomileus...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">eye_health_eyeglasses_age</td>
+<td>Eye health eyeglasses age</td>
+<td>Eye health eyeglasses age</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">eye_health_decreased_eyesight_age</td>
+<td>Eye health decreased eyesight age</td>
+<td>Eye health decreased eyesight age</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">eye_health_ona_age</td>
+<td>Eye health ona age</td>
+<td>Eye health AMD age</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">eye_health_conjunctivitis_age</td>
+<td>Eye health conjunctivitis age</td>
+<td>Eye health conjunctivitis age</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">eye_health_surgery_improve_vision_age</td>
+<td>Eye health surgery improve vision age</td>
+<td>Eye health LASIK surgery age</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">adhd_knew</td>
+<td>Adhd knew</td>
+<td>Known Attention deficit hyperactivity disorder...</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>object</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">polycystic_ovary_syndrome</td>
+<td>Polycystic ovary syndrome</td>
+<td>Polycystic ovary syndrome (PCOS)</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>object</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">endometriosis</td>
+<td>Endometriosis</td>
+<td>Endometriosis</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>object</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">urinary_tract_infection</td>
+<td>Urinary tract infection</td>
+<td>Recurrent urinary tract infection episodes</td>
+<td>medical_conditions/medical_conditions.parquet</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>object</td>
+<td>NaN</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
