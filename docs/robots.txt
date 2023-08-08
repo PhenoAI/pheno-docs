@@ -1,1 +1,1 @@
-Sitemap: https://pheno-ai.github.io/pheno-docs/sitemap.xml
+Sitemap: https://PhenoAI.github.io/pheno-docs/sitemap.xml
