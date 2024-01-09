@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.361">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Pheno.AI - 013-gut_microbiome</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Pheno.AI</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../datasets.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Available Datasets</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../platform_tutorial.html" rel="" target="">
+ <span class="menu-text">Getting Started</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publications.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datasets.html">Datasets</a></li><li class="breadcrumb-item"><a href="../datasets/013-gut_microbiome.html">013-gut_microbiome</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../platform_tutorial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting Started</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../pheno_utils.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">pheno-utils</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAQ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../data_format.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data format</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Datasets</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Available Datasets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets_description.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datasets Description</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/000-population.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">000-population</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/001-events.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">001-events</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/002-anthropometrics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">002-anthropometrics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/003-fundus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">003-fundus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/004-liver_ultrasound.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">004-liver_ultrasound</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/005-diet_logging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">005-diet_logging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/006-hand_grip.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">006-hand_grip</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/007-blood_pressure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">007-blood_pressure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/008-serum_lipidomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">008-serum_lipidomics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/009-sleep.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">009-sleep</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/010-vascular_health.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">010-vascular_health</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/011-body_composition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">011-body_composition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/012-carotid_ultrasound.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">012-carotid_ultrasound</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/013-gut_microbiome.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">013-gut_microbiome</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/014-human_genetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">014-human_genetics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/015-ecg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">015-ecg</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/016-blood_tests.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">016-blood_tests</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/017-cgm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">017-cgm</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/018-medications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">018-medications</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/021-medical_conditions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">021-medical_conditions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/022-bone_density.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">022-bone_density</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/040-ukbb_questionnaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">040-ukbb_questionnaire</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/041-ukbb_followup_questionnaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">041-ukbb_followup_questionnaire</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/042-ibs_questionnaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">042-ibs_questionnaire</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/043-covid_questionnaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">043-covid_questionnaire</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#gut-microbiome-dataset" id="toc-gut-microbiome-dataset" class="nav-link active" data-scroll-target="#gut-microbiome-dataset">Gut microbiome dataset</a>
+  <ul class="collapse">
+  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability:</a></li>
+  </ul></li>
+  <li><a href="#data-dictionary" id="toc-data-dictionary" class="nav-link" data-scroll-target="#data-dictionary">Data dictionary</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">013-gut_microbiome</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="gut-microbiome-dataset" class="level1">
+<h1>Gut microbiome dataset</h1>
+<p>Metagenomics is the study of genetic material from environmental samples, including microbial communities. It involves sequencing the DNA of all microorganisms in the sample, rather than isolating individual organisms. Metagenomics enables the identification and functional analysis of microorganisms in diverse environments, including soil, water, and the human body.</p>
+<p>This dataset maps out the human gut microbiota per participant via shotgun metagenomic sequencing given stool samples. It is then compared to known references of gut flora to measure prevalence of specific microbes.</p>
+<p>Gut microbiome metagenomics can be used to identify potential biomarkers of disease, develop personalized treatment strategies, and better understand the complex relationship between the gut microbiota and human physiology. It has already been providing insights into the role of gut microbes in various diseases such as obesity, diabetes and IBD.</p>
+<p>To measure the genetic makeup of the human gut flora given stool samples via metagenomics, the following steps done:</p>
+<ol type="1">
+<li>Collection of stool sample: For each visit, a stool sample is collected from the individual and stored appropriately to preserve the microbial community.</li>
+<li>DNA extraction: DNA is extracted from the stool sample using specialized techniques to isolate the microbial DNA from other materials present in the sample.</li>
+<li>DNA fragmentation and sequencing: The extracted DNA is then fragmented into small pieces and sequenced using high-throughput sequencing technologies.</li>
+<li>Quality control: The resulting raw sequencing data is then pre-processed, removing low-quality reads and artifacts of the sequencing methodology.</li>
+<li>Taxonomic classification: The processed sequencing data is then compared to databases of known microbial sequences to identify and classify the microbial species presence and their respective abundances in the sample.</li>
+</ol>
+<section id="data-availability" class="level3">
+<h3 class="anchored" data-anchor-id="data-availability">Data availability:</h3>
+<p>The information is stored in multiple parquet files: - <code>gut_microbiome.parquet</code>: Sequencing and QC statistics. - <code>urs</code>: Segal Lab relative abundance. - <code>metaphlan_*</code>: 8 tables with MetaPhlAn 4 relative abundances, separated by taxonomic levels.</p>
+<div class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-03T12:40:59.494271Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-03T12:40:59.494111Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-03T12:41:00.335693Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-03T12:41:00.334979Z&quot;}" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pheno_utils <span class="im">import</span> PhenoLoader</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-03T12:41:00.337478Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-03T12:41:00.337340Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-03T12:41:05.732320Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-03T12:41:05.731800Z&quot;}" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dl <span class="op">=</span> PhenoLoader(<span class="st">'gut_microbiome'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>DataLoader for gut_microbiome with
+46 fields
+2 tables: ['gut_microbiome', 'age_sex']</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="data-dictionary" class="level1">
+<h1>Data dictionary</h1>
+<div class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2023-08-03T12:41:05.733734Z&quot;,&quot;iopub.status.busy&quot;:&quot;2023-08-03T12:41:05.733514Z&quot;,&quot;iopub.status.idle&quot;:&quot;2023-08-03T12:41:05.745304Z&quot;,&quot;shell.execute_reply&quot;:&quot;2023-08-03T12:41:05.744909Z&quot;}" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dl.<span class="bu">dict</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">field_string</th>
+<th data-quarto-table-cell-role="th">description_string</th>
+<th data-quarto-table-cell-role="th">relative_location</th>
+<th data-quarto-table-cell-role="th">value_type</th>
+<th data-quarto-table-cell-role="th">units</th>
+<th data-quarto-table-cell-role="th">sampling_rate</th>
+<th data-quarto-table-cell-role="th">item_type</th>
+<th data-quarto-table-cell-role="th">array</th>
+<th data-quarto-table-cell-role="th">cohorts</th>
+<th data-quarto-table-cell-role="th">data_type</th>
+<th data-quarto-table-cell-role="th">debut</th>
+<th data-quarto-table-cell-role="th">pandas_dtype</th>
+<th data-quarto-table-cell-role="th">parent_dataframe</th>
+<th data-quarto-table-cell-role="th">data_coding</th>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">tabular_field_name</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">collection_timestamp</td>
+<td>Sampled timestamp</td>
+<td>Time sample was given</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Date</td>
+<td>Time</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>datetime64[ns, Asia/Jerusalem]</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">collection_date</td>
+<td>Sampled date</td>
+<td>Date sample was given</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Date</td>
+<td>Time</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>datetime64[ns]</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">timezone</td>
+<td>Timezone</td>
+<td>Timezone</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Text</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">sample_name</td>
+<td>Sample name</td>
+<td>Sample Name</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Text</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">urs_metadata_parquet</td>
+<td>URS abundances metadata</td>
+<td>Organism classification and taxonomy</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>category</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">urs_abundance_parquet</td>
+<td>URS abundances</td>
+<td>Aggregated abundance (mapped to the URS refere...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>category</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">metaphlan_abundance_kingdom_parquet</td>
+<td>MetaPhlAn 4 abundance (kingdom)</td>
+<td>Aggregated abundance (MetaPhlAn 4) at the king...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>category</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">metaphlan_abundance_phylum_parquet</td>
+<td>MetaPhlAn 4 abundance (phylum)</td>
+<td>Aggregated abundance (MetaPhlAn 4) at the phyl...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>category</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">metaphlan_abundance_class_parquet</td>
+<td>MetaPhlAn 4 abundance (class)</td>
+<td>Aggregated abundance (MetaPhlAn 4) at the clas...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>category</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">metaphlan_abundance_order_parquet</td>
+<td>MetaPhlAn 4 abundance (order)</td>
+<td>Aggregated abundance (MetaPhlAn 4) at the orde...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>category</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">metaphlan_abundance_family_parquet</td>
+<td>MetaPhlAn 4 abundance (famiily)</td>
+<td>Aggregated abundance (MetaPhlAn 4) at the fami...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>category</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">metaphlan_abundance_genus_parquet</td>
+<td>MetaPhlAn 4 abundance (genus)</td>
+<td>Aggregated abundance (MetaPhlAn 4) at the genu...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>category</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">metaphlan_abundance_species_parquet</td>
+<td>MetaPhlAn 4 abundance (species)</td>
+<td>Aggregated abundance (MetaPhlAn 4) at the spec...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>category</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">metaphlan_abundance_strain_parquet</td>
+<td>MetaPhlAn 4 abundance (strain)</td>
+<td>Aggregated abundance (MetaPhlAn 4) at the stra...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>category</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">raw_fastq</td>
+<td>Raw FASTQ path</td>
+<td>The original FASTQ file</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">trimmed_fastq</td>
+<td>Post QC FASTQ path</td>
+<td>FASTQ file post Trimmomatic (removing adaptors...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">non_human_fastq</td>
+<td>Non-human FASTQ path</td>
+<td>FASTQ file for non-human reads (Post Trimmomatic)</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">fastqc_html</td>
+<td>FASTQC HTML path</td>
+<td>FASTQC Output for Post QC FASTQ - HTML</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">fastqc_zip</td>
+<td>FASTQC zip path</td>
+<td>FASTQC Output for Post QC FASTQ - Zip</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">human_variants_bed</td>
+<td>Human variants plink (BED)</td>
+<td>Plink file containing all the human alleles ex...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">human_variants_bim</td>
+<td>Human variants plink (BIM)</td>
+<td>Plink file containing all the human variants e...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">human_variants_fam</td>
+<td>Human variants plink (FAM)</td>
+<td>Plink file containing only the specific sample</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">urs_mapped_bam</td>
+<td>URS mapped bam path</td>
+<td>Reads aligned to the URS reference</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">urs_mapped_single_bacteria_per_read_bam</td>
+<td>URS mapped bam path (best match only)</td>
+<td>Reads aligned to the URS reference, but only t...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Molecular</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">urs_mapped_metrics_txt</td>
+<td>URS Bowtie2 metric file path</td>
+<td>Bowtie2 metric output for the URS alignment</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">urs_mapped_results_csv</td>
+<td>URS abundances path</td>
+<td>URS relative abundances</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Tabular</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">metaphlan4_results_txt</td>
+<td>MetaPhlAn 4 abundance path</td>
+<td>MetaPhlAn4 relative abundances</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Binary string</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Bulk</td>
+<td>Single</td>
+<td>10k</td>
+<td>Tabular</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">duplicate_reads_count</td>
+<td>Duplicate reads count</td>
+<td>#Reads that are exact duplciates</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Integer</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">excessive_duplicate_reads</td>
+<td>Excessive duplicate reads</td>
+<td>Whether the sample contain an abnormal amount ...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Boolean</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>bool</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">raw_read_count</td>
+<td>Raw reads count</td>
+<td>#Reads in the original FASTQ</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Integer</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">trimmed_read_count</td>
+<td>Post QC reads count</td>
+<td>#Reads in the Post QC FASTQ</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Integer</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">human_variant_count</td>
+<td>Detectable human variants count</td>
+<td>#Variants in the Plink files</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Integer</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">human_read_count</td>
+<td>Human reads count</td>
+<td>#Reads successfuly aligned to humans</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Integer</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">urs_mapped_read_count</td>
+<td>URS mapped reads count</td>
+<td>#Reads mapped to the URS reference panel (not ...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Integer</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">wgs_compare_error_total</td>
+<td>WGS vs stool compare - #Errors</td>
+<td>#Errors when comparing homozygous SNPs found i...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Integer</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">wgs_compare_errors_percent</td>
+<td>WGS vs stool compare - %Errors</td>
+<td>%Errors when comparing homozygous SNPs found i...</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Continuous</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>float</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">wgs_compare_count_homozygous</td>
+<td>WGS vs stool compare - #Homozygous SNPs</td>
+<td>#homozygous SNPs found in stool vs WGS</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Integer</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">wgs_compare_count_variants</td>
+<td>WGS vs stool compare - #SNPs</td>
+<td>#SNPs found in stool vs WGS</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Integer</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">wgs_compare_pass</td>
+<td>WGS vs stool compare - Passed Validation</td>
+<td>Passed Stool Vs WGS validation</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Categorical (single)</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>category</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">raw_read_length</td>
+<td>Legnth of raw reads</td>
+<td>Length of reads (from the Raw FASTQ file)</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Integer</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">single_ended</td>
+<td>Is single ended</td>
+<td>Single ended (SE) or pair ended (PE)</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Boolean</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>bool</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">is_genotek</td>
+<td>Vial type</td>
+<td>Type of vial used for stool collecting</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Boolean</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>bool</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">run_name</td>
+<td>Batch name</td>
+<td>The run-name of the sample's batch(s)</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Text</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>string</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">wgs_dna_code</td>
+<td>WGS DNA code</td>
+<td>WGS DNA code</td>
+<td>gut_microbiome/gut_microbiome.parquet</td>
+<td>Integer</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>Data</td>
+<td>Single</td>
+<td>10k</td>
+<td>Metadata</td>
+<td>NaN</td>
+<td>int</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

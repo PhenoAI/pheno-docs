@@ -3,7 +3,7 @@ pheno-utils
 
 A pip-installable python library for Dataloader and analysis tools.
 
-[See full documentation](https://pheno-ai.github.io/pheno-utils/)
+[See full documentation](https://phenoai.github.io/pheno-utils/)
 
 
 ## Install
