@@ -2,7 +2,7 @@
 
 Fundus imaging allows for the visualization of the interior surface of the eye, known as the fundus; and used to examine structures such as the optic disc, retina, and retinal microvasculature. This procedure is commonly used to diagnose and monitor a variety of eye diseases.
 
-Fundus imaging is a type of medical imaging technique that is used to obtain detailed, high-resolution images of the back of the eye, including the retina, the optic nerve, and the macula, an oval-shaped area in the center of the retina used for central vision (Figure 1). These images can provide important information about the health of the eye and can be used to diagnose and monitor a variety of eye diseases and conditions.
+Fundus imaging is a type of medical imaging technique that is used to obtain detailed, high-resolution images of the back of the eye, including the retina, the optic nerve, and the macula, an oval-shaped area in the center of the retina used for central vision. These images can provide important information about the health of the eye and can be used to diagnose and monitor a variety of eye diseases and conditions.
 
 One of the key features that can be seen in fundus images is the retinal microvasculature, which refers to the network of small blood vessels that supply blood to the retina. The appearance and structure of the retinal microvasculature can provide information about the health of the eye and can be used to diagnose and monitor a variety of conditions.
 
@@ -17,4 +17,5 @@ The current pipeline does not include automatic identification or clinical inter
 
 ### Data availability:
 - All tabular information is stored in a main parquet file: `fundus.parquet`
-- Image files including segmentations are stored in subfolders and mapped in the main parqet file.
+- Derived microvasculature information is stored in a secondary parquet file: `microvasculature.parquet`
+- Image files including segmentations are stored in subfolders and mapped in the parqet files.

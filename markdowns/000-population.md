@@ -4,4 +4,4 @@ Population characteristics of the Human Phenotype Project study participants inc
 
 ### Data availability:
 
-- population.parquet - contains sex, month and year of birth per participant
+- Information about sex, study_id, and month and year of birth per participant: `population.parquet`
