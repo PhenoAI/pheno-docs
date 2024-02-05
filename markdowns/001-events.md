@@ -1,7 +1,8 @@
 # Events dataset  
 
-Events Informations of the Human Phenotype Project study participants including birth month and year, sex and visits information.
+Events Informations of the Human Phenotype Project study participants contains information regarding participant visits and calls.
+
 
 ### Data availability:
 
-- events.parquet - also contains information regarding participant visits and calls
+- Information about sex, study_id, month and year of birth per participant, visits types and dates: `events.parquet`
