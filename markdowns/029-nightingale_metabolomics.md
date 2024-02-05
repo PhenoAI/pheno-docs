@@ -8,8 +8,4 @@ The information is stored in 3 parquet file:
 1. Results - nightingale_metabolomics.parquet - quantification of metabolites in blood sample.
 2. Tags per Biomarker - tags_per_biomarker.parquet - categorical tags per metabolite per sample
 
-And 2 annotation csv files:
-- Biomarker annotations - biomarker_annotation.parquet 
-- Tag annotations - tag_annotation.parquet
-
 As of 2024-02-01, the dataset contains 1700 participants who were analyzed.
