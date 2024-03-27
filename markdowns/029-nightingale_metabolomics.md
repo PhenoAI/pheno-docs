@@ -4,7 +4,7 @@ The dataset, derived from Nightingale Health's metabolic profiling of blood seru
 
 ### Data availability:
 
-The information is stored in 3 parquet file:
+The information is stored in 2 parquet file:
 1. Results - nightingale_metabolomics.parquet - quantification of metabolites in blood sample.
 2. Tags per Biomarker - tags_per_biomarker.parquet - categorical tags per metabolite per sample
 
