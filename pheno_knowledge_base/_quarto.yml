@@ -47,17 +47,28 @@ website:
           - datasets/018-medications.ipynb
           - datasets/021-medical_conditions.ipynb
           - datasets/022-bone_density.ipynb
-          - datasets/040-ukbb_questionnaire.ipynb
-          - datasets/041-ukbb_followup_questionnaire.ipynb
-          - datasets/042-ibs_questionnaire.ipynb
-          - datasets/043-covid_questionnaire.ipynb
-
-
+          - datasets/024-rna_seq.ipynb
+          - datasets/029-nightingale_metabolomics.ipynb
+          - datasets/043-covid.ipynb
+          - datasets/044-sex_specific_factors.ipynb
+          - datasets/045-participant_relation.ipynb
+          - datasets/049-medical_procedures.ipynb
+          - datasets/051-children.ipynb
+          - datasets/052-family_history.ipynb
+          - datasets/053-sociodemographics.ipynb
+          - datasets/055-lifestyle_and_environment.ipynb
+          - datasets/057-psychological_and_social_health.ipynb
+          - datasets/058-health_and_medical_history.ipynb
+          - datasets/070-oral_microbiome.ipynb
+          - datasets/100-curated_phenotypes.ipynb
 format:
   html:
-    theme: cosmo
+    theme:
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
+
 
 
 
