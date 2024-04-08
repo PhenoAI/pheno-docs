@@ -5,6 +5,8 @@ project:
 website:
   title: "Pheno.AI"
   navbar:
+    background: primary
+    search: true
     left:
       - href: index.qmd
         text: Home
@@ -69,6 +71,8 @@ format:
     css: styles.css
     toc: true
 
+execute:
+  freeze: auto
 
 
 
