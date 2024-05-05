@@ -164,7 +164,7 @@ Use the following code  docker pull \<accountID\>.dkr.ecr.\<aws-region\>.amazona
 
 ### Docker run
 Use the image you have under docker image ls \
-e.g  docker run -it --rm \<accountName\>.dkr.ecr.\<regionAWS\>.amazonaws.com/ecr-public/docker/library/alpine:edge
+e.g  docker run -it --rm \<accountID\>.dkr.ecr.\<aws-region\>.amazonaws.com/ecr-public/docker/library/alpine:edge
 ![](platform_imgs/docker_run.png)
 
 
