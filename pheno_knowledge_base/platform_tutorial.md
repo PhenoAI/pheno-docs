@@ -40,13 +40,18 @@ Use this section if this is your first time connecting to the system.
 
 # Studies - Data sets saved in Amazon S3
 
-## Organizational Study
-![](platform_imgs/org_study.png)
+
 
 ## Personal Study
+1. Click on **Create Study**
 ![](platform_imgs/personal_study1.png)
+1. Fill up all the fields and press **Create Study** myStudy for personal and Organziation study for Org Studies
 ![](platform_imgs/personal_study2.png)
+1. Study Created and ready to use 
 ![](platform_imgs/personal_study3.png)
+
+## Organizational Study
+![](platform_imgs/org_study.png)
 
 # Using Trusted Research Environment
 
@@ -152,10 +157,14 @@ When you no longer need a Research Environment you can terminate it. Follow thes
 
 ## Docker usage
 
-### Docke pull
+### Docker pull
+docker registry: https://gallery.ecr.aws/ \
+Use the following code  docker pull \<accountID\>.dkr.ecr.\<aws-region\>.amazonaws.com/ecr-public/\<Change to your library\>
 ![](platform_imgs/docker_pull.png)
 
-### Docke run
+### Docker run
+Use the image you have under docker image ls \
+e.g  docker run -it --rm \<accountName\>.dkr.ecr.\<regionAWS\>.amazonaws.com/ecr-public/docker/library/alpine:edge
 ![](platform_imgs/docker_run.png)
 
 
