@@ -41,12 +41,12 @@ Use this section if this is your first time connecting to the system.
 # Studies - Data sets saved in Amazon S3
 
 ## Organizational Study
-![] (platform_imgs/org_study.png)
+![](platform_imgs/org_study.png)
 
 ## Personal Study
-![] (platform_imgs/personal_study1.png)
-![] (platform_imgs/personal_study2.png)
-![] (platform_imgs/personal_study3.png)
+![](platform_imgs/personal_study1.png)
+![](platform_imgs/personal_study2.png)
+![](platform_imgs/personal_study3.png)
 
 # Using Trusted Research Environment
 
@@ -84,7 +84,7 @@ Wait for the workspace to be **Available**.
 1. In the portal navigate to the **Workspaces** page using the menu on the left.
 1. Click on the **Connections** button, below the **Workspace** name.
 
-![] (platform_imgs/autoconnect.png)
+![](platform_imgs/autoconnect.png)
 
 ## Connecting to an Existing Research Environment
 
