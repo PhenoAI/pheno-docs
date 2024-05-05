@@ -35,9 +35,18 @@ Use this section if this is your first time connecting to the system.
 
 **SSH Keys** - SSH Keys for EC2 authorization
 
-**Studies** - Data sets saved in Amazon S3
 
 **Workspaces** - The combination of a study with a compute![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.004.png)
+
+# Studies - Data sets saved in Amazon S3
+
+## Organizational Study
+![] (platform_imgs/org_study.png)
+
+## Personal Study
+![] (platform_imgs/personal_study1.png)
+![] (platform_imgs/personal_study2.png)
+![] (platform_imgs/personal_study3.png)
 
 # Using Trusted Research Environment
 
@@ -69,6 +78,13 @@ This will deploy the new Workspace and attach the Studies that were selected.
 You will automatically be redirected to the Workspaces tab on the portal.
 
 Wait for the workspace to be **Available**.
+
+## Connecting to EC2
+
+1. In the portal navigate to the **Workspaces** page using the menu on the left.
+1. Click on the **Connections** button, below the **Workspace** name.
+
+![] (platform_imgs/autoconnect.png)
 
 ## Connecting to an Existing Research Environment
 
@@ -133,6 +149,15 @@ When you no longer need a Research Environment you can terminate it. Follow thes
 ![](platform_imgs/existing_workspace.png)
 
 # Tools Installation
+
+## Docker usage
+
+### Docke pull
+![](platform_imgs/docker_pull.png)
+
+### Docke run
+![](platform_imgs/docker_run.png)
+
 
 ## Installing Python Packages
 
