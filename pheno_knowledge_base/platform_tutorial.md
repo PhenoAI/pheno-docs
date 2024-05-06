@@ -159,12 +159,12 @@ When you no longer need a Research Environment you can terminate it. Follow thes
 
 ### Docker pull
 docker registry: https://gallery.ecr.aws/ \
-Use the following code  docker pull \<accountID\>.dkr.ecr.\<aws-region\>.amazonaws.com/ecr-public/\<Change to your library\>
+Use the following code  `docker pull \<accountID\>.dkr.ecr.\<aws-region\>.amazonaws.com/ecr-public/\<Change to your library\>`
 ![](platform_imgs/docker_pull.png)
 
 ### Docker run
 Use the image you have under docker image ls \
-e.g  docker run -it --rm \<accountID\>.dkr.ecr.\<aws-region\>.amazonaws.com/ecr-public/docker/library/alpine:edge
+e.g  `docker run -it --rm \<accountID\>.dkr.ecr.\<aws-region\>.amazonaws.com/ecr-public/docker/library/alpine:edge`
 ![](platform_imgs/docker_run.png)
 
 
