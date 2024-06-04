@@ -62,7 +62,6 @@ website:
           - datasets/057-psychological_and_social_health.ipynb
           - datasets/058-health_and_medical_history.ipynb
           - datasets/070-oral_microbiome.ipynb
-          - datasets/100-curated_phenotypes.ipynb
 format:
   html:
     theme:

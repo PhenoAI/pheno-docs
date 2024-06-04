@@ -377,12 +377,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">070-oral_microbiome</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./datasets/100-curated_phenotypes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">100-curated_phenotypes</span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -402,9 +396,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#login" id="toc-login" class="nav-link" data-scroll-target="#login">Login</a></li>
   <li><a href="#user-interface" id="toc-user-interface" class="nav-link" data-scroll-target="#user-interface">User Interface</a></li>
   </ul></li>
+  <li><a href="#studies---data-sets-saved-in-amazon-s3" id="toc-studies---data-sets-saved-in-amazon-s3" class="nav-link" data-scroll-target="#studies---data-sets-saved-in-amazon-s3">Studies - Data sets saved in Amazon S3</a>
+  <ul class="collapse">
+  <li><a href="#personal-study" id="toc-personal-study" class="nav-link" data-scroll-target="#personal-study">Personal Study</a></li>
+  <li><a href="#organizational-study" id="toc-organizational-study" class="nav-link" data-scroll-target="#organizational-study">Organizational Study</a></li>
+  </ul></li>
   <li><a href="#using-trusted-research-environment" id="toc-using-trusted-research-environment" class="nav-link" data-scroll-target="#using-trusted-research-environment">Using Trusted Research Environment</a>
   <ul class="collapse">
   <li><a href="#launching-a-new-research-environment" id="toc-launching-a-new-research-environment" class="nav-link" data-scroll-target="#launching-a-new-research-environment">Launching a new Research Environment</a></li>
+  <li><a href="#connecting-to-ec2" id="toc-connecting-to-ec2" class="nav-link" data-scroll-target="#connecting-to-ec2">Connecting to EC2</a></li>
   <li><a href="#connecting-to-an-existing-research-environment" id="toc-connecting-to-an-existing-research-environment" class="nav-link" data-scroll-target="#connecting-to-an-existing-research-environment">Connecting to an Existing Research Environment</a></li>
   <li><a href="#attach-files-to-a-research-environment" id="toc-attach-files-to-a-research-environment" class="nav-link" data-scroll-target="#attach-files-to-a-research-environment">Attach Files to a Research Environment</a></li>
   <li><a href="#collaborating-and-sharing-data-between-environments" id="toc-collaborating-and-sharing-data-between-environments" class="nav-link" data-scroll-target="#collaborating-and-sharing-data-between-environments">Collaborating and Sharing Data Between Environments</a></li>
@@ -412,6 +412,11 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#tools-installation" id="toc-tools-installation" class="nav-link" data-scroll-target="#tools-installation">Tools Installation</a>
   <ul class="collapse">
+  <li><a href="#docker-usage" id="toc-docker-usage" class="nav-link" data-scroll-target="#docker-usage">Docker usage</a>
+  <ul class="collapse">
+  <li><a href="#docker-pull" id="toc-docker-pull" class="nav-link" data-scroll-target="#docker-pull">Docker pull</a></li>
+  <li><a href="#docker-run" id="toc-docker-run" class="nav-link" data-scroll-target="#docker-run">Docker run</a></li>
+  </ul></li>
   <li><a href="#installing-python-packages" id="toc-installing-python-packages" class="nav-link" data-scroll-target="#installing-python-packages">Installing Python Packages</a>
   <ul class="collapse">
   <li><a href="#for-any-questions-or-help-please-contact-supportpheno.ai" id="toc-for-any-questions-or-help-please-contact-supportpheno.ai" class="nav-link" data-scroll-target="#for-any-questions-or-help-please-contact-supportpheno.ai">For any questions or help please contact: support@pheno.ai</a></li>
@@ -461,8 +466,22 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.003.png" class="img-fluid"></p>
 <p><strong>Dashboard</strong> - Displays AWS charges over the past 30 days</p>
 <p><strong>SSH Keys</strong> - SSH Keys for EC2 authorization</p>
-<p><strong>Studies</strong> - Data sets saved in Amazon S3</p>
 <p><strong>Workspaces</strong> - The combination of a study with a compute<img src="platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.004.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="studies---data-sets-saved-in-amazon-s3" class="level1">
+<h1>Studies - Data sets saved in Amazon S3</h1>
+<section id="personal-study" class="level2">
+<h2 class="anchored" data-anchor-id="personal-study">Personal Study</h2>
+<ol type="1">
+<li>Click on <strong>Create Study</strong> <img src="platform_imgs/personal_study1.png" class="img-fluid"></li>
+<li>Fill up all the fields and press <strong>Create Study</strong> myStudy for personal and Organziation study for Org Studies <img src="platform_imgs/personal_study2.png" class="img-fluid"></li>
+<li>Study Created and ready to use <img src="platform_imgs/personal_study3.png" class="img-fluid"></li>
+</ol>
+</section>
+<section id="organizational-study" class="level2">
+<h2 class="anchored" data-anchor-id="organizational-study">Organizational Study</h2>
+<p><img src="platform_imgs/org_study.png" class="img-fluid"></p>
 </section>
 </section>
 <section id="using-trusted-research-environment" class="level1">
@@ -491,6 +510,14 @@ ul.task-list li input[type="checkbox"] {
 <p>This will deploy the new Workspace and attach the Studies that were selected.</p>
 <p>You will automatically be redirected to the Workspaces tab on the portal.</p>
 <p>Wait for the workspace to be <strong>Available</strong>.</p>
+</section>
+<section id="connecting-to-ec2" class="level2">
+<h2 class="anchored" data-anchor-id="connecting-to-ec2">Connecting to EC2</h2>
+<ol type="1">
+<li>In the portal navigate to the <strong>Workspaces</strong> page using the menu on the left.</li>
+<li>Click on the <strong>Connections</strong> button, below the <strong>Workspace</strong> name.</li>
+</ol>
+<p><img src="platform_imgs/autoconnect.png" class="img-fluid"></p>
 </section>
 <section id="connecting-to-an-existing-research-environment" class="level2">
 <h2 class="anchored" data-anchor-id="connecting-to-an-existing-research-environment">Connecting to an Existing Research Environment</h2>
@@ -555,6 +582,19 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="tools-installation" class="level1">
 <h1>Tools Installation</h1>
+<section id="docker-usage" class="level2">
+<h2 class="anchored" data-anchor-id="docker-usage">Docker usage</h2>
+<section id="docker-pull" class="level3">
+<h3 class="anchored" data-anchor-id="docker-pull">Docker pull</h3>
+<p>docker registry: https://gallery.ecr.aws/<br>
+Use the following code <code>docker pull \&lt;accountID\&gt;.dkr.ecr.\&lt;aws-region\&gt;.amazonaws.com/ecr-public/\&lt;Change to your library\&gt;</code> <img src="platform_imgs/docker_pull.png" class="img-fluid"></p>
+</section>
+<section id="docker-run" class="level3">
+<h3 class="anchored" data-anchor-id="docker-run">Docker run</h3>
+<p>Use the image you have under docker image ls<br>
+e.g <code>docker run -it --rm \&lt;accountID\&gt;.dkr.ecr.\&lt;aws-region\&gt;.amazonaws.com/ecr-public/docker/library/alpine:edge</code> <img src="platform_imgs/docker_run.png" class="img-fluid"></p>
+</section>
+</section>
 <section id="installing-python-packages" class="level2">
 <h2 class="anchored" data-anchor-id="installing-python-packages">Installing Python Packages</h2>
 <ol type="1">

@@ -35,6 +35,5 @@
 |  057 | [psychological_and_social_health](datasets/057-psychological_and_social_health.html) | 2019-01-09   | 2022-12-31  | 14861 (9262)                 | ✓              |                    |              |
 |  058 | [health_and_medical_history](datasets/058-health_and_medical_history.html)           | 2018-11-21   | 2022-12-31  | 14861 (10197)                | ✓              |                    |              |
 |  070 | [oral_microbiome](datasets/070-oral_microbiome.html)                                 | 2019-03-11   | 2022-12-21  | 8816 (8816)                  | ✓              |                    |              |
-|  100 | [curated_phenotypes](datasets/100-curated_phenotypes.html)                           | 2018-12-05   | 2022-12-29  | 20723 (10434)                | ✓              |                    |              |
 
 : Available Datasets {.striped .hover tbl-colwidths="[5, 37, 20 ,20, 20, 5, 5, 5]"}
