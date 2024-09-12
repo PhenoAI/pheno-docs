@@ -1,18 +1,19 @@
 # Events dataset  
 
-### Overview <!-- short description for the example notebooks -->
+### Description 
 
 Events Informations of the Human Phenotype Project study participants including birth month and year, sex and visits information.
 
-### Description  <!-- long description for the data browser -->
-
-Events Informations of the Human Phenotype Project study participants including birth month and year, sex and visits information.
-
-### Measurment procedure <!-- short and no images measurment for the example notebooks -->
+### Introduction
 
 TODO
 
-### Measurment protocol <!-- long measurment for the data browser -->
+
+### Measurment protocol no images <!-- short and no images measurment protocol for the example notebooks -->
+
+TODO
+
+### Measurment protocol <!-- long measurment protocol for the data browser -->
 
 TODO
 
