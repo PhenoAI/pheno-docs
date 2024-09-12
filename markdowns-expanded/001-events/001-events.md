@@ -8,11 +8,6 @@ Events Informations of the Human Phenotype Project study participants including 
 
 TODO
 
-
-### Measurment protocol no images <!-- short and no images measurment protocol for the example notebooks -->
-
-TODO
-
 ### Measurment protocol <!-- long measurment protocol for the data browser -->
 
 TODO

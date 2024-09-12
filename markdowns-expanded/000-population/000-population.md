@@ -8,12 +8,6 @@ Population characteristics of the Human Phenotype Project study participants inc
 
 TODO
 
-### Measurment protocol no images <!-- short and no images measurment protocol for the example notebooks -->
-
-Upon registration to the Human Phenotype Project, people are assigned with a registration code, which is their ID in the study and provide a telephone number and email by which all communications are conducted. Participants are asked about their date of birth and their sex, and are asked to schedule a visit to the assessment center.
-
-Personal and communication data is saved separately in a secure environment from the population characteristics information, which is saved with the participant designated ID.
-
 ### Measurment protocol <!-- long measurment protocol for the data browser -->
 
 Upon registration to the Human Phenotype Project, people are assigned with a registration code, which is their ID in the study and provide a telephone number and email by which all communications are conducted. Participants are asked about their date of birth and their sex, and are asked to schedule a visit to the assessment center.
