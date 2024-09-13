@@ -1,0 +1,43 @@
+# Medical conditions dataset  
+
+### Description 
+
+A medical conditions dataset is a collection of information about various health-related issues experienced by people. This data can include symptoms, diagnoses, treatments, and outcomes for different diseases and conditions. The dataset is gathered using various methods, or "modalities," such as electronic health records, surveys, wearable devices, and medical imaging. The purpose of collecting and analyzing this information is to better understand health trends, identify risk factors, and improve medical care for everyone.
+
+
+### Introduction
+
+Medical diagnosis in research studies plays a crucial role in the understanding and advancement of medicine. In clinical research, the process of diagnosis is used to identify individuals with specific medical conditions and to determine the prevalence of these conditions within a study population. Diagnosis is also used to identify subgroups of individuals with similar characteristics or outcomes, which can help researchers to better understand the underlying disease mechanisms and to develop risk models, identify biomarkers for early detection of the disease and for monitoring its progress and to develop  new treatments.
+
+Survey data is a valuable resource for understanding various aspects of medical conditions. It involves collecting self-reported information from individuals about their health, symptoms, diagnoses, treatments, and lifestyle factors. This data is tabular, meaning it is organized in rows and columns, which makes it easy to analyze and compare.
+
+Medical conditions data collected through surveys covers diverse body systems, such as the cardiovascular, respiratory, digestive, and nervous systems. It provides insights into disease prevalence, risk factors, and the impact on individuals' lives.
+
+Surveys are an attractive data modality due to their accessibility, cost-effectiveness, and ability to capture patient perspectives. This information helps researchers identify potential risk factors, inform prevention strategies, and shape public health policies, ultimately contributing to better health outcomes for diverse populations.
+
+### Measurment protocol <!-- long measurment protocol for the data browser -->
+
+Upon registration to the Human Phenotype Project study, participants filled an online medical questionnaire containing medical diagnosis. During visits to the clinical testing center, participants were interviewed by research staff asking about known medical diagnoses, along with approximate dates of onset. Questions and self-reported medical diagnoses were mapped to ICD-11 codes. Medical diagnoses at baseline were determined as diagnoses that were reported at the baseline visit or with an onset date prior to the baseline visit.
+
+#### Baseline
+* Interviewer asks participant question and fill in a drop down list of different conditions participants have 
+* Old list of drop down conditions was built in a free form way and may be problematic to map a lot of them to icd codes
+
+#### Every follow up visit/ call and baseline
+* 1 year questionnaire -
+    * Medical questionnaire asks about conditions
+    * Should fill in the date when new condition was founded 
+* There is a problem where we unsure if person had condition at baseline to validate if they developed this condition in the last year
+
+
+### Data availability <!-- for the example notebooks -->
+
+The information is stored in 1 parquet file: `medical_conditions.parquet` 
+
+### Summary of available data <!-- for the data browser -->
+
+1. Medical diagnosis at baseline coded as ICD-11 codes.
+
+### Relevent links
+
+* Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/021-medical_conditions.html
