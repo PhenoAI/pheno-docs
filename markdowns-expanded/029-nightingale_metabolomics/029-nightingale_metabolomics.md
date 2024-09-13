@@ -47,8 +47,8 @@ As of 2024-02-01, the dataset contains 1700 participants who were analyzed.
 ### Summary of available data <!-- for the data browser -->
 
 We sent our samples to Nightingale in two batches (with more planned):
-Batch #1 (POC, 6/6/2023) - Total entries: 1,827 / Unique participant IDs: 1,714
-Batch #2 (15/04/2024) - Total entries: 8,387 / Unique participant IDs: 7,454
+* Batch #1 (POC, 6/6/2023) - Total entries: 1,827 / Unique participant IDs: 1,714
+* Batch #2 (15/04/2024) - Total entries: 8,387 / Unique participant IDs: 7,454
 
 ### Relevent links
 
