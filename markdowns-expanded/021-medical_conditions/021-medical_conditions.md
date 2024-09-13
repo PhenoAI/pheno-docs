@@ -4,7 +4,6 @@
 
 A medical conditions dataset is a collection of information about various health-related issues experienced by people. This data can include symptoms, diagnoses, treatments, and outcomes for different diseases and conditions. The dataset is gathered using various methods, or "modalities," such as electronic health records, surveys, wearable devices, and medical imaging. The purpose of collecting and analyzing this information is to better understand health trends, identify risk factors, and improve medical care for everyone.
 
-
 ### Introduction
 
 Medical diagnosis in research studies plays a crucial role in the understanding and advancement of medicine. In clinical research, the process of diagnosis is used to identify individuals with specific medical conditions and to determine the prevalence of these conditions within a study population. Diagnosis is also used to identify subgroups of individuals with similar characteristics or outcomes, which can help researchers to better understand the underlying disease mechanisms and to develop risk models, identify biomarkers for early detection of the disease and for monitoring its progress and to develop  new treatments.
@@ -28,7 +27,6 @@ Upon registration to the Human Phenotype Project study, participants filled an o
     * Medical questionnaire asks about conditions
     * Should fill in the date when new condition was founded 
 * There is a problem where we unsure if person had condition at baseline to validate if they developed this condition in the last year
-
 
 ### Data availability 
 <!-- for the example notebooks -->

@@ -33,4 +33,4 @@ The CBC blood tests consist of 21 tests comprising of both red blood cells and w
 
 ### Relevent links
 
-TODO - no page in the knowledgebase, do we have any other links?
+Coming soon

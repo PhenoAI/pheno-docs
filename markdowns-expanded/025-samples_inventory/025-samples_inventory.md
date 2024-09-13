@@ -25,12 +25,12 @@ Tubes are barcoded and are registered to the LabCollector database upon scanning
 
 ### Data availability 
 <!-- for the example notebooks -->
-TODO
+Coming soon
 
 ### Summary of available data 
 <!-- for the data browser -->
-TODO
+Coming soon
 
 ### Relevent links
 
-TODO
+Coming soon

@@ -6,7 +6,7 @@ Population characteristics of the Human Phenotype Project study participants inc
 
 ### Introduction  
 
-TODO
+Coming soon
 
 ### Measurment protocol 
 <!-- long measurment protocol for the data browser -->

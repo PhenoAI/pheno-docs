@@ -1,6 +1,5 @@
 # Sleep monitoring dataset  
 
-
 ### Description
 
 Sleep monitoring includes sleep staging, body positioning, respiratory events, heart rate, oxygen saturation and snoring, measured concurrently over three nights.

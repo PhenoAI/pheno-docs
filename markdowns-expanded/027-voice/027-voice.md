@@ -2,7 +2,7 @@
 
 ### Description 
 
-TODO
+Coming soon
 
 ### Introduction
 
@@ -17,7 +17,7 @@ The participant's voice is audio-recorded for thirty (30) seconds by counting to
 
 ### Data availability 
 <!-- for the example notebooks -->
-TODO
+Coming soon
 
 ### Summary of available data
 <!-- for the data browser -->
@@ -31,4 +31,4 @@ The amplitude of an audio signal represents the instantaneous voltage (or pressu
 
 ### Relevent links
 
-* Pheno Knowledgebase: 
+Coming soon

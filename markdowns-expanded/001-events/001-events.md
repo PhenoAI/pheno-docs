@@ -6,11 +6,11 @@ Events Informations of the Human Phenotype Project study participants including 
 
 ### Introduction
 
-TODO
+Coming soon
 
 ### Measurment protocol 
 <!-- long measurment protocol for the data browser -->
-TODO
+Coming soon
 
 ### Data availability
 <!-- for the example notebooks -->
@@ -19,7 +19,7 @@ TODO
 
 ### Summary of available data 
 <!-- for the data browser -->
-TODO
+Coming soon
 
 ### Relevent links
 
