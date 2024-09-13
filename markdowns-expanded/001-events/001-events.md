@@ -8,16 +8,17 @@ Events Informations of the Human Phenotype Project study participants including 
 
 TODO
 
-### Measurment protocol <!-- long measurment protocol for the data browser -->
-
+### Measurment protocol 
+<!-- long measurment protocol for the data browser -->
 TODO
 
-### Data availability <!-- for the example notebooks -->
+### Data availability
+<!-- for the example notebooks -->
 
 * events.parquet - contains information regarding participant visits and calls and study_ids.
 
-### Summary of available data <!-- for the data browser -->
-
+### Summary of available data 
+<!-- for the data browser -->
 TODO
 
 ### Relevent links

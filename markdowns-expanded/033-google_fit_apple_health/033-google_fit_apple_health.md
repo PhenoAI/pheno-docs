@@ -2,7 +2,7 @@
 
 ### Description 
 
-TODO
+Coming soon
 
 ### Introduction
 
@@ -10,20 +10,20 @@ Google Fit. It’s a fitness tracking platform that was released in October 2014
 
 HealthKit. Apple has an app called Health (an analog of Google Fit) that collects and visualizes user data that was received by the Apple Watch and self-reported. It was released in 2014 for iPhone with iOS 8+. HealthKit is a framework with an API that allows displaying the health data collected by apps and wearables that are connected to Health
 
-### Measurment protocol <!-- long measurment protocol for the data browser -->
+### Measurment protocol 
+<!-- long measurment protocol for the data browser -->
+Coming soon
 
-TODO
+### Data availability 
+<!-- for the example notebooks -->
+Coming soon
 
-### Data availability <!-- for the example notebooks -->
-
-TODO
-
-### Summary of available data <!-- for the data browser -->
-
+### Summary of available data 
+<!-- for the data browser -->
 Available data, marked in the high level flow chart above.
 1. Raw data: a data frame containing individual level records
 2. QC filtered data: a data frame containing data which post some basic QC filtering described below.
 
 ### Relevent links
 
-TODO
+Coming soon

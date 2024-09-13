@@ -6,17 +6,19 @@ The Human Phenotype Project conducts comprehensive data collection through onlin
 
 ### Introduction
 
-### Measurment protocol <!-- long measurment protocol for the data browser -->
+Coming soon
 
+### Measurment protocol 
+<!-- long measurment protocol for the data browser -->
 A short online survey is used to track participants in the study who are related in some way.
 
-### Data availability <!-- for the example notebooks -->
-
+### Data availability 
+<!-- for the example notebooks -->
 The information is stored in 1 parquet files: `participant_relation.parquet`.
 
-### Summary of available data <!-- for the data browser -->
-
-TODO
+### Summary of available data 
+<!-- for the data browser -->
+Coming soon
 
 ### Relevent links
 

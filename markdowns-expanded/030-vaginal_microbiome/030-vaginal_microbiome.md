@@ -8,16 +8,16 @@ TODO
 
 TODO
 
-### Measurment protocol <!-- long measurment protocol for the data browser -->
-
+### Measurment protocol 
+<!-- long measurment protocol for the data browser -->
 TODO
 
-### Data availability <!-- for the example notebooks -->
-
+### Data availability 
+<!-- for the example notebooks -->
 TODO
 
-### Summary of available data <!-- for the data browser -->
-
+### Summary of available data 
+<!-- for the data browser -->
 TODO
 
 ### Relevent links

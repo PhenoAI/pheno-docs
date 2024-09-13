@@ -19,20 +19,20 @@ The Human Phenotype Project (HPP) performs fundus imaging on each participant's 
 (4) Various morphological feature measurements such as vessel caliber, tortuosity density, fractal dimension etc. These features were calculated separately for segmented veins and arteries, and also as a combined feature.
 The current pipeline does not include automatic identification or clinical interpretation of eye abnormalities such as age-macular degeneration (AMD) or edema, glaucoma signs, microaneurysms etc’ that can be derived from the fundus image.
 
-### Measurment protocol <!-- long measurment protocol for the data browser -->
-
+### Measurment protocol 
+<!-- long measurment protocol for the data browser -->
 Images of both eyes were taken with the iCare DRSplus confocal fundus imaging system (ICare). Center view 45° retinal images were collected without pupil dilation.  
 
 ![DRSplus confocal fundus imaging system](fundus_drs_plus.png)
 
-### Data availability <!-- for the example notebooks -->
-
+### Data availability 
+<!-- for the example notebooks -->
 - All tabular information is stored in a main parquet file: `fundus.parquet`
 - Derived microvasculature information is stored in a secondary parquet file: `microvasculature.parquet`
 - Image files including segmentations are stored in subfolders and mapped in the parqet files.
 
-### Summary of available data <!-- for the data browser -->
-
+### Summary of available data 
+<!-- for the data browser -->
 1. Fundus image files.
 2. Segmented images of vessels, veins, arteries.
 3. Image quality scores and auxiliary data fields.

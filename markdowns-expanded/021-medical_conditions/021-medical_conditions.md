@@ -15,8 +15,8 @@ Medical conditions data collected through surveys covers diverse body systems, s
 
 Surveys are an attractive data modality due to their accessibility, cost-effectiveness, and ability to capture patient perspectives. This information helps researchers identify potential risk factors, inform prevention strategies, and shape public health policies, ultimately contributing to better health outcomes for diverse populations.
 
-### Measurment protocol <!-- long measurment protocol for the data browser -->
-
+### Measurment protocol 
+<!-- long measurment protocol for the data browser -->
 Upon registration to the Human Phenotype Project study, participants filled an online medical questionnaire containing medical diagnosis. During visits to the clinical testing center, participants were interviewed by research staff asking about known medical diagnoses, along with approximate dates of onset. Questions and self-reported medical diagnoses were mapped to ICD-11 codes. Medical diagnoses at baseline were determined as diagnoses that were reported at the baseline visit or with an onset date prior to the baseline visit.
 
 #### Baseline
@@ -30,12 +30,12 @@ Upon registration to the Human Phenotype Project study, participants filled an o
 * There is a problem where we unsure if person had condition at baseline to validate if they developed this condition in the last year
 
 
-### Data availability <!-- for the example notebooks -->
-
+### Data availability 
+<!-- for the example notebooks -->
 The information is stored in 1 parquet file: `medical_conditions.parquet` 
 
-### Summary of available data <!-- for the data browser -->
-
+### Summary of available data 
+<!-- for the data browser -->
 1. Medical diagnosis at baseline coded as ICD-11 codes.
 
 ### Relevent links

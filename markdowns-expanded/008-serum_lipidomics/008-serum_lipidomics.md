@@ -8,8 +8,8 @@ High throughput untargeted lipidomics in serum by Ultra-High-Performance Liquid 
 
 The serum metabolome is known to represent a variety of environmental, genetic and other endogenous factors (Bar et al. 2020). Lipidomics is a subfield of metabolomics, which is defined as the study of pathways and networks of cellular lipids in biological systems. Lipids perform various functions within the body, from structural components of cell membranes, to energy reserve and regulating hormones. These pivotal functions highlight circulating lipids as playing a key role in a number of age-related diseases such as cardiovascular disease and stroke (Holmes et al. 2018; Michos et al. 2019). 
 
-### Measurment protocol <!-- long measurment protocol for the data browser -->
-
+### Measurment protocol 
+<!-- long measurment protocol for the data browser -->
 The data acquisition process can be broken down into these three main stages:
 1. Sample preparation and experimental design, performed by the wet lab at Weizmann
 2. Operating the MS machines to obtain the raw spectral data, performed by the Weizmann service unit
@@ -34,12 +34,12 @@ The service unit in Weizmann is responsible to operate the MS machines in order 
 
 Lipid annotations were obtained by comparing the mz, retention times and ccs values to equivalent empirical measurements from a library that was profiled on the same instruments with longer running times (26 minutes).
 
-### Data availability <!-- for the example notebooks -->
-
+### Data availability 
+<!-- for the example notebooks -->
 The information is stored in 1 parquet file: `serum_lipidomics.parquet`
 
-### Summary of available data <!-- for the data browser -->
-
+### Summary of available data 
+<!-- for the data browser -->
 1. Raw spectral data per sample in open source format (mzML).
 2. All features of processed data (systematic error removed, batch corrected, plates merged).
 3. Annotated processed features.

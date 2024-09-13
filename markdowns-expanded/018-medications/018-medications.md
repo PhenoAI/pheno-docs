@@ -13,8 +13,8 @@ There are different methods for collecting medication usage data in research stu
 
 The medication information collection in the Human Phenotype Project study is based on self reporting of medications usage via online and smartphone applications and collection by staff members by telephone or face-to-face interviews during follow-up. 
 
-### Measurment protocol <!-- long measurment protocol for the data browser -->
-
+### Measurment protocol 
+<!-- long measurment protocol for the data browser -->
 Currently, there are several origins for the medication data:
 1. During registration (sign up) to the study, participants are asked to report their regular medications online (autofill), selecting from a predefined drop-down list (Updated Clalit db). The medication responses are stored in the 10k medical database. A medication corresponding to exclusion criteria triggers cessation of the questionnaire and exclusion message. For a while, about a year, the data was not saved. Status: at this point only this data available for users
 2. Initial Questionnaire also contains some medication related questions (see detailed list in “data source section”).
@@ -22,16 +22,16 @@ Currently, there are several origins for the medication data:
 4. On follow up stages calls or visits to the clinical testing center - ​​participants are asked to report about any new medications they take or stopped taking and provide the month and year of when each medication was given or stopped. A staff member fills the  medications from a predefined dropdown list.
 In case the staff member cannot find the exact medication in the list, they asked to log the missing medication using the app. There is also an option to free text. 
 
-### Data availability <!-- for the example notebooks -->
-
+### Data availability 
+<!-- for the example notebooks -->
 - During registration (sign-up) for the study, participants are asked to report their regular medications online, with an autofill feature, selecting from a predefined drop-down list.
 - During follow-up calls or visits, participants update their medication intake.
 - App medication logging.
 
 All three sources of data are stored in 1 parquet file: `medications.parquet`
 
-### Summary of available data <!-- for the data browser -->
-
+### Summary of available data 
+<!-- for the data browser -->
 For now, we process the medications information from the different sources and use a translation into ATC codes.
 We separate the medications into two datasets:
 1. Medications at baseline.

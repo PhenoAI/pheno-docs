@@ -14,8 +14,8 @@ The 10K study includes collection of blood samples for CBC during every visit to
 #### Manufacturer reference study
 A reference interval study was conducted to assess the reference intervals for the DxH 560. Whole blood samples were collected from at least 240 healthy adult donors aged 22 to 65 years (males and females). Reference intervals were verified for males and females up to 65 years of age.
 
-### Measurment protocol <!-- long measurment protocol for the data browser -->
-
+### Measurment protocol 
+<!-- long measurment protocol for the data browser -->
 * The blood is drawn from the arm vein (venous blood). The usual place for a sample to be taken is the inside of the elbow or wrist (antecubital fossa), where the veins are relatively close to the surface. 
 * A total of approximately 16 ml of blood is collected in 3 tubes of which CBC is 3 ml.
 * Fasting is not required for this blood tests.
@@ -23,12 +23,12 @@ A reference interval study was conducted to assess the reference intervals for t
 * CBC is collected in EDTA tubes (purple top).
 * At the end of the shift, all the samples are taken to be processed by the DxH 560 machine.
 
-### Data availability <!-- for the example notebooks -->
-
+### Data availability 
+<!-- for the example notebooks -->
 * events.parquet - contains information regarding participant visits and calls and study_ids.
 
-### Summary of available data <!-- for the data browser -->
-
+### Summary of available data 
+<!-- for the data browser -->
 The CBC blood tests consist of 21 tests comprising of both red blood cells and white blood cells statistics outputed by the DxH560 machine.
 
 ### Relevent links

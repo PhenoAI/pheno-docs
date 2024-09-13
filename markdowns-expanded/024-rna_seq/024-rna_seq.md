@@ -4,8 +4,8 @@
 
 The RNA-Seq dataset includes bulk gene expression profiles measured in human peripheral blood mononuclear cells (PBMC) cells, sampled at each visit to the clinical testing center.
 
-### Introduction <!-- just for RNA-Seq: shortened from the original introduction in the data doc -->
-
+### Introduction 
+<!-- just for RNA-Seq: shortened from the original introduction in the data doc -->
 RNA sequencing (RNA-Seq) is a powerful high-throughput technique used to analyze the transcriptome, providing a snapshot of RNA presence and quantity in a biological sample at a given moment. Our bulk approach sequences RNA from a mixed population of cells, giving a cumulative overview of gene expression across the sample. It's widely used for understanding complex biological processes and disease mechanisms.
 
 This RNA-Seq dataset focuses on gene expression profiles in human peripheral blood mononuclear cells (PBMC), collected during patient visits to a clinical testing center. The aim is to uncover the gene expression dynamics in PBMCs under various clinical conditions. PBMCs, which include lymphocytes and monocytes, play a key role in the immune response. The gene expression patterns in these cells can provide valuable insights into immune system activities and pathophysiological states.
@@ -14,8 +14,8 @@ The dataset was generated using 3’-tagged bulk RNA sequencing technology, capt
 
 The dataset is instrumental for research in immunology and systemic diseases, offering a unique perspective on how PBMC gene expression varies in different clinical scenarios. It serves as a critical resource for understanding immune responses and developing therapeutic strategies.
 
-### Measurment protocol <!-- long measurment protocol for the data browser -->
-
+### Measurment protocol 
+<!-- long measurment protocol for the data browser -->
 #### Sample Collection and Handling
 A blood sample of 8 ml for PBMC isolation is taken from each participant during the visit to the clinical testing center. Fasting is not required. The samples are kept at room temperature until processing, and then processed to isolate PBMCs.
 
@@ -38,14 +38,14 @@ The prepared libraries are sequenced on an Illumina NovaSeq platform. 66 bp are 
 
 Figure 1: library structure
 
-### Data availability <!-- for the example notebooks -->
-
+### Data availability 
+<!-- for the example notebooks -->
 - All tabular information is stored in a main parquet file: `rna_seq.parquet`
 - Read counts are stored in long-format parquet files per batch
 - Each sequencing batch includes metadata parquet, JSON and HTML files
 
-### Summary of available data <!-- for the data browser -->
-
+### Summary of available data 
+<!-- for the data browser -->
 TODO
 
 ### Relevent links

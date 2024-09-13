@@ -2,24 +2,24 @@
 
 ### Description 
 
-TODO
+Coming soon
 
 ### Introduction
 
-TODO
+Coming soon
 
-### Measurment protocol <!-- long measurment protocol for the data browser -->
+### Measurment protocol 
+<!-- long measurment protocol for the data browser -->
+Coming soon
 
-TODO
+### Data availability 
+<!-- for the example notebooks -->
+Coming soon
 
-### Data availability <!-- for the example notebooks -->
-
-TODO
-
-### Summary of available data <!-- for the data browser -->
-
-TODO
+### Summary of available data 
+<!-- for the data browser -->
+Coming soon
 
 ### Relevent links
 
-TODO
+Coming soon

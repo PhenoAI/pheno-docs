@@ -5,8 +5,8 @@
 
 Sleep monitoring includes sleep staging, body positioning, respiratory events, heart rate, oxygen saturation and snoring, measured concurrently over three nights.
 
-### Introduction <!-- just for sleep: shortened from the original introduction in the data doc -->
-
+### Introduction 
+<!-- just for sleep: shortened from the original introduction in the data doc -->
 Obstructive sleep apnea (OSA) is a sleep disorder in which a person’s breathing is interrupted during sleep due to obstruction of the upper airway as a result of relaxation of the throat muscles. This obstruction can lead to pauses in breathing for short periods of time, which can cause loud snoring, reduction in the  blood oxygen levels, stress response, awakening and fragmented sleep.
 
 A home sleep apnea test (HSAT) is a non-invasive test used to diagnose sleep apnea. During an HSAT, a patient wears a portable device overnight to monitor their breathing, heart rate, oxygen levels, snoring, and other sleep patterns. The device records this data and it is then analyzed by clinically-validated algorithms that compute apnea-related indices. The data can also be used to study sleep architecture and other aspects of sleep, such as heart rate variability (HRV) and arrhythmia.
@@ -17,8 +17,8 @@ The PAT probe measures changes in the volume of blood vessels by applying a unif
 
 The device's algorithms provide 3 main indices for diagnosis of OSA: Apnea/Hypopnea Index (AHI), Respiratory Disturbance Index (RDI), Oxygen Desaturation Index (ODI). The device's algoithms also provide indices for diagnosis of Atrial Fibrillation (not FDA-approved yet): Premature beats per minute, Atrial fibrillation longest event.
 
-### Measurment protocol <!-- long measurment protocol for the data browser -->
-
+### Measurment protocol 
+<!-- long measurment protocol for the data browser -->
 The WatchPAT device is given to participants during the visit to the clinical testing center who then record 3 nights of sleep at home during the following two weeks (see figure below). Participants who use CPAP/BiPap devices are asked to report the usage of CPAP/BiPap devices in the 10K App per the monitored nights.
 
 ![image alt](sleep_info_figure1.png)
@@ -33,12 +33,12 @@ RESBP setup: Trim thick chest hair, if needed. Stick the sensor to the center of
 
 WatchPAT device setup: It is strapped on the wrist of the non-dominant hand.
 
-### Data availability <!-- for the example notebooks -->
-
+### Data availability 
+<!-- for the example notebooks -->
 The information is stored in 2 main statistics parquet files: `sleep.parquet`, `hrv.parquet`; In multiple events parquets and in multiple time series parquets / EDF files containing sensor channels for each night of logging.
 
-### Summary of available data <!-- for the data browser -->
-
+### Summary of available data 
+<!-- for the data browser -->
 The data comprises of 3 levels of processing:
 
 1. Raw channels: A data frame of temporal data - values and times - for each of 11 source channels.

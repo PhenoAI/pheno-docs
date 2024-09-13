@@ -17,15 +17,14 @@ This document describes the genotyping and quality control (QC) procedures appli
 Figure 1: taken from [Li et al. 2013](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2925172/).
 Panel A illustrates the observed data which consists of genotypes at a modest number of genetic markers in each sample being studied and of detailed information on genotypes (or haplotypes) for a reference sample. Panel B illustrates the process of identifying regions of chromosomes shared between a study sample and individuals in the reference panel. In Panel C, observed genotypes and haplotype sharing information have been combined to fill in a series of unobserved genotypes in the study sample.*
 
-### Measurment protocol <!-- long measurment protocol for the data browser -->
-
+### Measurment protocol 
+<!-- long measurment protocol for the data browser -->
 #### Genotyping Procedure
 DNA is collected from Human Phenotype Project participants using a buccal swab during their baseline visit. DNA is collected only once as germline DNA is considered constant. The buccal swabs are shipped to Gencove laboratories. The entire sequencing and genotyping workflow is performed by Gencove technologies. The Detailed information about the Gencove algorithms and quality control protocols are available in Wasik et al. 2021,  we briefly describe the key steps here.
 Gencove’s  workflow contains three steps: DNA extraction and library preparation, low-pass whole genome sequencing, and imputation analysis. Sequencing is performed at Neogen GeneSeek Laboratories using Illumina Novaseq at low-pass, targeting coverage levels of 0.5× and 1×. Whole-genome coverage is defined as the number of mapped DNA bases divided by the size of the genome (∼3 billion base pairs). We perform paired-end sequencing at length of 150-bp resulting in two FASTQ files (R1 and R2). Sequencing at paired-end mode significantly improves alignment to the genome. Next, the FASTQ files are aligned to the hs37-1kg reference genome, resulting in a BAM (Binary Alignment Map) file. In the sequence alignment procedure the DNA reads are mapped (in-pair) to the human genome reference sequence by similarity between the sequences. Lastly, loimpute-v0.1.0, Gencove’s imputation procedure, is used over the aligned reads. Imputation is done for the autosomal chromosomes (1-22) using The 1000 Genomes phase 3 haplotypes (1KGP3) as a reference panel, resulting in a VCF (Variant Call Format) file. The VCF contains the most likely genotype (GT) at 37,559,140 positions and their corresponding genotype probabilities (GP). Finally, Gencove employs quality control procedures to exclude samples with poor sequencing and genotyping results.
 
-
-### Data availability <!-- for the example notebooks -->
-
+### Data availability 
+<!-- for the example notebooks -->
 The information is stored in a number of statistics parquet files:<br>
 - `human_genetics.parquet`: sample metadata, including QC statistics, paths to PLINK variant files (raw and post-QC), and principal components (PCs).<br>
 - `variants_qc.parquet`: variant QC statistics.<br>
@@ -34,8 +33,8 @@ The information is stored in a number of statistics parquet files:<br>
 - `pca/pca.parquet`: a PLINK file containing  principal components.<br>
 - `pca/pca_loadings.tsv`: a PLINK file containing principal component loadings calculated.<br>
 
-### Summary of available data <!-- for the data browser -->
-
+### Summary of available data 
+<!-- for the data browser -->
 #### Raw DNA data
 Pheno provides per each sample all of the raw sequencing and genotyping workflow data, including FASTQ, BAM, VCF, and QC files. 
 FASTQ files are the sequencing machine outputs. They are text files that store the DNA sequences and their corresponding quality scores.

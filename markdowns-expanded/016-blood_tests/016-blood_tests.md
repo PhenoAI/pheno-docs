@@ -20,20 +20,19 @@ Creatinine, Glucose, CBC (WBC, RBC, Hemoglobin, Hematocrite, Platelets, MCV, MCH
 ##### Tests without time  recommendation:
 TSH, CRP, Albumin, Protein, Bilirubin, AST-GOT, ALT-GPT, GGT, Alkaline phosphatase, Sodium, Potassium, Chloride, Calcium, Phosphor, Uric acid, B12, Vitamin D, Folic acid and Ferritin.
 
-### Measurment protocol <!-- long measurment protocol for the data browser -->
-
+### Measurment protocol 
+<!-- long measurment protocol for the data browser -->
 Every blood/urine test has its own measuring protocol.
 * Some blood tests require the participant itself to act differently prior to the test - whether it’s fasting, drinking concentrated glucose/lactose, sampling urine etc.
 * The technician has also a large part of the test, by selecting relevant buffers for every one of the tests and have it’s own complete protocol per test.
 * And the lab - each HMO would have their own storing protocols, measuring with different machines with different sensitivity thresholds and their own standards (usually aligned between different HMO, but not necessarily).
 
-
-### Data availability <!-- for the example notebooks -->
-
+### Data availability 
+<!-- for the example notebooks -->
 The information is stored in 1 parquet file `blood_tests.parquet`.
 
-### Summary of available data <!-- for the data browser -->
-
+### Summary of available data 
+<!-- for the data browser -->
 All the participant provided blood tests are stored in a single .parquet file. Each row depicts a single test done (either blood or urine) for an individual. It consists of the test’s name, unit, date and value (split into 2 columns - continuous and categorical) with some extra metadata columns.
 
 The duplicate value columns are an artifact of some tests having both float variables and notes from the HMOs instead of continuous values. We represent these notes as categorical values such as “value under detectable threshold” or “toxic levels” etc (e.g. urine microalbumin mostly contains float values, but it can also have “threshold under 3mg/l” in the categorical column). These notes are not values per-se, and replacing them with continuous values is not straightforward but they should be considered nonetheless.
