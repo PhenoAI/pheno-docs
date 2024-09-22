@@ -2,7 +2,7 @@
 
 ### Description
 
-Coming soon
+Sex-specific factors refer to biological and physiological differences, such as reproductive health, hormonal variations, disease prevalence and aging processes that influence medical health outcomes in males and females.
 
 ### Introduction
 
@@ -18,7 +18,7 @@ The information is stored in 5 parquet files: `menstrual_cycle`, `initial_medica
 
 ### Summary of available data 
 <!-- for the data browser -->
-Coming soon
+The data consists of 5 data frames relfecting the survey data sources where information related to sex-speicific factors was collected from.
 
 ### Relevent links
 
