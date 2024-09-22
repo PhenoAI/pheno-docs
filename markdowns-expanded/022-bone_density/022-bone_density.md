@@ -23,6 +23,8 @@ The information is stored in 1 parquet file: `bone_density.parquet`
 <!-- for the data browser -->
 1. Measurements of mineral content in different parts of a variety of skeletal components.
 2. Age, sex and ethnicity normalized values for the above measurements.
+3. DXA image files (e.g., total body composition - BMD).
+4. DXA image DICOM files.
 
 ### Relevent links
 
