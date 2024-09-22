@@ -25,9 +25,11 @@ The information is stored in 3 parquet files: `diet_logging.parquet`, `diet_logg
 
 ### Summary of available data 
 <!-- for the data browser -->
-1. Clean diet logging data: a data frame containing individual level diet logging records, indexed by the individual’s registration code, research stage, logging timestamp and food id. Data is post some basic preprocessing.
-2. Nutrients: The nutrional information of the diet logging records.
-3. Daily aggregated data: A dataframe containing individual level diet logging records aggregated to a daily level.
+1. Clean Diet Logging Data: A DataFrame with individual-level diet logging records, post-basic preprocessing and filtering.
+2. Raw Diet Logging Data: A DataFrame containing the raw, unprocessed individual-level diet logging records.
+3. Nutrients: Nutritional information corresponding to the diet logging records.
+4. Summary Table: Contains summary statistics of the diet logging data, aggregated per participant per research stage.
+
 
 ### Relevent links
 
