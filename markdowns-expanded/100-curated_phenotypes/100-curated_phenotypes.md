@@ -26,7 +26,7 @@ Coming soon
 * Sarcopenia: Sarcopenia is a syndrome characterized by the loss of muscle mass, strength, and performance.
 * Sleep Quality: Sleep is considered a restorative process that allows for energy renewal and also for cellular. Low sleep quality may lead to accelerated aging by triggering DNA damage and chronic inflammation to influence the compensatory/resiliency systems of the human body.
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 Coming soon
 

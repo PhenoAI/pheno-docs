@@ -8,7 +8,7 @@ Events Informations of the Human Phenotype Project study participants including 
 
 Coming soon
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 Coming soon
 

@@ -8,7 +8,7 @@ Coming soon
 
 The Human Phenotype Project study collects medical data through online surveys, where participants self-report their experiences with various medical symptoms. This method depends on individuals accurately conveying their own health experiences. Obtaining detailed and thorough information about the symptoms people experience is essential to understand their actual impact on individual health.
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 In the initial phase of the study, during registration, participants are asked to provide information about any medical symptoms they have experienced in the Initial Medical Survey. Additional data is then collected in the Follow-up UKBB Survey during subsequent visits, allowing for ongoing tracking of these symptoms
 

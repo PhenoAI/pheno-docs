@@ -17,7 +17,7 @@ This document describes the genotyping and quality control (QC) procedures appli
 Figure 1: taken from [Li et al. 2013](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2925172/).
 Panel A illustrates the observed data which consists of genotypes at a modest number of genetic markers in each sample being studied and of detailed information on genotypes (or haplotypes) for a reference sample. Panel B illustrates the process of identifying regions of chromosomes shared between a study sample and individuals in the reference panel. In Panel C, observed genotypes and haplotype sharing information have been combined to fill in a series of unobserved genotypes in the study sample.*
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 #### Genotyping Procedure
 DNA is collected from Human Phenotype Project participants using a buccal swab during their baseline visit. DNA is collected only once as germline DNA is considered constant. The buccal swabs are shipped to Gencove laboratories. The entire sequencing and genotyping workflow is performed by Gencove technologies. The Detailed information about the Gencove algorithms and quality control protocols are available in Wasik et al. 2021,  we briefly describe the key steps here.

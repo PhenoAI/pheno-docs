@@ -10,7 +10,7 @@ Biological samples are collected and stored as part of the 10K study. These samp
 As new molecular profiling technologies evolve, it is essential to have access to historic samples of individuals for which additional wide profiling and longitudinal follow up exists. Thus, the availability of the biobanked samples represents a major opportunity.
 Internally, information regarding the labeling and availability of samples are managed through the LabCollector software tool.
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 The following samples are collected during the visits to the assessment center:
 1. A total of 16cc of blood is collected in 3 tubes:

@@ -11,7 +11,7 @@ Voice data is increasingly being used in clinical research and personalized medi
 To collect direct voice recordings in clinical research, use high-quality digital recorders or mobile devices with good microphones, and save audio in lossless formats. Perform various tests, including reading tasks, picture description, conversational tasks, repetition tasks, and diadochokinetic tasks. Ensure consistent recording conditions, provide clear participant instructions, and follow ethical guidelines for informed consent and data privacy.
 
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 The participant's voice is audio-recorded for thirty (30) seconds by counting to thirty (30).
 

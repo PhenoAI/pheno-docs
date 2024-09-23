@@ -20,7 +20,7 @@ Furthermore, the dataset holds promise for multi-omic analyses when combined wit
 
 The Nightingale NMR platform stands out from other metabolomics techniques such as mass spectrometry, due to its minimal batch effects, low requisites for expensive reagents, and high throughput at a relatively lower cost. NMR spectroscopy, grounded in the interaction of externally applied radiofrequency radiation with atomic nuclei, facilitates the quantification of over 200 biomarkers in absolute units from a single blood sample. The absolute concentrations of metabolite levels provided are calibrated against global standards, making the results easily comparable to other studies and traditional clinical chemistry methods.
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 After collecting blood samples from participants during clinic visits, the blood samples are immediately placed in tubes and processed to separate the serum. These serum samples are then stored in plates and kept in the freezer to maintain their integrity until shipment.
 Upon arrival at Nightingale Health's laboratories, the serum samples are once again frozen. When ready for analysis, the samples are thawed and undergo a series of preparatory steps.

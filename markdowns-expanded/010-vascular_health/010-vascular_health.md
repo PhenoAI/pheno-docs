@@ -19,7 +19,7 @@ Based on literature reports, normal PWV values can range between around 6 m/s to
 
 PWV has been recognized as an indicator of organ damage and a useful additional test in the investigation of high blood pressure, it is also a useful method for prediction of cardiovascular events and mortality. Studies have also shown that ABI is a reliable predictor of cardiovascular disease and mortality in patients with peripheral artery disease.
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 Measuring the systolic blood pressure with the Falcon is based on a combination of blood pressure cuffs and a Photoplethysmograph (PPG) sensor . A blood pressure cuff is wrapped around the measured site, and a distal PPG waveform is obtained. The cuff is then inflated until the distal signal disappears as a result of the total occlusion. The blood pressure cuff is then deflated in a controlled manner, and the cuff pressure at which the distal signal re-appears is determined as the systolic pressure.
 

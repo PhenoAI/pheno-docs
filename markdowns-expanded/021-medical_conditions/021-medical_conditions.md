@@ -14,7 +14,7 @@ Medical conditions data collected through surveys covers diverse body systems, s
 
 Surveys are an attractive data modality due to their accessibility, cost-effectiveness, and ability to capture patient perspectives. This information helps researchers identify potential risk factors, inform prevention strategies, and shape public health policies, ultimately contributing to better health outcomes for diverse populations.
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 Upon registration to the Human Phenotype Project study, participants provide details about their medical conditions in the Initial Medical Survey. Further data is then gathered during an interview at the baseline visit (In-system drop down) and using the Follow-up Medical Survey when participants return for subsequent visits. The data source columns indicate where information was collected.
 
