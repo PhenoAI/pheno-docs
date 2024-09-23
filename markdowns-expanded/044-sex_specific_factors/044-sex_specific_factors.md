@@ -18,7 +18,7 @@ The information is stored in 5 parquet files: `menstrual_cycle`, `initial_medica
 
 ### Summary of available data 
 <!-- for the data browser -->
-The data consists of 5 data frames relfecting the survey data sources where information related to sex-speicific factors was collected from.
+The data consists of 5 data frames relfecting the survey data sources where information related to sex-specific factors was collected from.
 
 ### Relevent links
 
