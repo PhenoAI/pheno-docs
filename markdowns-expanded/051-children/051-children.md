@@ -12,7 +12,7 @@ The Children Dataset is a curated collection of self-reported information from p
 
 The Human Phenotype Project collects comprehensive data about participants' children. Through online surveys, participants provide vital self-reported information regarding their children's birth weights, pregnancy durations, and the number of children in their families. This focus on familial data enables researchers to explore how parental factors influence child health outcomes.
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 Data for the Children Dataset were collected during the registration phase of the Human Phenotype Project through the Initial Medical Survey. Participants completed an online questionnaire designed to capture accurate and comprehensive information 
 

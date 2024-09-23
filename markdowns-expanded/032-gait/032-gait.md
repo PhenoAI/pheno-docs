@@ -8,7 +8,7 @@ This dataset includes high-resolution gait measurements collected using advanced
 
 The Gait Dataset is a comprehensive collection of human gait data intended to advance research in biomechanics, rehabilitation, sports science, and related fields. By capturing detailed information on human walking patterns, this dataset enables a deeper understanding of gait mechanics and variability among individuals. Researchers can utilize this data to analyze normal and pathological gait, contributing to improved diagnostic methods and therapeutic interventions. The dataset serves as a valuable resource for developing models and simulations that enhance our knowledge of human movement
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 The Gait Dataset was collected using a standardized protocol to ensure accurate and reliable data. Participants provided informed consent and wore comfortable clothing with standardized footwear. Reflective markers or sensors were placed on key anatomical landmarks such as the hips, knees, ankles, and feet to capture precise movement data. Using advanced motion capture systems with multiple cameras, participants walked along a designated path or on a treadmill at a comfortable pace, performing multiple trials to ensure consistency. Ground reaction forces were measured using embedded force plates during walking sessions. The collected data were filtered to remove noise and processed to calculate kinematic and kinetic parameters, including joint angles, stride length, cadence, and gait velocity. Ethical guidelines were strictly followed, maintaining participant anonymity and data security, making the dataset suitable for various research applications.
 

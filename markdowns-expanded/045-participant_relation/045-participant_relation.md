@@ -8,7 +8,7 @@ The Human Phenotype Project conducts comprehensive data collection through onlin
 
 Coming soon
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 A short online survey is used to track participants in the study who are related in some way.
 

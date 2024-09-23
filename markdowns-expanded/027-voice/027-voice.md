@@ -8,7 +8,7 @@ The Voice Dataset is a collection of direct voice recordings gathered for clinic
 
 Voice data is increasingly being used in clinical research and personalized medicine. Key trends include utilizing vocal biomarkers for disease diagnosis (e.g., Parkinson's disease, Alzheimer's disease), mental health assessment, and monitoring respiratory conditions. Voice-based technologies are also being developed for treatment adherence, remote patient monitoring, and personalized voice assistants in healthcare settings. Additionally, voice data is explored for emotion recognition and speech therapy applications. Overall, voice data has the potential to transform healthcare by providing non-invasive, cost-effective, and convenient diagnostic and treatment methods.
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 The participant's voice is audio-recorded for thirty (30) seconds by counting to thirty (30).
 

@@ -10,7 +10,7 @@ There is a strong relationship between the development of chronic disease and a 
 
 Nutritional epidemiology is a sub-discipline of epidemiology that provides data about the relationship between diet and disease. The data collected is used to define diet–disease associations that are converted into the practice of prevention by public-health nutrition practitioners. To study the associations between diet and disease, there is a need to accurately characterize the dietary habits of individuals. One approach is to use a food diary, which is a daily log of what an individual eats and drinks. Such diaries are used to characterize eating habits in large and small epidemiological studies. Owing to recent technological advancements and the vast availability of smartphones, nutrition-related apps are commonly used to track dietary behavior.
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 Participants in the Human Phenotype Project are asked to log their food for a period of at least two weeks following each visit to the assessment center or a followup call. The figure below shows the process of logging a food item through the diet logging app.
 

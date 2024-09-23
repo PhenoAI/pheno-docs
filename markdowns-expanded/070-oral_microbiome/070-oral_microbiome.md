@@ -13,7 +13,7 @@ This data illuminates the diversity and interactions of microorganisms, specific
 
 Through this data, the exploration into possible connections between oral microbial composition and various health conditions is facilitated, marking a step towards understanding the broader health implications.
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 This dataset is a derivative of the human genome dataset (that has been collected via buccal swabs) - ergo the measurement protocol can be found at the Human genetics dataset.
 

@@ -20,7 +20,7 @@ Creatinine, Glucose, CBC (WBC, RBC, Hemoglobin, Hematocrite, Platelets, MCV, MCH
 ##### Tests without time  recommendation:
 TSH, CRP, Albumin, Protein, Bilirubin, AST-GOT, ALT-GPT, GGT, Alkaline phosphatase, Sodium, Potassium, Chloride, Calcium, Phosphor, Uric acid, B12, Vitamin D, Folic acid and Ferritin.
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 Every blood/urine test has its own measuring protocol.
 * Some blood tests require the participant itself to act differently prior to the test - whether it’s fasting, drinking concentrated glucose/lactose, sampling urine etc.

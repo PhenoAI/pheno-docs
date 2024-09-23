@@ -8,7 +8,7 @@ Population characteristics of the Human Phenotype Project study participants.
 
 Population characteristics of the Human Phenotype Project include basic information about the participants regarding sex, living area, visits to the clinical testing center, and communication status.
 
-### Measurment protocol 
+### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 Upon registration to the Human Phenotype Project, people are assigned with a registration code, which is their ID in the study and provide a telephone number and email by which all communications are conducted. Participants are asked about their date of birth and their sex, and are asked to schedule a visit to the assessment center.
 
