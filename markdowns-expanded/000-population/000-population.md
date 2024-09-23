@@ -2,11 +2,11 @@
 
 ### Description
 
-Population characteristics of the Human Phenotype Project study participants including birth month and year, sex and study id.
+Population characteristics of the Human Phenotype Project study participants.
 
 ### Introduction  
 
-Coming soon
+Population characteristics of the Human Phenotype Project include basic information about the participants regarding sex, living area, visits to the clinical testing center, and communication status.
 
 ### Measurment protocol 
 <!-- long measurment protocol for the data browser -->
