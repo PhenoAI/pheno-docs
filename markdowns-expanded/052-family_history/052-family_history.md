@@ -2,7 +2,7 @@
 
 ### Description 
 
-Coming soon
+Family history information in medical research involves collecting data on genetic and hereditary conditions passed down through generations. This includes predispositions to diseases such as cancer, cardiovascular conditions, diabetes, and mental health disorders, helping identify potential health risks based on familial patterns.
 
 ### Introduction
 
@@ -18,7 +18,8 @@ The information is stored in 2 parquet files:  `initial_medical.parquet` and `uk
 
 ### Summary of available data 
 <!-- for the data browser -->
-Coming soon
+1. Initial Medical Survey: A DataFrame containing tabular features representing responses related to family medical history from the initial medical survey.
+2. Lifestyle Survey: A DataFrame containing tabular features representing responses related to family medical history from the lifestyle survey.
 
 ### Relevent links
 
