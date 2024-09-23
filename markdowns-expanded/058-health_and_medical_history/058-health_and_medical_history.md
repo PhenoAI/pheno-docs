@@ -2,7 +2,7 @@
 
 ### Description 
 
-Coming soon
+Health and medical history data provides comprehensive insights into an individual's past and present medical conditions, treatments, surgeries, and overall health status. This data includes personal health details such as chronic illnesses, medications, hospitalizations, and surgical procedures, which help in assessing risk factors and understanding disease progression over time.
 
 ### Introduction
 
@@ -18,7 +18,8 @@ The information is stored in 2 parquet files: `ukbb.parquet` and `initial_medica
 
 ### Summary of available data 
 <!-- for the data browser -->
-Coming soon
+1. Initial Medical Survey: A DataFrame containing tabular features representing responses related to personal health and medical history from the initial medical survey.
+2. Lifestyle Survey: A DataFrame containing tabular features representing responses related to health behaviors and medical history from the lifestyle survey.
 
 ### Relevent links
 
