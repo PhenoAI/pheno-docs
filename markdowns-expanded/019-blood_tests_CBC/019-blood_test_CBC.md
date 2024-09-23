@@ -31,6 +31,6 @@ A reference interval study was conducted to assess the reference intervals for t
 <!-- for the data browser -->
 The CBC blood tests consist of 21 tests comprising of both red blood cells and white blood cells statistics outputed by the DxH560 machine.
 
-### Relevent links
+### Relevant links
 
 Coming soon

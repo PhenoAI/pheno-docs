@@ -37,6 +37,6 @@ The information is stored in multiple parquet files:
     5. HumanN (3.6) output
     6. MetaPhlAn4 (vJan21) output
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/070-oral_microbiome.html

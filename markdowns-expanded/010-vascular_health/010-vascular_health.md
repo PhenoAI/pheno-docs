@@ -36,6 +36,6 @@ The information is stored in 1 parquet file: `vascular_health.parquet`
 <!-- for the data browser -->
 1. ABI and PWV measurements: A data frame of computed features provided by the manufacturer based on the above channels
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/010-vascular_health.html

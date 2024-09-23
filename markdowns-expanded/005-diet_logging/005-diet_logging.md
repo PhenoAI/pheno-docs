@@ -31,6 +31,6 @@ The information is stored in 3 parquet files: `diet_logging.parquet`, `diet_logg
 4. Summary Table: Contains summary statistics of the diet logging data, aggregated per participant per research stage.
 
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/005-diet_logging.html

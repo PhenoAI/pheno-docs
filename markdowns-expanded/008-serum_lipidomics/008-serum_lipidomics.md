@@ -45,6 +45,6 @@ The information is stored in 1 parquet file: `serum_lipidomics.parquet`
 3. Annotated processed features.
 4. Clustered processed features.
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/008-serum_lipidomics.html

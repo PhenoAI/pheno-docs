@@ -38,6 +38,6 @@ Coming soon
 <!-- for the data browser -->
 Coming soon
 
-### Relevent links
+### Relevant links
 
 Coming soon

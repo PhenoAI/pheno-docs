@@ -20,6 +20,6 @@ The information is stored in 1 parquet files: `participant_relation.parquet`.
 <!-- for the data browser -->
 Coming soon
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/045-participant_relation.html

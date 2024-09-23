@@ -21,6 +21,6 @@ The information is stored in 2 parquet files:  `initial_medical.parquet` and `uk
 1. Initial Medical Survey: A DataFrame containing tabular features representing responses related to family medical history from the initial medical survey.
 2. Lifestyle Survey: A DataFrame containing tabular features representing responses related to family medical history from the lifestyle survey.
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/052-family_history.html

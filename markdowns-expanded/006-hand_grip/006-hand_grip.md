@@ -29,6 +29,6 @@ The information is stored in 1 parquet file: `hand_grip.parquet`
 <!-- for the data browser -->
 1. Raw data: a data frame containing individual level hand grip strength measurements.
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/006-hand_grip.html

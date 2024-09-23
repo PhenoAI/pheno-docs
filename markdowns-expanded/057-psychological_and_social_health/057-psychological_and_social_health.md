@@ -20,6 +20,6 @@ The information is stored in 1 parquet file: `psychological_and_social_health`
 <!-- for the data browser -->
 Coming soon
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/057-psychological_and_social_health.html

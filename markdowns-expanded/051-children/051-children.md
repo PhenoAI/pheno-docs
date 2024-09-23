@@ -24,6 +24,6 @@ The information is stored in 1 parquets file: `children.parquet`
 <!-- for the data browser -->
 Coming soon
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/051-children.html

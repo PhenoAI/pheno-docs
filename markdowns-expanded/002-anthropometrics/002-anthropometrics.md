@@ -28,6 +28,6 @@ The information is stored in 1 parquet file: `anthropometrics.parquet`
 <!-- for the data browser -->
 A data frame of tabular data containing individual level body measurement records and derived measures.
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/002-anthropometrics.html

@@ -48,6 +48,6 @@ Figure 1: library structure
 <!-- for the data browser -->
 Coming soon
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/024-rna_seq.html

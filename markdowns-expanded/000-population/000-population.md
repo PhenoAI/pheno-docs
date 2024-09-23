@@ -24,6 +24,6 @@ Personal and communication data is saved separately in a secure environment from
 2. Date of birth - only month and year of birth should be available.
 3. Sex of the participants.
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/000-population.html

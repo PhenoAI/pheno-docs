@@ -23,6 +23,6 @@ The information is stored in 3 parquest files: `initial_medical.parquet`, `follo
 <!-- for the data browser -->
 Coming soon
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/049-medical_symptoms

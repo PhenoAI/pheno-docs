@@ -37,6 +37,6 @@ The information is stored in 1 parquet file: `medical_conditions.parquet`
 <!-- for the data browser -->
 1. Medical conditions of participants at various research stages.
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/021-medical_conditions.html

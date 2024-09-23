@@ -26,6 +26,6 @@ The information is stored in 1 parquet file: `carotid_ultrasound.parquet`
 2. Right and left Intima Media Thickness
 3. Percentages of the box of interest for which the IMT is calculated
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/012-carotid_ultrasound.html

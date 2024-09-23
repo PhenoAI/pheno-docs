@@ -37,6 +37,6 @@ The information is stored in multiple parquet files:
 * Names of the bacterial species include their entire taxonomy in the following format:
 k__<kingdom>|p__<phylum>|c__<class>|o__<order>|f__<family>|g__<genus>|s__<species>
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/013-gut_microbiome.html

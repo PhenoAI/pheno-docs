@@ -26,6 +26,6 @@ The information is stored in 1 parquet file: `bone_density.parquet`
 3. DXA image files (e.g., total body composition - BMD).
 4. DXA image DICOM files.
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/022-bone_density.html

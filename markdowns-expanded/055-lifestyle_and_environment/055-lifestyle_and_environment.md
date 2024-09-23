@@ -20,6 +20,6 @@ The information is stored in 1 parquet file: `'lifestyle_and_environment.parquet
 <!-- for the data browser -->
 Coming soon
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/055-lifestyle_and_environment.html

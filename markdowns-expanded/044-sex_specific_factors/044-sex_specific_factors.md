@@ -20,6 +20,6 @@ The information is stored in 5 parquet files: `menstrual_cycle`, `initial_medica
 <!-- for the data browser -->
 The data consists of 5 data frames relfecting the survey data sources where information related to sex-specific factors was collected from.
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/044-sex_specific_factors.html

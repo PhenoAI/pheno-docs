@@ -21,6 +21,6 @@ The information is stored in 2 parquet files: `ukbb.parquet` and `initial_medica
 1. Initial Medical Survey: A DataFrame containing tabular features representing responses related to personal health and medical history from the initial medical survey.
 2. Lifestyle Survey: A DataFrame containing tabular features representing responses related to health behaviors and medical history from the lifestyle survey.
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/058-health_and_medical_history.html

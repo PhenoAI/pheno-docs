@@ -20,6 +20,6 @@ The information is stored in 2 parquet files: `initial_medical.parquet`  and `uk
 <!-- for the data browser -->
 Coming soon
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/053-sociodemographics.html

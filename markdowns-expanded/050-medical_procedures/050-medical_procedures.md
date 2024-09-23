@@ -20,6 +20,6 @@ The information is stored in 2 parquets file: `initial_medical.parquet`, `follow
 <!-- for the data browser -->
 Coming soon
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/050-medical_procedures

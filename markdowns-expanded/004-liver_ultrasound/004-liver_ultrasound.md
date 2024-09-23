@@ -27,6 +27,6 @@ The information is stored in 2 parquet files: `liver_ultrasound.parquet`and `liv
 3. Derived measures (e.g. viscosity, elasticity, and attenuation)
 4. Auxiliary data (e.g. stability index)
 
-### Relevent links
+### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/004-liver_ultrasound.html

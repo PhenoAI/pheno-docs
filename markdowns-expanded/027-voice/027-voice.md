@@ -26,6 +26,6 @@ flac file stores audio data using lossless compression, retaining all original i
 The amplitude of an audio signal represents the instantaneous voltage (or pressure) at a specific point in time. In digital audio, the analog signal is sampled at discrete intervals, creating a time-series of amplitude values. Digital audio data is processed using specialized libraries like Librosa for feature extraction, signal processing, and visualization, enabling data scientists to analyze and apply machine learning techniques to understand and utilize the information within audio signals.
 
 
-### Relevent links
+### Relevant links
 
 Coming soon
