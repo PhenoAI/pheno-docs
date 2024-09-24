@@ -54,7 +54,8 @@ website:
           - datasets/043-covid.ipynb
           - datasets/044-sex_specific_factors.ipynb
           - datasets/045-participant_relation.ipynb
-          - datasets/049-medical_procedures.ipynb
+          - datasets/049-medical_symptoms.ipynb
+          - datasets/050-medical_procedures.ipynb
           - datasets/051-children.ipynb
           - datasets/052-family_history.ipynb
           - datasets/053-sociodemographics.ipynb
