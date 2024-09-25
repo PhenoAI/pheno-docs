@@ -41,6 +41,17 @@ Figure 1: library structure
 - Read counts are stored in long-format parquet files per batch
 - Each sequencing batch includes metadata parquet, JSON and HTML files
 
+```mermaid
+flowchart LR;
+
+S[sequencing] -->|bcl2fastq<br>fastq-multx| raw(raw FASTQ) -->|umi-tools<br>cutadapt| trimmed(trimmed FASTQ) -->|STAR| aligned(aligned BAM) -->|umi-tools| deduplicated(deduplicated BAM) -->|htseq| counts(counts)
+
+raw --> metadata(metadata)
+trimmed --> metadata
+aligned --> metadata
+deduplicated --> metadata
+```
+
 ### Summary of available data 
 <!-- for the data browser -->
 - Metadata: statistics from the library preparation, QC metrics, ERCC spike-ins stats, and all processing steps of each sample, and each batch. The metadata also includes MultiQC HTML reports.
