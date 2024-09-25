@@ -36,6 +36,21 @@ WatchPAT device setup: It is strapped on the wrist of the non-dominant hand.
 <!-- for the example notebooks -->
 The information is stored in 2 main statistics parquet files: `sleep.parquet`, `hrv.parquet`; In multiple events parquets and in multiple time series parquets / EDF files containing sensor channels for each night of logging.
 
+```mermaid
+flowchart LR;
+
+classDef sensor fill:#a1c9f4;
+classDef raw fill:#ffb482;
+classDef event fill:#8de5a1;
+classDef stat fill:#ff9f9b;
+
+Sensor(sleep sensor):::sensor --> Raw(raw channel):::raw
+Raw --> Events(sleep events):::event
+Raw --> Extracted(computed stats)
+Events --> Extracted
+Events --> Summary(summary stats):::stat
+```
+
 ### Summary of available data 
 <!-- for the data browser -->
 The data comprises of 3 levels of processing:
@@ -43,6 +58,8 @@ The data comprises of 3 levels of processing:
 1. Raw channels: A data frame of temporal data - values and times - for each of 12 source channels.
 2. Events: A data frame of annotated events based on the manufacturer’s analysis of the raw channels. Each row contains the event, its main source channel, its start time and end time.
 3. Summary statistics: A data frame of computed features provided by the manufacturer based on the above channels and events. Some of the summary stats are also computed separately for different sleep stages and body positions. Additional computed features, such as the ones related to heart rate variability (HRV) and sleep fragmentation, are computed by Pheno.ai.
+
+![available data](sleep_data.png)
 
 ### Relevant links
 
