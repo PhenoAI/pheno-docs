@@ -43,7 +43,13 @@ Figure 1: library structure
 
 ### Summary of available data 
 <!-- for the data browser -->
-Coming soon
+- Metadata: statistics from the library preparation, QC metrics, ERCC spike-ins stats, and all processing steps of each sample, and each batch. The metadata also includes MultiQC HTML reports.
+- Counts: raw matrices of read counts (in long, sparse format) within annotated transcripts, and for ERCC spike-ins.
+- FASTQ: raw, and trimmed.
+- BAM: aligned to genome, and after UMI deduplication.
+- Reference: accessions and coordinates of the annotated transcripts.
+
+![availbale data](rna_data.png)
 
 ### Relevant links
 
