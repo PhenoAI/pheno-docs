@@ -1,8 +1,8 @@
-# Lifestyle and the environment
+# Lifestyle and environment
 
 ### Description
 
-Coming soon
+Lifestyle and environmental factors encompass a wide range of influences on an individual's health and well-being. These factors may include behaviors such as diet, physical activity, sleep patterns, smoking, and alcohol consumption, as well as environmental exposures like air quality, pollution, and climate. Together, they play a crucial role in determining overall health outcomes, impacting both the prevention and progression of diseases.
 
 ### Introduction
 
@@ -18,7 +18,7 @@ The information is stored in 1 parquet file: `'lifestyle_and_environment.parquet
 
 ### Summary of available data 
 <!-- for the data browser -->
-Coming soon
+1. Lifestyle Survey: A DataFrame containing tabular features representing responses related to lifestyle and environment factors from the lifestyle survey.
 
 ### Relevant links
 
