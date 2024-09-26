@@ -2,7 +2,7 @@
 
 ### Description 
 
-he collection of buccal swabs for human genetic sequencing presents an advantageous opportunity to simultaneously explore the oral microbiome using the non-human DNA sequences found. This metagenomic analysis provides insight into the diverse microbial community within the buccal mucosa. The obtained data not only enriches our genetic understanding but also broadens our knowledge on the microorganisms residing in the oral cavity, their interactions, and potential implications for oral and systemic health. This dual analysis underscores the utility of buccal swabs as a resourceful means for both genetic and microbial investigations.
+The collection of buccal swabs for human genetic sequencing presents an advantageous opportunity to simultaneously explore the oral microbiome using the non-human DNA sequences found. This metagenomic analysis provides insight into the diverse microbial community within the buccal mucosa. The obtained data not only enriches our genetic understanding but also broadens our knowledge on the microorganisms residing in the oral cavity, their interactions, and potential implications for oral and systemic health. This dual analysis underscores the utility of buccal swabs as a resourceful means for both genetic and microbial investigations.
 
 
 ### Introduction
@@ -25,17 +25,30 @@ The information is stored in multiple parquet files:
 - `metaphlan_*`: 8 tables with MetaPhlAn 4 vJan21 relative abundances, separated by taxonomic levels.
 - `humann_aggregated_*`: arrow files of either gene level abundances or pathway level abundances+coverage from HumanN 3.6 given MetaPhlAn 4 vJan21 outputs
 
+```mermaid
+graph LR;
+    A(Human Aligned<br>BAM) --> |Filter and convert| B(Non Human Reads<br>FASTQ)
+    B --> |Trimmomatic| C(Clean FASTQ File)
+    C --> |MetaPhlAn| D(MetaPhlAn 4 /<br>vJan21 Abundances<br>Tabular)
+    C --> |HumanN| E(HumanN 3.6 genes abundance)
+    C --> |HumanN| F(HumanN 3.6 Pathways abundance)
+    C --> |HumanN| G(HumanN 3.6 Pathways coverage)
+    C --> |FastQC| H(Reads QC report - after)
+    B ---> |FastQC| I(Reads QC report - before)
+```
+
 ### Summary of available data 
 <!-- for the data browser -->
-* DNA Sequencing files
-    1. Original oral swab .bam file aligned to chr37
-    2. Non human FASTQ file
-    3. Trimmed Non human FASTQ file
-* QC
-    4. FASTQC files
-* Bacterial
-    5. HumanN (3.6) output
-    6. MetaPhlAn4 (vJan21) output
+- DNA Sequencing files
+    - Non human FASTQ file
+    - Trimmed Non human FASTQ file
+- QC
+    - FASTQC files
+- Bacterial
+    - HumanN (3.6) output
+    - MetaPhlAn4 (vJan21) output
+
+![available data](oralmb_data.png)
 
 ### Relevant links
 
