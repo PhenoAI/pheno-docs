@@ -50,6 +50,7 @@ raw --> metadata(metadata)
 trimmed --> metadata
 aligned --> metadata
 deduplicated --> metadata
+counts --> metadata
 ```
 
 ### Summary of available data 
