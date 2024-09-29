@@ -10,7 +10,7 @@ The Human Phenotype Project conducts comprehensive data collection through onlin
 
 ### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
-These lifestyle surveys are modeled after the UK Biobank's touch screen questionnaire. Participants receive the full version via email to complete on the Zoho platform, either before or after their baseline visit. A shorter, follow-up version of the questionnaire is then filled out by participants during subsequent visits. 
+These lifestyle surveys are modeled after the UK Biobank's touch screen questionnaire. Participants receive the full version via email to complete on an online platform, either before or after their baseline visit. A shorter, follow-up version of the questionnaire is then filled out by participants during subsequent visits. 
 
 ### Data availability 
 <!-- for the example notebooks -->
