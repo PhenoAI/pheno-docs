@@ -55,7 +55,7 @@ graph LR;
 3. PLINK BED files: Containing human variants.
 4. URS relative abundances of 3594 representative gut microbes.
 5. MetaPhlAn 4 relative abundances, separated by taxonomic levels.
-    - The data browser displays the relative abundances of 607 bacterial species that appear in at least 5% of the participants.
+    - The data browser displays the relative abundances of a subset of 300 bacterial species.
 
 ![available data](gutmb_data.png)
 
