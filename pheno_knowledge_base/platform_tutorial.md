@@ -1,4 +1,4 @@
-﻿# Trusted Research Environment User Guide
+﻿# Trusted Research Environment User Guide - Applicable for version 6.2.1
 
 Trusted Research Environment (TRE) is a cloud solution that provides secure access to data, tooling, and compute power that researchers need. Researchers can focus on achieving research missions and completing essential work in minutes in a trusted research environment.
 
@@ -99,7 +99,7 @@ Wait for the workspace to be **Available**.
 ![](platform_imgs/existing_workspace.png)
 
 3. Click on the **Generate URL** button on the right, under HTTP Connections.
-4. Click on the **Copy icon** to copy the notebook link, and click **Connect.**
+4. Click **Connect.**
 
 ![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.010.png)
 
@@ -107,21 +107,23 @@ Wait for the workspace to be **Available**.
 
 ![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.011.jpeg)
 
-6. Click on the Apps icon on the top left, and pick **Chrome.**
+It will now open the browser with the data and the tools to start working.
+It will open in Firefox automatically if the workspace created in a Notebook, or Remmina Client(Remote) in case it created in EC2. 
+So you can do the following:
 
-![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.012.jpeg)
+## Installing Python Packages
 
-7. Click the paste icon in the top menu, and paste the notebook URL you copied on **Step 4**.
+1. Connect to the Research Environment and open your Jupyter Notebook (See: Connect to an Existing Research Environment)
+2. Click on Open JupyterLab on the top right.
 
-![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.013.jpeg)
+![](platform_imgs/e4d32db7-372f-488a-9919-9083e15e07c4.png)
+3. Open a new Jupyter notebook.
 
-8. Go to **Chrome**, right click and **Paste/Paste and go to.**
+![](platform_imgs/bbd18cb5-16cc-4c2f-8f0a-15f385e1d472.png)
 
-![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.014.jpeg)
+4. Inside the one of the notebook cells, type `!pip3 install <package name>`.
 
-9. You can now access your Jupyter Notebook.
-
-![](platform_imgs/Aspose.Words.eb2aa5b5-7f63-4203-881b-2ae5083537c6.015.jpeg)
+### For any questions or help please contact: [support@pheno.ai](support@pheno.ai)
 
 ## Attach Files to a Research Environment
 
@@ -166,18 +168,3 @@ Use the following code  `docker pull \<accountID\>.dkr.ecr.\<aws-region\>.amazon
 Use the image you have under docker image ls \
 e.g  `docker run -it --rm \<accountID\>.dkr.ecr.\<aws-region\>.amazonaws.com/ecr-public/docker/library/alpine:edge`
 ![](platform_imgs/docker_run.png)
-
-
-## Installing Python Packages
-
-1. Connect to the Research Environment and open your Jupyter Notebook (See: Connect to an Existing Research Environment)
-2. Click on Open JupyterLab on the top right.
-
-![](platform_imgs/e4d32db7-372f-488a-9919-9083e15e07c4.png)
-3. Open a new Jupyter notebook.
-
-![](platform_imgs/bbd18cb5-16cc-4c2f-8f0a-15f385e1d472.png)
-
-4. Inside the one of the notebook cells, type `!pip3 install <package name>`.
-
-### For any questions or help please contact: [support@pheno.ai](support@pheno.ai)
