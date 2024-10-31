@@ -2,7 +2,7 @@
 
 ### Description 
 
-Events Informations of the Human Phenotype Project study participants.
+Information on calls and visits to the clinical testing center of the Human Phenotype Project study participants.
 
 ### Introduction
 
