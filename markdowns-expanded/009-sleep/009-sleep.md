@@ -16,6 +16,8 @@ The PAT probe measures changes in the volume of blood vessels by applying a unif
 
 The device's algorithms provide 3 main indices for diagnosis of OSA: Apnea/Hypopnea Index (AHI), Respiratory Disturbance Index (RDI), Oxygen Desaturation Index (ODI). The device's algoithms also provide indices for diagnosis of Atrial Fibrillation (not FDA-approved yet): Premature beats per minute, Atrial fibrillation longest event.
 
+In addition to the above, the device's algorithms provide statistics on sleep architecture. Furthermore, we use [NeuroKit2](https://neuropsychology.github.io/NeuroKit/) ([Makowski et al., 2021](https://doi.org/10.3758/s13428-020-01516-y)) to compute HRV indices from the PAT channel.
+
 ### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 The WatchPAT device is given to participants during the visit to the clinical testing center who then record 3 nights of sleep at home during the following two weeks (see figure below). Participants who use CPAP/BiPap devices are asked to report the usage of CPAP/BiPap devices in the 10K App per the monitored nights.
@@ -34,7 +36,7 @@ WatchPAT device setup: It is strapped on the wrist of the non-dominant hand.
 
 ### Data availability 
 <!-- for the example notebooks -->
-The information is stored in 2 main statistics parquet files: `sleep.parquet`, `hrv.parquet`; In multiple events parquets and in multiple time series parquets / EDF files containing sensor channels for each night of logging.
+The information is stored in 2 main statistics parquet files: `sleep.parquet`, `hrv.parquet` (computed using NeuroKit2); In multiple events parquets and in multiple time series parquets / EDF files containing sensor channels for each night of logging.
 
 ```mermaid
 flowchart LR;
@@ -45,10 +47,10 @@ classDef event fill:#8de5a1;
 classDef stat fill:#ff9f9b;
 
 Sensor(sleep sensor):::sensor --> Raw(raw channel):::raw
-Raw --> Events(sleep events):::event
-Raw --> Extracted(computed stats)
+Raw -->|zzzPAT| Events(sleep events):::event
+Raw -->|NeuroKit2| Extracted(computed stats)
 Events --> Extracted
-Events --> Summary(summary stats):::stat
+Events -->|zzzPAT| Summary(summary stats):::stat
 ```
 
 ### Summary of available data 
@@ -57,7 +59,7 @@ The data comprises of 3 levels of processing:
 
 1. Raw channels: A data frame of temporal data - values and times - for each of 12 source channels.
 2. Events: A data frame of annotated events based on the manufacturer’s analysis of the raw channels. Each row contains the event, its main source channel, its start time and end time.
-3. Summary statistics: A data frame of computed features provided by the manufacturer based on the above channels and events. Some of the summary stats are also computed separately for different sleep stages and body positions. Additional computed features, such as the ones related to heart rate variability (HRV) and sleep fragmentation, are computed by Pheno.ai.
+3. Summary statistics: A data frame of computed features provided by the manufacturer based on the above channels and events. Some of the summary stats are also computed separately for different sleep stages and body positions. Additional computed features, such as the ones related to heart rate variability (HRV, using NeuroKit2) and sleep fragmentation, are computed by Pheno.ai.
 
 ![available data](sleep_data.png)
 
