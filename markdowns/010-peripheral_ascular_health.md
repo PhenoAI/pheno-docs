@@ -1,4 +1,4 @@
-# Vascular Health (ABI & PWV) dataset  
+# Peripheral Vascular Health dataset  
 
 ABI and PWV are measured in the Human Phenotype Project to assess vascular health. ABI is a ratio of the systolic blood pressure in the ankle to the systolic blood pressure in the arm. PWV is the speed at which the pulse wave of the blood pressure travels along the wall of an artery or a combined length of arteries.
 

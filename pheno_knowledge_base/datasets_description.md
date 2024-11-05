@@ -10,7 +10,7 @@
 * **Blood Pressure** - Blood pressure measurements.
 * **Serum Lipidomics** - Lipid annotations from blood tests.
 * **Sleep** - Sleep staging, body positioning, respiratory events, heart rate, oxygen saturation, and snoring.
-* **Vascular Health** - ABI and PWV measurements.
+* **Peripheral Vascular Health** - ABI and PWV measurements.
 * **Body Composition** - Measurements of fat and lean mass, VAT/SAT area, mass, and volume.
 * **Carotid Ultrasound** - Intima Media Thickness measurements.
 * **Gut Microbiome** - Gut microbiome sequencing and QC statistics, Segal Lab relative abundance, MetaPhlAn 4 relative abundances.

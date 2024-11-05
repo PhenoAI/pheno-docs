@@ -10,7 +10,7 @@
 |  007 | [blood_pressure](datasets/007-blood_pressure.html)                                   | 2018-12-27   | 2022-12-29  | 12946 (10398)                | ✓              |                    |              |
 |  008 | [serum_lipidomics](datasets/008-serum_lipidomics.html)                               | 2019-02-19   | 2021-08-08  | 6321 (6144)                  | ✓              |                    |              |
 |  009 | [sleep](datasets/009-sleep.html)                                                     | 2020-01-15   | 2022-12-27  | 21589 (7132)                 | ✓              | ✓                  |              |
-|  010 | [vascular_health](datasets/010-vascular_health.html)                                 | 2018-12-27   | 2022-12-29  | 11387 (9729)                 | ✓              |                    |              |
+|  010 | [peripheral_vascular_health](datasets/010-peripheral_vascular_health.html)           | 2018-12-27   | 2022-12-29  | 11387 (9729)                 | ✓              |                    |              |
 |  011 | [body_composition](datasets/011-body_composition.html)                               | 2020-06-09   | 2022-12-29  | 8990 (8411)                  | ✓              |                    |              |
 |  012 | [carotid_ultrasound](datasets/012-carotid_ultrasound.html)                           | 2020-07-23   | 2022-12-29  | 8518 (7988)                  | ✓              |                    |              |
 |  013 | [gut_microbiome](datasets/013-gut_microbiome.html)                                   | 2019-02-14   | 2022-12-28  | 10694 (8838)                 | ✓              |                    |              |

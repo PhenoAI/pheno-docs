@@ -38,7 +38,7 @@ website:
           - datasets/007-blood_pressure.ipynb
           - datasets/008-serum_lipidomics.ipynb
           - datasets/009-sleep.ipynb
-          - datasets/010-vascular_health.ipynb
+          - datasets/010-peripheral_vascular_health.ipynb
           - datasets/011-body_composition.ipynb
           - datasets/012-carotid_ultrasound.ipynb
           - datasets/013-gut_microbiome.ipynb
