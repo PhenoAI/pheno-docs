@@ -1,4 +1,4 @@
-# Vascular Health (ABI & PWV) dataset  
+# Peripheral Vascular Health dataset  
 
 ### Description
 
