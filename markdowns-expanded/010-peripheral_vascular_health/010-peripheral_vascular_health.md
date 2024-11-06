@@ -1,4 +1,4 @@
-# Peripheral Vascular Health dataset  
+# Peripheral vascular health dataset  
 
 ### Description
 
