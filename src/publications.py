@@ -164,6 +164,7 @@ def process_publication(row: pd.Series, notion_token: str=None):
 
     # Remove related links section
     content = re.sub(r'(?i)## related links.*?(?=\n#|$)', '', content, flags=re.DOTALL)
+    content = re.sub(r'(?i)## relevant links.*?(?=\n#|$)', '', content, flags=re.DOTALL)
     content = content.strip()
 
     # Extract first image if present
