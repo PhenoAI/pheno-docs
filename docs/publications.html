@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>publications – Pheno.AI</title>
+<title>Publications – Pheno.AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,7 +70,66 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -118,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Publications</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -401,217 +462,1463 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#publications" id="toc-publications" class="nav-link active" data-scroll-target="#publications">Publications</a>
-  <ul class="collapse">
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">2022</a>
-  <ul class="collapse">
-  <li><a href="#science-advances" id="toc-science-advances" class="nav-link" data-scroll-target="#science-advances">SCIENCE ADVANCES</a></li>
-  <li><a href="#plos-one" id="toc-plos-one" class="nav-link" data-scroll-target="#plos-one">PLOS ONE</a></li>
-  <li><a href="#nature-medicine" id="toc-nature-medicine" class="nav-link" data-scroll-target="#nature-medicine">NATURE MEDICINE</a></li>
-  </ul></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2021</a>
-  <ul class="collapse">
-  <li><a href="#immunity-inflammation-and-disease" id="toc-immunity-inflammation-and-disease" class="nav-link" data-scroll-target="#immunity-inflammation-and-disease">IMMUNITY, INFLAMMATION AND DISEASE</a></li>
-  <li><a href="#diabetes-care" id="toc-diabetes-care" class="nav-link" data-scroll-target="#diabetes-care">DIABETES CARE</a></li>
-  <li><a href="#nature-medicine-1" id="toc-nature-medicine-1" class="nav-link" data-scroll-target="#nature-medicine-1">NATURE MEDICINE</a></li>
-  <li><a href="#european-journal-epidemiology" id="toc-european-journal-epidemiology" class="nav-link" data-scroll-target="#european-journal-epidemiology">EUROPEAN JOURNAL EPIDEMIOLOGY</a></li>
-  <li><a href="#cell-reports-medicine" id="toc-cell-reports-medicine" class="nav-link" data-scroll-target="#cell-reports-medicine">CELL REPORTS MEDICINE</a></li>
-  </ul></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2020</a>
-  <ul class="collapse">
-  <li><a href="#nature" id="toc-nature" class="nav-link" data-scroll-target="#nature">NATURE</a></li>
-  <li><a href="#nature-1" id="toc-nature-1" class="nav-link" data-scroll-target="#nature-1">NATURE</a></li>
-  <li><a href="#nature-medicine-2" id="toc-nature-medicine-2" class="nav-link" data-scroll-target="#nature-medicine-2">NATURE MEDICINE</a></li>
-  </ul></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2019</a>
-  <ul class="collapse">
-  <li><a href="#nature-2" id="toc-nature-2" class="nav-link" data-scroll-target="#nature-2">NATURE</a></li>
-  <li><a href="#nature-3" id="toc-nature-3" class="nav-link" data-scroll-target="#nature-3">NATURE</a></li>
-  </ul></li>
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2018</a>
-  <ul class="collapse">
-  <li><a href="#cell" id="toc-cell" class="nav-link" data-scroll-target="#cell">CELL</a></li>
-  <li><a href="#cell-1" id="toc-cell-1" class="nav-link" data-scroll-target="#cell-1">CELL</a></li>
-  <li><a href="#nature-4" id="toc-nature-4" class="nav-link" data-scroll-target="#nature-4">NATURE</a></li>
-  </ul></li>
-  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2016</a>
-  <ul class="collapse">
-  <li><a href="#nature-5" id="toc-nature-5" class="nav-link" data-scroll-target="#nature-5">NATURE</a></li>
-  </ul></li>
-  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">2015</a>
-  <ul class="collapse">
-  <li><a href="#cell-2" id="toc-cell-2" class="nav-link" data-scroll-target="#cell-2">CELL</a></li>
-  <li><a href="#science" id="toc-science" class="nav-link" data-scroll-target="#science">SCIENCE</a></li>
-  </ul></li>
-  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">2014</a>
-  <ul class="collapse">
-  <li><a href="#nature-6" id="toc-nature-6" class="nav-link" data-scroll-target="#nature-6">NATURE</a></li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(37)</span></div><div class="category" data-category="Aging">Aging <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Anthropometrics">Anthropometrics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="BMC Medicine">BMC Medicine <span class="quarto-category-count">(2)</span></div><div class="category" data-category="BMJ Open">BMJ Open <span class="quarto-category-count">(2)</span></div><div class="category" data-category="CGM">CGM <span class="quarto-category-count">(9)</span></div><div class="category" data-category="Cancer">Cancer <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cardiovascular">Cardiovascular <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Cell">Cell <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Cell Host &amp; Microbe">Cell Host &amp; Microbe <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cell Metabolism">Cell Metabolism <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Current Opinion in Microbiology">Current Opinion in Microbiology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Diabetes">Diabetes <span class="quarto-category-count">(13)</span></div><div class="category" data-category="Diabetes Care">Diabetes Care <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Diabetes Technology and Therapeutics">Diabetes Technology and Therapeutics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="European Journal of Epidemiology">European Journal of Epidemiology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Fundus">Fundus <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Genomics">Genomics <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Gut">Gut <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ML4H (arXiv)">ML4H (arXiv) <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Med">Med <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Metabolomics">Metabolomics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Microbiome">Microbiome <span class="quarto-category-count">(17)</span></div><div class="category" data-category="Nature">Nature <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Nature Aging">Nature Aging <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Nature Communications">Nature Communications <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Nature Medicine">Nature Medicine <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Nutrition">Nutrition <span class="quarto-category-count">(8)</span></div><div class="category" data-category="PLoS ONE">PLoS ONE <span class="quarto-category-count">(1)</span></div><div class="category" data-category="PhIP-Seq">PhIP-Seq <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pheno.AI">Pheno.AI <span class="quarto-category-count">(8)</span></div><div class="category" data-category="SSL">SSL <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Segal lab">Segal lab <span class="quarto-category-count">(28)</span></div><div class="category" data-category="Sleep">Sleep <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Stress">Stress <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T2DM">T2DM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="arxiv">arxiv <span class="quarto-category-count">(1)</span></div><div class="category" data-category="eLife">eLife <span class="quarto-category-count">(1)</span></div><div class="category" data-category="medRxiv">medRxiv <span class="quarto-category-count">(1)</span></div><div class="category" data-category="obesity">obesity <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Publications</h1>
+</div>
 
 
 
-<section id="publications" class="level1">
-<h1>Publications</h1>
-<p>Below you will find all the published papers using The Human Phenotype Project data. Scientists all over the world have put their imaginations to work and published a wide range of work.</p>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">2022</h2>
-<section id="science-advances" class="level3">
-<h3 class="anchored" data-anchor-id="science-advances">SCIENCE ADVANCES</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/36149952/">Systemic antibody responses against human microbiota flagellins are overrepresented in chronic fatigue syndrome patients</a><br>
-Thomas Vogl, Iris N Kalka, Shelley Klompus, Sigal Leviatan, Adina Weinberger, Eran Segal</p>
-<p>09/23/2022</p>
-</section>
-<section id="plos-one" class="level3">
-<h3 class="anchored" data-anchor-id="plos-one">PLOS ONE</h3>
-<p><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0265756">An atlas of robust microbiome associations with phenotypic traits based on large-scale cohorts from two continents</a><br>
-Daphna Rothschild, Sigal Leviatan, Ariel Hanemann, Yossi Cohen, Omer Weissbrod, Eran Segal</p>
-<p>03/24/2022</p>
-</section>
-<section id="nature-medicine" class="level3">
-<h3 class="anchored" data-anchor-id="nature-medicine">NATURE MEDICINE</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/35177859/">Metabolomic and microbiome profiling reveals personalized risk factors for coronary artery disease</a><br>
-Yeela Talmor-Barkan, Noam Bar, Aviv A Shaul, Nir Shahaf, Anastasia Godneva, Yuval Bussi, Maya Lotan-Pompan, Adina Weinberger, Alon Shechter, Chava Chezar-Azerrad, Ziad Arow, Yoav Hammer, Kanta Chechi, Sofia K Forslund, Sebastien Fromentin, Marc-Emmanuel Dumas, S Dusko Ehrlich, Oluf Pedersen, Ran Kornowski, Eran Segal</p>
-<p>02/17/2022</p>
-</section>
-</section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1">2021</h2>
-<section id="immunity-inflammation-and-disease" class="level3">
-<h3 class="anchored" data-anchor-id="immunity-inflammation-and-disease">IMMUNITY, INFLAMMATION AND DISEASE</h3>
-<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8926506/">Clinical efficacy of fecal microbial transplantation treatment in adults with moderate‐to‐severe atopic dermatitis</a><br>
-Mashiah J, Karady T, Fliss-Isakov N, Sprecher E, Slodownik D, Artzi O, Samuelov L, Ellenbogen E, Godneva A, E. Segal, Maharshak N. 12/20/2021</p>
-</section>
-<section id="diabetes-care" class="level3">
-<h3 class="anchored" data-anchor-id="diabetes-care">DIABETES CARE</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/34301736/">Personalized Postprandial Glucose Response-Targeting Diet Versus Mediterranean Diet for Glycemic Control in Prediabetes</a><br>
-Ben-Yacov O, Godneva A, Rein M, Shilo S, Kolobkov D, Koren N, Cohen Dolev N, Travinsky Shmul T, Wolf BC, Kosower N, Sagiv K, Lotan-Pompan M, Zmora N, Weinberger A, Elinav E, E. Segal</p>
-<p>07/23/2021</p>
-</section>
-<section id="nature-medicine-1" class="level3">
-<h3 class="anchored" data-anchor-id="nature-medicine-1">NATURE MEDICINE</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/34282338/">Population-wide diversity and stability of serum antibody epitope repertoires against human microbiota</a><br>
-Vogl T, Klompus S, Leviatan S, Kalka IN, Weinberger A, Wijmenga C, Fu J, Zhernakova A, Weersma RK, E. Segal</p>
-<p>07/19/2021</p>
-</section>
-<section id="european-journal-epidemiology" class="level3">
-<h3 class="anchored" data-anchor-id="european-journal-epidemiology">EUROPEAN JOURNAL EPIDEMIOLOGY</h3>
-<p><a href="https://europepmc.org/article/ppr/ppr287118">Cohort profile: 10K - a large-scale prospective longitudinal study in Israel</a><br>
-S. Shilo, N. Bar, A. Keshet, Y. Talmor-Barkan, H. Rossman, A. Godneva, Y. Aviv, Y. Edlitz, L. Reicher, D. Kolobkov, BC. Wolf, M. Lotan-Pompan, K. Levi, O. Cohen, H. Saranga, A. Weinberger, E. Segal</p>
-<p>02/23/2021</p>
-</section>
-<section id="cell-reports-medicine" class="level3">
-<h3 class="anchored" data-anchor-id="cell-reports-medicine">CELL REPORTS MEDICINE</h3>
-<p><a href="https://europepmc.org/article/med/33948576">Potential role of indolelactate and butyrate in multiple sclerosis revealed by integrated microbiome-metabolome analysis</a><br>
-D. Zeevi, T. Korem, A. Godneva, N. Bar, A. Kurilshikov, M. Lotan-Pompan, A. Weinberger, J. Fu, C. Wijmenga, A. Zhernakova, E. Segal</p>
-<p>04/20/2021</p>
-</section>
-</section>
-<section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2">2020</h2>
-<section id="nature" class="level3">
-<h3 class="anchored" data-anchor-id="nature">NATURE</h3>
-<p><a href="https://discovery.dundee.ac.uk/en/publications/a-reference-map-of-potential-determinants-for-the-human-serum-met">A reference map of potential determinants for the human serum metabolome</a><br>
-N. Bar, T. Korem, O. Weissbrod, D. Zeevi, D. Rothschild, S. Leviatan, N. Kosower, M. Lotan-Pompan, A. Weinberger, CI. Le Roy, C. Menni, A. Visconti, M. Falchi, TD. Spector; IMI DIRECT consortium, J. Adamski, PW. Franks, O. Pedersen, E. Segal</p>
-<p>12/03/2020</p>
-</section>
-<section id="nature-1" class="level3">
-<h3 class="anchored" data-anchor-id="nature-1">NATURE</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/31996830/">Rich data sets could end costly drug discovery</a><br>
-E. Segal</p>
-<p>02/2020</p>
-</section>
-<section id="nature-medicine-2" class="level3">
-<h3 class="anchored" data-anchor-id="nature-medicine-2">NATURE MEDICINE</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/31932803/">Axes of a revolution: challenges and promises of big data in healthcare</a><br>
-S. Shilo, H. Rossman, E. Segal</p>
-<p>01/13/2020</p>
-</section>
-</section>
-<section id="section-3" class="level2">
-<h2 class="anchored" data-anchor-id="section-3">2019</h2>
-<section id="nature-2" class="level3">
-<h3 class="anchored" data-anchor-id="nature-2">NATURE</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/31330533/">Potential roles of gut microbiome and metabolites in modulating ALS in mice</a><br>
-E. Blacher, S. Bashiardes, H. Shapiro, D. Rothschild, U. Mor, M. Dori-Bachash, C. Kleimeyer, C. Moresi, Y. Harnik, M. Zur, M. Zabari, R. Ben-Zeev Brik, D. Kviatcovsky, N. Zmora, Y. Cohen, N. Bar, I. Levi, N. Amar, T. Mehlman, A. Brandis, I. Biton, Y. Kuperman, M. Tsoory, L. Alfahel, A. Harmelin, M. Schwartz, A. Israelson, L. Arike, M. Johansson, G.C. Hansson, M. Gotkine, E. Segal<em>, E. Elinav</em></p>
-<p>07/22/2019</p>
-</section>
-<section id="nature-3" class="level3">
-<h3 class="anchored" data-anchor-id="nature-3">NATURE</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/30918406/">Structural variation in the gut microbiome associates with host health</a><br>
-D. Zeevi, T. Korem, A. Godneva, N. Bar, A. Kurilshikov, M. Lotan-Pompan, A. Weinberger, J. Fu, C. Wijmenga, A. Zhernakova, E. Segal</p>
-<p>03/27/2019</p>
-</section>
-</section>
-<section id="section-4" class="level2">
-<h2 class="anchored" data-anchor-id="section-4">2018</h2>
-<section id="cell" class="level3">
-<h3 class="anchored" data-anchor-id="cell">CELL</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/30193113/">Post-Antibiotic Gut Mucosal Microbiome Reconstitution Is Impaired by Probiotics and Improved by Autologous FMT</a><br>
-Jotham Suez, Niv Zmora, Gili Zilberman-Schapira, Uria Mor, Mally Dori-Bachash, Stavros Bashiardes, Maya Zur, Dana Regev-Lehavi, Rotem Ben-Zeev Brik, Sara Federici, Max Horn, Yotam Cohen, Andreas E Moor, David Zeevi, Tal Korem, Eran Kotler, Alon Harmelin, Shalev Itzkovitz, Nitsan Maharshak, Oren Shibolet, Meirav Pevsner-Fischer, Hagit Shapiro, Itai Sharon, Zamir Halpern, Eran Segal, Eran Elinav</p>
-<p>09/06/2018</p>
-</section>
-<section id="cell-1" class="level3">
-<h3 class="anchored" data-anchor-id="cell-1">CELL</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/30193112/">Personalized Gut Mucosal Colonization Resistance to Empiric Probiotics Is Associated with Unique Host and Microbiome Features</a><br>
-N. Zmora, G. Zilberman-Schapira, J. Suez, U. Mor, M. Dori-Bachash, S. Bashiardes, E. Kotler, M. Zur, D. Regev-Lehavi, R. Ben-Zeev Brik, S. Federici, Y. Cohen, R. Linevsky, D. Rothschild, AE. Moor, S. Ben-Moshe, A. Harmelin, S. Itzkovitz, N. Maharshak, O. Shibolet, H. Shapiro, M. Pevsner-Fischer, I. Sharon, Z. Halpern, E. Segal<em>, E. Elinav</em></p>
-<p>09/06/2018</p>
-</section>
-<section id="nature-4" class="level3">
-<h3 class="anchored" data-anchor-id="nature-4">NATURE</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/29489753/">Environment dominates over host genetics in shaping human gut microbiota</a><br>
-D. Rothschild, O. Weissbrod, E. Barkan, A. Kurilshikov, T. Korem, D. Zeevi, PI. Costea, A. Godneva, IN. Kalka, N. Bar, S. Shilo, D. Lador, AV. Vila, N. Zmora, M. Pevsner-Fischer, D. Israeli, N. Kosower, G. Malka, BC. Wolf, T. Avnit-Sagi, M. Lotan-Pompan, A. Weinberger, Z. Halpern, S. Carmi, J. Fu, Lifelines cohort study, C. Wijmenga, A. Zhernakova, E. Elinav, E. Segal</p>
-<p>03/08/2018</p>
-</section>
-</section>
-<section id="section-5" class="level2">
-<h2 class="anchored" data-anchor-id="section-5">2016</h2>
-<section id="nature-5" class="level3">
-<h3 class="anchored" data-anchor-id="nature-5">NATURE</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/27906159/">Persistent microbiome alterations modulate the rate of post-dieting weight regain</a><br>
-C.A. Thaiss, S. Itav, D. Rothschild, M. Meijer, C. Moresi, M. Levy, L. Dohnalová, S. Rozin, Y. Kuperman, I. Biton, A. Harmelin, H. Shapiro, E. Segal<em>, E. Elinav</em></p>
-<p>12/22/2016</p>
-</section>
-</section>
-<section id="section-6" class="level2">
-<h2 class="anchored" data-anchor-id="section-6">2015</h2>
-<section id="cell-2" class="level3">
-<h3 class="anchored" data-anchor-id="cell-2">CELL</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/26590418/">Personalized Nutrition by Prediction of Glycemic Responses</a><br>
-D. Zeevi, T. Korem, D. Rothschild, A. Weinberger, N. Zmora, D. Israeli, O. Ben-Yacov, D. Lador, T. Avnit-Sagi, M. Lotan-Pompan, J. Suez, J. Ali Mahdi, E. Matot, G. Malka, N. Kosower, M. Rein, G. Zilberman, L. Dohnalova, M. Pevsner-Fischer, R. Bikovsky, Z. Halpern, E. Elinav, E. Segal</p>
-<p>11/19/2015</p>
-</section>
-<section id="science" class="level3">
-<h3 class="anchored" data-anchor-id="science">SCIENCE</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/26229116/">Growth dynamics of gut microbiota in health and disease inferred from single metagenomic samples</a><br>
-T. Korem, D. Zeevi, J. Suez, A. Weinberger, T. Avnit-Sagi, M. Pompan-Lotan, E. Matot, G. Jona, A. Harmelin, N. Cohen, A. Sirota-Madi, C.A. Thaiss, M. Pevsner-Fischer, R. Sorek, R. Xavier, E. Elinav, E. Segal</p>
-<p>09/04/2015</p>
-</section>
-</section>
-<section id="section-7" class="level2">
-<h2 class="anchored" data-anchor-id="section-7">2014</h2>
-<section id="nature-6" class="level3">
-<h3 class="anchored" data-anchor-id="nature-6">NATURE</h3>
-<p><a href="https://pubmed.ncbi.nlm.nih.gov/25231862/">Artificial sweeteners induce glucose intolerance by altering the gut microbiota</a><br>
-J. Suez, T. Korem, D. Zeevi, G. Zilberman-Schapira, C.A. Thaiss, O. Maza, D. Israeli, N. Zmora, S. Gilad, A. Weinberger, Y. Kuperman, A. Harmelin, I. Kolodkin-Gal, H. Shapiro, Z. Halpern, E. Segal<em>, E. Elinav</em></p>
-<p>09/17/2014</p>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-</section>
-</section>
-</section>
+</header>
 
-</main> <!-- /main -->
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Nutrition,Anthropometrics,obesity,Segal lab,BMC Medicine" data-listing-date-sort="1730851200000" data-listing-file-modified-sort="1734586519399" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="120">
+<div class="thumbnail">
+<p><a href="./publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html" class="no-external"></a></p><a href="./publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html" class="no-external">
+<p><img loading="lazy" src="./publications/00bfe8b7_image.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html" class="no-external">Sex-specific dietary habits and their association with weight change in healthy adults</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Nutrition'); return false;">
+Nutrition
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Anthropometrics'); return false;">
+Anthropometrics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('obesity'); return false;">
+obesity
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('BMC Medicine'); return false;">
+BMC Medicine
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html" class="no-external">Rein M, Elkan M, Godneva A, Dolev N, Segal E, <em>BMC Medicine</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html" class="no-external">
+<div class="listing-date">
+Nov 6, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Aging,Segal lab,Pheno.AI,Nature Aging" data-listing-date-sort="1730764800000" data-listing-file-modified-sort="1734586523095" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="292">
+<div class="thumbnail">
+<p><a href="./publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html" class="no-external"></a></p><a href="./publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html" class="no-external">
+<p><img loading="lazy" src="./publications/11189edf_image.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html" class="no-external">Phenome-wide associations of human aging uncover sex-specific dynamics</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Aging'); return false;">
+Aging
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pheno.AI'); return false;">
+Pheno.AI
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nature Aging'); return false;">
+Nature Aging
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html" class="no-external">Reicher L, Bar N, Godneva A, Reisner Y, Zahavi L, Shahaf N, Dhir R, Weinberger A, Segal E, <em>Nature Aging</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html" class="no-external">
+<div class="listing-date">
+Nov 5, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Microbiome,Segal lab,Pheno.AI,Nature Communications" data-listing-date-sort="1730160000000" data-listing-file-modified-sort="1734586524055" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
+<div class="thumbnail">
+<p><a href="./publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html" class="no-external"></a></p><a href="./publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html" class="no-external">Identification of gut microbiome features associated with host metabolic health in a large population-based cohort</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pheno.AI'); return false;">
+Pheno.AI
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nature Communications'); return false;">
+Nature Communications
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html" class="no-external">Keshet A, Segal E, <em>Nature Communications</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html" class="no-external">
+<div class="listing-date">
+Oct 29, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="CGM,SSL,Diabetes,Nutrition,Segal lab,Pheno.AI,arxiv" data-listing-date-sort="1724112000000" data-listing-file-modified-sort="1734586529287" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
+<div class="thumbnail">
+<p><a href="./publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html" class="no-external"></a></p><a href="./publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html" class="no-external">
+<p><img loading="lazy" src="./publications/71ad6e99_image.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html" class="no-external">From Glucose Patterns to Health Outcomes: A Generalizable Foundation Model for Continuous Glucose Monitor Data Analysis</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('CGM'); return false;">
+CGM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('SSL'); return false;">
+SSL
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes'); return false;">
+Diabetes
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nutrition'); return false;">
+Nutrition
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pheno.AI'); return false;">
+Pheno.AI
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('arxiv'); return false;">
+arxiv
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html" class="no-external">Lutsker G, Sapir G, Godneva A, Shilo S, Greenfield J, Samocha-Bonet D, Mannor S, Meirom E, Chechik G, Rossman H, Segal E, <em>arxiv</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html" class="no-external">
+<div class="listing-date">
+Aug 20, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="CGM,Diabetes,Segal lab,Pheno.AI,Nature Medicine" data-listing-date-sort="1713139200000" data-listing-file-modified-sort="1734586557370" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
+<div class="thumbnail">
+<p><a href="./publications/fedb27b4-d1e1-4f27-84d2-c85ecf3e7c69.html" class="no-external"></a></p><a href="./publications/fedb27b4-d1e1-4f27-84d2-c85ecf3e7c69.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/fedb27b4-d1e1-4f27-84d2-c85ecf3e7c69.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/fedb27b4-d1e1-4f27-84d2-c85ecf3e7c69.html" class="no-external">Continuous glucose monitoring and intrapersonal variability in fasting glucose</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/fedb27b4-d1e1-4f27-84d2-c85ecf3e7c69.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('CGM'); return false;">
+CGM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes'); return false;">
+Diabetes
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pheno.AI'); return false;">
+Pheno.AI
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nature Medicine'); return false;">
+Nature Medicine
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/fedb27b4-d1e1-4f27-84d2-c85ecf3e7c69.html" class="no-external">Shilo S, Keshet A, Rossman H, Godneva A, Talmor-Barkan Y, Aviv Y, Segal E, <em>Nature Medicine</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/fedb27b4-d1e1-4f27-84d2-c85ecf3e7c69.html" class="no-external">
+<div class="listing-date">
+Apr 15, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="SSL,Fundus,Cardiovascular,Pheno.AI,Segal lab,medRxiv" data-listing-date-sort="1710720000000" data-listing-file-modified-sort="1734586515071" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
+<div class="thumbnail">
+<p><a href="./publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html" class="no-external"></a></p><a href="./publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html" class="no-external">COMPRER: A Multimodal Multi-Objective Pretraining Framework for Enhanced Medical Image Representation</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('SSL'); return false;">
+SSL
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Fundus'); return false;">
+Fundus
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Cardiovascular'); return false;">
+Cardiovascular
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pheno.AI'); return false;">
+Pheno.AI
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('medRxiv'); return false;">
+medRxiv
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html" class="no-external">Lutsker G, Rossman H, Godneva N, Segal E, <em>medRxiv</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html" class="no-external">
+<div class="listing-date">
+Mar 18, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="Microbiome,Stress,Genomics,Segal lab,Cell Host &amp; Microbe" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1734586527043" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="164">
+<div class="thumbnail">
+<p><a href="./publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html" class="no-external"></a></p><a href="./publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html" class="no-external">
+<p><img loading="lazy" src="./publications/cf44e859_image.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html" class="no-external">Pangenomes of human gut microbiota uncover links between genetic diversity and stress response</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Stress'); return false;">
+Stress
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Genomics'); return false;">
+Genomics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Cell Host &amp; Microbe'); return false;">
+Cell Host &amp; Microbe
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html" class="no-external">Shoer S, Reicher L, Zhao C, Pollard K, Pilpel Y, Segal E, <em>Cell Host &amp; Microbe</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="Genomics,Sleep,Segal lab,Pheno.AI,Med" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1734586555391" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
+<div class="thumbnail">
+<p><a href="./publications/4fd3ee73-68e0-4b1e-bf2c-a35b4e4f80d3.html" class="no-external"></a></p><a href="./publications/4fd3ee73-68e0-4b1e-bf2c-a35b4e4f80d3.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/4fd3ee73-68e0-4b1e-bf2c-a35b4e4f80d3.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/4fd3ee73-68e0-4b1e-bf2c-a35b4e4f80d3.html" class="no-external">Genome-wide association studies and polygenic risk score phenome-wide association studies across complex phenotypes in the human phenotype project</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/4fd3ee73-68e0-4b1e-bf2c-a35b4e4f80d3.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Genomics'); return false;">
+Genomics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Sleep'); return false;">
+Sleep
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pheno.AI'); return false;">
+Pheno.AI
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Med'); return false;">
+Med
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/4fd3ee73-68e0-4b1e-bf2c-a35b4e4f80d3.html" class="no-external">Levine Z, Kalka I, Kolobkov D, Rossman H, Godneva A, Shilo S, Keshet A, Weissglas-Volkov D, Shor T, Diament A, Talmor-Barkan Y, Aviv Y, Sharon T, Weinberger A, Segal E, <em>Med</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/4fd3ee73-68e0-4b1e-bf2c-a35b4e4f80d3.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="Sleep,Pheno.AI,Segal lab,ML4H (arXiv)" data-listing-date-sort="1700006400000" data-listing-file-modified-sort="1734586524907" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="145">
+<div class="thumbnail">
+<p><a href="./publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html" class="no-external"></a></p><a href="./publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html" class="no-external">A Multimodal Dataset of 21,412 Recorded Nights for Sleep and Respiratory Research</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Sleep'); return false;">
+Sleep
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pheno.AI'); return false;">
+Pheno.AI
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ML4H (arXiv)'); return false;">
+ML4H (arXiv)
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html" class="no-external">Diament A, Gorodetski M, Jankelow A, Keshet A, Shor T, Weissglas-Volkov D, Rossman H, Segal E, <em>ML4H (arXiv)</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html" class="no-external">
+<div class="listing-date">
+Nov 15, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-categories="Diabetes,Microbiome,Segal lab,Nature Communications" data-listing-date-sort="1693785600000" data-listing-file-modified-sort="1734586554559" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="229">
+<div class="thumbnail">
+<p><a href="./publications/010dda05-6716-4d0a-a0a5-1f1a38ea05d7.html" class="no-external"></a></p><a href="./publications/010dda05-6716-4d0a-a0a5-1f1a38ea05d7.html" class="no-external">
+<p><img loading="lazy" src="./publications/93f451b7_image.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/010dda05-6716-4d0a-a0a5-1f1a38ea05d7.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/010dda05-6716-4d0a-a0a5-1f1a38ea05d7.html" class="no-external">Impact of dietary interventions on pre-diabetic oral and gut microbiome, metabolites and cytokines</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/010dda05-6716-4d0a-a0a5-1f1a38ea05d7.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes'); return false;">
+Diabetes
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nature Communications'); return false;">
+Nature Communications
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/010dda05-6716-4d0a-a0a5-1f1a38ea05d7.html" class="no-external">Shoer S, Shilo S, Godneva A, Ben-Yacov O, Rein M, Wolf B, Lotan-Pompan M, Bar N, Weiss E, Houri-Haddad Y, Pilpel Y, Weinberger A, Segal E, <em>Nature Communications</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/010dda05-6716-4d0a-a0a5-1f1a38ea05d7.html" class="no-external">
+<div class="listing-date">
+Sep 4, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-categories="Diabetes,Microbiome,Segal lab,Gut" data-listing-date-sort="1683072000000" data-listing-file-modified-sort="1734586556526" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="302">
+<div class="thumbnail">
+<p><a href="./publications/bb8ea994-5e82-4c4a-80aa-175c474a9e09.html" class="no-external"></a></p><a href="./publications/bb8ea994-5e82-4c4a-80aa-175c474a9e09.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/bb8ea994-5e82-4c4a-80aa-175c474a9e09.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/bb8ea994-5e82-4c4a-80aa-175c474a9e09.html" class="no-external">Gut microbiome modulates the effects of a personalised postprandial-targeting (PPT) diet on cardiometabolic markers: a diet intervention in pre-diabetes</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/bb8ea994-5e82-4c4a-80aa-175c474a9e09.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes'); return false;">
+Diabetes
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Gut'); return false;">
+Gut
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/bb8ea994-5e82-4c4a-80aa-175c474a9e09.html" class="no-external">Ben-Yacov O, Godneva A, Rein M, Shilo S, Lotan-Pompan M, Weinberger A, Segal E, <em>Gut</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/bb8ea994-5e82-4c4a-80aa-175c474a9e09.html" class="no-external">
+<div class="listing-date">
+May 3, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-categories="Microbiome,Anthropometrics,Segal lab,Nature Medicine" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1734586517395" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
+<div class="thumbnail">
+<p><a href="./publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html" class="no-external"></a></p><a href="./publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html" class="no-external">
+<p><img loading="lazy" src="./publications/9391a9da_image.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html" class="no-external">Bacterial SNPs in the human gut microbiome associate with host BMI</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Anthropometrics'); return false;">
+Anthropometrics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nature Medicine'); return false;">
+Nature Medicine
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html" class="no-external">Zahavi L, Lavon A, Reicher L, Shoer S, Godneva A, Leviatan S, Rein M, Weissbrod O, Weinberger A, Segal E, <em>Nature Medicine</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="12" data-categories="CGM,Diabetes,Segal lab,Pheno.AI,Cell Metabolism" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1734586552627" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="165">
+<div class="thumbnail">
+<p><a href="./publications/91e6897a-de37-4e4f-ac99-f07ccd6e87e0.html" class="no-external"></a></p><a href="./publications/91e6897a-de37-4e4f-ac99-f07ccd6e87e0.html" class="no-external">
+<p><img loading="lazy" src="./publications/82c84e4c_image.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/91e6897a-de37-4e4f-ac99-f07ccd6e87e0.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/91e6897a-de37-4e4f-ac99-f07ccd6e87e0.html" class="no-external">CGMap: Characterizing continuous glucose monitor data in thousands of non-diabetic individuals</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/91e6897a-de37-4e4f-ac99-f07ccd6e87e0.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('CGM'); return false;">
+CGM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes'); return false;">
+Diabetes
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pheno.AI'); return false;">
+Pheno.AI
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Cell Metabolism'); return false;">
+Cell Metabolism
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/91e6897a-de37-4e4f-ac99-f07ccd6e87e0.html" class="no-external">Keshet A, Shilo S, Godneva A, Talmor-Barkan Y, Aviv Y, Segal E, Rossman H, <em>Cell Metabolism</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/91e6897a-de37-4e4f-ac99-f07ccd6e87e0.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="13" data-categories="Microbiome,Segal lab,Nature Communications" data-listing-date-sort="1656979200000" data-listing-file-modified-sort="1734586548791" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="145">
+<div class="thumbnail">
+<p><a href="./publications/75ed7d8b-e171-4ec5-8fa6-5efe73ecc0cc.html" class="no-external"></a></p><a href="./publications/75ed7d8b-e171-4ec5-8fa6-5efe73ecc0cc.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/75ed7d8b-e171-4ec5-8fa6-5efe73ecc0cc.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/75ed7d8b-e171-4ec5-8fa6-5efe73ecc0cc.html" class="no-external">An expanded reference map of the human gut microbiome reveals hundreds of previously unknown species</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/75ed7d8b-e171-4ec5-8fa6-5efe73ecc0cc.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nature Communications'); return false;">
+Nature Communications
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/75ed7d8b-e171-4ec5-8fa6-5efe73ecc0cc.html" class="no-external">Leviatan S, Shoer S, Rothschild D, Gorodetski M, Segal E, <em>Nature Communications</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/75ed7d8b-e171-4ec5-8fa6-5efe73ecc0cc.html" class="no-external">
+<div class="listing-date">
+Jul 5, 2022
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="14" data-categories="Diabetes,Segal lab,eLife" data-listing-date-sort="1655856000000" data-listing-file-modified-sort="1734586549691" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="605">
+<div class="thumbnail">
+<p><a href="./publications/85d0fc4e-d054-44d7-93ab-e2bbb584a2c5.html" class="no-external"></a></p><a href="./publications/85d0fc4e-d054-44d7-93ab-e2bbb584a2c5.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/85d0fc4e-d054-44d7-93ab-e2bbb584a2c5.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/85d0fc4e-d054-44d7-93ab-e2bbb584a2c5.html" class="no-external">Prediction of type 2 diabetes mellitus onset using logistic regression-based scorecards</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/85d0fc4e-d054-44d7-93ab-e2bbb584a2c5.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes'); return false;">
+Diabetes
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('eLife'); return false;">
+eLife
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/85d0fc4e-d054-44d7-93ab-e2bbb584a2c5.html" class="no-external">Edlitz Y, Segal E, <em>eLife</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/85d0fc4e-d054-44d7-93ab-e2bbb584a2c5.html" class="no-external">
+<div class="listing-date">
+Jun 22, 2022
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="15" data-categories="Microbiome,Segal lab,PLoS ONE" data-listing-date-sort="1648080000000" data-listing-file-modified-sort="1734586546223" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
+<div class="thumbnail">
+<p><a href="./publications/6f8db522-12bb-4409-893d-23f4791419ce.html" class="no-external"></a></p><a href="./publications/6f8db522-12bb-4409-893d-23f4791419ce.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/6f8db522-12bb-4409-893d-23f4791419ce.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/6f8db522-12bb-4409-893d-23f4791419ce.html" class="no-external">An atlas of robust microbiome associations with phenotypic traits based on large-scale cohorts from two continents</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/6f8db522-12bb-4409-893d-23f4791419ce.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('PLoS ONE'); return false;">
+PLoS ONE
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/6f8db522-12bb-4409-893d-23f4791419ce.html" class="no-external">Rothschild D, Leviatan S, Hanemann A, Cohen Y, Weissbrod O, Segal E, <em>PLoS ONE</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/6f8db522-12bb-4409-893d-23f4791419ce.html" class="no-external">
+<div class="listing-date">
+Mar 24, 2022
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="16" data-categories="CGM,Diabetes,Nutrition,Segal lab,BMC Medicine" data-listing-date-sort="1644364800000" data-listing-file-modified-sort="1734586547063" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="638">
+<div class="thumbnail">
+<p><a href="./publications/b2e2b71f-acec-4b3e-8d9c-e9ad11ad4326.html" class="no-external"></a></p><a href="./publications/b2e2b71f-acec-4b3e-8d9c-e9ad11ad4326.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/b2e2b71f-acec-4b3e-8d9c-e9ad11ad4326.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/b2e2b71f-acec-4b3e-8d9c-e9ad11ad4326.html" class="no-external">Effects of personalized diets by prediction of glycemic responses on glycemic control and metabolic health in newly diagnosed T2DM: a randomized dietary intervention pilot trial</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/b2e2b71f-acec-4b3e-8d9c-e9ad11ad4326.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('CGM'); return false;">
+CGM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes'); return false;">
+Diabetes
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nutrition'); return false;">
+Nutrition
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('BMC Medicine'); return false;">
+BMC Medicine
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/b2e2b71f-acec-4b3e-8d9c-e9ad11ad4326.html" class="no-external">Rein M, Ben-Yacov O, Godneva A, Shilo S, Zmora N, Kolobkov D, Cohen-Dolev N, Wolf B, Kosower N, Lotan-Pompan M, Weinberger A, Halpern Z, Zelber-Sagi S, Elinav E, Segal E, <em>BMC…</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/b2e2b71f-acec-4b3e-8d9c-e9ad11ad4326.html" class="no-external">
+<div class="listing-date">
+Feb 9, 2022
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="17" data-categories="Microbiome,Diabetes,Segal lab,Diabetes Care" data-listing-date-sort="1642550400000" data-listing-file-modified-sort="1734586544335" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="558">
+<div class="thumbnail">
+<p><a href="./publications/0018b2d3-d9cc-4350-a938-aefb31f9b07f.html" class="no-external"></a></p><a href="./publications/0018b2d3-d9cc-4350-a938-aefb31f9b07f.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/0018b2d3-d9cc-4350-a938-aefb31f9b07f.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/0018b2d3-d9cc-4350-a938-aefb31f9b07f.html" class="no-external">The Gut Microbiome of Adults With Type 1 Diabetes and Its Association With the Host Glycemic Control</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/0018b2d3-d9cc-4350-a938-aefb31f9b07f.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes'); return false;">
+Diabetes
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes Care'); return false;">
+Diabetes Care
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/0018b2d3-d9cc-4350-a938-aefb31f9b07f.html" class="no-external">Shilo S, Godneva A, Rachmiel M, Korem T, Bussi Y, Kolobkov D, Karady T, Bar N, Wolf B, Glantz-Gashai Y, Cohen M, Levin N, Shehadeh N, Gruber N, Levran N, Koren S, Weinberger…<em></em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/0018b2d3-d9cc-4350-a938-aefb31f9b07f.html" class="no-external">
+<div class="listing-date">
+Jan 19, 2022
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="18" data-categories="Cardiovascular,Microbiome,Metabolomics,Segal lab,Nature Medicine" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1734586543507" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
+<div class="thumbnail">
+<p><a href="./publications/61e9a0b7-e087-4c13-b644-93062b06a9ab.html" class="no-external"></a></p><a href="./publications/61e9a0b7-e087-4c13-b644-93062b06a9ab.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/61e9a0b7-e087-4c13-b644-93062b06a9ab.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/61e9a0b7-e087-4c13-b644-93062b06a9ab.html" class="no-external">Metabolomic and microbiome profiling reveals personalized risk factors for coronary artery disease</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/61e9a0b7-e087-4c13-b644-93062b06a9ab.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Cardiovascular'); return false;">
+Cardiovascular
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Metabolomics'); return false;">
+Metabolomics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nature Medicine'); return false;">
+Nature Medicine
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/61e9a0b7-e087-4c13-b644-93062b06a9ab.html" class="no-external">Talmor-Barkan Y, Bar N, Shaul A, Shahaf N, Godneva A, Bussi Y, Lotan-Pompan M, Weinberger A, Shechter A, Chezar-Azerrad C, Arow Z, Hammer Y, Chechi K, Forslund S, Fromentin…<em></em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/61e9a0b7-e087-4c13-b644-93062b06a9ab.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2022
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="19" data-categories="Microbiome,Nutrition,Segal lab,Cell" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1734586547943" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="52">
+<div class="thumbnail">
+<p><a href="./publications/66f69cc3-2d9a-4f0c-87b6-7f29749392e6.html" class="no-external"></a></p><a href="./publications/66f69cc3-2d9a-4f0c-87b6-7f29749392e6.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/66f69cc3-2d9a-4f0c-87b6-7f29749392e6.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/66f69cc3-2d9a-4f0c-87b6-7f29749392e6.html" class="no-external">Personalized microbiome-driven effects of non-nutritive sweeteners on human glucose tolerance</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/66f69cc3-2d9a-4f0c-87b6-7f29749392e6.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nutrition'); return false;">
+Nutrition
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Cell'); return false;">
+Cell
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/66f69cc3-2d9a-4f0c-87b6-7f29749392e6.html" class="no-external">Suez J, Cohen Y, Valdés-Mas R, Mor U, Dori-Bachash M, Federici S, Zmora N, Leshem A, Heinemann M, Linevsky R, Zur M, Ben-Zeev Brik R, Bukimer A, Eliyahu-Miller S, Metz A…<em></em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/66f69cc3-2d9a-4f0c-87b6-7f29749392e6.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2022
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="20" data-categories="CGM,Cancer,Diabetes,Segal lab,BMJ Open" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1734586550587" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="305">
+<div class="thumbnail">
+<p><a href="./publications/91e207f5-5090-42c7-b84b-d6ad10589acf.html" class="no-external"></a></p><a href="./publications/91e207f5-5090-42c7-b84b-d6ad10589acf.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/91e207f5-5090-42c7-b84b-d6ad10589acf.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/91e207f5-5090-42c7-b84b-d6ad10589acf.html" class="no-external">BREAst Cancer Personalised NuTrition (BREACPNT): dietary intervention in breast cancer survivors treated with endocrine therapy - a protocol for a randomised clinical trial</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/91e207f5-5090-42c7-b84b-d6ad10589acf.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('CGM'); return false;">
+CGM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Cancer'); return false;">
+Cancer
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes'); return false;">
+Diabetes
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('BMJ Open'); return false;">
+BMJ Open
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/91e207f5-5090-42c7-b84b-d6ad10589acf.html" class="no-external">Rein M, Dadiani M, Godneva A, Bakalenik-Gavry M, Morzaev-Sulzbach D, Vachnish Y, Kolobkov D, Lotan-Pompan m, Weinberger A, Segal E, Gal-Yam E, <em>BMJ Open</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/91e207f5-5090-42c7-b84b-d6ad10589acf.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2022
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="21" data-categories="CGM,Diabetes,Nutrition,Segal lab,Diabetes Care" data-listing-date-sort="1634601600000" data-listing-file-modified-sort="1734586545375" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="606">
+<div class="thumbnail">
+<p><a href="./publications/20076cab-601f-41a8-882d-fe1cc674d6a5.html" class="no-external"></a></p><a href="./publications/20076cab-601f-41a8-882d-fe1cc674d6a5.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/20076cab-601f-41a8-882d-fe1cc674d6a5.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/20076cab-601f-41a8-882d-fe1cc674d6a5.html" class="no-external">Prediction of Personal Glycemic Responses to Food for Individuals With Type 1 Diabetes Through Integration of Clinical and Microbial Data</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/20076cab-601f-41a8-882d-fe1cc674d6a5.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('CGM'); return false;">
+CGM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes'); return false;">
+Diabetes
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nutrition'); return false;">
+Nutrition
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes Care'); return false;">
+Diabetes Care
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/20076cab-601f-41a8-882d-fe1cc674d6a5.html" class="no-external">Shilo S, Godneva A, Rachmiel M, Korem T, Kolobkov D, Karady T, Bar N, Wolf B, Glantz-Gashai Y, Cohen M, Zuckerman Levin N, Shehadeh N, Gruber N, Levran N, Koren S…<em></em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/20076cab-601f-41a8-882d-fe1cc674d6a5.html" class="no-external">
+<div class="listing-date">
+Oct 19, 2021
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="22" data-categories="Diabetes Care" data-listing-date-sort="1626998400000" data-listing-file-modified-sort="1734586541819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="593">
+<div class="thumbnail">
+<p><a href="./publications/b326aa2c-22cc-4096-afde-97ed1fd2c5d6.html" class="no-external"></a></p><a href="./publications/b326aa2c-22cc-4096-afde-97ed1fd2c5d6.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/b326aa2c-22cc-4096-afde-97ed1fd2c5d6.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/b326aa2c-22cc-4096-afde-97ed1fd2c5d6.html" class="no-external">Personalized Postprandial Glucose Response–Targeting Diet Versus Mediterranean Diet for Glycemic Control in Prediabetes</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/b326aa2c-22cc-4096-afde-97ed1fd2c5d6.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes Care'); return false;">
+Diabetes Care
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/b326aa2c-22cc-4096-afde-97ed1fd2c5d6.html" class="no-external">Ben-Yacov O, Godneva A, Rein M, Shilo S, Kolobkov D, Koren N, Cohen Dolev N, Travinsky Shmul T, Wolf B, Kosower N, Sagiv K, Lotan-Pompan M, Zmora N, Weinberger A, Elinav E…<em></em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/b326aa2c-22cc-4096-afde-97ed1fd2c5d6.html" class="no-external">
+<div class="listing-date">
+Jul 23, 2021
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="23" data-categories="Microbiome,PhIP-Seq,Nature Medicine" data-listing-date-sort="1626652800000" data-listing-file-modified-sort="1734586540963" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
+<div class="thumbnail">
+<p><a href="./publications/1215a04e-d02c-4fab-8ce7-6a4ec35781f2.html" class="no-external"></a></p><a href="./publications/1215a04e-d02c-4fab-8ce7-6a4ec35781f2.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/1215a04e-d02c-4fab-8ce7-6a4ec35781f2.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/1215a04e-d02c-4fab-8ce7-6a4ec35781f2.html" class="no-external">Population-wide diversity and stability of serum antibody epitope repertoires against human microbiota</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/1215a04e-d02c-4fab-8ce7-6a4ec35781f2.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('PhIP-Seq'); return false;">
+PhIP-Seq
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nature Medicine'); return false;">
+Nature Medicine
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/1215a04e-d02c-4fab-8ce7-6a4ec35781f2.html" class="no-external">Vogl T, Klompus S, Leviatan S, Kalka I, Weinberger A, Wijmenga C, Fu J, Zhernakova A, Weersma R, Segal E, <em>Nature Medicine</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/1215a04e-d02c-4fab-8ce7-6a4ec35781f2.html" class="no-external">
+<div class="listing-date">
+Jul 19, 2021
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="24" data-categories="Segal lab,European Journal of Epidemiology" data-listing-date-sort="1621036800000" data-listing-file-modified-sort="1734586542667" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
+<div class="thumbnail">
+<p><a href="./publications/61af5278-39ef-4363-854c-13d491f15987.html" class="no-external"></a></p><a href="./publications/61af5278-39ef-4363-854c-13d491f15987.html" class="no-external">
+<p><img loading="lazy" src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/61af5278-39ef-4363-854c-13d491f15987.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/61af5278-39ef-4363-854c-13d491f15987.html" class="no-external">10&nbsp;K: a large scale prospective longitudinal study in Israel</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/61af5278-39ef-4363-854c-13d491f15987.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('European Journal of Epidemiology'); return false;">
+European Journal of Epidemiology
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/61af5278-39ef-4363-854c-13d491f15987.html" class="no-external">Shilo S, Bar N, Keshet A, Talmor-Barkan Y, Rossman H, Godneva A, Aviv Y, Edlitz Y, Reicher L, Kolobkov D, Wolf B, Lotan-Pompan M, Levi K, Cohen O, Saranga H, Weinberger A…<em></em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/61af5278-39ef-4363-854c-13d491f15987.html" class="no-external">
+<div class="listing-date">
+May 15, 2021
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="25" data-categories="Microbiome,Metabolomics,Nature" data-listing-date-sort="1605052800000" data-listing-file-modified-sort="1734586539291" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="348">
+<div class="thumbnail">
+<p><a href="./publications/3c6bf2e4-c504-4212-89d8-58048e795319.html" class="no-external"></a></p><a href="./publications/3c6bf2e4-c504-4212-89d8-58048e795319.html" class="no-external">
+<p><img loading="lazy" data-src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/3c6bf2e4-c504-4212-89d8-58048e795319.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/3c6bf2e4-c504-4212-89d8-58048e795319.html" class="no-external">A reference map of potential determinants for the human serum metabolome</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/3c6bf2e4-c504-4212-89d8-58048e795319.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Metabolomics'); return false;">
+Metabolomics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nature'); return false;">
+Nature
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/3c6bf2e4-c504-4212-89d8-58048e795319.html" class="no-external">Bar N, Korem T, Weissbrod O, Zeevi D, Rothschild D, Leviatan S, Kosower N, Lotan-Pompan M, Weinberger A, Le Roy C, Menni C, Visconti A, Falchi M, Spector T, Vestergaard H…<em></em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/3c6bf2e4-c504-4212-89d8-58048e795319.html" class="no-external">
+<div class="listing-date">
+Nov 11, 2020
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="26" data-categories="Diabetes Technology and Therapeutics" data-listing-date-sort="1596240000000" data-listing-file-modified-sort="1734586540123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="16">
+<div class="thumbnail">
+<p><a href="./publications/94395495-9ce7-4d57-bf56-ba1a91aa4f50.html" class="no-external"></a></p><a href="./publications/94395495-9ce7-4d57-bf56-ba1a91aa4f50.html" class="no-external">
+<p><img loading="lazy" data-src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/94395495-9ce7-4d57-bf56-ba1a91aa4f50.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/94395495-9ce7-4d57-bf56-ba1a91aa4f50.html" class="no-external">Clinically Accurate Prediction of Glucose Levels in Patients with Type 1 Diabetes</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/94395495-9ce7-4d57-bf56-ba1a91aa4f50.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes Technology and Therapeutics'); return false;">
+Diabetes Technology and Therapeutics
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/94395495-9ce7-4d57-bf56-ba1a91aa4f50.html" class="no-external">Amar Y, Shilo S, Oron T, Amar E, Phillip M, Segal E, <em>Diabetes Technology and Therapeutics</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/94395495-9ce7-4d57-bf56-ba1a91aa4f50.html" class="no-external">
+<div class="listing-date">
+Aug 1, 2020
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="27" data-categories="Nature" data-listing-date-sort="1580256000000" data-listing-file-modified-sort="1734586534743" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
+<div class="thumbnail">
+<p><a href="./publications/384ddec8-c5c0-43da-9600-1ab53c7f93e0.html" class="no-external"></a></p><a href="./publications/384ddec8-c5c0-43da-9600-1ab53c7f93e0.html" class="no-external">
+<p><img loading="lazy" data-src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/384ddec8-c5c0-43da-9600-1ab53c7f93e0.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/384ddec8-c5c0-43da-9600-1ab53c7f93e0.html" class="no-external">Rich data sets could end costly drug discovery</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/384ddec8-c5c0-43da-9600-1ab53c7f93e0.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Nature'); return false;">
+Nature
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/384ddec8-c5c0-43da-9600-1ab53c7f93e0.html" class="no-external">Segal E, <em>Nature</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/384ddec8-c5c0-43da-9600-1ab53c7f93e0.html" class="no-external">
+<div class="listing-date">
+Jan 29, 2020
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="28" data-categories="Nature Medicine" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1734586535635" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+<div class="thumbnail">
+<p><a href="./publications/3db57ba3-1917-48a6-8014-85b92662213e.html" class="no-external"></a></p><a href="./publications/3db57ba3-1917-48a6-8014-85b92662213e.html" class="no-external">
+<p><img loading="lazy" data-src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/3db57ba3-1917-48a6-8014-85b92662213e.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/3db57ba3-1917-48a6-8014-85b92662213e.html" class="no-external">Axes of a revolution: challenges and promises of big data in healthcare</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/3db57ba3-1917-48a6-8014-85b92662213e.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Nature Medicine'); return false;">
+Nature Medicine
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/3db57ba3-1917-48a6-8014-85b92662213e.html" class="no-external">Shilo S, Rossman H, Segal E, <em>Nature Medicine</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/3db57ba3-1917-48a6-8014-85b92662213e.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2020
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="29" data-categories="Nature Medicine" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1734586537619" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
+<div class="thumbnail">
+<p><a href="./publications/d6c7f6b9-f967-4a10-8e66-629e400f4e42.html" class="no-external"></a></p><a href="./publications/d6c7f6b9-f967-4a10-8e66-629e400f4e42.html" class="no-external">
+<p><img loading="lazy" data-src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/d6c7f6b9-f967-4a10-8e66-629e400f4e42.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/d6c7f6b9-f967-4a10-8e66-629e400f4e42.html" class="no-external">Prediction of gestational diabetes based on nationwide electronic health records</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/d6c7f6b9-f967-4a10-8e66-629e400f4e42.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Nature Medicine'); return false;">
+Nature Medicine
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/d6c7f6b9-f967-4a10-8e66-629e400f4e42.html" class="no-external">Artzi N, Shilo S, Hadar E, Rossman H, Barbash-Hazan S, Ben-Haroush A, Balicer R, Feldman B, Wiznitzer A, Segal E, <em>Nature Medicine</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/d6c7f6b9-f967-4a10-8e66-629e400f4e42.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2020
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="30" data-categories="CGM,Diabetes,T2DM,Segal lab,BMJ Open" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1734586538443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="338">
+<div class="thumbnail">
+<p><a href="./publications/1534de69-4df4-4c1c-945b-f8385a71a998.html" class="no-external"></a></p><a href="./publications/1534de69-4df4-4c1c-945b-f8385a71a998.html" class="no-external">
+<p><img loading="lazy" data-src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/1534de69-4df4-4c1c-945b-f8385a71a998.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/1534de69-4df4-4c1c-945b-f8385a71a998.html" class="no-external">Rationale and design of a randomised controlled trial testing the effect of personalised diet in individuals with pre-diabetes or type 2 diabetes mellitus treated with metformin</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/1534de69-4df4-4c1c-945b-f8385a71a998.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('CGM'); return false;">
+CGM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes'); return false;">
+Diabetes
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('T2DM'); return false;">
+T2DM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('BMJ Open'); return false;">
+BMJ Open
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/1534de69-4df4-4c1c-945b-f8385a71a998.html" class="no-external">Htet T, Godneva A, Liu Z, Chalmers E, Kolobkov D, Snaith J, Richens R, Toth K, Danta M, Hng T, Elinav E, Segal E, Greenfield J, Samocha-Bonet D, <em>BMJ Open</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/1534de69-4df4-4c1c-945b-f8385a71a998.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2020
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="31" data-categories="Microbiome,Segal lab,Nature" data-listing-date-sort="1553644800000" data-listing-file-modified-sort="1734586533895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
+<div class="thumbnail">
+<p><a href="./publications/368fcea0-0a5d-4cb1-8bcf-cce629386ab8.html" class="no-external"></a></p><a href="./publications/368fcea0-0a5d-4cb1-8bcf-cce629386ab8.html" class="no-external">
+<p><img loading="lazy" data-src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/368fcea0-0a5d-4cb1-8bcf-cce629386ab8.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/368fcea0-0a5d-4cb1-8bcf-cce629386ab8.html" class="no-external">Structural variation in the gut microbiome associates with host health</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/368fcea0-0a5d-4cb1-8bcf-cce629386ab8.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nature'); return false;">
+Nature
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/368fcea0-0a5d-4cb1-8bcf-cce629386ab8.html" class="no-external">Zeevi D, Korem T, Godneva A, Bar N, Kurilshikov A, Lotan-Pompan M, Weinberger A, Fu J, Wijmenga C, Zhernakova A, Segal E, <em>Nature</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/368fcea0-0a5d-4cb1-8bcf-cce629386ab8.html" class="no-external">
+<div class="listing-date">
+Mar 27, 2019
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="32" data-categories="Nature Medicine" data-listing-date-sort="1546300800000" data-listing-file-modified-sort="1734586536571" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
+<div class="thumbnail">
+<p><a href="./publications/8dfba73a-865f-4071-aa95-c081252a0d95.html" class="no-external"></a></p><a href="./publications/8dfba73a-865f-4071-aa95-c081252a0d95.html" class="no-external">
+<p><img loading="lazy" data-src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/8dfba73a-865f-4071-aa95-c081252a0d95.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/8dfba73a-865f-4071-aa95-c081252a0d95.html" class="no-external">The pros, cons, and many unknowns of probiotics</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/8dfba73a-865f-4071-aa95-c081252a0d95.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Nature Medicine'); return false;">
+Nature Medicine
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/8dfba73a-865f-4071-aa95-c081252a0d95.html" class="no-external">Suez J, Zmora N, Segal E, Elinav E, <em>Nature Medicine</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/8dfba73a-865f-4071-aa95-c081252a0d95.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2019
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="33" data-categories="Microbiome,Nutrition,Segal lab,Nature" data-listing-date-sort="1519776000000" data-listing-file-modified-sort="1734586531795" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
+<div class="thumbnail">
+<p><a href="./publications/1dd59130-bc80-43ba-b3ed-25559c242a38.html" class="no-external"></a></p><a href="./publications/1dd59130-bc80-43ba-b3ed-25559c242a38.html" class="no-external">
+<p><img loading="lazy" data-src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/1dd59130-bc80-43ba-b3ed-25559c242a38.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/1dd59130-bc80-43ba-b3ed-25559c242a38.html" class="no-external">Environment dominates over host genetics in shaping human gut microbiota</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/1dd59130-bc80-43ba-b3ed-25559c242a38.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nutrition'); return false;">
+Nutrition
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nature'); return false;">
+Nature
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/1dd59130-bc80-43ba-b3ed-25559c242a38.html" class="no-external">Rothschild D, Weissbrod O, Barkan E, Kurilshikov A, Korem T, Zeevi D, Costea P, Godneva A, Kalka I, Bar N, Shilo S, Lador D, Vila A, Zmora N, Pevsner-Fischer M, Israeli D…<em></em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/1dd59130-bc80-43ba-b3ed-25559c242a38.html" class="no-external">
+<div class="listing-date">
+Feb 28, 2018
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="34" data-categories="Microbiome,Current Opinion in Microbiology" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1734586532643" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<div class="thumbnail">
+<p><a href="./publications/2a21980a-e72d-4533-9313-303678fd412e.html" class="no-external"></a></p><a href="./publications/2a21980a-e72d-4533-9313-303678fd412e.html" class="no-external">
+<p><img loading="lazy" data-src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/2a21980a-e72d-4533-9313-303678fd412e.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/2a21980a-e72d-4533-9313-303678fd412e.html" class="no-external">Host genetics and microbiome associations through the lens of genome wide association studies</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/2a21980a-e72d-4533-9313-303678fd412e.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Current Opinion in Microbiology'); return false;">
+Current Opinion in Microbiology
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/2a21980a-e72d-4533-9313-303678fd412e.html" class="no-external">Weissbrod O, Rothschild D, Barkan E, Segal E, <em>Current Opinion in Microbiology</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/2a21980a-e72d-4533-9313-303678fd412e.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2018
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="35" data-categories="CGM,Microbiome,Diabetes,Nutrition,Segal lab,Cell Metabolism" data-listing-date-sort="1483228800000" data-listing-file-modified-sort="1734586530947" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+<div class="thumbnail">
+<p><a href="./publications/4b235cf9-853f-49f0-8676-2117b7eb673a.html" class="no-external"></a></p><a href="./publications/4b235cf9-853f-49f0-8676-2117b7eb673a.html" class="no-external">
+<p><img loading="lazy" data-src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/4b235cf9-853f-49f0-8676-2117b7eb673a.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/4b235cf9-853f-49f0-8676-2117b7eb673a.html" class="no-external">Bread Affects Clinical Parameters and Induces Gut Microbiome-Associated Personal Glycemic Responses</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/4b235cf9-853f-49f0-8676-2117b7eb673a.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('CGM'); return false;">
+CGM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes'); return false;">
+Diabetes
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nutrition'); return false;">
+Nutrition
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Cell Metabolism'); return false;">
+Cell Metabolism
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/4b235cf9-853f-49f0-8676-2117b7eb673a.html" class="no-external">Korem T, Zeevi D, Zmora N, Weissbrod O, Bar N, Lotan-Pompan M, Avnit-Sagi T, Kosower N, Malka G, Rein M, Suez J, Goldberg B, Weinberger A, Levy A, Elinav E, Segal E, <em>Cell…</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/4b235cf9-853f-49f0-8676-2117b7eb673a.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2017
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="36" data-categories="CGM,Genomics,Microbiome,Nutrition,Diabetes,Segal lab,Cell" data-listing-date-sort="1420070400000" data-listing-file-modified-sort="1734586530119" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
+<div class="thumbnail">
+<p><a href="./publications/5b632df2-b422-4e49-af55-15a5feeaa9cf.html" class="no-external"></a></p><a href="./publications/5b632df2-b422-4e49-af55-15a5feeaa9cf.html" class="no-external">
+<p><img loading="lazy" data-src="./hpp_logo.png" class="thumbnail-image"></p>
+</a><p><a href="./publications/5b632df2-b422-4e49-af55-15a5feeaa9cf.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./publications/5b632df2-b422-4e49-af55-15a5feeaa9cf.html" class="no-external">Personalized Nutrition by Prediction of Glycemic Responses</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./publications/5b632df2-b422-4e49-af55-15a5feeaa9cf.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('CGM'); return false;">
+CGM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Genomics'); return false;">
+Genomics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Microbiome'); return false;">
+Microbiome
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Nutrition'); return false;">
+Nutrition
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Diabetes'); return false;">
+Diabetes
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Segal lab'); return false;">
+Segal lab
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Cell'); return false;">
+Cell
+</div>
+</div>
+<div class="listing-description">
+<a href="./publications/5b632df2-b422-4e49-af55-15a5feeaa9cf.html" class="no-external">Zeevi D, Korem T, Zmora N, Israeli D, Rothschild D, Weinberger A, Ben-Yacov O, Lador D, Avnit-Sagi T, Lotan-Pompan M, Suez J, Mahdi J, Matot E, Malka G, Kosower N, Rein M…<em></em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./publications/5b632df2-b422-4e49-af55-15a5feeaa9cf.html" class="no-external">
+<div class="listing-date">
+Jan 1, 2015
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
