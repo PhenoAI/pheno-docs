@@ -169,7 +169,7 @@ def process_publication(row: pd.Series, notion_token: str=None):
 
     # Extract first image if present
     image_match = re.search(r'!\[.*?\]\((.*?)\)', content)
-    image_path = image_match.group(1) if image_match else '../hpp_logo.png'
+    image_path = f'image: {image_match.group(1)}' if image_match else ''
     
     # Clean journal name by removing trailing periods
     journal_name = row['Journal'].rstrip('.') if isinstance(row['Journal'], str) else ''
@@ -186,7 +186,7 @@ def process_publication(row: pd.Series, notion_token: str=None):
 title: "{row['Title']}"
 date: "{pub_date if pub_date else row['Year']}"
 link: {weblink}
-image: {image_path}
+{image_path}
 categories:
 {chr(10).join(f'  - "{cat}"' for cat in categories)}
 ---

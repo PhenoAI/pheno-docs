@@ -2,7 +2,7 @@
 title: "An expanded reference map of the human gut microbiome reveals hundreds of previously unknown species"
 date: "2022-07-05"
 link: http://dx.doi.org/10.1038/s41467-022-31502-1
-image: ../hpp_logo.png
+
 categories:
   - "Microbiome"
   - "Segal lab"

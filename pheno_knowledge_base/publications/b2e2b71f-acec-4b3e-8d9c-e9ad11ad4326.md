@@ -2,7 +2,7 @@
 title: "Effects of personalized diets by prediction of glycemic responses on glycemic control and metabolic health in newly diagnosed T2DM: a randomized dietary intervention pilot trial"
 date: "2022-02-09"
 link: http://dx.doi.org/10.1186/s12916-022-02254-y
-image: ../hpp_logo.png
+
 categories:
   - "CGM"
   - "Diabetes"
