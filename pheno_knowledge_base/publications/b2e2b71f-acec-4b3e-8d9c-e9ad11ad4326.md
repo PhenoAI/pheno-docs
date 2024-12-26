@@ -9,6 +9,7 @@ categories:
   - "Nutrition"
   - "Segal lab"
   - "BMC Medicine"
+  - "2022"
 ---
 
 Rein M, Ben-Yacov O, Godneva A, Shilo S, Zmora N, Kolobkov D, Cohen-Dolev N, Wolf B, Kosower N, Lotan-Pompan M, Weinberger A, Halpern Z, Zelber-Sagi S, Elinav E, Segal E, [*BMC Medicine*](http://dx.doi.org/10.1186/s12916-022-02254-y)

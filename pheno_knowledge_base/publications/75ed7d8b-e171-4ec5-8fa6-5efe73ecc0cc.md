@@ -7,6 +7,7 @@ categories:
   - "Microbiome"
   - "Segal lab"
   - "Nature Communications"
+  - "2022"
 ---
 
 Leviatan S, Shoer S, Rothschild D, Gorodetski M, Segal E, [*Nature Communications*](http://dx.doi.org/10.1038/s41467-022-31502-1)

@@ -8,6 +8,7 @@ categories:
   - "Anthropometrics"
   - "Segal lab"
   - "Nature Medicine"
+  - "2023"
 ---
 
 Zahavi L, Lavon A, Reicher L, Shoer S, Godneva A, Leviatan S, Rein M, Weissbrod O, Weinberger A, Segal E, [*Nature Medicine*](http://dx.doi.org/10.1038/s41591-023-02599-8)

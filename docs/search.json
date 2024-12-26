@@ -112,6 +112,83 @@
     "text": "Artzi N, Shilo S, Hadar E, Rossman H, Barbash-Hazan S, Ben-Haroush A, Balicer R, Feldman B, Wiznitzer A, Segal E, Nature Medicine"
   },
   {
+    "objectID": "publications/384ddec8-c5c0-43da-9600-1ab53c7f93e0.html",
+    "href": "publications/384ddec8-c5c0-43da-9600-1ab53c7f93e0.html",
+    "title": "Rich data sets could end costly drug discovery",
+    "section": "",
+    "text": "Segal E, Nature"
+  },
+  {
+    "objectID": "publications/2a21980a-e72d-4533-9313-303678fd412e.html",
+    "href": "publications/2a21980a-e72d-4533-9313-303678fd412e.html",
+    "title": "Host genetics and microbiome associations through the lens of genome wide association studies",
+    "section": "",
+    "text": "Weissbrod O, Rothschild D, Barkan E, Segal E, Current Opinion in Microbiology"
+  },
+  {
+    "objectID": "publications/4b235cf9-853f-49f0-8676-2117b7eb673a.html",
+    "href": "publications/4b235cf9-853f-49f0-8676-2117b7eb673a.html",
+    "title": "Bread Affects Clinical Parameters and Induces Gut Microbiome-Associated Personal Glycemic Responses",
+    "section": "",
+    "text": "Korem T, Zeevi D, Zmora N, Weissbrod O, Bar N, Lotan-Pompan M, Avnit-Sagi T, Kosower N, Malka G, Rein M, Suez J, Goldberg B, Weinberger A, Levy A, Elinav E, Segal E, Cell Metabolism"
+  },
+  {
+    "objectID": "publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html",
+    "href": "publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html",
+    "title": "From Glucose Patterns to Health Outcomes: A Generalizable Foundation Model for Continuous Glucose Monitor Data Analysis",
+    "section": "",
+    "text": "Lutsker G, Sapir G, Godneva A, Shilo S, Greenfield J, Samocha-Bonet D, Mannor S, Meirom E, Chechik G, Rossman H, Segal E, arxiv"
+  },
+  {
+    "objectID": "publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html#paper-summary",
+    "href": "publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html#paper-summary",
+    "title": "From Glucose Patterns to Health Outcomes: A Generalizable Foundation Model for Continuous Glucose Monitor Data Analysis",
+    "section": "Paper summary",
+    "text": "Paper summary\nThe paper describes the GluFormer model that was developed based on CGM data from 10,812 non-diabetic individuals from the HPP dataset. The AI model is from the class of transformer-based generative models, similar to ChatGPT (GPT = Generative, Pretrained, Transformer). For each glucose measurement, it provides a prediction for the next point in time. The model offers insights into metabolic health, predicting health outcomes 4 years in advance, outperforming state-of-the-art CGM analysis tools. It can be used for different downstream tasks, for example to forecast outcomes of clinical trials or to simulate glucose response to diet.\n\n\n\nimage"
+  },
+  {
+    "objectID": "publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html",
+    "href": "publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html",
+    "title": "A Multimodal Dataset of 21,412 Recorded Nights for Sleep and Respiratory Research",
+    "section": "",
+    "text": "Diament A, Gorodetski M, Jankelow A, Keshet A, Shor T, Weissglas-Volkov D, Rossman H, Segal E, ML4H (arXiv)"
+  },
+  {
+    "objectID": "publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html#paper-summary",
+    "href": "publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html#paper-summary",
+    "title": "A Multimodal Dataset of 21,412 Recorded Nights for Sleep and Respiratory Research",
+    "section": "Paper summary",
+    "text": "Paper summary\nThis study introduces a novel, rich dataset obtained from home sleep apnea tests using the FDA-approved WatchPAT-300 device, collected from 7,077 participants over 21,412 nights. The dataset comprises three levels of sleep data: raw multi-channel time-series from sensors, annotated sleep events, and computed summary statistics, which include 447 features related to sleep architecture, sleep apnea, and heart rate variability (HRV). We present reference values for Apnea/Hypopnea Index (AHI), sleep efficiency, Wake After Sleep Onset (WASO), and HRV sample entropy, stratified by age and sex. Moreover, we demonstrate that the dataset improves the predictive capability for various health related traits, including body composition, bone density, blood sugar levels and cardiovascular health. These results illustrate the dataset’s potential to advance sleep research, personalized healthcare, and machine learning applications in biomedicine."
+  },
+  {
+    "objectID": "publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html",
+    "href": "publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html",
+    "title": "Phenome-wide associations of human aging uncover sex-specific dynamics",
+    "section": "",
+    "text": "Reicher L, Bar N, Godneva A, Reisner Y, Zahavi L, Shahaf N, Dhir R, Weinberger A, Segal E, Nature Aging"
+  },
+  {
+    "objectID": "publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html#paper-summary",
+    "href": "publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html#paper-summary",
+    "title": "Phenome-wide associations of human aging uncover sex-specific dynamics",
+    "section": "Paper summary",
+    "text": "Paper summary\n\nTL;DR Summary\n💡\n- Researchers used data from the Human Phenotype Project to create sex-specific biological age (BA) models. \n\n- Findings showed that biological systems age differently between sexes; BA models based on bone density and cardiovascular markers performed better in women, potentially due effects of menopause.\n\n- This study supports personalized prevention strategies, emphasizing the need for sex-specific interventions in aging.\n\n\nFull Summary\nThis study analyzed data from the Human Phenotype Project - a deeply phenotyped cohort of 10,000 individuals aged 40-70 years to develop biological age (BA) models that reveal distinct aging patterns across various physiological systems.\nBy leveraging multiomic, clinical, and environmental data collected in the Human Phenotype Project, the researchers devised sex-specific machine learning models to estimate BA and its relationship to age-related diseases. The findings revealed notable differences in aging dynamics between males and females, with distinct BA scores correlating with age-related health conditions. Notably, BA scores provided insights into sex-specific risks, such as a higher incidence of osteoporosis in aging women, emphasizing the potential role of menopause in accelerating certain aging processes.\nThe study also highlighted that biological systems age differently between men and women, as evidenced by the variability of biological aging models based on bone density, blood lipids, and cardiovascular function. These models demonstrated better performance among women, potentially reflecting the effects of menopause. The research underscores the significance of considering sex as a biological variable in aging studies and its impact on clinical outcomes. These findings offer a holistic view of aging, which can drive personalized medical prevention strategies and the development of sex-specific interventions to mitigate the impact of aging-related diseases, ultimately contributing to healthier aging.\n\n\n\nimage"
+  },
+  {
+    "objectID": "publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html",
+    "href": "publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html",
+    "title": "Bacterial SNPs in the human gut microbiome associate with host BMI",
+    "section": "",
+    "text": "Zahavi L, Lavon A, Reicher L, Shoer S, Godneva A, Leviatan S, Rein M, Weissbrod O, Weinberger A, Segal E, Nature Medicine"
+  },
+  {
+    "objectID": "publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html#paper-summary",
+    "href": "publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html#paper-summary",
+    "title": "Bacterial SNPs in the human gut microbiome associate with host BMI",
+    "section": "Paper summary",
+    "text": "Paper summary\nGenome-wide association studies (GWASs) have provided numerous associations between human single-nucleotide polymorphisms (SNPs) and health traits. Likewise, metagenome-wide association studies (MWASs) between bacterial SNPs and human traits can suggest mechanistic links, but very few such studies have been done thus far. In this study, we devised an MWAS framework to detect SNPs and associate them with host phenotypes systematically. We recruited and obtained gut metagenomic samples from a cohort of 7,190 healthy individuals and discovered 1,358 statistically significant associations between a bacterial SNP and host body mass index (BMI), from which we distilled 40 independent associations. Most of these associations were unexplained by diet, medications or physical exercise, and 17 replicated in a geographically independent cohort. We uncovered BMI-associated SNPs in 27 bacterial species, and 12 of them showed no association by standard relative abundance analysis. We revealed a BMI association of an SNP in a potentially inflammatory pathway of Bilophila wadsworthia as well as of a group of SNPs in a region coding for energy metabolism functions in a Faecalibacterium prausnitzii genome. Our results demonstrate the importance of considering nucleotide-level diversity in microbiome studies and pave the way toward improved understanding of interpersonal microbiome differences and their potential health implications.\n\n\n\nimage"
+  },
+  {
     "objectID": "publications/3db57ba3-1917-48a6-8014-85b92662213e.html",
     "href": "publications/3db57ba3-1917-48a6-8014-85b92662213e.html",
     "title": "Axes of a revolution: challenges and promises of big data in healthcare",
@@ -119,112 +196,177 @@
     "text": "Shilo S, Rossman H, Segal E, Nature Medicine"
   },
   {
-    "objectID": "publications/368fcea0-0a5d-4cb1-8bcf-cce629386ab8.html",
-    "href": "publications/368fcea0-0a5d-4cb1-8bcf-cce629386ab8.html",
-    "title": "Structural variation in the gut microbiome associates with host health",
-    "section": "",
-    "text": "Zeevi D, Korem T, Godneva A, Bar N, Kurilshikov A, Lotan-Pompan M, Weinberger A, Fu J, Wijmenga C, Zhernakova A, Segal E, Nature"
-  },
-  {
-    "objectID": "publications/1dd59130-bc80-43ba-b3ed-25559c242a38.html",
-    "href": "publications/1dd59130-bc80-43ba-b3ed-25559c242a38.html",
-    "title": "Environment dominates over host genetics in shaping human gut microbiota",
-    "section": "",
-    "text": "Rothschild D, Weissbrod O, Barkan E, Kurilshikov A, Korem T, Zeevi D, Costea P, Godneva A, Kalka I, Bar N, Shilo S, Lador D, Vila A, Zmora N, Pevsner-Fischer M, Israeli D, Kosower N, Malka G, Wolf B, Avnit-Sagi T, Lotan-Pompan M, Weinberger A, Halpern Z, Carmi S, Fu J, Wijmenga C, Zhernakova A, Elinav E, Segal E, Nature"
-  },
-  {
-    "objectID": "publications/5b632df2-b422-4e49-af55-15a5feeaa9cf.html",
-    "href": "publications/5b632df2-b422-4e49-af55-15a5feeaa9cf.html",
-    "title": "Personalized Nutrition by Prediction of Glycemic Responses",
-    "section": "",
-    "text": "Zeevi D, Korem T, Zmora N, Israeli D, Rothschild D, Weinberger A, Ben-Yacov O, Lador D, Avnit-Sagi T, Lotan-Pompan M, Suez J, Mahdi J, Matot E, Malka G, Kosower N, Rein M, Zilberman-Schapira G, Dohnalová L, Pevsner-Fischer M, Bikovsky R, Halpern Z, Elinav E, Segal E, Cell"
-  },
-  {
-    "objectID": "publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html",
-    "href": "publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html",
-    "title": "Pangenomes of human gut microbiota uncover links between genetic diversity and stress response",
-    "section": "",
-    "text": "Shoer S, Reicher L, Zhao C, Pollard K, Pilpel Y, Segal E, Cell Host & Microbe"
-  },
-  {
-    "objectID": "publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html#paper-summary",
-    "href": "publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html#paper-summary",
-    "title": "Pangenomes of human gut microbiota uncover links between genetic diversity and stress response",
+    "objectID": "publications/3db57ba3-1917-48a6-8014-85b92662213e.html#paper-summary",
+    "href": "publications/3db57ba3-1917-48a6-8014-85b92662213e.html#paper-summary",
+    "title": "Axes of a revolution: challenges and promises of big data in healthcare",
     "section": "Paper summary",
-    "text": "Paper summary\nThe genetic diversity of the gut microbiota has a central role in host health. Here, we created pangenomes for 728 human gut prokaryotic species, quadrupling the genes of strain-specific genomes. Each of these species has a core set of a thousand genes, differing even between closely related species, and an accessory set of genes unique to the different strains. Functional analysis shows high strain variability associates with sporulation, whereas low variability is linked with antibiotic resistance. We further map the antibiotic resistome across the human gut population and find 237 cases of extreme resistance even to last-resort antibiotics, with a predominance among Enterobacteriaceae. Lastly, the presence of specific genes in the microbiota relates to host age and sex. Our study underscores the genetic complexity of the human gut microbiota, emphasizing its significant implications for host health. The pangenomes and antibiotic resistance map constitute a valuable resource for further research.\n\n\n\nimage"
+    "text": "Paper summary\nHealth data are increasingly being generated at a massive scale, at various levels of phenotyping and from different types of resources. Concurrent with recent technological advances in both data-generation infrastructure and data-analysis methodologies, there have been many claims that these events will revolutionize healthcare, but such claims are still a matter of debate. Addressing the potential and challenges of big data in healthcare requires an understanding of the characteristics of the data. Here we characterize various properties of medical data, which we refer to as ‘axes’ of data, describe the considerations and tradeoffs taken when such data are generated, and the types of analyses that may achieve the tasks at hand. We then broadly describe the potential and challenges of using big data in healthcare resources, aiming to contribute to the ongoing discussion of the potential of big data resources to advance the understanding of health and disease.\n\n\n\nimage"
   },
   {
-    "objectID": "publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html",
-    "href": "publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html",
-    "title": "Identification of gut microbiome features associated with host metabolic health in a large population-based cohort",
+    "objectID": "platform_tutorial.html",
+    "href": "platform_tutorial.html",
+    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
     "section": "",
-    "text": "Keshet A, Segal E, Nature Communications"
-  },
-  {
-    "objectID": "publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html#paper-summary",
-    "href": "publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html#paper-summary",
-    "title": "Identification of gut microbiome features associated with host metabolic health in a large population-based cohort",
-    "section": "Paper summary",
-    "text": "Paper summary\n\nThis paper examines the relationship between gut microbiome and Host metabolic health.\nMicrobiome data was analyzed on a functional level - examining microbial gene families and metabolic pathways that are contributed by the entire gut microbiome community.\nFor host metabolic health 38 measures were examined - from CGM, DXA and liver US.\nSignificant associations were uncovered between microbial gene families and pathways and host metabolic health. Many significant associations were observed specifically for body composition measures.\nVariability was found in the number of species and genera contributing to the abundance of the associated gene families and pathways - suggesting that the discovered associations do not represent a unique species or genera but an association with a community level functionality.\nMost of the associations remained unchanged when adjusting for nutritional information for diet logging, with CGM within-day variability measures most affected with a reduction in the amount of significant associations.\nAssociations with BMI were replicated in an external cohort of Dutch microbiome.\nThis results could pave the way for future research on the relation between microbiome and host metabolic health, and perhaps to the development of microbiome based therapeutics."
-  },
-  {
-    "objectID": "publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html",
-    "href": "publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html",
-    "title": "Sex-specific dietary habits and their association with weight change in healthy adults",
-    "section": "",
-    "text": "Rein M, Elkan M, Godneva A, Dolev N, Segal E, BMC Medicine"
-  },
-  {
-    "objectID": "publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html#paper-summary",
-    "href": "publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html#paper-summary",
-    "title": "Sex-specific dietary habits and their association with weight change in healthy adults",
-    "section": "Paper summary",
-    "text": "Paper summary\nThe study leverages a unique dataset to explore the relationship between diet and obesity management, focusing on gender-specific dietary impacts.\nThe study analyzed how different food categories influence body mass index (BMI) at baseline and weight change over time.\nThe authors discovered that dietary habits and their effects on weight management vary significantly by sex. In men, weight loss was associated with increased intake of animal-based proteins, whereas in women, it correlated with a higher consumption of plant-based fats. These findings suggest that personalized dietary interventions considering gender-specific needs could enhance obesity management effectiveness. This research underscores the value of our detailed diet logging data in developing targeted nutritional strategies.\n\n\n\nimage"
-  },
-  {
-    "objectID": "publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html",
-    "href": "publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html",
-    "title": "COMPRER: A Multimodal Multi-Objective Pretraining Framework for Enhanced Medical Image Representation",
-    "section": "",
-    "text": "Lutsker G, Rossman H, Godneva N, Segal E, medRxiv\n{Replace content here with relevant information, and please try to fill in as many properties as possible}"
-  },
-  {
-    "objectID": "publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html#paper-summary-optional",
-    "href": "publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html#paper-summary-optional",
-    "title": "COMPRER: A Multimodal Multi-Objective Pretraining Framework for Enhanced Medical Image Representation",
-    "section": "Paper summary {OPTIONAL}",
-    "text": "Paper summary {OPTIONAL}\nThis should be a short summary that is more directed towards DS customers. Potentially, to include some technical details that were excluded from the business summary."
-  },
-  {
-    "objectID": "datasets_description.html",
-    "href": "datasets_description.html",
-    "title": "Pheno.AI",
-    "section": "",
-    "text": "Population - Year of birth, month of birth, sex, study ID.\nEvents - Birth month/year, age at research stage, sex, follow-up information, visit dates, and locations.\nAnthropometrics - Individual body measurement records.\nFundus - Image files, segmented images of vessels, veins, arteries, and summary statistics.\nLiver Ultrasound - Derived measures such as viscosity and elasticity, auxiliary data, and aggregated data.\nDiet Logging - Food logging per participant, including all macronutrients.\nHand Grip - Hand and finger grip strength measurements.\nBlood Pressure - Blood pressure measurements.\nSerum Lipidomics - Lipid annotations from blood tests.\nSleep - Sleep staging, body positioning, respiratory events, heart rate, oxygen saturation, and snoring.\nPeripheral Vascular Health - ABI and PWV measurements.\nBody Composition - Measurements of fat and lean mass, VAT/SAT area, mass, and volume.\nCarotid Ultrasound - Intima Media Thickness measurements.\nGut Microbiome - Gut microbiome sequencing and QC statistics, Segal Lab relative abundance, MetaPhlAn 4 relative abundances.\nHuman Genetics - Sample metadata, QC statistics, principal components and principal component loadings calculated, IBS calculated by PLINK for pairs of participants, King kinship coefficients for pairs of participants.\nECG - ECG waveform signal, machine-generated tabular features.\nBlood Tests - Participant’s blood tests.\nCGM - Temporal glucose measures, summary and daily summary features.\nMedications - Consumed medications for each participant.\nMedical Conditions - Binary information on medical conditions per participant.\nBone Density - Measurements of mineral content, age, and sex-normalized values.\nUKBB Questionnaire - Adapted UK Biobank questionnaire.\nUKBB Follow-up Questionnaire - Short version of the UKBB survey.\nIBS Questionnaire - Adapted UK Biobank GI health questionnaire.\nCOVID Questionnaire - Questions on COVID-19 vaccinations and diagnosis.",
+    "text": "Trusted Research Environment (TRE) is a cloud solution that provides secure access to data, tooling, and compute power that researchers need. Researchers can focus on achieving research missions and completing essential work in minutes in a trusted research environment.",
     "crumbs": [
       "Home",
-      "Datasets",
-      "Datasets Description"
+      "Getting Started"
     ]
   },
   {
-    "objectID": "datasets_description.html#datasets-description",
-    "href": "datasets_description.html#datasets-description",
-    "title": "Pheno.AI",
-    "section": "",
-    "text": "Population - Year of birth, month of birth, sex, study ID.\nEvents - Birth month/year, age at research stage, sex, follow-up information, visit dates, and locations.\nAnthropometrics - Individual body measurement records.\nFundus - Image files, segmented images of vessels, veins, arteries, and summary statistics.\nLiver Ultrasound - Derived measures such as viscosity and elasticity, auxiliary data, and aggregated data.\nDiet Logging - Food logging per participant, including all macronutrients.\nHand Grip - Hand and finger grip strength measurements.\nBlood Pressure - Blood pressure measurements.\nSerum Lipidomics - Lipid annotations from blood tests.\nSleep - Sleep staging, body positioning, respiratory events, heart rate, oxygen saturation, and snoring.\nPeripheral Vascular Health - ABI and PWV measurements.\nBody Composition - Measurements of fat and lean mass, VAT/SAT area, mass, and volume.\nCarotid Ultrasound - Intima Media Thickness measurements.\nGut Microbiome - Gut microbiome sequencing and QC statistics, Segal Lab relative abundance, MetaPhlAn 4 relative abundances.\nHuman Genetics - Sample metadata, QC statistics, principal components and principal component loadings calculated, IBS calculated by PLINK for pairs of participants, King kinship coefficients for pairs of participants.\nECG - ECG waveform signal, machine-generated tabular features.\nBlood Tests - Participant’s blood tests.\nCGM - Temporal glucose measures, summary and daily summary features.\nMedications - Consumed medications for each participant.\nMedical Conditions - Binary information on medical conditions per participant.\nBone Density - Measurements of mineral content, age, and sex-normalized values.\nUKBB Questionnaire - Adapted UK Biobank questionnaire.\nUKBB Follow-up Questionnaire - Short version of the UKBB survey.\nIBS Questionnaire - Adapted UK Biobank GI health questionnaire.\nCOVID Questionnaire - Questions on COVID-19 vaccinations and diagnosis.",
+    "objectID": "platform_tutorial.html#sign-up",
+    "href": "platform_tutorial.html#sign-up",
+    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
+    "section": "Sign Up",
+    "text": "Sign Up\nUse this section if this is your first time connecting to the system.\n\nOpen your browser and navigate to TRE URL.\nClick on the Sign up link.\n\n\n\nFill out your Username (email address), Name, Family name and pick a Password.\n\n\n\nClick the Sign up button.",
     "crumbs": [
       "Home",
-      "Datasets",
-      "Datasets Description"
+      "Getting Started"
     ]
   },
   {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
+    "objectID": "platform_tutorial.html#login",
+    "href": "platform_tutorial.html#login",
+    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
+    "section": "Login",
+    "text": "Login\n\nOpen your browser and navigate to TRE URL.\nType in your Username (the email you used to sign up) and your Password.\nClick the Sign In button.",
+    "crumbs": [
+      "Home",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "platform_tutorial.html#user-interface",
+    "href": "platform_tutorial.html#user-interface",
+    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
+    "section": "User Interface",
+    "text": "User Interface\n\nDashboard - Displays AWS charges over the past 30 days\nSSH Keys - SSH Keys for EC2 authorization\nWorkspaces - The combination of a study with a compute",
+    "crumbs": [
+      "Home",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "platform_tutorial.html#personal-study",
+    "href": "platform_tutorial.html#personal-study",
+    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
+    "section": "Personal Study",
+    "text": "Personal Study\n\nClick on Create Study \nFill up all the fields and press Create Study myStudy for personal and Organziation study for Org Studies \nStudy Created and ready to use",
+    "crumbs": [
+      "Home",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "platform_tutorial.html#organizational-study",
+    "href": "platform_tutorial.html#organizational-study",
+    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
+    "section": "Organizational Study",
+    "text": "Organizational Study",
+    "crumbs": [
+      "Home",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "platform_tutorial.html#launching-a-new-research-environment",
+    "href": "platform_tutorial.html#launching-a-new-research-environment",
+    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
+    "section": "Launching a new Research Environment",
+    "text": "Launching a new Research Environment\nA user can select a Study or multiple Studies and launch a Workspace to access and analyze data. To launch a Research Environment, follow these steps:\n\nIn the portal navigate to the Studies page using the menu on the left.\nSelect the Studies to be attached to the new Workspace.\nOnce you have selected all the Studies you want, click the Next button.\n\n\n\nChoose the type of Workspace you want and click the Next button.\n\n\n\nFill in the Workspace Name field.\nSelect your project in the Project ID drop down field.\nSelect the Configuration type according to your needs.\nType a description for the Workspace in the Description field.\nClick the Create Research Workspace button.\n\n \nThis will deploy the new Workspace and attach the Studies that were selected.\nYou will automatically be redirected to the Workspaces tab on the portal.\nWait for the workspace to be Available.",
+    "crumbs": [
+      "Home",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "platform_tutorial.html#connecting-to-ec2",
+    "href": "platform_tutorial.html#connecting-to-ec2",
+    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
+    "section": "Connecting to EC2",
+    "text": "Connecting to EC2\n\nIn the portal navigate to the Workspaces page using the menu on the left.\nClick on the Connections button, below the Workspace name.",
+    "crumbs": [
+      "Home",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "platform_tutorial.html#connecting-to-an-existing-research-environment",
+    "href": "platform_tutorial.html#connecting-to-an-existing-research-environment",
+    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
+    "section": "Connecting to an Existing Research Environment",
+    "text": "Connecting to an Existing Research Environment\n\nIn the portal navigate to the Workspaces page using the menu on the left.\nClick on the Connections button, below the Workspace name.\n\n\n\nClick on the Generate URL button on the right, under HTTP Connections.\nClick Connect.\n\n\n\nWait for the system to load.\n\n\nIt will now open the browser with the data and the tools to start working. It will open in Firefox automatically if the workspace created in a Notebook, or Remmina Client(Remote) in case it created in EC2. So you can do the following:",
+    "crumbs": [
+      "Home",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "platform_tutorial.html#installing-python-packages",
+    "href": "platform_tutorial.html#installing-python-packages",
+    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
+    "section": "Installing Python Packages",
+    "text": "Installing Python Packages\n\nConnect to the Research Environment and open your Jupyter Notebook (See: Connect to an Existing Research Environment)\nClick on Open JupyterLab on the top right.\n\n 3. Open a new Jupyter notebook.\n\n\nInside the one of the notebook cells, type !pip3 install &lt;package name&gt;.\n\n\nFor any questions or help please contact: support@pheno.ai",
+    "crumbs": [
+      "Home",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "platform_tutorial.html#attach-files-to-a-research-environment",
+    "href": "platform_tutorial.html#attach-files-to-a-research-environment",
+    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
+    "section": "Attach Files to a Research Environment",
+    "text": "Attach Files to a Research Environment\n\nNavigate to the Studies page using the menu on the left.\nFind the Study you want to attach files to and click Upload Files on the right.\nYou can upload files either by dragging and dropping, or by clicking the Upload Files or Upload Folder button.",
+    "crumbs": [
+      "Home",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "platform_tutorial.html#collaborating-and-sharing-data-between-environments",
+    "href": "platform_tutorial.html#collaborating-and-sharing-data-between-environments",
+    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
+    "section": "Collaborating and Sharing Data Between Environments",
+    "text": "Collaborating and Sharing Data Between Environments\nTo share code with peers, make sure to include a common organizational Study when creating your workspace.\nInside the workspace, the shared folder will be located at /home/ec2-user/studies/&lt;study name&gt;.\nIn Jupyter’s file explorer, this will be under studies/&lt;study name&gt;.\nFiles included in this folder will be shared with researchers in your Organization.\nWhen saving code and temporary data, we recommend saving code in outside of the studies folder, and only move them to the shared folder once you’de like to share amongst your peers.",
+    "crumbs": [
+      "Home",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "platform_tutorial.html#terminating-a-research-environment",
+    "href": "platform_tutorial.html#terminating-a-research-environment",
+    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
+    "section": "Terminating a Research Environment",
+    "text": "Terminating a Research Environment\nWhen you no longer need a Research Environment you can terminate it. Follow these steps:\n\nIn the portal navigate to the Workspaces page using the menu on the left.\nIn the list of Workspaces, find the Workspace that you want to terminate.\nClick on the Terminate button, the Workspace must be in the Ready state to terminate it.",
+    "crumbs": [
+      "Home",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "platform_tutorial.html#docker-usage",
+    "href": "platform_tutorial.html#docker-usage",
+    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
+    "section": "Docker usage",
+    "text": "Docker usage\n\nDocker pull\ndocker registry: https://gallery.ecr.aws/\nUse the following code docker pull \\&lt;accountID\\&gt;.dkr.ecr.\\&lt;aws-region\\&gt;.amazonaws.com/ecr-public/\\&lt;Change to your library\\&gt; \n\n\nDocker run\nUse the image you have under docker image ls\ne.g docker run -it --rm \\&lt;accountID\\&gt;.dkr.ecr.\\&lt;aws-region\\&gt;.amazonaws.com/ecr-public/docker/library/alpine:edge",
+    "crumbs": [
+      "Home",
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "datasets.html",
+    "href": "datasets.html",
+    "title": "Pheno.AI",
     "section": "",
-    "text": "Sex-specific dietary habits and their association with weight change in healthy adults\n\n\n\n\n\n\nNutrition\n\n\nAnthropometrics\n\n\nobesity\n\n\nSegal lab\n\n\nBMC Medicine\n\n\n\n\n\n\n\n\n\nNov 6, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPhenome-wide associations of human aging uncover sex-specific dynamics\n\n\n\n\n\n\nAging\n\n\nSegal lab\n\n\nPheno.AI\n\n\nNature Aging\n\n\n\n\n\n\n\n\n\nNov 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nIdentification of gut microbiome features associated with host metabolic health in a large population-based cohort\n\n\n\n\n\n\nMicrobiome\n\n\nSegal lab\n\n\nPheno.AI\n\n\nNature Communications\n\n\n\n\n\n\n\n\n\nOct 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Glucose Patterns to Health Outcomes: A Generalizable Foundation Model for Continuous Glucose Monitor Data Analysis\n\n\n\n\n\n\nCGM\n\n\nSSL\n\n\nDiabetes\n\n\nNutrition\n\n\nSegal lab\n\n\nPheno.AI\n\n\narxiv\n\n\n\n\n\n\n\n\n\nAug 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nContinuous glucose monitoring and intrapersonal variability in fasting glucose\n\n\n\n\n\n\nCGM\n\n\nDiabetes\n\n\nSegal lab\n\n\nPheno.AI\n\n\nNature Medicine\n\n\n\n\n\n\n\n\n\nApr 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nCOMPRER: A Multimodal Multi-Objective Pretraining Framework for Enhanced Medical Image Representation\n\n\n\n\n\n\nSSL\n\n\nFundus\n\n\nCardiovascular\n\n\nPheno.AI\n\n\nSegal lab\n\n\nmedRxiv\n\n\n\n\n\n\n\n\n\nMar 18, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPangenomes of human gut microbiota uncover links between genetic diversity and stress response\n\n\n\n\n\n\nMicrobiome\n\n\nStress\n\n\nGenomics\n\n\nSegal lab\n\n\nCell Host & Microbe\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nGenome-wide association studies and polygenic risk score phenome-wide association studies across complex phenotypes in the human phenotype project\n\n\n\n\n\n\nGenomics\n\n\nSleep\n\n\nSegal lab\n\n\nPheno.AI\n\n\nMed\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nA Multimodal Dataset of 21,412 Recorded Nights for Sleep and Respiratory Research\n\n\n\n\n\n\nSleep\n\n\nPheno.AI\n\n\nSegal lab\n\n\nML4H (arXiv)\n\n\n\n\n\n\n\n\n\nNov 15, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nImpact of dietary interventions on pre-diabetic oral and gut microbiome, metabolites and cytokines\n\n\n\n\n\n\nDiabetes\n\n\nMicrobiome\n\n\nSegal lab\n\n\nNature Communications\n\n\n\n\n\n\n\n\n\nSep 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nGut microbiome modulates the effects of a personalised postprandial-targeting (PPT) diet on cardiometabolic markers: a diet intervention in pre-diabetes\n\n\n\n\n\n\nDiabetes\n\n\nMicrobiome\n\n\nSegal lab\n\n\nGut\n\n\n\n\n\n\n\n\n\nMay 3, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nBacterial SNPs in the human gut microbiome associate with host BMI\n\n\n\n\n\n\nMicrobiome\n\n\nAnthropometrics\n\n\nSegal lab\n\n\nNature Medicine\n\n\n\n\n\n\n\n\n\nJan 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nCGMap: Characterizing continuous glucose monitor data in thousands of non-diabetic individuals\n\n\n\n\n\n\nCGM\n\n\nDiabetes\n\n\nSegal lab\n\n\nPheno.AI\n\n\nCell Metabolism\n\n\n\n\n\n\n\n\n\nJan 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nAn expanded reference map of the human gut microbiome reveals hundreds of previously unknown species\n\n\n\n\n\n\nMicrobiome\n\n\nSegal lab\n\n\nNature Communications\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nPrediction of type 2 diabetes mellitus onset using logistic regression-based scorecards\n\n\n\n\n\n\nDiabetes\n\n\nSegal lab\n\n\neLife\n\n\n\n\n\n\n\n\n\nJun 22, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nAn atlas of robust microbiome associations with phenotypic traits based on large-scale cohorts from two continents\n\n\n\n\n\n\nMicrobiome\n\n\nSegal lab\n\n\nPLoS ONE\n\n\n\n\n\n\n\n\n\nMar 24, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nEffects of personalized diets by prediction of glycemic responses on glycemic control and metabolic health in newly diagnosed T2DM: a randomized dietary intervention pilot trial\n\n\n\n\n\n\nCGM\n\n\nDiabetes\n\n\nNutrition\n\n\nSegal lab\n\n\nBMC Medicine\n\n\n\n\n\n\n\n\n\nFeb 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nThe Gut Microbiome of Adults With Type 1 Diabetes and Its Association With the Host Glycemic Control\n\n\n\n\n\n\nMicrobiome\n\n\nDiabetes\n\n\nSegal lab\n\n\nDiabetes Care\n\n\n\n\n\n\n\n\n\nJan 19, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMetabolomic and microbiome profiling reveals personalized risk factors for coronary artery disease\n\n\n\n\n\n\nCardiovascular\n\n\nMicrobiome\n\n\nMetabolomics\n\n\nSegal lab\n\n\nNature Medicine\n\n\n\n\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nPersonalized microbiome-driven effects of non-nutritive sweeteners on human glucose tolerance\n\n\n\n\n\n\nMicrobiome\n\n\nNutrition\n\n\nSegal lab\n\n\nCell\n\n\n\n\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nBREAst Cancer Personalised NuTrition (BREACPNT): dietary intervention in breast cancer survivors treated with endocrine therapy - a protocol for a randomised clinical trial\n\n\n\n\n\n\nCGM\n\n\nCancer\n\n\nDiabetes\n\n\nSegal lab\n\n\nBMJ Open\n\n\n\n\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nPrediction of Personal Glycemic Responses to Food for Individuals With Type 1 Diabetes Through Integration of Clinical and Microbial Data\n\n\n\n\n\n\nCGM\n\n\nDiabetes\n\n\nNutrition\n\n\nSegal lab\n\n\nDiabetes Care\n\n\n\n\n\n\n\n\n\nOct 19, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nPersonalized Postprandial Glucose Response–Targeting Diet Versus Mediterranean Diet for Glycemic Control in Prediabetes\n\n\n\n\n\n\nDiabetes Care\n\n\n\n\n\n\n\n\n\nJul 23, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation-wide diversity and stability of serum antibody epitope repertoires against human microbiota\n\n\n\n\n\n\nMicrobiome\n\n\nPhIP-Seq\n\n\nNature Medicine\n\n\n\n\n\n\n\n\n\nJul 19, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n10 K: a large scale prospective longitudinal study in Israel\n\n\n\n\n\n\nSegal lab\n\n\nEuropean Journal of Epidemiology\n\n\n\n\n\n\n\n\n\nMay 15, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nA reference map of potential determinants for the human serum metabolome\n\n\n\n\n\n\nMicrobiome\n\n\nMetabolomics\n\n\nNature\n\n\n\n\n\n\n\n\n\nNov 11, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nClinically Accurate Prediction of Glucose Levels in Patients with Type 1 Diabetes\n\n\n\n\n\n\nDiabetes Technology and Therapeutics\n\n\n\n\n\n\n\n\n\nAug 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nRich data sets could end costly drug discovery\n\n\n\n\n\n\nNature\n\n\n\n\n\n\n\n\n\nJan 29, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nAxes of a revolution: challenges and promises of big data in healthcare\n\n\n\n\n\n\nNature Medicine\n\n\n\n\n\n\n\n\n\nJan 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nPrediction of gestational diabetes based on nationwide electronic health records\n\n\n\n\n\n\nNature Medicine\n\n\n\n\n\n\n\n\n\nJan 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nRationale and design of a randomised controlled trial testing the effect of personalised diet in individuals with pre-diabetes or type 2 diabetes mellitus treated with metformin\n\n\n\n\n\n\nCGM\n\n\nDiabetes\n\n\nT2DM\n\n\nSegal lab\n\n\nBMJ Open\n\n\n\n\n\n\n\n\n\nJan 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nStructural variation in the gut microbiome associates with host health\n\n\n\n\n\n\nMicrobiome\n\n\nSegal lab\n\n\nNature\n\n\n\n\n\n\n\n\n\nMar 27, 2019\n\n\n\n\n\n\n\n\n\n\n\n\nThe pros, cons, and many unknowns of probiotics\n\n\n\n\n\n\nNature Medicine\n\n\n\n\n\n\n\n\n\nJan 1, 2019\n\n\n\n\n\n\n\n\n\n\n\n\nEnvironment dominates over host genetics in shaping human gut microbiota\n\n\n\n\n\n\nMicrobiome\n\n\nNutrition\n\n\nSegal lab\n\n\nNature\n\n\n\n\n\n\n\n\n\nFeb 28, 2018\n\n\n\n\n\n\n\n\n\n\n\n\nHost genetics and microbiome associations through the lens of genome wide association studies\n\n\n\n\n\n\nMicrobiome\n\n\nCurrent Opinion in Microbiology\n\n\n\n\n\n\n\n\n\nJan 1, 2018\n\n\n\n\n\n\n\n\n\n\n\n\nBread Affects Clinical Parameters and Induces Gut Microbiome-Associated Personal Glycemic Responses\n\n\n\n\n\n\nCGM\n\n\nMicrobiome\n\n\nDiabetes\n\n\nNutrition\n\n\nSegal lab\n\n\nCell Metabolism\n\n\n\n\n\n\n\n\n\nJan 1, 2017\n\n\n\n\n\n\n\n\n\n\n\n\nPersonalized Nutrition by Prediction of Glycemic Responses\n\n\n\n\n\n\nCGM\n\n\nGenomics\n\n\nMicrobiome\n\n\nNutrition\n\n\nDiabetes\n\n\nSegal lab\n\n\nCell\n\n\n\n\n\n\n\n\n\nJan 1, 2015\n\n\n\n\n\n\nNo matching items"
+    "text": "Available Datasets\n\n\n\n\n\n\n\n\n\n\n\n\nid\ndataset\nfirst date\nlast date\ndata points (participants)\ntabular data\ntime series data\nimage data\n\n\n\n\n000\npopulation\n2018-12-05\n2022-12-29\n10434 (10434)\n✓\n\n\n\n\n001\nevents\n2018-12-05\n2022-12-29\n20723 (10434)\n✓\n\n\n\n\n002\nanthropometrics\n2018-11-22\n2022-12-29\n12925 (10387)\n✓\n\n\n\n\n003\nfundus\n2021-02-17\n2022-12-04\n7068 (7038)\n✓\n\n✓\n\n\n004\nliver_ultrasound\n2020-02-20\n2022-12-29\n26684 (8229)\n✓\n\n\n\n\n005\ndiet_logging\n2019-09-01\n2022-12-31\n5924216 (10003)\n✓\n\n\n\n\n006\nhand_grip\n2018-12-27\n2022-12-29\n12894 (10371)\n✓\n\n\n\n\n007\nblood_pressure\n2018-12-27\n2022-12-29\n12946 (10398)\n✓\n\n\n\n\n008\nserum_lipidomics\n2019-02-19\n2021-08-08\n6321 (6144)\n✓\n\n\n\n\n009\nsleep\n2020-01-15\n2022-12-27\n21589 (7132)\n✓\n✓\n\n\n\n010\nperipheral_vascular_health\n2018-12-27\n2022-12-29\n11387 (9729)\n✓\n\n\n\n\n011\nbody_composition\n2020-06-09\n2022-12-29\n8990 (8411)\n✓\n\n\n\n\n012\ncarotid_ultrasound\n2020-07-23\n2022-12-29\n8518 (7988)\n✓\n\n\n\n\n013\ngut_microbiome\n2019-02-14\n2022-12-28\n10694 (8838)\n✓\n\n\n\n\n014\nhuman_genetics\n2019-03-11\n2022-12-21\n8821 (8821)\n✓\n\n\n\n\n015\necg\n2019-08-13\n2022-12-29\n9702 (8085)\n✓\n✓\n\n\n\n016\nblood_tests\n2010-01-06\n2022-12-29\n29074 (10252)\n✓\n\n\n\n\n017\ncgm\n2019-01-07\n2022-12-31\n104845 (9431)\n✓\n✓\n\n\n\n018\nmedications\n2018-10-18\n2022-12-31\n43417 (10787)\n✓\n\n\n\n\n021\nmedical_conditions\n2018-11-21\n2022-12-31\n22413 (10792)\n✓\n\n\n\n\n022\nbone_density\n2020-06-09\n2022-12-29\n9032 (8459)\n✓\n\n\n\n\n024\nrna_seq\n2021-02-28\n2022-06-21\n3958 (3863)\n✓\n\n\n\n\n029\nnightingale_metabolomics\n2019-05-07\n2022-08-02\n1644 (1552)\n✓\n\n\n\n\n043\ncovid\n2021-04-22\n2022-12-29\n14988 (9120)\n✓\n\n\n\n\n044\nsex_specific_factors\n2019-01-09\n2022-12-31\n9151 (8759)\n✓\n\n\n\n\n045\nparticipant_relation\n2019-02-05\n2022-12-29\n3739 (3106)\n✓\n\n\n\n\n049\nmedical_symptoms\n2019-01-09\n2022-12-31\n9172 (8719)\n✓\n\n\n\n\n050\nmedical_procedures\n2020-02-26\n2022-12-31\n7572 (7383)\n✓\n\n\n\n\n051\nchildren\n2020-02-26\n2022-12-31\n7416 (7383)\n✓\n\n\n\n\n052\nfamily_history\n2019-01-09\n2022-12-31\n14861 (9262)\n✓\n\n\n\n\n053\nsociodemographics\n2019-01-09\n2022-12-31\n14861 (9262)\n✓\n\n\n\n\n055\nlifestyle_and_environment\n2019-01-09\n2022-12-31\n14861 (9262)\n✓\n\n\n\n\n057\npsychological_and_social_health\n2019-01-09\n2022-12-31\n14861 (9262)\n✓\n\n\n\n\n058\nhealth_and_medical_history\n2018-11-21\n2022-12-31\n14861 (10197)\n✓\n\n\n\n\n070\noral_microbiome\n2019-03-11\n2022-12-21\n8816 (8816)\n✓",
+    "crumbs": [
+      "Home",
+      "Datasets",
+      "Available Datasets"
+    ]
   },
   {
     "objectID": "index.html",
@@ -738,247 +880,112 @@
     ]
   },
   {
-    "objectID": "datasets.html",
-    "href": "datasets.html",
+    "objectID": "datasets_description.html",
+    "href": "datasets_description.html",
     "title": "Pheno.AI",
     "section": "",
-    "text": "Available Datasets\n\n\n\n\n\n\n\n\n\n\n\n\nid\ndataset\nfirst date\nlast date\ndata points (participants)\ntabular data\ntime series data\nimage data\n\n\n\n\n000\npopulation\n2018-12-05\n2022-12-29\n10434 (10434)\n✓\n\n\n\n\n001\nevents\n2018-12-05\n2022-12-29\n20723 (10434)\n✓\n\n\n\n\n002\nanthropometrics\n2018-11-22\n2022-12-29\n12925 (10387)\n✓\n\n\n\n\n003\nfundus\n2021-02-17\n2022-12-04\n7068 (7038)\n✓\n\n✓\n\n\n004\nliver_ultrasound\n2020-02-20\n2022-12-29\n26684 (8229)\n✓\n\n\n\n\n005\ndiet_logging\n2019-09-01\n2022-12-31\n5924216 (10003)\n✓\n\n\n\n\n006\nhand_grip\n2018-12-27\n2022-12-29\n12894 (10371)\n✓\n\n\n\n\n007\nblood_pressure\n2018-12-27\n2022-12-29\n12946 (10398)\n✓\n\n\n\n\n008\nserum_lipidomics\n2019-02-19\n2021-08-08\n6321 (6144)\n✓\n\n\n\n\n009\nsleep\n2020-01-15\n2022-12-27\n21589 (7132)\n✓\n✓\n\n\n\n010\nperipheral_vascular_health\n2018-12-27\n2022-12-29\n11387 (9729)\n✓\n\n\n\n\n011\nbody_composition\n2020-06-09\n2022-12-29\n8990 (8411)\n✓\n\n\n\n\n012\ncarotid_ultrasound\n2020-07-23\n2022-12-29\n8518 (7988)\n✓\n\n\n\n\n013\ngut_microbiome\n2019-02-14\n2022-12-28\n10694 (8838)\n✓\n\n\n\n\n014\nhuman_genetics\n2019-03-11\n2022-12-21\n8821 (8821)\n✓\n\n\n\n\n015\necg\n2019-08-13\n2022-12-29\n9702 (8085)\n✓\n✓\n\n\n\n016\nblood_tests\n2010-01-06\n2022-12-29\n29074 (10252)\n✓\n\n\n\n\n017\ncgm\n2019-01-07\n2022-12-31\n104845 (9431)\n✓\n✓\n\n\n\n018\nmedications\n2018-10-18\n2022-12-31\n43417 (10787)\n✓\n\n\n\n\n021\nmedical_conditions\n2018-11-21\n2022-12-31\n22413 (10792)\n✓\n\n\n\n\n022\nbone_density\n2020-06-09\n2022-12-29\n9032 (8459)\n✓\n\n\n\n\n024\nrna_seq\n2021-02-28\n2022-06-21\n3958 (3863)\n✓\n\n\n\n\n029\nnightingale_metabolomics\n2019-05-07\n2022-08-02\n1644 (1552)\n✓\n\n\n\n\n043\ncovid\n2021-04-22\n2022-12-29\n14988 (9120)\n✓\n\n\n\n\n044\nsex_specific_factors\n2019-01-09\n2022-12-31\n9151 (8759)\n✓\n\n\n\n\n045\nparticipant_relation\n2019-02-05\n2022-12-29\n3739 (3106)\n✓\n\n\n\n\n049\nmedical_symptoms\n2019-01-09\n2022-12-31\n9172 (8719)\n✓\n\n\n\n\n050\nmedical_procedures\n2020-02-26\n2022-12-31\n7572 (7383)\n✓\n\n\n\n\n051\nchildren\n2020-02-26\n2022-12-31\n7416 (7383)\n✓\n\n\n\n\n052\nfamily_history\n2019-01-09\n2022-12-31\n14861 (9262)\n✓\n\n\n\n\n053\nsociodemographics\n2019-01-09\n2022-12-31\n14861 (9262)\n✓\n\n\n\n\n055\nlifestyle_and_environment\n2019-01-09\n2022-12-31\n14861 (9262)\n✓\n\n\n\n\n057\npsychological_and_social_health\n2019-01-09\n2022-12-31\n14861 (9262)\n✓\n\n\n\n\n058\nhealth_and_medical_history\n2018-11-21\n2022-12-31\n14861 (10197)\n✓\n\n\n\n\n070\noral_microbiome\n2019-03-11\n2022-12-21\n8816 (8816)\n✓",
+    "text": "Population - Year of birth, month of birth, sex, study ID.\nEvents - Birth month/year, age at research stage, sex, follow-up information, visit dates, and locations.\nAnthropometrics - Individual body measurement records.\nFundus - Image files, segmented images of vessels, veins, arteries, and summary statistics.\nLiver Ultrasound - Derived measures such as viscosity and elasticity, auxiliary data, and aggregated data.\nDiet Logging - Food logging per participant, including all macronutrients.\nHand Grip - Hand and finger grip strength measurements.\nBlood Pressure - Blood pressure measurements.\nSerum Lipidomics - Lipid annotations from blood tests.\nSleep - Sleep staging, body positioning, respiratory events, heart rate, oxygen saturation, and snoring.\nPeripheral Vascular Health - ABI and PWV measurements.\nBody Composition - Measurements of fat and lean mass, VAT/SAT area, mass, and volume.\nCarotid Ultrasound - Intima Media Thickness measurements.\nGut Microbiome - Gut microbiome sequencing and QC statistics, Segal Lab relative abundance, MetaPhlAn 4 relative abundances.\nHuman Genetics - Sample metadata, QC statistics, principal components and principal component loadings calculated, IBS calculated by PLINK for pairs of participants, King kinship coefficients for pairs of participants.\nECG - ECG waveform signal, machine-generated tabular features.\nBlood Tests - Participant’s blood tests.\nCGM - Temporal glucose measures, summary and daily summary features.\nMedications - Consumed medications for each participant.\nMedical Conditions - Binary information on medical conditions per participant.\nBone Density - Measurements of mineral content, age, and sex-normalized values.\nUKBB Questionnaire - Adapted UK Biobank questionnaire.\nUKBB Follow-up Questionnaire - Short version of the UKBB survey.\nIBS Questionnaire - Adapted UK Biobank GI health questionnaire.\nCOVID Questionnaire - Questions on COVID-19 vaccinations and diagnosis.",
     "crumbs": [
       "Home",
       "Datasets",
-      "Available Datasets"
+      "Datasets Description"
     ]
   },
   {
-    "objectID": "platform_tutorial.html",
-    "href": "platform_tutorial.html",
-    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
+    "objectID": "datasets_description.html#datasets-description",
+    "href": "datasets_description.html#datasets-description",
+    "title": "Pheno.AI",
     "section": "",
-    "text": "Trusted Research Environment (TRE) is a cloud solution that provides secure access to data, tooling, and compute power that researchers need. Researchers can focus on achieving research missions and completing essential work in minutes in a trusted research environment.",
+    "text": "Population - Year of birth, month of birth, sex, study ID.\nEvents - Birth month/year, age at research stage, sex, follow-up information, visit dates, and locations.\nAnthropometrics - Individual body measurement records.\nFundus - Image files, segmented images of vessels, veins, arteries, and summary statistics.\nLiver Ultrasound - Derived measures such as viscosity and elasticity, auxiliary data, and aggregated data.\nDiet Logging - Food logging per participant, including all macronutrients.\nHand Grip - Hand and finger grip strength measurements.\nBlood Pressure - Blood pressure measurements.\nSerum Lipidomics - Lipid annotations from blood tests.\nSleep - Sleep staging, body positioning, respiratory events, heart rate, oxygen saturation, and snoring.\nPeripheral Vascular Health - ABI and PWV measurements.\nBody Composition - Measurements of fat and lean mass, VAT/SAT area, mass, and volume.\nCarotid Ultrasound - Intima Media Thickness measurements.\nGut Microbiome - Gut microbiome sequencing and QC statistics, Segal Lab relative abundance, MetaPhlAn 4 relative abundances.\nHuman Genetics - Sample metadata, QC statistics, principal components and principal component loadings calculated, IBS calculated by PLINK for pairs of participants, King kinship coefficients for pairs of participants.\nECG - ECG waveform signal, machine-generated tabular features.\nBlood Tests - Participant’s blood tests.\nCGM - Temporal glucose measures, summary and daily summary features.\nMedications - Consumed medications for each participant.\nMedical Conditions - Binary information on medical conditions per participant.\nBone Density - Measurements of mineral content, age, and sex-normalized values.\nUKBB Questionnaire - Adapted UK Biobank questionnaire.\nUKBB Follow-up Questionnaire - Short version of the UKBB survey.\nIBS Questionnaire - Adapted UK Biobank GI health questionnaire.\nCOVID Questionnaire - Questions on COVID-19 vaccinations and diagnosis.",
     "crumbs": [
       "Home",
-      "Getting Started"
+      "Datasets",
+      "Datasets Description"
     ]
   },
   {
-    "objectID": "platform_tutorial.html#sign-up",
-    "href": "platform_tutorial.html#sign-up",
-    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
-    "section": "Sign Up",
-    "text": "Sign Up\nUse this section if this is your first time connecting to the system.\n\nOpen your browser and navigate to TRE URL.\nClick on the Sign up link.\n\n\n\nFill out your Username (email address), Name, Family name and pick a Password.\n\n\n\nClick the Sign up button.",
-    "crumbs": [
-      "Home",
-      "Getting Started"
-    ]
-  },
-  {
-    "objectID": "platform_tutorial.html#login",
-    "href": "platform_tutorial.html#login",
-    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
-    "section": "Login",
-    "text": "Login\n\nOpen your browser and navigate to TRE URL.\nType in your Username (the email you used to sign up) and your Password.\nClick the Sign In button.",
-    "crumbs": [
-      "Home",
-      "Getting Started"
-    ]
-  },
-  {
-    "objectID": "platform_tutorial.html#user-interface",
-    "href": "platform_tutorial.html#user-interface",
-    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
-    "section": "User Interface",
-    "text": "User Interface\n\nDashboard - Displays AWS charges over the past 30 days\nSSH Keys - SSH Keys for EC2 authorization\nWorkspaces - The combination of a study with a compute",
-    "crumbs": [
-      "Home",
-      "Getting Started"
-    ]
-  },
-  {
-    "objectID": "platform_tutorial.html#personal-study",
-    "href": "platform_tutorial.html#personal-study",
-    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
-    "section": "Personal Study",
-    "text": "Personal Study\n\nClick on Create Study \nFill up all the fields and press Create Study myStudy for personal and Organziation study for Org Studies \nStudy Created and ready to use",
-    "crumbs": [
-      "Home",
-      "Getting Started"
-    ]
-  },
-  {
-    "objectID": "platform_tutorial.html#organizational-study",
-    "href": "platform_tutorial.html#organizational-study",
-    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
-    "section": "Organizational Study",
-    "text": "Organizational Study",
-    "crumbs": [
-      "Home",
-      "Getting Started"
-    ]
-  },
-  {
-    "objectID": "platform_tutorial.html#launching-a-new-research-environment",
-    "href": "platform_tutorial.html#launching-a-new-research-environment",
-    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
-    "section": "Launching a new Research Environment",
-    "text": "Launching a new Research Environment\nA user can select a Study or multiple Studies and launch a Workspace to access and analyze data. To launch a Research Environment, follow these steps:\n\nIn the portal navigate to the Studies page using the menu on the left.\nSelect the Studies to be attached to the new Workspace.\nOnce you have selected all the Studies you want, click the Next button.\n\n\n\nChoose the type of Workspace you want and click the Next button.\n\n\n\nFill in the Workspace Name field.\nSelect your project in the Project ID drop down field.\nSelect the Configuration type according to your needs.\nType a description for the Workspace in the Description field.\nClick the Create Research Workspace button.\n\n \nThis will deploy the new Workspace and attach the Studies that were selected.\nYou will automatically be redirected to the Workspaces tab on the portal.\nWait for the workspace to be Available.",
-    "crumbs": [
-      "Home",
-      "Getting Started"
-    ]
-  },
-  {
-    "objectID": "platform_tutorial.html#connecting-to-ec2",
-    "href": "platform_tutorial.html#connecting-to-ec2",
-    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
-    "section": "Connecting to EC2",
-    "text": "Connecting to EC2\n\nIn the portal navigate to the Workspaces page using the menu on the left.\nClick on the Connections button, below the Workspace name.",
-    "crumbs": [
-      "Home",
-      "Getting Started"
-    ]
-  },
-  {
-    "objectID": "platform_tutorial.html#connecting-to-an-existing-research-environment",
-    "href": "platform_tutorial.html#connecting-to-an-existing-research-environment",
-    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
-    "section": "Connecting to an Existing Research Environment",
-    "text": "Connecting to an Existing Research Environment\n\nIn the portal navigate to the Workspaces page using the menu on the left.\nClick on the Connections button, below the Workspace name.\n\n\n\nClick on the Generate URL button on the right, under HTTP Connections.\nClick Connect.\n\n\n\nWait for the system to load.\n\n\nIt will now open the browser with the data and the tools to start working. It will open in Firefox automatically if the workspace created in a Notebook, or Remmina Client(Remote) in case it created in EC2. So you can do the following:",
-    "crumbs": [
-      "Home",
-      "Getting Started"
-    ]
-  },
-  {
-    "objectID": "platform_tutorial.html#installing-python-packages",
-    "href": "platform_tutorial.html#installing-python-packages",
-    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
-    "section": "Installing Python Packages",
-    "text": "Installing Python Packages\n\nConnect to the Research Environment and open your Jupyter Notebook (See: Connect to an Existing Research Environment)\nClick on Open JupyterLab on the top right.\n\n 3. Open a new Jupyter notebook.\n\n\nInside the one of the notebook cells, type !pip3 install &lt;package name&gt;.\n\n\nFor any questions or help please contact: support@pheno.ai",
-    "crumbs": [
-      "Home",
-      "Getting Started"
-    ]
-  },
-  {
-    "objectID": "platform_tutorial.html#attach-files-to-a-research-environment",
-    "href": "platform_tutorial.html#attach-files-to-a-research-environment",
-    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
-    "section": "Attach Files to a Research Environment",
-    "text": "Attach Files to a Research Environment\n\nNavigate to the Studies page using the menu on the left.\nFind the Study you want to attach files to and click Upload Files on the right.\nYou can upload files either by dragging and dropping, or by clicking the Upload Files or Upload Folder button.",
-    "crumbs": [
-      "Home",
-      "Getting Started"
-    ]
-  },
-  {
-    "objectID": "platform_tutorial.html#collaborating-and-sharing-data-between-environments",
-    "href": "platform_tutorial.html#collaborating-and-sharing-data-between-environments",
-    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
-    "section": "Collaborating and Sharing Data Between Environments",
-    "text": "Collaborating and Sharing Data Between Environments\nTo share code with peers, make sure to include a common organizational Study when creating your workspace.\nInside the workspace, the shared folder will be located at /home/ec2-user/studies/&lt;study name&gt;.\nIn Jupyter’s file explorer, this will be under studies/&lt;study name&gt;.\nFiles included in this folder will be shared with researchers in your Organization.\nWhen saving code and temporary data, we recommend saving code in outside of the studies folder, and only move them to the shared folder once you’de like to share amongst your peers.",
-    "crumbs": [
-      "Home",
-      "Getting Started"
-    ]
-  },
-  {
-    "objectID": "platform_tutorial.html#terminating-a-research-environment",
-    "href": "platform_tutorial.html#terminating-a-research-environment",
-    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
-    "section": "Terminating a Research Environment",
-    "text": "Terminating a Research Environment\nWhen you no longer need a Research Environment you can terminate it. Follow these steps:\n\nIn the portal navigate to the Workspaces page using the menu on the left.\nIn the list of Workspaces, find the Workspace that you want to terminate.\nClick on the Terminate button, the Workspace must be in the Ready state to terminate it.",
-    "crumbs": [
-      "Home",
-      "Getting Started"
-    ]
-  },
-  {
-    "objectID": "platform_tutorial.html#docker-usage",
-    "href": "platform_tutorial.html#docker-usage",
-    "title": "Trusted Research Environment User Guide - Applicable for version 6.2.1",
-    "section": "Docker usage",
-    "text": "Docker usage\n\nDocker pull\ndocker registry: https://gallery.ecr.aws/\nUse the following code docker pull \\&lt;accountID\\&gt;.dkr.ecr.\\&lt;aws-region\\&gt;.amazonaws.com/ecr-public/\\&lt;Change to your library\\&gt; \n\n\nDocker run\nUse the image you have under docker image ls\ne.g docker run -it --rm \\&lt;accountID\\&gt;.dkr.ecr.\\&lt;aws-region\\&gt;.amazonaws.com/ecr-public/docker/library/alpine:edge",
-    "crumbs": [
-      "Home",
-      "Getting Started"
-    ]
-  },
-  {
-    "objectID": "publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html",
-    "href": "publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html",
-    "title": "Bacterial SNPs in the human gut microbiome associate with host BMI",
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
     "section": "",
-    "text": "Zahavi L, Lavon A, Reicher L, Shoer S, Godneva A, Leviatan S, Rein M, Weissbrod O, Weinberger A, Segal E, Nature Medicine"
+    "text": "Sex-specific dietary habits and their association with weight change in healthy adults\n\n\n\n\n\n\nNutrition\n\n\nAnthropometrics\n\n\nobesity\n\n\nSegal lab\n\n\nBMC Medicine\n\n\n2024\n\n\n\n\n\n\n\n\n\nNov 6, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPhenome-wide associations of human aging uncover sex-specific dynamics\n\n\n\n\n\n\nAging\n\n\nSegal lab\n\n\nPheno.AI\n\n\nNature Aging\n\n\n2024\n\n\n\n\n\n\n\n\n\nNov 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nIdentification of gut microbiome features associated with host metabolic health in a large population-based cohort\n\n\n\n\n\n\nMicrobiome\n\n\nSegal lab\n\n\nPheno.AI\n\n\nNature Communications\n\n\n2024\n\n\n\n\n\n\n\n\n\nOct 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nFrom Glucose Patterns to Health Outcomes: A Generalizable Foundation Model for Continuous Glucose Monitor Data Analysis\n\n\n\n\n\n\nCGM\n\n\nSSL\n\n\nDiabetes\n\n\nNutrition\n\n\nSegal lab\n\n\nPheno.AI\n\n\narxiv\n\n\n2024\n\n\n\n\n\n\n\n\n\nAug 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nContinuous glucose monitoring and intrapersonal variability in fasting glucose\n\n\n\n\n\n\nCGM\n\n\nDiabetes\n\n\nSegal lab\n\n\nPheno.AI\n\n\nNature Medicine\n\n\n2024\n\n\n\n\n\n\n\n\n\nApr 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nCOMPRER: A Multimodal Multi-Objective Pretraining Framework for Enhanced Medical Image Representation\n\n\n\n\n\n\nSSL\n\n\nFundus\n\n\nCardiovascular\n\n\nPheno.AI\n\n\nSegal lab\n\n\nmedRxiv\n\n\n2024\n\n\n\n\n\n\n\n\n\nMar 18, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPangenomes of human gut microbiota uncover links between genetic diversity and stress response\n\n\n\n\n\n\nMicrobiome\n\n\nStress\n\n\nGenomics\n\n\nSegal lab\n\n\nCell Host & Microbe\n\n\n2024\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nGenome-wide association studies and polygenic risk score phenome-wide association studies across complex phenotypes in the human phenotype project\n\n\n\n\n\n\nGenomics\n\n\nSleep\n\n\nSegal lab\n\n\nPheno.AI\n\n\nMed\n\n\n2024\n\n\n\n\n\n\n\n\n\nJan 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nA Multimodal Dataset of 21,412 Recorded Nights for Sleep and Respiratory Research\n\n\n\n\n\n\nSleep\n\n\nPheno.AI\n\n\nSegal lab\n\n\nML4H (arXiv)\n\n\n2023\n\n\n\n\n\n\n\n\n\nNov 15, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nImpact of dietary interventions on pre-diabetic oral and gut microbiome, metabolites and cytokines\n\n\n\n\n\n\nDiabetes\n\n\nMicrobiome\n\n\nSegal lab\n\n\nNature Communications\n\n\n2023\n\n\n\n\n\n\n\n\n\nSep 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nGut microbiome modulates the effects of a personalised postprandial-targeting (PPT) diet on cardiometabolic markers: a diet intervention in pre-diabetes\n\n\n\n\n\n\nDiabetes\n\n\nMicrobiome\n\n\nSegal lab\n\n\nGut\n\n\n2023\n\n\n\n\n\n\n\n\n\nMay 3, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nBacterial SNPs in the human gut microbiome associate with host BMI\n\n\n\n\n\n\nMicrobiome\n\n\nAnthropometrics\n\n\nSegal lab\n\n\nNature Medicine\n\n\n2023\n\n\n\n\n\n\n\n\n\nJan 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nCGMap: Characterizing continuous glucose monitor data in thousands of non-diabetic individuals\n\n\n\n\n\n\nCGM\n\n\nDiabetes\n\n\nSegal lab\n\n\nPheno.AI\n\n\nCell Metabolism\n\n\n2023\n\n\n\n\n\n\n\n\n\nJan 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nAn expanded reference map of the human gut microbiome reveals hundreds of previously unknown species\n\n\n\n\n\n\nMicrobiome\n\n\nSegal lab\n\n\nNature Communications\n\n\n2022\n\n\n\n\n\n\n\n\n\nJul 5, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nPrediction of type 2 diabetes mellitus onset using logistic regression-based scorecards\n\n\n\n\n\n\nDiabetes\n\n\nSegal lab\n\n\neLife\n\n\n2022\n\n\n\n\n\n\n\n\n\nJun 22, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nAn atlas of robust microbiome associations with phenotypic traits based on large-scale cohorts from two continents\n\n\n\n\n\n\nMicrobiome\n\n\nSegal lab\n\n\nPLoS ONE\n\n\n2022\n\n\n\n\n\n\n\n\n\nMar 24, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nEffects of personalized diets by prediction of glycemic responses on glycemic control and metabolic health in newly diagnosed T2DM: a randomized dietary intervention pilot trial\n\n\n\n\n\n\nCGM\n\n\nDiabetes\n\n\nNutrition\n\n\nSegal lab\n\n\nBMC Medicine\n\n\n2022\n\n\n\n\n\n\n\n\n\nFeb 9, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nThe Gut Microbiome of Adults With Type 1 Diabetes and Its Association With the Host Glycemic Control\n\n\n\n\n\n\nMicrobiome\n\n\nDiabetes\n\n\nSegal lab\n\n\nDiabetes Care\n\n\n2022\n\n\n\n\n\n\n\n\n\nJan 19, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMetabolomic and microbiome profiling reveals personalized risk factors for coronary artery disease\n\n\n\n\n\n\nCardiovascular\n\n\nMicrobiome\n\n\nMetabolomics\n\n\nSegal lab\n\n\nNature Medicine\n\n\n2022\n\n\n\n\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nPersonalized microbiome-driven effects of non-nutritive sweeteners on human glucose tolerance\n\n\n\n\n\n\nMicrobiome\n\n\nNutrition\n\n\nSegal lab\n\n\nCell\n\n\n2022\n\n\n\n\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nBREAst Cancer Personalised NuTrition (BREACPNT): dietary intervention in breast cancer survivors treated with endocrine therapy - a protocol for a randomised clinical trial\n\n\n\n\n\n\nCGM\n\n\nCancer\n\n\nDiabetes\n\n\nSegal lab\n\n\nBMJ Open\n\n\n2022\n\n\n\n\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nPrediction of Personal Glycemic Responses to Food for Individuals With Type 1 Diabetes Through Integration of Clinical and Microbial Data\n\n\n\n\n\n\nCGM\n\n\nDiabetes\n\n\nNutrition\n\n\nSegal lab\n\n\nDiabetes Care\n\n\n2021\n\n\n\n\n\n\n\n\n\nOct 19, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nPersonalized Postprandial Glucose Response–Targeting Diet Versus Mediterranean Diet for Glycemic Control in Prediabetes\n\n\n\n\n\n\nDiabetes Care\n\n\n2021\n\n\n\n\n\n\n\n\n\nJul 23, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation-wide diversity and stability of serum antibody epitope repertoires against human microbiota\n\n\n\n\n\n\nMicrobiome\n\n\nPhIP-Seq\n\n\nNature Medicine\n\n\n2021\n\n\n\n\n\n\n\n\n\nJul 19, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n10 K: a large scale prospective longitudinal study in Israel\n\n\n\n\n\n\nSegal lab\n\n\nEuropean Journal of Epidemiology\n\n\n2021\n\n\n\n\n\n\n\n\n\nMay 15, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nA reference map of potential determinants for the human serum metabolome\n\n\n\n\n\n\nMicrobiome\n\n\nMetabolomics\n\n\nNature\n\n\n2020\n\n\n\n\n\n\n\n\n\nNov 11, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nClinically Accurate Prediction of Glucose Levels in Patients with Type 1 Diabetes\n\n\n\n\n\n\nDiabetes Technology and Therapeutics\n\n\n2020\n\n\n\n\n\n\n\n\n\nAug 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nRich data sets could end costly drug discovery\n\n\n\n\n\n\nNature\n\n\n2020\n\n\n\n\n\n\n\n\n\nJan 29, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nAxes of a revolution: challenges and promises of big data in healthcare\n\n\n\n\n\n\nNature Medicine\n\n\n2020\n\n\n\n\n\n\n\n\n\nJan 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nPrediction of gestational diabetes based on nationwide electronic health records\n\n\n\n\n\n\nNature Medicine\n\n\n2020\n\n\n\n\n\n\n\n\n\nJan 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nRationale and design of a randomised controlled trial testing the effect of personalised diet in individuals with pre-diabetes or type 2 diabetes mellitus treated with metformin\n\n\n\n\n\n\nCGM\n\n\nDiabetes\n\n\nT2DM\n\n\nSegal lab\n\n\nBMJ Open\n\n\n2020\n\n\n\n\n\n\n\n\n\nJan 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nStructural variation in the gut microbiome associates with host health\n\n\n\n\n\n\nMicrobiome\n\n\nSegal lab\n\n\nNature\n\n\n2019\n\n\n\n\n\n\n\n\n\nMar 27, 2019\n\n\n\n\n\n\n\n\n\n\n\n\nThe pros, cons, and many unknowns of probiotics\n\n\n\n\n\n\nNature Medicine\n\n\n2019\n\n\n\n\n\n\n\n\n\nJan 1, 2019\n\n\n\n\n\n\n\n\n\n\n\n\nEnvironment dominates over host genetics in shaping human gut microbiota\n\n\n\n\n\n\nMicrobiome\n\n\nNutrition\n\n\nSegal lab\n\n\nNature\n\n\n2018\n\n\n\n\n\n\n\n\n\nFeb 28, 2018\n\n\n\n\n\n\n\n\n\n\n\n\nHost genetics and microbiome associations through the lens of genome wide association studies\n\n\n\n\n\n\nMicrobiome\n\n\nCurrent Opinion in Microbiology\n\n\n2018\n\n\n\n\n\n\n\n\n\nJan 1, 2018\n\n\n\n\n\n\n\n\n\n\n\n\nBread Affects Clinical Parameters and Induces Gut Microbiome-Associated Personal Glycemic Responses\n\n\n\n\n\n\nCGM\n\n\nMicrobiome\n\n\nDiabetes\n\n\nNutrition\n\n\nSegal lab\n\n\nCell Metabolism\n\n\n2017\n\n\n\n\n\n\n\n\n\nJan 1, 2017\n\n\n\n\n\n\n\n\n\n\n\n\nPersonalized Nutrition by Prediction of Glycemic Responses\n\n\n\n\n\n\nCGM\n\n\nGenomics\n\n\nMicrobiome\n\n\nNutrition\n\n\nDiabetes\n\n\nSegal lab\n\n\nCell\n\n\n2015\n\n\n\n\n\n\n\n\n\nJan 1, 2015\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html#paper-summary",
-    "href": "publications/3aa1efcf-f17c-4d49-a88a-9ffdabcc49c9.html#paper-summary",
-    "title": "Bacterial SNPs in the human gut microbiome associate with host BMI",
+    "objectID": "publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html",
+    "href": "publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html",
+    "title": "COMPRER: A Multimodal Multi-Objective Pretraining Framework for Enhanced Medical Image Representation",
+    "section": "",
+    "text": "Lutsker G, Rossman H, Godneva N, Segal E, medRxiv"
+  },
+  {
+    "objectID": "publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html#paper-summary",
+    "href": "publications/15fc42c7-a9e4-8088-aacd-c9a455a5e0b4.html#paper-summary",
+    "title": "COMPRER: A Multimodal Multi-Objective Pretraining Framework for Enhanced Medical Image Representation",
     "section": "Paper summary",
-    "text": "Paper summary\nGenome-wide association studies (GWASs) have provided numerous associations between human single-nucleotide polymorphisms (SNPs) and health traits. Likewise, metagenome-wide association studies (MWASs) between bacterial SNPs and human traits can suggest mechanistic links, but very few such studies have been done thus far. In this study, we devised an MWAS framework to detect SNPs and associate them with host phenotypes systematically. We recruited and obtained gut metagenomic samples from a cohort of 7,190 healthy individuals and discovered 1,358 statistically significant associations between a bacterial SNP and host body mass index (BMI), from which we distilled 40 independent associations. Most of these associations were unexplained by diet, medications or physical exercise, and 17 replicated in a geographically independent cohort. We uncovered BMI-associated SNPs in 27 bacterial species, and 12 of them showed no association by standard relative abundance analysis. We revealed a BMI association of an SNP in a potentially inflammatory pathway of Bilophila wadsworthia as well as of a group of SNPs in a region coding for energy metabolism functions in a Faecalibacterium prausnitzii genome. Our results demonstrate the importance of considering nucleotide-level diversity in microbiome studies and pave the way toward improved understanding of interpersonal microbiome differences and their potential health implications.\n\n\n\nimage"
+    "text": "Paper summary\nABSTRACTSubstantial advances in multi-modal Artificial Intelligence (AI) facilitate the combination of diverse medical modalities to achieve holistic health assessments. We present COMPRER, a novel multi-modal, multi-objective pretraining framework which enhances medical-image representation, diagnostic inferences, and prognosis of diseases. COMPRER employs a multi-objective training framework, where each objective introduces distinct knowledge to the model. This includes a multi-modal loss that consolidates information across different imaging modalities; A temporal loss that imparts the ability to discern patterns over time; Medical-measure prediction adds appropriate medical insights; Lastly, reconstruction loss ensures the integrity of image structure within the latent space. Despite the concern that multiple objectives could weaken task performance, our findings show that this combination actually boosts outcomes on certain tasks. Here, we apply this framework to both fundus images and carotid ultrasound, and validate our downstream tasks capabilities by predicting both current and future cardiovascular conditions. COMPRER achieved higher Area Under the Curve (AUC) scores in evaluating medical conditions compared to existing models on held-out data. On the Out-of-distribution (OOD) UK-Biobank dataset COMPRER maintains favorable performance over well-established models with more parameters, even though these models were trained on 75× more data than COMPRER. In addition, to better assess our model’s performance in contrastive learning, we introduce a novel evaluation metric, providing deeper understanding of the effectiveness of the latent space pairing."
   },
   {
-    "objectID": "publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html",
-    "href": "publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html",
-    "title": "Phenome-wide associations of human aging uncover sex-specific dynamics",
+    "objectID": "publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html",
+    "href": "publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html",
+    "title": "Sex-specific dietary habits and their association with weight change in healthy adults",
     "section": "",
-    "text": "Reicher L, Bar N, Godneva A, Reisner Y, Zahavi L, Shahaf N, Dhir R, Weinberger A, Segal E, Nature Aging"
+    "text": "Rein M, Elkan M, Godneva A, Dolev N, Segal E, BMC Medicine"
   },
   {
-    "objectID": "publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html#paper-summary",
-    "href": "publications/135c42c7-a9e4-800e-968b-de6f6f3e7b8c.html#paper-summary",
-    "title": "Phenome-wide associations of human aging uncover sex-specific dynamics",
+    "objectID": "publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html#paper-summary",
+    "href": "publications/144c42c7-a9e4-80a8-8425-ffc0f9cdb76d.html#paper-summary",
+    "title": "Sex-specific dietary habits and their association with weight change in healthy adults",
     "section": "Paper summary",
-    "text": "Paper summary\n\nTL;DR Summary\n💡\n- Researchers used data from the Human Phenotype Project to create sex-specific biological age (BA) models. \n\n- Findings showed that biological systems age differently between sexes; BA models based on bone density and cardiovascular markers performed better in women, potentially due effects of menopause.\n\n- This study supports personalized prevention strategies, emphasizing the need for sex-specific interventions in aging.\n\n\nFull Summary\nThis study analyzed data from the Human Phenotype Project - a deeply phenotyped cohort of 10,000 individuals aged 40-70 years to develop biological age (BA) models that reveal distinct aging patterns across various physiological systems.\nBy leveraging multiomic, clinical, and environmental data collected in the Human Phenotype Project, the researchers devised sex-specific machine learning models to estimate BA and its relationship to age-related diseases. The findings revealed notable differences in aging dynamics between males and females, with distinct BA scores correlating with age-related health conditions. Notably, BA scores provided insights into sex-specific risks, such as a higher incidence of osteoporosis in aging women, emphasizing the potential role of menopause in accelerating certain aging processes.\nThe study also highlighted that biological systems age differently between men and women, as evidenced by the variability of biological aging models based on bone density, blood lipids, and cardiovascular function. These models demonstrated better performance among women, potentially reflecting the effects of menopause. The research underscores the significance of considering sex as a biological variable in aging studies and its impact on clinical outcomes. These findings offer a holistic view of aging, which can drive personalized medical prevention strategies and the development of sex-specific interventions to mitigate the impact of aging-related diseases, ultimately contributing to healthier aging.\n\n\n\nimage"
+    "text": "Paper summary\nThe study leverages a unique dataset to explore the relationship between diet and obesity management, focusing on gender-specific dietary impacts.\nThe study analyzed how different food categories influence body mass index (BMI) at baseline and weight change over time.\nThe authors discovered that dietary habits and their effects on weight management vary significantly by sex. In men, weight loss was associated with increased intake of animal-based proteins, whereas in women, it correlated with a higher consumption of plant-based fats. These findings suggest that personalized dietary interventions considering gender-specific needs could enhance obesity management effectiveness. This research underscores the value of our detailed diet logging data in developing targeted nutritional strategies.\n\n\n\nimage"
   },
   {
-    "objectID": "publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html",
-    "href": "publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html",
-    "title": "A Multimodal Dataset of 21,412 Recorded Nights for Sleep and Respiratory Research",
+    "objectID": "publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html",
+    "href": "publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html",
+    "title": "Identification of gut microbiome features associated with host metabolic health in a large population-based cohort",
     "section": "",
-    "text": "Diament A, Gorodetski M, Jankelow A, Keshet A, Shor T, Weissglas-Volkov D, Rossman H, Segal E, ML4H (arXiv)"
+    "text": "Keshet A, Segal E, Nature Communications"
   },
   {
-    "objectID": "publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html#paper-summary",
-    "href": "publications/125c42c7-a9e4-806c-964c-eeac81f1567f.html#paper-summary",
-    "title": "A Multimodal Dataset of 21,412 Recorded Nights for Sleep and Respiratory Research",
+    "objectID": "publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html#paper-summary",
+    "href": "publications/12fc42c7-a9e4-807c-8cd4-ffe82a9c6d5d.html#paper-summary",
+    "title": "Identification of gut microbiome features associated with host metabolic health in a large population-based cohort",
     "section": "Paper summary",
-    "text": "Paper summary\nThis study introduces a novel, rich dataset obtained from home sleep apnea tests using the FDA-approved WatchPAT-300 device, collected from 7,077 participants over 21,412 nights. The dataset comprises three levels of sleep data: raw multi-channel time-series from sensors, annotated sleep events, and computed summary statistics, which include 447 features related to sleep architecture, sleep apnea, and heart rate variability (HRV). We present reference values for Apnea/Hypopnea Index (AHI), sleep efficiency, Wake After Sleep Onset (WASO), and HRV sample entropy, stratified by age and sex. Moreover, we demonstrate that the dataset improves the predictive capability for various health related traits, including body composition, bone density, blood sugar levels and cardiovascular health. These results illustrate the dataset’s potential to advance sleep research, personalized healthcare, and machine learning applications in biomedicine."
+    "text": "Paper summary\n\nThis paper examines the relationship between gut microbiome and Host metabolic health.\nMicrobiome data was analyzed on a functional level - examining microbial gene families and metabolic pathways that are contributed by the entire gut microbiome community.\nFor host metabolic health 38 measures were examined - from CGM, DXA and liver US.\nSignificant associations were uncovered between microbial gene families and pathways and host metabolic health. Many significant associations were observed specifically for body composition measures.\nVariability was found in the number of species and genera contributing to the abundance of the associated gene families and pathways - suggesting that the discovered associations do not represent a unique species or genera but an association with a community level functionality.\nMost of the associations remained unchanged when adjusting for nutritional information for diet logging, with CGM within-day variability measures most affected with a reduction in the amount of significant associations.\nAssociations with BMI were replicated in an external cohort of Dutch microbiome.\nThis results could pave the way for future research on the relation between microbiome and host metabolic health, and perhaps to the development of microbiome based therapeutics."
   },
   {
-    "objectID": "publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html",
-    "href": "publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html",
-    "title": "From Glucose Patterns to Health Outcomes: A Generalizable Foundation Model for Continuous Glucose Monitor Data Analysis",
+    "objectID": "publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html",
+    "href": "publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html",
+    "title": "Pangenomes of human gut microbiota uncover links between genetic diversity and stress response",
     "section": "",
-    "text": "Lutsker G, Sapir G, Godneva A, Shilo S, Greenfield J, Samocha-Bonet D, Mannor S, Meirom E, Chechik G, Rossman H, Segal E, arxiv"
+    "text": "Shoer S, Reicher L, Zhao C, Pollard K, Pilpel Y, Segal E, Cell Host & Microbe"
   },
   {
-    "objectID": "publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html#paper-summary",
-    "href": "publications/102c42c7-a9e4-8035-9eb6-f9dbe5250084.html#paper-summary",
-    "title": "From Glucose Patterns to Health Outcomes: A Generalizable Foundation Model for Continuous Glucose Monitor Data Analysis",
+    "objectID": "publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html#paper-summary",
+    "href": "publications/120c42c7-a9e4-8039-baaf-e5c618103a4d.html#paper-summary",
+    "title": "Pangenomes of human gut microbiota uncover links between genetic diversity and stress response",
     "section": "Paper summary",
-    "text": "Paper summary\nThe paper describes the GluFormer model that was developed based on CGM data from 10,812 non-diabetic individuals from the HPP dataset. The AI model is from the class of transformer-based generative models, similar to ChatGPT (GPT = Generative, Pretrained, Transformer). For each glucose measurement, it provides a prediction for the next point in time. The model offers insights into metabolic health, predicting health outcomes 4 years in advance, outperforming state-of-the-art CGM analysis tools. It can be used for different downstream tasks, for example to forecast outcomes of clinical trials or to simulate glucose response to diet.\n\n\n\nimage"
+    "text": "Paper summary\nThe genetic diversity of the gut microbiota has a central role in host health. Here, we created pangenomes for 728 human gut prokaryotic species, quadrupling the genes of strain-specific genomes. Each of these species has a core set of a thousand genes, differing even between closely related species, and an accessory set of genes unique to the different strains. Functional analysis shows high strain variability associates with sporulation, whereas low variability is linked with antibiotic resistance. We further map the antibiotic resistome across the human gut population and find 237 cases of extreme resistance even to last-resort antibiotics, with a predominance among Enterobacteriaceae. Lastly, the presence of specific genes in the microbiota relates to host age and sex. Our study underscores the genetic complexity of the human gut microbiota, emphasizing its significant implications for host health. The pangenomes and antibiotic resistance map constitute a valuable resource for further research.\n\n\n\nimage"
   },
   {
-    "objectID": "publications/4b235cf9-853f-49f0-8676-2117b7eb673a.html",
-    "href": "publications/4b235cf9-853f-49f0-8676-2117b7eb673a.html",
-    "title": "Bread Affects Clinical Parameters and Induces Gut Microbiome-Associated Personal Glycemic Responses",
+    "objectID": "publications/5b632df2-b422-4e49-af55-15a5feeaa9cf.html",
+    "href": "publications/5b632df2-b422-4e49-af55-15a5feeaa9cf.html",
+    "title": "Personalized Nutrition by Prediction of Glycemic Responses",
     "section": "",
-    "text": "Korem T, Zeevi D, Zmora N, Weissbrod O, Bar N, Lotan-Pompan M, Avnit-Sagi T, Kosower N, Malka G, Rein M, Suez J, Goldberg B, Weinberger A, Levy A, Elinav E, Segal E, Cell Metabolism"
+    "text": "Zeevi D, Korem T, Zmora N, Israeli D, Rothschild D, Weinberger A, Ben-Yacov O, Lador D, Avnit-Sagi T, Lotan-Pompan M, Suez J, Mahdi J, Matot E, Malka G, Kosower N, Rein M, Zilberman-Schapira G, Dohnalová L, Pevsner-Fischer M, Bikovsky R, Halpern Z, Elinav E, Segal E, Cell"
   },
   {
-    "objectID": "publications/2a21980a-e72d-4533-9313-303678fd412e.html",
-    "href": "publications/2a21980a-e72d-4533-9313-303678fd412e.html",
-    "title": "Host genetics and microbiome associations through the lens of genome wide association studies",
+    "objectID": "publications/1dd59130-bc80-43ba-b3ed-25559c242a38.html",
+    "href": "publications/1dd59130-bc80-43ba-b3ed-25559c242a38.html",
+    "title": "Environment dominates over host genetics in shaping human gut microbiota",
     "section": "",
-    "text": "Weissbrod O, Rothschild D, Barkan E, Segal E, Current Opinion in Microbiology"
+    "text": "Rothschild D, Weissbrod O, Barkan E, Kurilshikov A, Korem T, Zeevi D, Costea P, Godneva A, Kalka I, Bar N, Shilo S, Lador D, Vila A, Zmora N, Pevsner-Fischer M, Israeli D, Kosower N, Malka G, Wolf B, Avnit-Sagi T, Lotan-Pompan M, Weinberger A, Halpern Z, Carmi S, Fu J, Wijmenga C, Zhernakova A, Elinav E, Segal E, Nature"
   },
   {
-    "objectID": "publications/384ddec8-c5c0-43da-9600-1ab53c7f93e0.html",
-    "href": "publications/384ddec8-c5c0-43da-9600-1ab53c7f93e0.html",
-    "title": "Rich data sets could end costly drug discovery",
+    "objectID": "publications/368fcea0-0a5d-4cb1-8bcf-cce629386ab8.html",
+    "href": "publications/368fcea0-0a5d-4cb1-8bcf-cce629386ab8.html",
+    "title": "Structural variation in the gut microbiome associates with host health",
     "section": "",
-    "text": "Segal E, Nature"
+    "text": "Zeevi D, Korem T, Godneva A, Bar N, Kurilshikov A, Lotan-Pompan M, Weinberger A, Fu J, Wijmenga C, Zhernakova A, Segal E, Nature"
   },
   {
     "objectID": "publications/8dfba73a-865f-4071-aa95-c081252a0d95.html",
