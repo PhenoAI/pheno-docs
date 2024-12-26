@@ -179,9 +179,10 @@ def process_publication(row: pd.Series, notion_token: str=None):
         weblink = row['DOI'] if row['DOI'] else weblink
     authors, pub_date, abstract = get_publication_details(weblink)
     abstract = '## Paper summary\n\n' + abstract if abstract else ''
+    year = pub_date.split('-')[0] if pub_date else row['Year']
 
     # Create frontmatter
-    categories = list(row['Tags']) + list(row['Groups involved']) + [journal_name]
+    categories = list(row['Tags']) + list(row['Groups involved']) + [journal_name] + [year]
     frontmatter = f"""---
 title: "{row['Title']}"
 date: "{pub_date if pub_date else row['Year']}"
