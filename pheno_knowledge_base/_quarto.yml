@@ -10,6 +10,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: participant_journey.md
+        text: "Get to Know the HPP"
       - href: datasets.md
         text: Available Datasets
       - platform_tutorial.md
@@ -19,6 +21,8 @@ website:
     style: "docked"
     search: true
     contents:
+      - href: participant_journey.md
+        text: "Get to Know the HPP"
       - platform_tutorial.md
       - pheno_utils.md
       - faq.md
