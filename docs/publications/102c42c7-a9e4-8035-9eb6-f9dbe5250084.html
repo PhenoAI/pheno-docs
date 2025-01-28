@@ -40,8 +40,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3a7b3844d9171e6a4adc2e26c678f646.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-a2e2465e12904b56fd75c214dc7b3a5f.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-a3f4f09f3538ce0afda08d7c3ded2b70.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-f2e833b4dd4d19362e410f2e13bd9081.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -458,10 +458,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Lutsker G, Sapir G, Godneva A, Shilo S, Greenfield J, Samocha-Bonet D, Mannor S, Meirom E, Chechik G, Rossman H, Segal E, <a href="https://arxiv.org/abs/2408.11876"><em>arxiv</em></a></p>
+<p>Lutsker G, Sapir G, Shilo S, Merino J, Godneva A, Greenfield J, Samocha-Bonet D, Dhir R, Gude F, Mannor S, Meirom E, Chechik G, Rossman H, Segal E, <a href="https://arxiv.org/abs/2408.11876"><em>arxiv</em></a></p>
 <section id="paper-summary" class="level2">
 <h2 class="anchored" data-anchor-id="paper-summary">Paper summary</h2>
-<p>The <a href="http://arxiv.org/abs/2408.11876">paper</a> describes the GluFormer model that was developed based on CGM data from 10,812 non-diabetic individuals from the HPP dataset. The AI model is from the class of transformer-based generative models, similar to ChatGPT (GPT = Generative, Pretrained, Transformer). For each glucose measurement, it provides a prediction for the next point in time. The model offers insights into metabolic health, predicting health outcomes 4 years in advance, outperforming state-of-the-art CGM analysis tools. It can be used for different downstream tasks, for example to forecast outcomes of clinical trials or to simulate glucose response to diet.</p>
+<p>The <a href="http://arxiv.org/abs/2408.11876">paper</a> describes the GluFormer model that was developed based on CGM data from 10,812 non-diabetic individuals from the HPP dataset. The AI model is from the class of transformer-based generative models, similar to ChatGPT (GPT = Generative, Pretrained, Transformer). For each glucose measurement, it provides a prediction for the next point in time. The model offers insights into metabolic health, predicting health outcomes 4 years in advance, outperforming state-of-the-art CGM analysis tools. It can be used for different downstream tasks, for example to forecast outcomes of clinical trials or to simulate glucose response to diet. Most important numbers:</p>
+<ul>
+<li><p>In a longitudinal study of 580 adults with CGM data and 12-year follow-up, GluFormer identifies individuals at elevated risk of developing diabetes more effectively than blood HbA1C%, capturing 66% of all new-onset diabetes diagnoses in the top quartile versus 7% in the bottom quartile.</p></li>
+<li><p>Similarly, 69% of cardiovascular-death events occurred in the top quartile with none in the bottom quartile, demonstrating powerful risk stratification beyond traditional glycemic metrics.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="6b4c6bdc_image.png" class="img-fluid figure-img"></p>
+<figcaption>image</figcaption>
+</figure>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="71ad6e99_image.png" class="img-fluid figure-img"></p>
