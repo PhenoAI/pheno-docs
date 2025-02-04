@@ -32,7 +32,7 @@ The information is stored in a number of statistics parquet files:<br>
 - `pca/pca.parquet`: a PLINK file containing  principal components.<br>
 - `pca/pca_loadings.tsv`: a PLINK file containing principal component loadings calculated.<br>
 
-```mermaid
+```{mermaid}
 graph LR;
     D[DNA extraction] -->|sequencing| F(FASTQ) -->|alignment| B(BAM) -->|imputation| V(VCF)
     H[REFERENCE HAPLOTYPES] -->|imputation| V -->|"sample<br>aggregation"| R(BED<br>raw) -->|QC| Q(BED<br>post-qc)

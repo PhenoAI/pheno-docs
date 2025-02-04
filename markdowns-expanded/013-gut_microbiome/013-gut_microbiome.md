@@ -29,7 +29,7 @@ The information is stored in multiple parquet files:
 - `urs`: Segal Lab relative abundance.
 - `metaphlan_*`: 8 tables with MetaPhlAn 4 relative abundances, separated by taxonomic levels.
 
-```mermaid
+```{mermaid}
 graph LR;
     A(Raw FASTQ File) --> |Trimmomatic| B(Clean FASTQ File)
     A --> |FASTQC| C(QC HTML)

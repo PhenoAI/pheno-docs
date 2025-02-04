@@ -38,7 +38,7 @@ WatchPAT device setup: It is strapped on the wrist of the non-dominant hand.
 <!-- for the example notebooks -->
 The information is stored in 2 main statistics parquet files: `sleep.parquet`, `hrv.parquet` (computed using NeuroKit2); In multiple events parquets and in multiple time series parquets / EDF files containing sensor channels for each night of logging.
 
-```mermaid
+```{mermaid}
 flowchart LR;
 
 classDef sensor fill:#a1c9f4;
