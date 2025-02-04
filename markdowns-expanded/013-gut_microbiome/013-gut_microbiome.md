@@ -25,6 +25,7 @@ To measure the genetic makeup of the human gut flora given stool samples via met
 ### Data availability 
 <!-- for the example notebooks -->
 The information is stored in multiple parquet files:
+
 - `gut_microbiome.parquet`: Sequencing and QC statistics.
 - `urs`: Segal Lab relative abundance.
 - `metaphlan_*`: 8 tables with MetaPhlAn 4 relative abundances, separated by taxonomic levels.
