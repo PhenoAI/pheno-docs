@@ -32,3 +32,4 @@ The information is stored in 1 parquet file: `hand_grip.parquet`
 ### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/006-hand_grip.html
+* Pheno Data Browser: https://pheno-demo-app.vercel.app/folder/6

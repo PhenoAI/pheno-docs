@@ -29,3 +29,4 @@ The information is stored in 1 parquet file: `bone_density.parquet`
 ### Relevant links
 
 * Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/022-bone_density.html
+* Pheno Data Browser: https://pheno-demo-app.vercel.app/folder/22
