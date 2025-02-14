@@ -41,7 +41,7 @@ Figure 1: library structure
 - Read counts are stored in long-format parquet files per batch
 - Each sequencing batch includes metadata parquet, JSON and HTML files
 
-```mermaid
+```{mermaid}
 flowchart LR;
 
 S[sequencing] -->|bcl2fastq<br>fastq-multx| raw(raw FASTQ) -->|umi-tools<br>cutadapt| trimmed(trimmed FASTQ) -->|STAR| aligned(aligned BAM) -->|umi-tools| deduplicated(deduplicated BAM) -->|htseq| counts(counts)
@@ -65,4 +65,5 @@ counts --> metadata
 
 ### Relevant links
 
-* Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/024-rna_seq.html
+* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/024-rna_seq.html)
+* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/24)

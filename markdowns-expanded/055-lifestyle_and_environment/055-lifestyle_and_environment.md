@@ -22,4 +22,5 @@ The information is stored in 1 parquet file: `'lifestyle_and_environment.parquet
 
 ### Relevant links
 
-* Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/055-lifestyle_and_environment.html
+* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/055-lifestyle_and_environment.html)
+* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/55)

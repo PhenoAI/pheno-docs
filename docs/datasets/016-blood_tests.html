@@ -454,7 +454,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#blood-tests-dataset" id="toc-blood-tests-dataset" class="nav-link active" data-scroll-target="#blood-tests-dataset">Blood tests dataset</a>
   <ul class="collapse">
-  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability:</a></li>
+  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#measurement-protocol" id="toc-measurement-protocol" class="nav-link" data-scroll-target="#measurement-protocol">Measurement protocol</a></li>
+  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability</a></li>
+  <li><a href="#relevant-links" id="toc-relevant-links" class="nav-link" data-scroll-target="#relevant-links">Relevant links</a></li>
   </ul></li>
   <li><a href="#data-dictionary" id="toc-data-dictionary" class="nav-link" data-scroll-target="#data-dictionary">Data dictionary</a></li>
   </ul>
@@ -484,10 +488,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="blood-tests-dataset" class="level1">
 <h1>Blood tests dataset</h1>
-<p>The lab tests in this data set of the Human Phenotype Project are based on tests performed to participants in the community as part of their regular medical care at their HMO (Health Maintenance Organization). Participants are asked to upload their blood/urine tests done at their HMOs from previous years. These tests range from the very common CBC and chemistry tests, Vitamins levels to the standard PCRs for infectious diseases all the way to rare tests requiring the user to measure urine for 24h.</p>
+<section id="description" class="level3">
+<h3 class="anchored" data-anchor-id="description">Description</h3>
+<p>The lab tests in this dataset of the Human Phenotype Project are based on tests performed to participants in the community as part of their regular medical care at their HMO (Health Maintenance Organization). Participants are asked to upload their blood/urine tests done at their HMOs from previous years. These tests range from the very common CBC and chemistry tests, vitamins levels and other laboratory tests.</p>
+</section>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>Laboratory (Lab) tests are often used in health care to determine physiological and biochemical states, such as disease, mineral content, pharmaceutical drug effectiveness, and organ function. The lab tests in this data set of the Human Phenotype Project are based on tests performed to participants in the community as part of their regular medical care at their HMO. Following registration and follow-up calls or visits the participants receive an email asking for and providing instructions on how to upload their lab test results. The participants are provided with a list of recommended tests to upload (specified in the list below) and the recommended time window for some tests (last 3 months or from the previous one year). Each participant uploads blood tests that were done throughout the years with their HMO. Upon upload, the file is analyzed based on its format, and all readable tests that can be extracted are uploaded to a PostgreSQL database.</p>
+<p>Note that this data is created by the users own volition and the tests are done independent of their visits to the clinical testing center (CTC).</p>
+<section id="list-of-recommended-tests-for-upload" class="level4">
+<h4 class="anchored" data-anchor-id="list-of-recommended-tests-for-upload">List of recommended tests for upload:</h4>
+<section id="tests-recommended-from-previous-year" class="level5">
+<h5 class="anchored" data-anchor-id="tests-recommended-from-previous-year">Tests recommended from previous year:</h5>
+<p>HbA1C%, tota cholesterol, HDL, LDL, Triglycerides. ##### Tests recommended from the last 3 months: Creatinine, Glucose, CBC (WBC, RBC, Hemoglobin, Hematocrite, Platelets, MCV, MCH, MCHC, RDW, Mean Platelet Volume, Neutrophils%, Lymphocytes%, Monocytes%, Eosinophils%, Basophils%) ##### Tests without time recommendation: TSH, CRP, Albumin, Total Protein, Bilirubin, AST-GOT, ALT-GPT, GGT, Alkaline phosphatase, Sodium, Potassium, Chloride, Calcium, Phosphor, Uric acid, B12, Vitamin D, Folic acid and Ferritin.</p>
+</section>
+</section>
+</section>
+<section id="measurement-protocol" class="level3">
+<h3 class="anchored" data-anchor-id="measurement-protocol">Measurement protocol</h3>
+<!-- long measurment protocol for the data browser -->
+<p>Every blood/urine test has its own measurement protocol. * Some blood tests require the participant itself to act differently prior to the test - whether it’s fasting, drinking concentrated glucose/lactose, sampling urine etc. * The technician has also a large part of the test, by selecting relevant buffers for every one of the tests and have it’s own complete protocol per test. * And the lab - each HMO would have their own storing protocols, measuring with different machines with different sensitivity thresholds and their own standards (usually aligned between different HMO, but not necessarily).</p>
+</section>
 <section id="data-availability" class="level3">
-<h3 class="anchored" data-anchor-id="data-availability">Data availability:</h3>
+<h3 class="anchored" data-anchor-id="data-availability">Data availability</h3>
+<!-- for the example notebooks -->
 <p>The information is stored in 1 parquet file <code>blood_tests.parquet</code>.</p>
+</section>
+<section id="relevant-links" class="level3">
+<h3 class="anchored" data-anchor-id="relevant-links">Relevant links</h3>
+<ul>
+<li><a href="https://knowledgebase.pheno.ai/datasets/016-blood_tests.html">Pheno Knowledgebase</a></li>
+<li><a href="https://pheno-demo-app.vercel.app/folder/16">Pheno Data Browser</a></li>
+</ul>
 <div id="a94c176c" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-04-02T11:45:56.614367Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-04-02T11:45:56.614094Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-04-02T11:45:57.915269Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-04-02T11:45:57.914452Z&quot;}" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pheno_utils <span class="im">import</span> PhenoLoader</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>

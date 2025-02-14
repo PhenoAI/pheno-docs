@@ -16,6 +16,7 @@ The Human Phenotype Project (HPP) performs fundus imaging on each participant's 
 The current pipeline does not include automatic identification or clinical interpretation of eye abnormalities such as age-macular degeneration (AMD) or edema, glaucoma signs, microaneurysms etc’ that can be derived from the fundus image.
 
 ### Data availability:
+
 - All tabular information is stored in a main parquet file: `fundus.parquet`
 - Derived microvasculature information is stored in a secondary parquet file: `microvasculature.parquet`
 - Image files including segmentations are stored in subfolders and mapped in the parqet files.

@@ -21,11 +21,12 @@ This dataset is a derivative of the human genome dataset (that has been collecte
 ### Data availability 
 <!-- for the example notebooks -->
 The information is stored in multiple parquet files:
+
 - `oral_microbiome.parquet`: Sequencing and QC statistics.
 - `metaphlan_*`: 8 tables with MetaPhlAn 4 vJan21 relative abundances, separated by taxonomic levels.
 - `humann_aggregated_*`: arrow files of either gene level abundances or pathway level abundances+coverage from HumanN 3.6 given MetaPhlAn 4 vJan21 outputs
 
-```mermaid
+```{mermaid}
 graph LR;
     A(Human Aligned<br>BAM) --> |Filter and convert| B(Non Human Reads<br>FASTQ)
     B --> |Trimmomatic| C(Clean FASTQ File)
@@ -52,4 +53,5 @@ graph LR;
 
 ### Relevant links
 
-* Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/070-oral_microbiome.html
+* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/070-oral_microbiome.html)
+* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/70)

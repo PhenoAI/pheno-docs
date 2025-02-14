@@ -9,6 +9,7 @@ This RNA-Seq dataset focuses on gene expression profiles in human peripheral blo
 The dataset was generated using 3’-tagged bulk RNA sequencing technology, capturing a broad spectrum of gene expression in PBMCs from diverse clinical samples. The protocol was adapted from mcSCRB-seq The library preparation for our RNA-Seq dataset is based on a 3'-tagged bulk RNA-Sequencing protocol, adapted from mcSCRB-seq (Bagnoli et al.). This method incorporates unique molecular identifiers (UMIs), pool barcodes, and sample barcodes. UMIs are crucial for accurately quantifying transcript abundance, as they enable the differentiation of PCR duplicates from unique mRNA molecules. Pool barcodes facilitate multiplexing of several samples in a single sequencing run, enhancing throughput efficiency. Sample barcodes are used to track individual samples, ensuring precise sample identification and data integrity.
 
 ### Data availability:
+
 - All tabular information is stored in a main parquet file: `rna_seq.parquet`
 - Read counts are stored in long-format parquet files per batch
 - Each sequencing batch includes metadata parquet, JSON and HTML files

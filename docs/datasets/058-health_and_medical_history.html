@@ -454,7 +454,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#health-and-medical-history" id="toc-health-and-medical-history" class="nav-link active" data-scroll-target="#health-and-medical-history">Health and medical history</a>
   <ul class="collapse">
-  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability:</a></li>
+  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#measurement-protocol" id="toc-measurement-protocol" class="nav-link" data-scroll-target="#measurement-protocol">Measurement protocol</a></li>
+  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability</a></li>
+  <li><a href="#relevant-links" id="toc-relevant-links" class="nav-link" data-scroll-target="#relevant-links">Relevant links</a></li>
   </ul></li>
   <li><a href="#data-dictionary" id="toc-data-dictionary" class="nav-link" data-scroll-target="#data-dictionary">Data dictionary</a></li>
   </ul>
@@ -484,11 +488,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="health-and-medical-history" class="level1">
 <h1>Health and medical history</h1>
+<section id="description" class="level3">
+<h3 class="anchored" data-anchor-id="description">Description</h3>
+<p>Health and medical history data provides comprehensive insights into an individual’s past and present medical conditions, treatments, surgeries, and overall health status. This data includes personal health details such as chronic illnesses, medications, hospitalizations, and surgical procedures, which help in assessing risk factors and understanding disease progression over time.</p>
+</section>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
 <p>The Human Phenotype Project conducts comprehensive data collection through online surveys, where participants voluntarily provide information on various aspects influencing their health. This includes information about a participant’s health and medical history, captured through two lifestyle surveys.</p>
+</section>
+<section id="measurement-protocol" class="level3">
+<h3 class="anchored" data-anchor-id="measurement-protocol">Measurement protocol</h3>
+<!-- long measurment protocol for the data browser -->
 <p>These lifestyle surveys are modeled after the UK Biobank’s touch screen questionnaire. Participants receive the full version via email to complete on the Zoho platform, either before or after their baseline visit. A shorter, follow-up version of the questionnaire is then filled out by participants during subsequent visits.</p>
+</section>
 <section id="data-availability" class="level3">
-<h3 class="anchored" data-anchor-id="data-availability">Data availability:</h3>
+<h3 class="anchored" data-anchor-id="data-availability">Data availability</h3>
+<!-- for the example notebooks -->
 <p>The information is stored in 2 parquet files: <code>ukbb.parquet</code> and <code>initial_medical.parquet</code></p>
+</section>
+<section id="relevant-links" class="level3">
+<h3 class="anchored" data-anchor-id="relevant-links">Relevant links</h3>
+<ul>
+<li><a href="https://knowledgebase.pheno.ai/datasets/058-health_and_medical_history.html">Pheno Knowledgebase</a></li>
+<li><a href="https://pheno-demo-app.vercel.app/folder/58">Pheno Data Browser</a></li>
+</ul>
 <div id="743793ab" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-04-02T12:01:31.009247Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-04-02T12:01:31.008580Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-04-02T12:01:32.253153Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-04-02T12:01:32.252636Z&quot;}" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pheno_utils <span class="im">import</span> PhenoLoader</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>

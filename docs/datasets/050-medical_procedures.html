@@ -452,9 +452,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#medical-procedures" id="toc-medical-procedures" class="nav-link active" data-scroll-target="#medical-procedures">Medical procedures</a>
+  <li><a href="#medical-procedures-dataset" id="toc-medical-procedures-dataset" class="nav-link active" data-scroll-target="#medical-procedures-dataset">Medical procedures dataset</a>
   <ul class="collapse">
-  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability:</a></li>
+  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#measurement-protocol" id="toc-measurement-protocol" class="nav-link" data-scroll-target="#measurement-protocol">Measurement protocol</a></li>
+  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability</a></li>
+  <li><a href="#relevant-links" id="toc-relevant-links" class="nav-link" data-scroll-target="#relevant-links">Relevant links</a></li>
   </ul></li>
   <li><a href="#data-dictionary" id="toc-data-dictionary" class="nav-link" data-scroll-target="#data-dictionary">Data dictionary</a></li>
   </ul>
@@ -482,13 +486,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="medical-procedures" class="level1">
-<h1>Medical procedures</h1>
+<section id="medical-procedures-dataset" class="level1">
+<h1>Medical procedures dataset</h1>
+<section id="description" class="level3">
+<h3 class="anchored" data-anchor-id="description">Description</h3>
+<p>Coming soon</p>
+</section>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
 <p>The Human Phenotype Project study gathers medical data through online surveys where participants self-report their use of medical procedures. This approach relies on individuals to communicate their experiences with medical interventions. Accurate and comprehensive information about the utilization of these procedures is crucial for grasping their actual effects on personal health.</p>
-<section id="data-availability" class="level3">
-<h3 class="anchored" data-anchor-id="data-availability">Data availability:</h3>
+</section>
+<section id="measurement-protocol" class="level3">
+<h3 class="anchored" data-anchor-id="measurement-protocol">Measurement protocol</h3>
+<!-- long measurment protocol for the data browser -->
 <p>During the registration phase of the study, participants are required to provide details about their medical procedures in the Initial Medical Survey. Further data is then gathered in the Follow-up Medical Survey when participants return for subsequent visits.</p>
+</section>
+<section id="data-availability" class="level3">
+<h3 class="anchored" data-anchor-id="data-availability">Data availability</h3>
+<!-- for the example notebooks -->
 <p>The information is stored in 2 parquets file: <code>initial_medical.parquet</code>, <code>follow_up_medical.parquet</code></p>
+</section>
+<section id="relevant-links" class="level3">
+<h3 class="anchored" data-anchor-id="relevant-links">Relevant links</h3>
+<ul>
+<li><a href="https://knowledgebase.pheno.ai/datasets/050-medical_procedures">Pheno Knowledgebase</a></li>
+<li><a href="https://pheno-demo-app.vercel.app/folder/50">Pheno Data Browser</a></li>
+</ul>
 <div id="b1e64e91" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-04-02T12:01:01.671449Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-04-02T12:01:01.671027Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-04-02T12:01:02.923524Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-04-02T12:01:02.923058Z&quot;}" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pheno_utils <span class="im">import</span> PhenoLoader</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>

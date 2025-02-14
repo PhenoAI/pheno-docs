@@ -52,4 +52,5 @@ We sent our samples to Nightingale in two batches (with more planned):
 
 ### Relevant links
 
-* Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/029-nightingale_metabolomics.html
+* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/029-nightingale_metabolomics.html)
+* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/29)
