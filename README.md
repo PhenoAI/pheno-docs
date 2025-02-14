@@ -23,3 +23,9 @@ python3 -m pip install jupyterlab-quarto
 
 1. Run the `src/create_publications.ipynb` notebook.
 2. Build the docs (see above).
+
+# How to update the datasets introduction
+
+1. Update the corresponding markdown file in the `markdowns-expanded` folder.
+2. Run the `python ../pheno-examples/src/tools/add_intro.py pheno_knowledge_base/datasets` command to update the introduction to the datasets.
+3. Build the docs (see above).
