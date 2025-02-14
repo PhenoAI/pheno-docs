@@ -62,5 +62,5 @@ graph LR;
 
 ### Relevant links
 
-* Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/013-gut_microbiome.html
-* Pheno Data Browser: https://pheno-demo-app.vercel.app/folder/13
+* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/013-gut_microbiome.html)
+* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/13)

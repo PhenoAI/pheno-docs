@@ -33,5 +33,5 @@ The information is stored in 3 parquet files: `diet_logging.parquet`, `diet_logg
 
 ### Relevant links
 
-* Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/005-diet_logging.html
-* Pheno Data Browser: https://pheno-demo-app.vercel.app/folder/5
+* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/005-diet_logging.html)
+* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/5)

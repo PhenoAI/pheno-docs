@@ -28,5 +28,5 @@ The information is stored in 1 parquet file: `blood_pressure.parquet`
 
 ### Relevant links
 
-* Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/007-blood_pressure.html
-* Pheno Data Browser: https://pheno-demo-app.vercel.app/folder/7
+* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/007-blood_pressure.html)
+* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/7)

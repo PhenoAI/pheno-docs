@@ -29,5 +29,5 @@ The information is stored in 2 parquet files: `liver_ultrasound.parquet`and `liv
 
 ### Relevant links
 
-* Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/004-liver_ultrasound.html
-* Pheno Data Browser: https://pheno-demo-app.vercel.app/folder/4
+* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/004-liver_ultrasound.html)
+* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/4)

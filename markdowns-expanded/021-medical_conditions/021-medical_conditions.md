@@ -39,5 +39,5 @@ The information is stored in 1 parquet file: `medical_conditions.parquet`
 
 ### Relevant links
 
-* Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/021-medical_conditions.html
-* Pheno Data Browser: https://pheno-demo-app.vercel.app/folder/21
+* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/021-medical_conditions.html)
+* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/21)

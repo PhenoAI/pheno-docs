@@ -64,5 +64,5 @@ Notably, we do not provide the raw data of samples who failed Gencove QC or for 
 
 ### Relevant links
 
-* Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/014-human_genetics.html
-* Pheno Data Browser: https://pheno-demo-app.vercel.app/folder/14
+* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/014-human_genetics.html)
+* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/14)

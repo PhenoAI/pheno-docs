@@ -35,5 +35,5 @@ Personal and communication data is saved separately in a secure environment from
 
 ### Relevant links
 
-* Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/001-events.html
-* Pheno Data Browser: https://pheno-demo-app.vercel.app/folder/1
+* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/001-events.html)
+* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/1)

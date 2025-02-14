@@ -28,5 +28,5 @@ The information is stored in 1 parquet file: `carotid_ultrasound.parquet`
 
 ### Relevant links
 
-* Pheno Knowledgebase: https://knowledgebase.pheno.ai/datasets/012-carotid_ultrasound.html
-* Pheno Data Browser: https://pheno-demo-app.vercel.app/folder/12
+* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/012-carotid_ultrasound.html)
+* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/12)
