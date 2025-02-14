@@ -452,9 +452,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#medical-symptoms" id="toc-medical-symptoms" class="nav-link active" data-scroll-target="#medical-symptoms">Medical symptoms</a>
+  <li><a href="#medical-symptoms-dataset" id="toc-medical-symptoms-dataset" class="nav-link active" data-scroll-target="#medical-symptoms-dataset">Medical symptoms dataset</a>
   <ul class="collapse">
-  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability:</a></li>
+  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#measurement-protocol" id="toc-measurement-protocol" class="nav-link" data-scroll-target="#measurement-protocol">Measurement protocol</a></li>
+  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability</a></li>
+  <li><a href="#relevant-links" id="toc-relevant-links" class="nav-link" data-scroll-target="#relevant-links">Relevant links</a></li>
   </ul></li>
   <li><a href="#data-dictionary" id="toc-data-dictionary" class="nav-link" data-scroll-target="#data-dictionary">Data dictionary</a></li>
   </ul>
@@ -482,14 +486,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="medical-symptoms" class="level1">
-<h1>Medical symptoms</h1>
+<section id="medical-symptoms-dataset" class="level1">
+<h1>Medical symptoms dataset</h1>
+<section id="description" class="level3">
+<h3 class="anchored" data-anchor-id="description">Description</h3>
+<p>Medical symptoms data captures detailed information about an individual’s current health status by recording physical and mental symptoms they experience. This data includes subjective descriptions such as pain levels, fatigue, and other discomforts, along with observed signs like fever or swelling. Tracking symptoms over time helps in identifying potential health issues, understanding disease onset and progression, and supporting diagnosis. It provides valuable real-time insights into patient well-being and is crucial for personalized healthcare management and treatment planning.</p>
+</section>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
 <p>The Human Phenotype Project study collects medical data through online surveys, where participants self-report their experiences with various medical symptoms. This method depends on individuals accurately conveying their own health experiences. Obtaining detailed and thorough information about the symptoms people experience is essential to understand their actual impact on individual health.</p>
+</section>
+<section id="measurement-protocol" class="level3">
+<h3 class="anchored" data-anchor-id="measurement-protocol">Measurement protocol</h3>
+<!-- long measurment protocol for the data browser -->
 <p>In the initial phase of the study, during registration, participants are asked to provide information about any medical symptoms they have experienced in the Initial Medical Survey. Additional data is then collected in the Follow-up UKBB Survey during subsequent visits, allowing for ongoing tracking of these symptoms</p>
-<p>An additional survey is asked to participants focusing on Irritable Bowel Syndrome (IBS) and digestive health. This IBS survey is an adaptation of the UK Biobank online gastro-intestinal health self-assessment questionnaire. Many of the questions in the UK Biobank gut health (IBS) questionnaire were adopted from the World Gastroenterology Association questionnaire (2009). Questions asked are related to the participant’s bowel habits, characterization of abdominal pain patterns, accompanying symptoms, and history of IBS in the family.</p>
+<p>An additional survey is asked to participants focusing on Irritable Bowel Syndrome (IBS) and digestive health. This digestive health survey is an adaptation of the UK Biobank online gastro-intestinal health self-assessment questionnaire. Many of the questions in the UK Biobank gut health (IBS) questionnaire were adopted from the World Gastroenterology Association questionnaire (2009). Questions asked are related to the participant’s bowel habits, characterization of abdominal pain patterns, accompanying symptoms, and history of IBS in the family.</p>
+</section>
 <section id="data-availability" class="level3">
-<h3 class="anchored" data-anchor-id="data-availability">Data availability:</h3>
+<h3 class="anchored" data-anchor-id="data-availability">Data availability</h3>
+<!-- for the example notebooks -->
 <p>The information is stored in 3 parquest files: <code>initial_medical.parquet</code>, <code>follow_up_ukbb.parquet</code> and <code>digestve_health.parquet</code></p>
+</section>
+<section id="relevant-links" class="level3">
+<h3 class="anchored" data-anchor-id="relevant-links">Relevant links</h3>
+<ul>
+<li><a href="https://knowledgebase.pheno.ai/datasets/049-medical_symptoms">Pheno Knowledgebase</a></li>
+<li><a href="https://pheno-demo-app.vercel.app/folder/49">Pheno Data Browser</a></li>
+</ul>
 <div id="ca5c170e" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-04-02T12:00:56.730184Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-04-02T12:00:56.729949Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-04-02T12:00:57.961620Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-04-02T12:00:57.960886Z&quot;}" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pheno_utils <span class="im">import</span> PhenoLoader</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>

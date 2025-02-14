@@ -454,7 +454,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#children" id="toc-children" class="nav-link active" data-scroll-target="#children">Children</a>
   <ul class="collapse">
-  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability:</a></li>
+  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#measurement-protocol" id="toc-measurement-protocol" class="nav-link" data-scroll-target="#measurement-protocol">Measurement protocol</a></li>
+  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability</a></li>
+  <li><a href="#relevant-links" id="toc-relevant-links" class="nav-link" data-scroll-target="#relevant-links">Relevant links</a></li>
   </ul></li>
   <li><a href="#data-dictionary" id="toc-data-dictionary" class="nav-link" data-scroll-target="#data-dictionary">Data dictionary</a></li>
   </ul>
@@ -484,11 +488,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="children" class="level1">
 <h1>Children</h1>
-<p>The Human Phenotype Project, with a special focus on information about a participants children, collects vital data through online surveys, where participants self-report details specifically related to children’s birth weights, pregnancy durations, and the number of children in their families.</p>
+<section id="description" class="level3">
+<h3 class="anchored" data-anchor-id="description">Description</h3>
+<p>The Children Dataset is a curated collection of self-reported information from participants concerning their children and pregnancy experiences. It includes key variables such as:</p>
+<ul>
+<li>Number of Children: The total count of biological children reported by each participant.</li>
+<li>Birth Weights: Recorded birth weights of participants’ children, offering insights into neonatal health and potential risk factors.</li>
+<li>Pregnancy Durations: Length of each pregnancy in weeks, indicating whether births were full-term or preterm</li>
+</ul>
+</section>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>The Human Phenotype Project collects comprehensive data about participants’ children. Through online surveys, participants provide vital self-reported information regarding their children’s birth weights, pregnancy durations, and the number of children in their families. This focus on familial data enables researchers to explore how parental factors influence child health outcomes.</p>
+</section>
+<section id="measurement-protocol" class="level3">
+<h3 class="anchored" data-anchor-id="measurement-protocol">Measurement protocol</h3>
+<!-- long measurment protocol for the data browser -->
+<p>Data for the Children Dataset were collected during the registration phase of the Human Phenotype Project through the Initial Medical Survey. Participants completed an online questionnaire designed to capture accurate and comprehensive information</p>
+</section>
 <section id="data-availability" class="level3">
-<h3 class="anchored" data-anchor-id="data-availability">Data availability:</h3>
-<p>During the registration phase of the study, participants are required to provide details about their children and pregnancies in the Initial Medical Survey.</p>
+<h3 class="anchored" data-anchor-id="data-availability">Data availability</h3>
+<!-- for the example notebooks -->
 <p>The information is stored in 1 parquets file: <code>children.parquet</code></p>
+</section>
+<section id="relevant-links" class="level3">
+<h3 class="anchored" data-anchor-id="relevant-links">Relevant links</h3>
+<ul>
+<li><a href="https://knowledgebase.pheno.ai/datasets/051-children.html">Pheno Knowledgebase</a></li>
+<li><a href="https://pheno-demo-app.vercel.app/folder/51">Pheno Data Browser</a></li>
+</ul>
 <div id="a6353671" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-04-02T12:01:06.208970Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-04-02T12:01:06.208467Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-04-02T12:01:07.454656Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-04-02T12:01:07.454177Z&quot;}" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pheno_utils <span class="im">import</span> PhenoLoader</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>

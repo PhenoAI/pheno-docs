@@ -102,6 +102,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
@@ -454,7 +457,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#oral-microbiome-dataset" id="toc-oral-microbiome-dataset" class="nav-link active" data-scroll-target="#oral-microbiome-dataset">Oral microbiome dataset</a>
   <ul class="collapse">
-  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability:</a></li>
+  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#measurement-protocol" id="toc-measurement-protocol" class="nav-link" data-scroll-target="#measurement-protocol">Measurement protocol</a></li>
+  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability</a></li>
+  <li><a href="#relevant-links" id="toc-relevant-links" class="nav-link" data-scroll-target="#relevant-links">Relevant links</a></li>
   </ul></li>
   <li><a href="#data-dictionary" id="toc-data-dictionary" class="nav-link" data-scroll-target="#data-dictionary">Data dictionary</a></li>
   <li><a href="#plot-histogram-and-ecdf-for-raw_read_count-at-baseline-visit" id="toc-plot-histogram-and-ecdf-for-raw_read_count-at-baseline-visit" class="nav-link" data-scroll-target="#plot-histogram-and-ecdf-for-raw_read_count-at-baseline-visit">Plot histogram and ecdf for raw_read_count at baseline visit</a></li>
@@ -485,12 +492,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="oral-microbiome-dataset" class="level1">
 <h1>Oral microbiome dataset</h1>
+<section id="description" class="level3">
+<h3 class="anchored" data-anchor-id="description">Description</h3>
+<p>The collection of buccal swabs for human genetic sequencing presents an advantageous opportunity to simultaneously explore the oral microbiome using the non-human DNA sequences found. This metagenomic analysis provides insight into the diverse microbial community within the buccal mucosa. The obtained data not only enriches our genetic understanding but also broadens our knowledge on the microorganisms residing in the oral cavity, their interactions, and potential implications for oral and systemic health. This dual analysis underscores the utility of buccal swabs as a resourceful means for both genetic and microbial investigations.</p>
+</section>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
 <p>The primary intent behind collecting buccal swabs was to explore human genetics. Concurrently, it yielded metagenomic data, unveiling the microbial community within the oral cavity.</p>
 <p>This data illuminates the diversity and interactions of microorganisms, specifically in the buccal mucosa. Delving into the oral microbiome presents an opportunity to understand its linkage to health conditions. For instance, an imbalanced oral microbiome can lead to periodontal disease, associated with an increased risk of cardiovascular diseases. Moreover, alterations in the oral microbiome have been observed in oral cancers, hinting at its potential role in their onset and progression​ <a href="https://www.nature.com/articles/s41579-023-00963-6">The oral microbiome: diversity, biogeography and human health</a>​.</p>
 <p>Through this data, the exploration into possible connections between oral microbial composition and various health conditions is facilitated, marking a step towards understanding the broader health implications.</p>
+</section>
+<section id="measurement-protocol" class="level3">
+<h3 class="anchored" data-anchor-id="measurement-protocol">Measurement protocol</h3>
+<!-- long measurment protocol for the data browser -->
+<p>This dataset is a derivative of the human genome dataset (that has been collected via buccal swabs) - ergo the measurement protocol can be found at the Human genetics dataset.</p>
+</section>
 <section id="data-availability" class="level3">
-<h3 class="anchored" data-anchor-id="data-availability">Data availability:</h3>
-<p>The information is stored in multiple parquet files: - <code>oral_microbiome.parquet</code>: Sequencing and QC statistics. - <code>metaphlan_*</code>: 8 tables with MetaPhlAn 4 vJan21 relative abundances, separated by taxonomic levels. - <code>humann_aggregated_*</code>: arrow files of either gene level abundances or pathway level abundances+coverage from HumanN 3.6 given MetaPhlAn 4 vJan21 outputs</p>
+<h3 class="anchored" data-anchor-id="data-availability">Data availability</h3>
+<!-- for the example notebooks -->
+<p>The information is stored in multiple parquet files:</p>
+<ul>
+<li><code>oral_microbiome.parquet</code>: Sequencing and QC statistics.</li>
+<li><code>metaphlan_*</code>: 8 tables with MetaPhlAn 4 vJan21 relative abundances, separated by taxonomic levels.</li>
+<li><code>humann_aggregated_*</code>: arrow files of either gene level abundances or pathway level abundances+coverage from HumanN 3.6 given MetaPhlAn 4 vJan21 outputs</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR;
+    A(Human Aligned&lt;br&gt;BAM) --&gt; |Filter and convert| B(Non Human Reads&lt;br&gt;FASTQ)
+    B --&gt; |Trimmomatic| C(Clean FASTQ File)
+    C --&gt; |MetaPhlAn| D(MetaPhlAn 4 /&lt;br&gt;vJan21 Abundances&lt;br&gt;Tabular)
+    C --&gt; |HumanN| E(HumanN 3.6 genes abundance)
+    C --&gt; |HumanN| F(HumanN 3.6 Pathways abundance)
+    C --&gt; |HumanN| G(HumanN 3.6 Pathways coverage)
+    C --&gt; |FastQC| H(Reads QC report - after)
+    B ---&gt; |FastQC| I(Reads QC report - before)
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="relevant-links" class="level3">
+<h3 class="anchored" data-anchor-id="relevant-links">Relevant links</h3>
+<ul>
+<li><a href="https://knowledgebase.pheno.ai/datasets/070-oral_microbiome.html">Pheno Knowledgebase</a></li>
+<li><a href="https://pheno-demo-app.vercel.app/folder/70">Pheno Data Browser</a></li>
+</ul>
 <div id="0713e105" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-04-02T12:01:40.109750Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-04-02T12:01:40.109518Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-04-02T12:01:41.360489Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-04-02T12:01:41.359682Z&quot;}" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pheno_utils <span class="im">import</span> PhenoLoader</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>

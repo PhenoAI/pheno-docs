@@ -454,7 +454,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#population-characteristics-dataset" id="toc-population-characteristics-dataset" class="nav-link active" data-scroll-target="#population-characteristics-dataset">Population characteristics dataset</a>
   <ul class="collapse">
-  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability:</a></li>
+  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#measurement-protocol" id="toc-measurement-protocol" class="nav-link" data-scroll-target="#measurement-protocol">Measurement protocol</a></li>
+  <li><a href="#data-availability" id="toc-data-availability" class="nav-link" data-scroll-target="#data-availability">Data availability</a></li>
+  <li><a href="#relevant-links" id="toc-relevant-links" class="nav-link" data-scroll-target="#relevant-links">Relevant links</a></li>
   </ul></li>
   <li><a href="#data-dictionary" id="toc-data-dictionary" class="nav-link" data-scroll-target="#data-dictionary">Data dictionary</a></li>
   </ul>
@@ -484,11 +488,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="population-characteristics-dataset" class="level1">
 <h1>Population characteristics dataset</h1>
-<p>Population characteristics of the Human Phenotype Project study participants including birth month and year, sex and study id.</p>
+<section id="description" class="level3">
+<h3 class="anchored" data-anchor-id="description">Description</h3>
+<p>Population characteristics of the Human Phenotype Project study participants.</p>
+</section>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>Population characteristics of the Human Phenotype Project include basic information about the participants regarding sex, living area, visits to the clinical testing center, and communication status.</p>
+</section>
+<section id="measurement-protocol" class="level3">
+<h3 class="anchored" data-anchor-id="measurement-protocol">Measurement protocol</h3>
+<!-- long measurment protocol for the data browser -->
+<p>Upon registration to the Human Phenotype Project, people are assigned with a registration code, which is their ID in the study and provide a telephone number and email by which all communications are conducted. Participants are asked about their date of birth and their sex, and are asked to schedule a visit to the assessment center.</p>
+<p>Personal and communication data is saved separately in a secure environment from the population characteristics information, which is saved with the participant designated ID.</p>
+</section>
 <section id="data-availability" class="level3">
-<h3 class="anchored" data-anchor-id="data-availability">Data availability:</h3>
+<h3 class="anchored" data-anchor-id="data-availability">Data availability</h3>
+<p><!-- for the example notebooks --> * population.parquet - contains sex, month and year of birth per participant</p>
+</section>
+<section id="relevant-links" class="level3">
+<h3 class="anchored" data-anchor-id="relevant-links">Relevant links</h3>
 <ul>
-<li>Information about sex, study_id, and month and year of birth per participant: <code>population.parquet</code></li>
+<li><a href="https://knowledgebase.pheno.ai/datasets/000-population.html">Pheno Knowledgebase</a></li>
+<li><a href="https://pheno-demo-app.vercel.app/folder/1">Pheno Data Browser</a></li>
 </ul>
 <div id="2cbba289" class="cell" data-execution="{&quot;iopub.execute_input&quot;:&quot;2024-04-02T11:57:53.889563Z&quot;,&quot;iopub.status.busy&quot;:&quot;2024-04-02T11:57:53.889296Z&quot;,&quot;iopub.status.idle&quot;:&quot;2024-04-02T11:57:55.215714Z&quot;,&quot;shell.execute_reply&quot;:&quot;2024-04-02T11:57:55.214824Z&quot;}" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pheno_utils <span class="im">import</span> PhenoLoader</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
