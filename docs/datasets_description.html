@@ -428,31 +428,41 @@ ul.task-list li input[type="checkbox"] {
 <section id="datasets-description" class="level2">
 <h2 class="anchored" data-anchor-id="datasets-description">Datasets Description</h2>
 <ul>
-<li><strong>Population</strong> - Year of birth, month of birth, sex, study ID.</li>
-<li><strong>Events</strong> - Birth month/year, age at research stage, sex, follow-up information, visit dates, and locations.</li>
-<li><strong>Anthropometrics</strong> - Individual body measurement records.</li>
-<li><strong>Fundus</strong> - Image files, segmented images of vessels, veins, arteries, and summary statistics.</li>
-<li><strong>Liver Ultrasound</strong> - Derived measures such as viscosity and elasticity, auxiliary data, and aggregated data.</li>
-<li><strong>Diet Logging</strong> - Food logging per participant, including all macronutrients.</li>
-<li><strong>Hand Grip</strong> - Hand and finger grip strength measurements.</li>
-<li><strong>Blood Pressure</strong> - Blood pressure measurements.</li>
-<li><strong>Serum Lipidomics</strong> - Lipid annotations from blood tests.</li>
-<li><strong>Sleep</strong> - Sleep staging, body positioning, respiratory events, heart rate, oxygen saturation, and snoring.</li>
-<li><strong>Peripheral Vascular Health</strong> - ABI and PWV measurements.</li>
-<li><strong>Body Composition</strong> - Measurements of fat and lean mass, VAT/SAT area, mass, and volume.</li>
-<li><strong>Carotid Ultrasound</strong> - Intima Media Thickness measurements.</li>
-<li><strong>Gut Microbiome</strong> - Gut microbiome sequencing and QC statistics, Segal Lab relative abundance, MetaPhlAn 4 relative abundances.</li>
-<li><strong>Human Genetics</strong> - Sample metadata, QC statistics, principal components and principal component loadings calculated, IBS calculated by PLINK for pairs of participants, King kinship coefficients for pairs of participants.</li>
-<li><strong>ECG</strong> - ECG waveform signal, machine-generated tabular features.</li>
-<li><strong>Blood Tests</strong> - Participant’s blood tests.</li>
-<li><strong>CGM</strong> - Temporal glucose measures, summary and daily summary features.</li>
-<li><strong>Medications</strong> - Consumed medications for each participant.</li>
-<li><strong>Medical Conditions</strong> - Binary information on medical conditions per participant.</li>
-<li><strong>Bone Density</strong> - Measurements of mineral content, age, and sex-normalized values.</li>
-<li><strong>UKBB Questionnaire</strong> - Adapted UK Biobank questionnaire.</li>
-<li><strong>UKBB Follow-up Questionnaire</strong> - Short version of the UKBB survey.</li>
-<li><strong>IBS Questionnaire</strong> - Adapted UK Biobank GI health questionnaire.</li>
-<li><strong>COVID Questionnaire</strong> - Questions on COVID-19 vaccinations and diagnosis.</li>
+<li><a href="datasets/000-population.html">Population</a>: Year of birth, month of birth, sex, and study ID.</li>
+<li><a href="datasets/001-events.html">Events</a>: Birth month/year, age at research stage, sex, follow‐up details, and visit dates.</li>
+<li><a href="datasets/002-anthropometrics.html">Anthropometrics</a>: Individual body measurement records (e.g.&nbsp;height, weight, circumferences).</li>
+<li><a href="datasets/003-fundus.html">Fundus</a>: Retinal image files, vessel/artery/vein segmentations, and derived microvasculature features.</li>
+<li><a href="datasets/004-liver_ultrasound.html">Liver Ultrasound</a>: Derived liver measures (viscosity, elasticity, attenuation), auxiliary data, and aggregated information.</li>
+<li><a href="datasets/005-diet_logging.html">Diet Logging</a>: Detailed food logs per participant including macronutrient information.</li>
+<li><a href="datasets/006-hand_grip.html">Hand Grip</a>: Measurements of hand and finger grip strength.</li>
+<li><a href="datasets/007-blood_pressure.html">Blood Pressure</a>: Multiple readings capturing systolic and diastolic pressures as well as heart rate.</li>
+<li><a href="datasets/008-serum_lipidomics.html">Serum Lipidomics</a>: High‐throughput lipid annotations from blood serum spectral data.</li>
+<li><a href="datasets/009-sleep.html">Sleep</a>: Sleep staging, body positioning, respiratory events, heart rate, oxygen saturation, and snoring details.</li>
+<li><a href="datasets/010-peripheral_vascular_health.html">Vascular Health</a>: ABI and PWV measurements for assessing vascular stiffness.</li>
+<li><a href="datasets/011-body_composition.html">Body Composition</a>: DXA‐based measures of fat and lean mass, including VAT/SAT areas, masses, and volumes.</li>
+<li><a href="datasets/012-carotid_ultrasound.html">Carotid Ultrasound</a>: Carotid intima-media thickness measurements from ultrasound imaging.</li>
+<li><a href="datasets/013-gut_microbiome.html">Gut Microbiome</a>: Gut metagenomic sequencing with QC statistics and relative abundance profiles.</li>
+<li><a href="datasets/014-human_genetics.html">Human Genetics</a>: Genotype data including sample metadata, QC statistics, principal components, and kinship coefficients.</li>
+<li><a href="datasets/015-ecg.html">ECG</a>: Raw and processed 12‐lead ECG waveforms and machine‐extracted cardiac features.</li>
+<li><a href="datasets/016-blood_tests.html">Blood Tests</a>: Participant‐provided blood (and urine) test results from routine clinical care.</li>
+<li><a href="datasets/017-cgm.html">CGM</a>: Continuous glucose monitoring data with temporal readings and computed summary features.</li>
+<li><a href="datasets/018-medications.html">Medications</a>: Self‐reported medication usage (mapped to ATC codes) from various collection methods.</li>
+<li><a href="datasets/021-medical_conditions.html">Medical Conditions</a>: Self‐reported binary information on diagnosed medical conditions.</li>
+<li><a href="datasets/022-bone_density.html">Bone Density</a>: DXA measurements of bone mineral content and density, with age/sex/ethnicity normalized values.</li>
+<li><a href="datasets/024-rna_seq.html">RNA-Seq</a>: Bulk gene expression profiles from PBMCs including read counts and QC metrics.</li>
+<li><a href="datasets/029-nightingale_metabolomics.html">Nightingale Metabolomics</a>: NMR‐based quantification of blood serum metabolites (lipids, fatty acids, amino acids, etc.).</li>
+<li><a href="datasets/043-covid.html">COVID Questionnaire</a>: Survey responses on COVID‐19 vaccination status and diagnosis history.</li>
+<li><a href="datasets/044-sex_specific_factors.html">Sex-specific Factors</a>: Data on reproductive health and hormonal variations impacting medical outcomes; collected via surveys adapted from the UKBB questionnaire.</li>
+<li><a href="datasets/045-participant_relation.html">Participant Relation</a>: Self‐reported information on familial relationships among study participants.</li>
+<li><a href="datasets/049-medical_symptoms.html">Medical Symptoms</a>: Detailed self‐reports of physical and mental symptoms for real‐time health tracking; partially collected via follow‐up surveys modeled on the UKBB questionnaire.</li>
+<li><a href="datasets/050-medical_procedures.html">Medical Procedures</a>: Data on self‐reported medical interventions and procedures over time.</li>
+<li><a href="datasets/051-children.html">Children</a>: Information on participants’ children including counts, birth weights, and pregnancy durations.</li>
+<li><a href="datasets/052-family_history.html">Family History</a>: Self‐reported family medical history detailing hereditary risk factors; collected via surveys including components modeled on the UKBB questionnaire.</li>
+<li><a href="datasets/053-sociodemographics.html">Sociodemographics</a>: Demographic and socioeconomic information such as age, education, and income; collected via surveys modeled on the UKBB questionnaire.</li>
+<li><a href="datasets/055-lifestyle_and_environment.html">Lifestyle and Environment</a>: Survey data on lifestyle behaviors and environmental exposures; collected via a UKBB‐based lifestyle survey.</li>
+<li><a href="datasets/057-psychological_and_social_health.html">Psychological and Social Health</a>: Self‐reported mental health, emotional well‐being, and social factors; collected via a UKBB‐based lifestyle survey.</li>
+<li><a href="datasets/058-health_and_medical_history.html">Health and Medical History</a>: Comprehensive data on past and current health conditions, treatments, and surgeries; collected via surveys including elements from the UKBB questionnaire.</li>
+<li><a href="datasets/070-oral_microbiome.html">Oral Microbiome</a>: Metagenomic profiles of the oral microbial community derived from buccal swabs.</li>
 </ul>
 
 
