@@ -41,11 +41,6 @@ The information is stored in 2 main statistics parquet files: `sleep.parquet`, `
 ```{mermaid}
 flowchart LR;
 
-classDef sensor fill:#a1c9f4;
-classDef raw fill:#ffb482;
-classDef event fill:#8de5a1;
-classDef stat fill:#ff9f9b;
-
 Sensor(sleep sensor):::sensor --> Raw(raw channel):::raw
 Raw -->|zzzPAT| Events(sleep events):::event
 Raw -->|NeuroKit2| Extracted(computed stats)
