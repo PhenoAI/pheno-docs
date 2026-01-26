@@ -3,25 +3,70 @@ project:
   output-dir: ../docs-expanded
 
 website:
-  title: "Pheno.AI Expanded"
+  title: "Pheno.AI"
   navbar:
     background: primary
     search: true
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About
+      - href: participant_journey.md
+        text: "Get to Know the HPP"
+      - href: datasets.md
+        text: Available Datasets
+      - platform_tutorial.md
+      - publications.md
       
   sidebar:
     style: "docked"
     search: true
     contents:
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: About
-
+      - href: participant_journey.md
+        text: "Get to Know the HPP"
+      - platform_tutorial.md
+      - pheno_utils.md
+      - faq.md
+      - data_format.qmd
+      - section: "Datasets"
+        contents:
+          - href: datasets.md
+            text: Available Datasets
+          - datasets_description.md
+          - datasets/000-population.ipynb
+          - datasets/001-events.ipynb
+          - datasets/002-anthropometrics.ipynb
+          - datasets/003-fundus.ipynb
+          - datasets/004-liver_ultrasound.ipynb
+          - datasets/005-diet_logging.ipynb
+          - datasets/006-hand_grip.ipynb
+          - datasets/007-blood_pressure.ipynb
+          - datasets/008-serum_lipidomics.ipynb
+          - datasets/009-sleep.ipynb
+          - datasets/010-peripheral_vascular_health.ipynb
+          - datasets/011-body_composition.ipynb
+          - datasets/012-carotid_ultrasound.ipynb
+          - datasets/013-gut_microbiome.ipynb
+          - datasets/014-human_genetics.ipynb
+          - datasets/015-ecg.ipynb
+          - datasets/016-blood_tests.ipynb
+          - datasets/017-cgm.ipynb
+          - datasets/018-medications.ipynb
+          - datasets/021-medical_conditions.ipynb
+          - datasets/022-bone_density.ipynb
+          - datasets/024-rna_seq.ipynb
+          - datasets/029-nightingale_metabolomics.ipynb
+          - datasets/043-covid.ipynb
+          - datasets/044-sex_specific_factors.ipynb
+          - datasets/045-participant_relation.ipynb
+          - datasets/049-medical_symptoms.ipynb
+          - datasets/050-medical_procedures.ipynb
+          - datasets/051-children.ipynb
+          - datasets/052-family_history.ipynb
+          - datasets/053-sociodemographics.ipynb
+          - datasets/055-lifestyle_and_environment.ipynb
+          - datasets/057-psychological_and_social_health.ipynb
+          - datasets/058-health_and_medical_history.ipynb
+          - datasets/070-oral_microbiome.ipynb
 format:
   html:
     theme:
