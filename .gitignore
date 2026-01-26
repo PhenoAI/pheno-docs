@@ -143,6 +143,9 @@ venv.bak/
 */.quarto/
 */_site/
 
+# Quarto output directories
+/docs-expanded/
+
 # mypy
 .mypy_cache/
 .dmypy.json
