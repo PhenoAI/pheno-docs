@@ -19,6 +19,7 @@ Clinical assessments in the Human Phenotype Project are performed by trained med
 - **[ECG](datasets/015-ecg.html)** - Electrocardiogram recordings for cardiac rhythm and electrical activity analysis
 - **[CBC](datasets/019-cbc.html)** - Complete blood count from non-invasive lip vein imaging device
 - **[Voice](datasets/027-voice.html)** - Voice recordings and acoustic analysis for speech patterns
+- **[Gait and Balance](datasets/032-gait.html)** - Comprehensive gait, balance, and movement assessments using motion capture technology
 
 ## Measurement Protocol
 

@@ -1,25 +1,61 @@
-# Gait dataset  
+# Gait and balance dataset  
 
-### Description 
+### Description
 
-This dataset includes high-resolution gait measurements collected using advanced motion capture systems. It provides detailed kinematic data such as joint angles, limb movements, and body segment trajectories throughout the gait cycle. Additionally, the dataset contains kinetic data like ground reaction forces and joint torques, essential for understanding the dynamics of gait. Temporal-spatial parameters—including stride length, step width, cadence, and gait velocity—are also provided. The data encompasses a diverse range of participants across different ages, genders, and physical conditions, ensuring a rich variety of gait patterns for analysis. All data is collected under standardized conditions with ethical compliance, making it suitable for a wide array of research applications.
+This dataset includes comprehensive gait, balance, and movement measurements collected using the Newton VR Ltd. motion capture system. The testing protocol comprises seven distinct assessments conducted over approximately 7 minutes: baseline A-pose, self-selected gait speed, treadmill walking at constant speed (3 km/h), stationary walking, sit-to-stand strength test, and Romberg balance tests (eyes open and closed). Movement parameters are captured through RGB, infrared, and depth-sensing cameras positioned at multiple angles, providing detailed analysis of participants' gait patterns, balance capabilities, and functional movement.
 
 ### Introduction
 
-The Gait Dataset is a comprehensive collection of human gait data intended to advance research in biomechanics, rehabilitation, sports science, and related fields. By capturing detailed information on human walking patterns, this dataset enables a deeper understanding of gait mechanics and variability among individuals. Researchers can utilize this data to analyze normal and pathological gait, contributing to improved diagnostic methods and therapeutic interventions. The dataset serves as a valuable resource for developing models and simulations that enhance our knowledge of human movement
+Gait and balance assessments are critical indicators of overall health, functional capacity, and fall risk, particularly in middle-aged and older adults. Abnormal gait patterns can be early indicators of neurodegenerative disorders such as Parkinson's disease, dementia, and multiple sclerosis, as well as musculoskeletal and cardiovascular conditions. Gait speed has been validated as a reliable predictor of survival, hospitalization, and functional decline, often referred to as the "sixth vital sign."
+
+The sit-to-stand test measures lower limb strength and functional endurance, reflecting overall mobility and independence in activities of daily living. The Romberg test assesses proprioception and vestibular function, providing insight into neurological health and postural control. Balance impairments are strongly associated with increased fall risk, representing a major public health concern.
+
+The participants' gait, balance, and movement parameters are analyzed as biomarkers at Newton VR Ltd.'s Gait and Movement Laboratory. Advanced algorithms (WIS P10K Report version 1.0.0) analyze multi-camera recordings to produce comprehensive movement biomarkers that can be used to track health outcomes and identify subtle changes that may precede clinical manifestations of disease.
 
 ### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
-The Gait Dataset was collected using a standardized protocol to ensure accurate and reliable data. Participants provided informed consent and wore comfortable clothing with standardized footwear. Reflective markers or sensors were placed on key anatomical landmarks such as the hips, knees, ankles, and feet to capture precise movement data. Using advanced motion capture systems with multiple cameras, participants walked along a designated path or on a treadmill at a comfortable pace, performing multiple trials to ensure consistency. Ground reaction forces were measured using embedded force plates during walking sessions. The collected data were filtered to remove noise and processed to calculate kinematic and kinetic parameters, including joint angles, stride length, cadence, and gait velocity. Ethical guidelines were strictly followed, maintaining participant anonymity and data security, making the dataset suitable for various research applications.
+
+The gait and balance testing is conducted by trained operators using the Newton VR Ltd. system within a dedicated movement laboratory at the Clinical Testing Center. All data is de-identified and processed according to Protection of Privacy Regulations (Data Security) 5777-2017, Israel.
+
+#### Equipment
+
+The Newton VR Ltd. Gait and Movement Laboratory Station includes:
+
+- **Motion Capture System:** Four cameras (4× Azure Kinect by Microsoft, 4× ZED 2i from StereoLabs) positioned at different angles (Front, Rear, Right, Left) with RGB, IR, and depth sensing capabilities
+- **Motorized Treadmill:** King Smith treadmill with self-paced function, maximum load 100 kg, controlled via remote and KS FIT mobile app
+- **Workout Bench:** BODYSOLID flat bench (46 cm height) with safety handrail
+- **Computer System:** Dedicated Newton Tech computer with GUI App version 003, de-identification software, and two NAS devices for backup
+
+#### Test Protocol
+
+The seven-assessment protocol includes:
+
+1. **Baseline (A-pose)** – 10 seconds: Standing still with arms at 30° angle, eyes forward
+2. **Self-Selected Gait Speed** – 1 minute: Treadmill walking at participant's comfortable pace (starting 2.5 km/h, adjusted in 0.1 km/h increments)
+3. **Constant Speed Walk (3 km/h)** – 3 minutes: Treadmill walking at fixed speed with Borg CR10 exertion rating (0-10) recorded after completion
+4. **Stationary Walk** – 1 minute: Walking in place at comfortable pace
+5. **Sit-to-Stand Test** – 30 seconds: Repeated standing/sitting with arms crossed over chest; number of repetitions counted
+6. **Romberg Test (Eyes Open)** – 30 seconds: Standing balance test with shoes removed
+7. **Romberg Test (Eyes Closed)** – 30 seconds: Standing balance test assessing proprioception and vestibular function
+
+#### Safety and Quality Control
+
+Participants must wear comfortable clothing and proper athletic shoes, with a maximum weight limit of 100 kg. Safety lock is clipped to clothing during treadmill exercises, and the operator maintains constant visual contact. Activities are marked incomplete and may be repeated if participants fail to maintain proper position or protocol requirements. PID barcode scanning ensures accurate participant identification and data linkage.
 
 ### Data availability 
 <!-- for the example notebooks -->
-Coming soon
+
+Initial processing takes place on the local PC where all subject data is de-identified. The information is stored in CSV files (one per participant) containing analyzed movement parameters, with PDF reports in development. Raw video data is temporarily stored during processing and permanently deleted after analysis to protect participant privacy.
 
 ### Summary of available data 
 <!-- for the data browser -->
-Coming soon
 
-### Relevant links
+The dataset includes comprehensive gait and movement biomarkers:
 
-Coming soon
+- **Temporal-spatial parameters:** Self-selected gait speed, stride length, step width, cadence, gait cycle timing
+- **Balance and postural control:** Romberg test performance (eyes open/closed), center of pressure, postural sway
+- **Functional strength:** Sit-to-stand repetitions (30-second count), movement quality metrics
+- **Kinematic analysis:** Joint angles, limb movements, body segment trajectories, movement symmetry
+- **Subjective measures:** Borg CR10 scale exertion ratings (0-10)
+
+All data is collected at baseline and follow-up visits, enabling longitudinal tracking of gait and balance parameters over time.

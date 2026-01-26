@@ -41,6 +41,7 @@ website:
               - datasets/015-ecg.ipynb
               - datasets/019-cbc.ipynb
               - datasets/027-voice.ipynb
+              - datasets/032-gait.ipynb
           - section: "Medical Imaging"
             href: category_medical_imaging.qmd
             expanded: true
