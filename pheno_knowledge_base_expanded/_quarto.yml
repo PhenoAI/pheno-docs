@@ -94,6 +94,7 @@ format:
       dark: darkly
     css: styles.css
     toc: true
+    include-after-body: chatbot-widget-simple.html
 
 execute:
   freeze: auto
