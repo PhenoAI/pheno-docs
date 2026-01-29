@@ -6,7 +6,7 @@ The vaginal microbiome dataset characterizes the bacterial communities present i
 
 ### Introduction
 
-The vaginal microbiome represents a dynamic ecosystem that plays a crucial role in maintaining vaginal health. Unlike the gut microbiome, a healthy vaginal microbiome is often characterized by lower diversity and dominance of specific bacterial genera, particularly *Lactobacillus* species. Alterations in the vaginal bacterial community have been associated with various health conditions, including bacterial vaginosis, which affects 20-60% of women globally.
+The vaginal microbiome represents a dynamic ecosystem that plays a crucial role in maintaining vaginal health. Unlike the gut microbiome, a healthy vaginal microbiome is often characterized by lower diversity and dominance of specific bacterial genera, particularly *Lactobacillus* species. Alterations in the vaginal bacterial community have been associated with various health conditions, including bacterial vaginosis, which affects 20-60% of women globally [(Kairys et al., 2024)](https://www.ncbi.nlm.nih.gov/books/NBK459216/).
 
 Through shotgun metagenomic sequencing of vaginal swab samples, this dataset provides comprehensive taxonomic profiling of vaginal bacterial communities. The data enables investigation of the relationship between vaginal microbiome composition and various health outcomes, reproductive health, and other phenotypic characteristics collected as part of the Human Phenotype Project.
 
@@ -22,32 +22,38 @@ To characterize the vaginal microbiome, the following steps are performed:
 4. **Quality control and filtering**: Raw sequencing reads are processed using Trimmomatic with a minimum length setting of 50 to remove low-quality reads and sequencing artifacts.
 5. **Human read removal**: Human reads are filtered using Bowtie with the CHM13v2 (T2T) human genome reference to isolate non-human (microbial) sequences.
 6. **Taxonomic classification**: Non-human reads are classified using Kraken2 against the Vaginal Microbiome Genome Collection (VMGC) reference database to identify bacterial species and their abundances.
-7. **Abundance normalization**: Bacterial abundances are normalized at the genus and species levels using Bracken.
 
 A minimum threshold of 50,000 non-human reads is required for reliable species detection and sample differentiation.
 
 ### Data availability 
 <!-- for the example notebooks -->
-The information is stored in multiple parquet files:
 
-- `vaginal_microbiome.parquet`: Sequencing and QC statistics.
-- `kraken_*`: Tables with Kraken2/VMGC relative abundances, separated by taxonomic levels.
+A vaginal swab sample is collected from every female HPP participant. To date, 1,622 samples have been sequenced and processed through the vaginal microbiome pipeline. Per-participant output files include:
 
-```mermaid
+- **Kraken2 report**: A tab-delimited file summarizing taxonomic classification results. Each row represents a taxon and includes the percentage of reads assigned, number of reads assigned directly and to the clade, taxonomic rank (Domain, Phylum, Class, Order, Family, Genus, Species), taxonomic ID, and taxon name.
+
+- **Kraken2 output**: A per-read classification file where each row represents a single sequencing read. Columns indicate classification status (C = classified, U = unclassified), read ID, assigned taxonomic ID, read length, and k-mer mapping information showing how the read was classified across its length.
+```{mermaid}
 graph LR;
     A(Raw FASTQ File) --> |Trimmomatic| B(Clean FASTQ File)
     B --> |Bowtie CHM13v2| C(Non Human Reads)
     B --> |Bowtie CHM13v2| D(Human Reads)
-    C --> |Kraken2 VMGC| E(Kraken2 Abundances<br>Tabular)
-    E --> |Bracken| F(Normalized Abundances<br>Tabular)
+    C --> |Kraken2 VMGC| E(Kraken2 Report)
+    C --> |Kraken2 VMGC| F(Kraken2 Output)
 ```
 
 ### Summary of available data 
 <!-- for the data browser -->
+
 - DNA Sequencing files
     - Raw FASTQ file
     - Trimmed FASTQ file
     - Non-human FASTQ file (filtered)
 - Bacterial
-    - Kraken2/VMGC output
-    - Bracken normalized abundances
+    - Kraken2 report (taxonomic abundance summary)
+    - Kraken2 output (per-read classifications)
+
+### Relevant links
+
+* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/030-vaginal_microbiome.html)
+* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/30)
