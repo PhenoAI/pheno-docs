@@ -51,8 +51,3 @@ graph LR;
 - Bacterial
     - Kraken2/VMGC output
     - Bracken normalized abundances
-
-### Relevant links
-
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/030-vaginal_microbiome.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/30)
