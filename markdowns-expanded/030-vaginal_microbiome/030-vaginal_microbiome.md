@@ -32,17 +32,14 @@ The information is stored in multiple parquet files:
 
 - `vaginal_microbiome.parquet`: Sequencing and QC statistics.
 - `kraken_*`: Tables with Kraken2/VMGC relative abundances, separated by taxonomic levels.
-```{mermaid}
+
+```mermaid
 graph LR;
     A(Raw FASTQ File) --> |Trimmomatic| B(Clean FASTQ File)
-    A --> |FastQC| C(QC HTML - before)
-    B --> |FastQC| D(QC HTML - after)
-    B --> |Bowtie CHM13v2| E(Non Human Reads)
-    B --> |Bowtie CHM13v2| F(Human Reads)
-    E --> |Kraken2 VMGC| G(Kraken2 Abundances<br>Tabular)
-    G --> |Bracken| H(Normalized Abundances<br>Tabular)
-    G --> I(Pipeline Metadata)
-    H --> I
+    B --> |Bowtie CHM13v2| C(Non Human Reads)
+    B --> |Bowtie CHM13v2| D(Human Reads)
+    C --> |Kraken2 VMGC| E(Kraken2 Abundances<br>Tabular)
+    E --> |Bracken| F(Normalized Abundances<br>Tabular)
 ```
 
 ### Summary of available data 
@@ -51,10 +48,11 @@ graph LR;
     - Raw FASTQ file
     - Trimmed FASTQ file
     - Non-human FASTQ file (filtered)
-- QC
-    - FastQC files (before and after filtering)
 - Bacterial
     - Kraken2/VMGC output
     - Bracken normalized abundances
 
 ### Relevant links
+
+* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/030-vaginal_microbiome.html)
+* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/30)
