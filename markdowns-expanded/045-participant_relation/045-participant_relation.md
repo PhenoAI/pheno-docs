@@ -6,7 +6,7 @@ The Human Phenotype Project conducts comprehensive data collection through onlin
 
 ### Introduction
 
-Coming soon
+The Human Phenotype Project collects information about family relationships between study participants to enable genetics and family-based research. Understanding familial connections is essential for studying heritability of traits, shared environmental factors, and genetic associations. Participants who have family members also enrolled in the study can indicate these relationships, allowing researchers to analyze data from related individuals while maintaining privacy and confidentiality.
 
 ### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
@@ -18,7 +18,10 @@ The information is stored in 1 parquet files: `participant_relation.parquet`.
 
 ### Summary of available data 
 <!-- for the data browser -->
-Coming soon
+The dataset contains information about familial relationships between study participants, including:
+1. Relation type: The type of familial relationship (e.g., parent, sibling, child, spouse)
+2. Relative participant ID: The study ID of the related participant
+3. This data enables family-based analyses and genetic studies involving related individuals within the cohort
 
 ### Relevant links
 

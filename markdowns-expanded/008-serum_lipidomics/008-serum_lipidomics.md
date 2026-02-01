@@ -24,7 +24,7 @@ Every plate contains 92 samples from study participants, and 4 QC samples that w
 2. Anchor sample - this is a sample that was pooled from a large number of study participants, and is used as validation for the statistical correction methods. Same sample is used repeatedly. (position 94 in the plate)
 3. Two NIST samples - these are standardized technical replicates that contain a predefined mixture of human serum metabolites. These samples are later used for running order and batch correction of the data. (positions 95-96 in the plate)
 
-For every plate, the team at the wet lab produces an experimental design file that describes the layout for the analysis of the plate. Mainly, it describes the ordering of the samples to be injected into the MS machine, including the various sample types (10K, empty, NIST, anchor), the tube barcode, their quantity and location. Systematic removal of technical noise is partly performed based on this experimental design file.
+For every plate, the team at the wet lab produces an experimental design file that describes the layout for the analysis of the plate. Mainly, it describes the ordering of the samples to be injected into the MS machine, including the various sample types (HPP, empty, NIST, anchor), the tube barcode, their quantity and location. Systematic removal of technical noise is partly performed based on this experimental design file.
 
 #### Operating the MS machines to obtain the raw spectral data
 

@@ -10,7 +10,7 @@ Gait and balance assessments are critical indicators of overall health, function
 
 The sit-to-stand test measures lower limb strength and functional endurance, reflecting overall mobility and independence in activities of daily living. The Romberg test assesses proprioception and vestibular function, providing insight into neurological health and postural control. Balance impairments are strongly associated with increased fall risk, representing a major public health concern.
 
-The participants' gait, balance, and movement parameters are analyzed as biomarkers at Newton VR Ltd.'s Gait and Movement Laboratory. Advanced algorithms (WIS P10K Report version 1.0.0) analyze multi-camera recordings to produce comprehensive movement biomarkers that can be used to track health outcomes and identify subtle changes that may precede clinical manifestations of disease.
+The participants' gait, balance, and movement parameters are analyzed as biomarkers at Newton VR Ltd.'s Gait and Movement Laboratory. Advanced algorithms analyze multi-camera recordings to produce comprehensive movement biomarkers that can be used to track health outcomes and identify subtle changes that may precede clinical manifestations of disease.
 
 ### Measurement protocol 
 <!-- long measurment protocol for the data browser -->

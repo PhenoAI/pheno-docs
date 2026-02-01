@@ -16,7 +16,7 @@ Measurement protocol: All patients were examined in supine position, with the ri
 
 ![Liver US example](liver_ultrasound_swe_and_vi_image.png)
 
-### Data availability: 
+### Data availability 
 <!-- for the example notebooks -->
 The information is stored in 2 parquet files: `liver_ultrasound.parquet`and `liver_ultrasound_aggregated.parquet`
 

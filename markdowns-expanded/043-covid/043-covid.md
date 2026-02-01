@@ -14,7 +14,7 @@ Participants are asked the COVID survey questions during the visit to the clinic
  
 ### Data availability 
 <!-- for the example notebooks -->
-The information is stored in 1 parquet file: `covid.parquet`. The 'data source' column indicates which survey the infromation comes from either the initial Covid survey or the Follow-up Medical Survey.
+The information is stored in 1 parquet file: `covid.parquet`. The 'data source' column indicates which survey the information comes from either the initial Covid survey or the Follow-up Medical Survey.
 
 ### Summary of available data 
 <!-- for the data browser -->

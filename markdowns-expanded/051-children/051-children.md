@@ -10,7 +10,7 @@ The Children Dataset is a curated collection of self-reported information from p
 
 ### Introduction
 
-The Human Phenotype Project collects comprehensive data about participants' children. Through online surveys, participants provide vital self-reported information regarding their children's birth weights, pregnancy durations, and the number of children in their families. This focus on familial data enables researchers to explore how parental factors influence child health outcomes.
+The Human Phenotype Project collects comprehensive data about participants' children and pregnancy experiences, as these factors can provide important insights into maternal and paternal health, genetic influences, and intergenerational health patterns. Birth weight and pregnancy duration are key indicators of fetal development and maternal health during pregnancy, and can be associated with long-term health outcomes for both parents and children. This information also enables research into the heritability of traits and conditions, as well as the impact of parental phenotypes on offspring health. By collecting data on number of pregnancies, genetic testing before pregnancy, and detailed birth outcomes for multiple children, researchers can investigate patterns across families and explore how parental characteristics and environmental factors influence reproductive outcomes.
 
 ### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
@@ -22,7 +22,23 @@ The information is stored in 1 parquets file: `children.parquet`
 
 ### Summary of available data 
 <!-- for the data browser -->
-Coming soon
+The dataset includes detailed information about participants' reproductive history and their children:
+
+**Pregnancy History:**
+- Total number of pregnancies
+- Number of biological children
+- History of genetic testing before pregnancy
+
+**Birth Outcomes (for up to 9 children):**
+- Birth week (gestational age at delivery)
+- Birth weight in kilograms
+- Collection date and timezone
+
+This data enables research into:
+1. Associations between parental phenotypes and birth outcomes
+2. Patterns of pregnancy duration and birth weight across multiple children within families
+3. Intergenerational health relationships
+4. Reproductive health patterns in the study population
 
 ### Relevant links
 

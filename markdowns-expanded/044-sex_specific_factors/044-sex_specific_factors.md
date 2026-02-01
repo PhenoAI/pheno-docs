@@ -1,4 +1,4 @@
-# Sex-specifc factors dataset
+# Sex-specific factors dataset
 
 ### Description
 
@@ -6,7 +6,7 @@ Sex-specific factors refer to biological and physiological differences, such as 
 
 ### Introduction
 
-The Human Phenotype Project conducts comprehensive data collection through online surveys, where participants voluntarily provide information on various aspects influencing their health. This includes sex-specifc factors, captured through mutiple surveys.
+The Human Phenotype Project conducts comprehensive data collection through online surveys, where participants voluntarily provide information on various aspects influencing their health. This includes sex-specific factors, captured through multiple surveys.
 
 ### Measurement protocol 
 <!-- long measurment protocol for the data browser -->

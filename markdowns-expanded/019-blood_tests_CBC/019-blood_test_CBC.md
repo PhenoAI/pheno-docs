@@ -10,9 +10,9 @@ The DxH 560 is a quantitative, multi-parameter, automated hematology analyzer us
 
 In the clinical setting, CBC can be used in a variety of ways. For example, changes in the white blood cell count can indicate an infection or inflammation, while changes in the red blood cell count can indicate anemia or other blood disorders. Additionally, this machine can be used to measure platelet count and hemoglobin level, which could indicate bleeding, clotting or hematologic issues. The CBC data can also be used to monitor treatment efficacy in conditions such as leukemia, where changes in cell counts can be used to track the progression of the disease. Furthermore, this data can be used in preventative screenings and routine check-ups to keep track of a patient's health status. Overall, the data collected by the DxH 560 provides a comprehensive picture of a patient's blood cell profile, which is an essential tool for diagnosis, treatment, and monitoring of various medical conditions.
 
-The 10K study includes collection of blood samples for CBC during every visit to the testing center including baseline and follow up visits. Blood is collected in non-fasting condition.
+The Human Phenotype Project includes collection of blood samples for CBC during every visit to the testing center including baseline and follow up visits. Blood is collected in non-fasting condition.
 
-#### Manufacturer reference study
+**Manufacturer reference study:**
 
 A reference interval study was conducted to assess the reference intervals for the DxH 560. Whole blood samples were collected from at least 240 healthy adult donors aged 22 to 65 years (males and females). Reference intervals were verified for males and females up to 65 years of age.
 
@@ -34,9 +34,9 @@ The blood is drawn from the arm vein (venous blood). The usual place for a sampl
 
 The CBC blood tests consist of 21 tests comprising of both red blood cells and white blood cells statistics outputed by the DxH560 machine.
 
-The tests are described in the CBC blood tests data dictionary (for the site).
+The tests are described in the CBC blood tests data dictionary.
 
-#### Quality Control
+**Quality Control:**
 
 Each day, the machine undergoes a validation process including 3 control samples denoted by low, normal and high. If the results are consistent (up to some acceptable variance) with their known values, the testing continues for the day. Their data is available for download, but it's not a streamlined process yet.
 

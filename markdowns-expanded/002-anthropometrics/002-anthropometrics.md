@@ -26,7 +26,13 @@ The information is stored in 1 parquet file: `anthropometrics.parquet`
 
 ### Summary of available data 
 <!-- for the data browser -->
-A data frame of tabular data containing individual level body measurement records and derived measures.
+A data frame of tabular data containing individual level body measurement records and derived measures, including:
+- Height (measured in centimeters using stadiometer)
+- Weight (measured in kilograms)
+- Waist circumference (measured in centimeters)
+- Hip circumference (measured in centimeters)
+- Neck circumference (measured in centimeters)
+- Derived measures such as Body Mass Index (BMI) and waist-to-hip ratio
 
 ### Relevant links
 

@@ -20,7 +20,7 @@ In addition to the above, the device's algorithms provide statistics on sleep ar
 
 ### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
-The WatchPAT device is given to participants during the visit to the clinical testing center who then record 3 nights of sleep at home during the following two weeks (see figure below). Participants who use CPAP/BiPap devices are asked to report the usage of CPAP/BiPap devices in the 10K App per the monitored nights.
+The WatchPAT device is given to participants during the visit to the clinical testing center who then record 3 nights of sleep at home during the following two weeks (see figure below). Participants who use CPAP/BiPap devices are asked to report the usage of CPAP/BiPap devices in the HPP App per the monitored nights.
 
 ![image alt](sleep_info_figure1.png)
 

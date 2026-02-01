@@ -20,10 +20,16 @@ The information is stored in 1 parquet file: `body_composition.parquet`
 
 ### Summary of available data 
 <!-- for the data browser -->
-1. Measurements of fat and lean mass for the legs, arms, trunk, gynoid, and android.
-2. Measurements of total scan visceral adipose tissue (VAT) and subcutaneous adipose tissue (SAT) area, mass and volume.
-3. DXA image files (e.g., total body composition - %fat).
-4. DXA image DICOM files.
+1. **Regional body composition measurements:**
+   - Fat and lean mass for legs, arms, trunk, gynoid region, and android region
+   - Total body fat percentage and total lean mass
+2. **Adipose tissue measurements:**
+   - Visceral adipose tissue (VAT) area, mass, and volume
+   - Subcutaneous adipose tissue (SAT) area, mass, and volume
+   - VAT/SAT ratios
+3. **Imaging files:**
+   - DXA image files (e.g., total body composition - %fat)
+   - DXA image DICOM files
 
 ### Relevant links
 

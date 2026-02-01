@@ -21,10 +21,16 @@ The information is stored in 1 parquet file: `bone_density.parquet`
 
 ### Summary of available data 
 <!-- for the data browser -->
-1. Measurements of mineral content in different parts of a variety of skeletal components.
-2. Age, sex and ethnicity normalized values for the above measurements.
-3. DXA image files (e.g., total body composition - BMD).
-4. DXA image DICOM files.
+1. **Bone mineral density (BMD) and content measurements:**
+   - Lumbar spine (L1-L4 vertebrae)
+   - Bilateral femur necks (left and right proximal femurs)
+   - Regional bone mineral content across different skeletal components
+2. **Normalized scores:**
+   - T-scores: Comparison to healthy young adult reference population (NHANES)
+   - Z-scores: Age, sex, and ethnicity-matched comparisons
+3. **Imaging files:**
+   - DXA image files (e.g., spine and femur BMD images)
+   - DXA image DICOM files
 
 ### Relevant links
 

@@ -2,11 +2,11 @@
 
 ### Description 
 
-The 10K samples inventory contains detailed information regarding all biological samples acquired as part of the 10K study.
+The Human Phenotype Project samples inventory contains detailed information regarding all biological samples acquired as part of the study.
 
 ### Introduction
 
-Biological samples are collected and stored as part of the 10K study. These samples are used for the profiling of different systems and materials, such as human genetics, microbiome, metabolomics etc.
+Biological samples are collected and stored as part of the Human Phenotype Project. These samples are used for the profiling of different systems and materials, such as human genetics, microbiome, metabolomics etc.
 As new molecular profiling technologies evolve, it is essential to have access to historic samples of individuals for which additional wide profiling and longitudinal follow up exists. Thus, the availability of the biobanked samples represents a major opportunity.
 Internally, information regarding the labeling and availability of samples are managed through the LabCollector software tool.
 
