@@ -1,4 +1,4 @@
-# Nightingale metabolomics dataset
+# Nightingale metabolomics
 
 ### Description 
 
@@ -29,7 +29,7 @@ Following preparation, the samples are analyzed using nuclear magnetic resonance
 
 The spectrometer machine used for these analyses is the Bruker AVANCE III 500 #60, which is well-regarded for its precision and reliability in metabolic profiling.
 
-![nightingale machine](nightingale_machine.png)
+![nightingale machine](029-nightingale_metabolomics/nightingale_machine.png)
 
 Nightingale Health utilizes advanced algorithms to process the spectral data obtained from NMR, identifying and quantifying a wide range of metabolites. 
 To ensure data quality and accuracy, Nightingale Health provides a comprehensive quality control (QC) report for each batch of samples. This report includes categorical QC tags for each metabolite in each sample and binary QC indications per sample, highlighting any potential issues that may need addressing.
@@ -47,10 +47,10 @@ As of 2024-02-01, the dataset contains 1700 participants who were analyzed.
 ### Summary of available data 
 <!-- for the data browser -->
 We sent our samples to Nightingale in two batches (with more planned):
-* Batch #1 (POC, 6/6/2023) - Total entries: 1,827 / Unique participant IDs: 1,714
-* Batch #2 (15/04/2024) - Total entries: 8,387 / Unique participant IDs: 7,454
+- Batch #1 (POC, 6/6/2023) - Total entries: 1,827 / Unique participant IDs: 1,714
+- Batch #2 (15/04/2024) - Total entries: 8,387 / Unique participant IDs: 7,454
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/029-nightingale_metabolomics.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/29)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/029-nightingale_metabolomics.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/29)

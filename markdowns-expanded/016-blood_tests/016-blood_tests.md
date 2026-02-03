@@ -1,4 +1,4 @@
-# Blood tests dataset
+# Blood tests
 
 ### Description 
 
@@ -23,9 +23,9 @@ TSH, CRP, Albumin, Total Protein, Bilirubin, AST-GOT, ALT-GPT, GGT, Alkaline pho
 ### Measurement protocol 
 <!-- long measurment protocol for the data browser -->
 Every blood/urine test has its own measurement protocol.
-* Some blood tests require the participant itself to act differently prior to the test - whether it’s fasting, drinking concentrated glucose/lactose, sampling urine etc.
-* The technician has also a large part of the test, by selecting relevant buffers for every one of the tests and have it’s own complete protocol per test.
-* And the lab - each HMO would have their own storing protocols, measuring with different machines with different sensitivity thresholds and their own standards (usually aligned between different HMO, but not necessarily).
+- Some blood tests require the participant itself to act differently prior to the test - whether it’s fasting, drinking concentrated glucose/lactose, sampling urine etc.
+- The technician has also a large part of the test, by selecting relevant buffers for every one of the tests and have it’s own complete protocol per test.
+- And the lab - each HMO would have their own storing protocols, measuring with different machines with different sensitivity thresholds and their own standards (usually aligned between different HMO, but not necessarily).
 
 ### Data availability 
 <!-- for the example notebooks -->
@@ -39,5 +39,5 @@ The duplicate value columns are an artifact of some tests having both float vari
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/016-blood_tests.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/16)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/016-blood_tests.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/16)

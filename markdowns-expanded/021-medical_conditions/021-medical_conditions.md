@@ -1,4 +1,4 @@
-# Medical conditions dataset  
+# Medical conditions  
 
 ### Description 
 
@@ -21,11 +21,11 @@ Upon registration to the Human Phenotype Project study, participants provide det
 Questions and self-reported medical diagnoses were mapped to ICD-11 codes. Medical diagnoses at baseline were determined as diagnoses that were reported at the baseline visit or with an onset date prior to the baseline visit.
 
 #### Baseline
-*  Participants fill in medical conditions history in the Initial Medical Survey.
-*  Interviewer asks participant question and fill in a drop down list of different conditions participants have (In-system drop down).
+-  Participants fill in medical conditions history in the Initial Medical Survey.
+-  Interviewer asks participant question and fill in a drop down list of different conditions participants have (In-system drop down).
 
 #### Every follow up visit/ call and baseline
-* Follow-up Medical Survey -
+- Follow-up Medical Survey -
     * Medical questionnaire asks about conditions.
     * Should fill in the date when new condition was founded .
 
@@ -39,5 +39,5 @@ The information is stored in 1 parquet file: `medical_conditions.parquet`
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/021-medical_conditions.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/21)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/021-medical_conditions.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/21)

@@ -4,9 +4,9 @@
 
 The Children Dataset is a curated collection of self-reported information from participants concerning their children and pregnancy experiences. It includes key variables such as:
 
-* Number of Children: The total count of biological children reported by each participant.
-* Birth Weights: Recorded birth weights of participants' children, offering insights into neonatal health and potential risk factors.
-* Pregnancy Durations: Length of each pregnancy in weeks, indicating whether births were full-term or preterm
+- Number of Children: The total count of biological children reported by each participant.
+- Birth Weights: Recorded birth weights of participants' children, offering insights into neonatal health and potential risk factors.
+- Pregnancy Durations: Length of each pregnancy in weeks, indicating whether births were full-term or preterm
 
 ### Introduction
 
@@ -42,5 +42,5 @@ This data enables research into:
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/051-children.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/51)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/051-children.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/51)

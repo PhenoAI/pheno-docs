@@ -64,5 +64,5 @@ This comprehensive sociodemographic data enables researchers to examine how soci
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/053-sociodemographics.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/53)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/053-sociodemographics.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/53)

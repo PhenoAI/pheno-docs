@@ -1,4 +1,4 @@
-# Gait and balance dataset  
+# Gait and balance  
 
 ### Description
 

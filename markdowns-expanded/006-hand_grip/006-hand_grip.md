@@ -1,4 +1,4 @@
-# Hand grip strength dataset  
+# Hand grip strength  
 
 ### Description
 
@@ -16,7 +16,7 @@ HGS is also used in research studies to investigate the relationship between mus
 <!-- long measurment protocol for the data browser -->
 HGS is measured using a Jamar Hydraulic Hand Dynamometer (see figure below). The measurement is a measure of the static force (without movement) that the hand can exert when squeezing around the dynamometer. The measurement is recorded in pounds initially, and then converted to kilograms.
 
-![image alt](grip_strength_info.png)
+![image alt](006-hand_grip/grip_strength_info.png)
 
 The participant is asked to sit upright in a chair with the arm bent at a 90° angle so that their forearm is pointing forward, with their thumb uppermost. The participant is asked to hold the device first in their dominant hand and adjust the handle of the dynamometer as necessary, ensuring the base rests on the first metacarpal and the handle on the middle of the four fingers. The participant is asked to squeeze the handle of the dynamometer for at least 3 seconds. The results are manually recorded, and then the measurement is repeated for the non-dominant hand.
 
@@ -31,5 +31,5 @@ The information is stored in 1 parquet file: `hand_grip.parquet`
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/006-hand_grip.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/6)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/006-hand_grip.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/6)

@@ -1,4 +1,4 @@
-# Samples inventory dataset  
+# Samples inventory  
 
 ### Description 
 

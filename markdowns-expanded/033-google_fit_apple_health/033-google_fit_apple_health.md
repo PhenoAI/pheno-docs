@@ -1,4 +1,4 @@
-# Health apps dataset (Google Fit & Apple HealthKit)
+# Wearables
 
 ### Description
 

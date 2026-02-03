@@ -1,3 +1,5 @@
+# Vaginal Microbiome
+
 ### Description 
 
 The vaginal microbiome dataset characterizes the bacterial communities present in the vaginal environment via metagenomic sequencing of vaginal swab samples. This dataset enables the exploration of the diverse bacterial populations residing in the vaginal tract, their relative abundances, and potential associations with women's health conditions. Understanding the vaginal microbiome composition provides insights into conditions such as bacterial vaginosis and other vaginal health-related outcomes.
@@ -23,7 +25,7 @@ To characterize the vaginal microbiome, the following steps are performed:
 
 A minimum threshold of 50,000 non-human reads is required for reliable species detection and sample differentiation.
 
-![Vaginal Microbiome Kit](vaginal_kit.png)
+![Vaginal Microbiome Kit](030-vaginal_microbiome/vaginal_kit.png)
 
 **Figure 1: Vaginal Microbiome Kit Components.**
 The kit includes a sterile swab in a medical grade paper pouch. An empty tube for placing the sampled tip after sampling is also present in cat:50U003DS. However, this tube is not used, as the CTC coordinator provides the participant with a separate safelock barcoded tube prior to VMB sampling. To conduct the self-sample test, the participant is instructed to wash her hands with soap (or put on gloves). She should then place the provided barcoded tube on the designated stand and open the paper pouch. Then, by holding the swab in the middle of the handle, perform the self-sampling test.

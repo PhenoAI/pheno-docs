@@ -1,4 +1,4 @@
-# Participant relation dataset
+# Participant relation
 
 ### Description 
 
@@ -25,5 +25,5 @@ The dataset contains information about familial relationships between study part
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/045-participant_relation.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/45)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/045-participant_relation.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/45)

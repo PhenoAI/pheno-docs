@@ -9,9 +9,9 @@ The primary quantitative output is **NPX (Normalized Protein eXpression)**, a lo
 The Human Phenotype Project (HPP) aims to deeply characterize participants using multi‑omics, imaging, physiology, and longitudinal follow‑up. Proteins are proximal effectors of genes and often more closely related to disease biology than the genome alone; high‑plex proteomics adds dynamic information about inflammation, metabolism, tissue damage and signaling.
 
 Olink Reveal was chosen as the first large‑scale proteomics platform for HPP because it:
-* Provides >1,000 proteins per sample from small volumes of plasma ([Olink data normalization white paper | Olink](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/05-white%20paper%20for%20website/1096-olink-data-normalization-white-paper.pdf)). 
-* Has a robust QC and normalization framework (internal/external controls, NPX, inter‑plate normalization).
-* Integrates naturally with Illumina NGS, allowing alignment with existing infrastructure and expertise.
+- Provides >1,000 proteins per sample from small volumes of plasma ([Olink data normalization white paper | Olink](https://7074596.fs1.hubspotusercontent-na1.net/hubfs/7074596/05-white%20paper%20for%20website/1096-olink-data-normalization-white-paper.pdf)). 
+- Has a robust QC and normalization framework (internal/external controls, NPX, inter‑plate normalization).
+- Integrates naturally with Illumina NGS, allowing alignment with existing infrastructure and expertise.
 
 
 ### Measurement protocol 
@@ -23,27 +23,27 @@ Olink Reveal was chosen as the first large‑scale proteomics platform for HPP b
 
 #### Controls and plate layout
 Per the HPP Olink design and Olink recommendations:
-* **Internal controls (spiked into each sample)**  designed to monitor the three main steps of the Olink protocol: Immunoreaction, extension, and amplification/detection (Figure 1).
+- **Internal controls (spiked into each sample)**  designed to monitor the three main steps of the Olink protocol: Immunoreaction, extension, and amplification/detection (Figure 1).
     * Incubation Control 1 & 2: monitor overall reaction / matrix effects.
     * Extension Control: monitors extension + amplification/detection, used for within‑sample normalization.
     * Detection Control: monitors amplification/detection only.
-* **External controls (dedicated wells per plate, Figure 2)**
+- **External controls (dedicated wells per plate, Figure 2)**
     * Inter‑Plate Controls (IPC, triplicates): synthetic high‑signal samples used for inter‑plate normalization.
     * Negative Controls (triplicates): buffer only; used to monitor background and define LOD.
     * Sample controls (pooled plasma, duplicates): monitor intra‑/inter‑assay CV across plates.
-* **Randomization**
+- **Randomization**
     * Within each batch, samples are balanced and randomized for age, sex, and other key HPP covariates, so that plate medians are comparable and intensity normalization remains valid.
 
-![olink internal controls](olink_internal_controls.png)
+![olink internal controls](028-olink_proteomics/olink_internal_controls.png)
 
-![olink external controls](olink_external_controls.png)
+![olink external controls](028-olink_proteomics/olink_external_controls.png)
 
 #### Technology & NPX scale
 
 ##### Olink Reveal platform
 
-* Reveal is an NGS‑based proteomics solution built on Olink’s PEA technology, measuring ~1,000 proteins per sample from ~4–25 μL plasma/serum ([Olink Reveal: Revolutionizing High-Throughput Proteomics | Protavio Team](https://protavio.com/news-olink-reveal/)).
-* Panels are curated to cover cardiometabolic, inflammatory, neurology, oncology and other key pathways with broad proteome coverage.
+- Reveal is an NGS‑based proteomics solution built on Olink’s PEA technology, measuring ~1,000 proteins per sample from ~4–25 μL plasma/serum ([Olink Reveal: Revolutionizing High-Throughput Proteomics | Protavio Team](https://protavio.com/news-olink-reveal/)).
+- Panels are curated to cover cardiometabolic, inflammatory, neurology, oncology and other key pathways with broad proteome coverage.
 
 ##### NPX computation (conceptual)
 For qPCR‑based Olink platforms, NPX is derived from Ct values using:
@@ -56,31 +56,31 @@ For NGS‑based platforms (Reveal/Explore), the exact calculations differ, but N
 2. Roughly: ΔNPX = 1 → ~2× fold change ([What Does the Olink NPX Value Represent? Guidelines for Accurate Interpretation of Protein Expression Data | MtoZ Biolabs Services](https://www.mtoz-biolabs.com/what-does-the-olink-npx-value-represent-guidelines-for-accurate-interpretation-of-protein-expression-data.html))
 
 **Interpretation guidelines**
-* Compare NPX within the same assay (e.g., IL‑6 across individuals or timepoints), not across different proteins.
-* Cross‑run / cross‑plate comparisons are valid after the specified normalization steps (IPC/intensity + any bridge normalization).
+- Compare NPX within the same assay (e.g., IL‑6 across individuals or timepoints), not across different proteins.
+- Cross‑run / cross‑plate comparisons are valid after the specified normalization steps (IPC/intensity + any bridge normalization).
 
 
 ### Data availability 
 <!-- for the example notebooks -->
-* **Raw NGS output (Illumina BCL)**
+- **Raw NGS output (Illumina BCL)**
     * One BCL directory per sequencing run.
-* **BCL detection & validation (Dagster)**
+- **BCL detection & validation (Dagster)**
     * Auto‑detect runs under /day2data/illumina/.
     * Validate BCL structure, presence of RunInfo, sample sheet, and Olink recipe files.
-* **BCL → counts (ngs2counts, Olink propraietary SW)**
+- **BCL → counts (ngs2counts, Olink propraietary SW)**
     * Run in Docker; outputs assay‑level count matrices per run/plate.
-* **Counts → NPX (npx_map_cli, Olink propraietary SW)**
+- **Counts → NPX (npx_map_cli, Olink propraietary SW)**
     * Vendor npx_map_cli tool converts counts + plate metadata into NPX tables, with vendor QC flags and internal/external control information.
-* **Pheno QC pipeline**
+- **Pheno QC pipeline**
     * Apply sample/assay QC filters.
     * Remove failed run and per‑run assay QC warnings.
     * PCA + median–IQR outlier detection.
     * IntraCV/interCV‑based filtering of noisy assays.
     * Bridge normalization for outlier run(s)
     * LOD analysis and % below LOD summaries.
-* **Final dataset assembly** - temporary location: `s3://datasets-development/olink/dataset/` in the DS account
+- **Final dataset assembly** - temporary location: `s3://datasets-development/olink/dataset/` in the DS account
     * Long‑format NPX tables with all QC columns + LOD (`5_olink_npx_data_lod_added.parquet`)
     * External controls with all QC columns (no LOD) (`4_olink_npx_controls_cv_qc.parquet`)
     * LOD per assay (protein) information (`5_olink_lod_per_assay.parquet`)
-* **Research stage filling** - temporary location: `s3://ds-users/anat/olink_eda/`
+- **Research stage filling** - temporary location: `s3://ds-users/anat/olink_eda/`
     * `olink_npx_events_filled_multiindex.parquet` - dataset after filling missing research stages and adding PhenoLoader-compatible multi-index (`['participant_id', 'cohort', 'research_stage', 'array_index']`)

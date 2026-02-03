@@ -1,4 +1,4 @@
-# Medical procedures dataset
+# Medical procedures
 
 ### Description
 
@@ -82,5 +82,5 @@ Each procedure record includes the year of occurrence, allowing for temporal ana
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/050-medical_procedures)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/50)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/050-medical_procedures)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/50)

@@ -1,4 +1,4 @@
-# Sleep monitoring dataset  
+# Sleep monitoring  
 
 ### Description
 
@@ -22,7 +22,7 @@ In addition to the above, the device's algorithms provide statistics on sleep ar
 <!-- long measurment protocol for the data browser -->
 The WatchPAT device is given to participants during the visit to the clinical testing center who then record 3 nights of sleep at home during the following two weeks (see figure below). Participants who use CPAP/BiPap devices are asked to report the usage of CPAP/BiPap devices in the HPP App per the monitored nights.
 
-![image alt](sleep_info_figure1.png)
+![image alt](009-sleep/sleep_info_figure1.png)
 
 Figure 1: WatchPAT-300 device. (Source: Itamar Medical)
 
@@ -56,9 +56,9 @@ The data comprises of 3 levels of processing:
 2. Events: A data frame of annotated events based on the manufacturer’s analysis of the raw channels. Each row contains the event, its main source channel, its start time and end time.
 3. Summary statistics: A data frame of computed features provided by the manufacturer based on the above channels and events. Some of the summary stats are also computed separately for different sleep stages and body positions. Additional computed features, such as the ones related to heart rate variability (HRV, using NeuroKit2) and sleep fragmentation, are computed by Pheno.ai.
 
-![available data](sleep_data.png)
+![available data](009-sleep/sleep_data.png)
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/009-sleep.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/9)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/009-sleep.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/9)

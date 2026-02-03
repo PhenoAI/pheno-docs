@@ -1,4 +1,4 @@
-# Peripheral vascular health dataset  
+# Peripheral vascular health  
 
 ### Description
 
@@ -25,7 +25,7 @@ Measuring the systolic blood pressure with the Falcon is based on a combination 
 
 The measurement of PWV is based on the definition of velocity, i.e., distance divided by time. The initial systolic upstroke serves as a time marker. When the arterial pulse wave propagates along with the arterial circulation, there is a short time delay between the proximal and the distal measurement sites, i.e the propagation time between them. The distance between the two measurements is measured directly using a measurement tape. The measurement is performed with the aid of blood pressure cuffs. These cuffs are wrapped around the ankle and thigh.
 
-![vascular](vascular.png)
+![vascular](010-peripheral_vascular_health/vascular.png)
 
 
 ### Data availability 
@@ -38,5 +38,5 @@ The information is stored in 1 parquet file: `vascular_health.parquet`
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/010-peripheral_vascular_health.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/10)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/010-peripheral_vascular_health.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/10)

@@ -1,4 +1,4 @@
-# Fundus images dataset  
+# Fundus images  
 
 ### Description
 
@@ -23,7 +23,7 @@ The current pipeline does not include automatic identification or clinical inter
 <!-- long measurment protocol for the data browser -->
 Images of both eyes were taken with the iCare DRSplus confocal fundus imaging system (ICare). Center view 45° retinal images were collected without pupil dilation.  
 
-![DRSplus confocal fundus imaging system](fundus_drs_plus.png)
+![DRSplus confocal fundus imaging system](003-fundus/fundus_drs_plus.png)
 
 ### Data availability 
 <!-- for the example notebooks -->
@@ -40,5 +40,5 @@ Images of both eyes were taken with the iCare DRSplus confocal fundus imaging sy
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/003-fundus.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/3)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/003-fundus.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/3)

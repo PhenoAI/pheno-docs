@@ -1,4 +1,4 @@
-# Oral microbiome dataset  
+# Oral microbiome  
 
 ### Description 
 
@@ -49,9 +49,9 @@ graph LR;
     - HumanN (3.6) output
     - MetaPhlAn4 (vJan21) output
 
-![available data](oralmb_data.png)
+![available data](070-oral_microbiome/oralmb_data.png)
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/070-oral_microbiome.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/70)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/070-oral_microbiome.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/70)

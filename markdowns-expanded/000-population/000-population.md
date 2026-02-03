@@ -1,4 +1,4 @@
-# Population characteristics dataset  
+# Population characteristics  
 
 ### Description
 
@@ -23,7 +23,7 @@ Personal and communication data is saved separately in a secure environment from
 
 ### Data availability
  <!-- for the example notebooks -->
-* population.parquet - contains sex, month and year of birth per participant
+- population.parquet - contains sex, month and year of birth per participant
 
 ### Summary of available data 
 <!-- for the data browser -->
@@ -33,5 +33,5 @@ Personal and communication data is saved separately in a secure environment from
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/000-population.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/1)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/000-population.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/1)

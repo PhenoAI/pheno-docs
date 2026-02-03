@@ -1,4 +1,4 @@
-# Medications dataset
+# Medications
 
 ### Description 
 
@@ -44,5 +44,5 @@ The data includes medication names, start and stop dates (month and year), and t
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/018-medications.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/18)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/018-medications.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/18)

@@ -1,4 +1,4 @@
-# Gut microbiome dataset  
+# Gut microbiome  
 
 ### Description 
 <!-- just for gut microbiome: shortened from the original introduction in the data doc -->
@@ -58,9 +58,9 @@ graph LR;
 5. MetaPhlAn 4 relative abundances, separated by taxonomic levels.
     - The data browser displays the relative abundances of a subset of 300 bacterial species.
 
-![available data](gutmb_data.png)
+![available data](013-gut_microbiome/gutmb_data.png)
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/013-gut_microbiome.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/13)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/013-gut_microbiome.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/13)

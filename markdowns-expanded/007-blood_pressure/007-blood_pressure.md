@@ -1,4 +1,4 @@
-# Blood pressure dataset 
+# Blood pressure 
 
 ### Description
 
@@ -16,7 +16,7 @@ Blood pressure is measured using an OMRON Blood Pressure Monitor HEM-RML31 devic
 
 The participant is seated for 5 minutes, after which the first measurement is taken. Repeat a second measurement after 2 minutes. The participant then lies down for 5 minutes and the lying blood pressure reading is taken. The participant then stands up, slowly. The first standing reading is taken after 1 minute of standing and the next reading after 3 minutes of standing. The participant is asked to report about dizziness on standing up.
 
-![image alt](blood_pressure_info.png)
+![image alt](007-blood_pressure/blood_pressure_info.png)
 
 ### Data availability 
 <!-- for the example notebooks -->
@@ -28,5 +28,5 @@ The information is stored in 1 parquet file: `blood_pressure.parquet`
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/007-blood_pressure.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/7)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/007-blood_pressure.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/7)

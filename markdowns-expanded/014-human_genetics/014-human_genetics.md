@@ -10,7 +10,7 @@ Genomic variation refers to DNA sequence differences between individuals. Some g
 
 The Human Phenotype Project uses low-pass sequencing combined with [imputation](https://en.wikipedia.org/wiki/Imputation_(genetics)) to obtain genomic variation, using [genocve](https://gencove.com) platform technologies. We do not target specific regions by sequencing, but rather sample the entire genome with low average depth of coverage, and impute the sequence data to the haplotype reference panel which includes a large set of known genetic variants. Briefly, the model approach is to identify haplotypes shared between a study sample and a reference panel based on the study sample observed genotypes. Next, the unobserved genotypes are extrapolated according to the large reference data as illustrated in Figure 1. Imputation is performed for single nucleotide polymorphisms (SNPs) and short insertion–deletion variants (indels), structural variation are currently not included. The overall accuracy of gencove imputed genotypes is 98.22% (Wasik et al. 2021). We also validated the accuracy of the imputation using two hundred Human Phenotype Project participants from several ancestries which had both low-pass sequencing done and Illumina genotyping array data. We obtained high concordance rates, greater than 96%.
 
-![study sample](study_sample.png)
+![study sample](014-human_genetics/study_sample.png)
 
 Figure 1: taken from [Li et al. 2013](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2925172/).
 Panel A illustrates the observed data which consists of genotypes at a modest number of genetic markers in each sample being studied and of detailed information on genotypes (or haplotypes) for a reference sample. Panel B illustrates the process of identifying regions of chromosomes shared between a study sample and individuals in the reference panel. In Panel C, observed genotypes and haplotype sharing information have been combined to fill in a series of unobserved genotypes in the study sample.*
@@ -60,9 +60,9 @@ Notably, we do not provide the raw data of samples who failed Gencove QC or for 
 - We provide the QC genotyped data in PLINK format as explained above. The post-genotyping QC procedure resulted in genotypes for ~99.98% of total samples, and 5,770,633 variants that passed variant QC (~15.36% of the total variants). 
 - In addition to the genotype data we provide auxiliary tabulated datasets such as : variants and sample QC metrics, principal component projection, and familial relationships estimates.
 
-![availbale data](genetics_data.png)
+![availbale data](014-human_genetics/genetics_data.png)
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/014-human_genetics.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/14)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/014-human_genetics.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/14)

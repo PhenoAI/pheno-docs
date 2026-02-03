@@ -1,4 +1,4 @@
-# Body composition (DXA) dataset  
+# Body composition (DXA)  
 
 ### Description 
 
@@ -12,7 +12,7 @@ DXA (dual-energy x-ray absorptiometry) is a medical imaging technique that is us
 <!-- long measurment protocol for the data browser -->
 Dual-energy X-ray Absorptiometry (DXA) was performed with the GE Lunar Prodigy Advance device (GE Healthcare, USA) and the GE CoreScan software application. Before the scan, participants were asked to remove all metal items, heavy clothing and shoes. Each participant performed a total body scan in a supine position to determine percent body fat, fat mass, lean body mass, and bone mineral density. The total body composition is calculated for various regions (arms, legs, trunk, android, gynoid and total). The CoreScan also estimates the Visceral Adipose Tissue (VAT) and Subcutaneous Adipose Tissue (SAT) content within the android region. Bone mineral density was measured from the Femur necks, bilaterally and from the spine vertebra L1-L4. 
 
-![DXA](dxa_machine.jpeg)
+![DXA](011-body_composition/dxa_machine.jpeg)
 
 ### Data availability 
 <!-- for the example notebooks -->
@@ -33,5 +33,5 @@ The information is stored in 1 parquet file: `body_composition.parquet`
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/011-body_composition.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/11)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/011-body_composition.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/11)

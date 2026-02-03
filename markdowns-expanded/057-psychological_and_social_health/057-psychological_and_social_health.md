@@ -81,5 +81,5 @@ This comprehensive assessment enables research into the relationships between ps
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/057-psychological_and_social_health.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/57)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/057-psychological_and_social_health.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/57)

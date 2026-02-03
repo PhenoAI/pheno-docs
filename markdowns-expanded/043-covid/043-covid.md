@@ -1,4 +1,4 @@
-# COVID-19 dataset
+# COVID-19
 
 ### Description
 
@@ -24,5 +24,5 @@ Each single instance of a survey filled by a participant is saved in multiple ro
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/043-covid.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/43)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/043-covid.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/43)

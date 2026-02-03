@@ -1,4 +1,4 @@
-# Anthropometrics dataset 
+# Anthropometrics 
 
 ### Description
 
@@ -14,7 +14,7 @@ Anthropometric measurements can be used to assess the body composition of adults
 <!-- long measurment protocol for the data browser -->
 Our anthropometric measurements include height, weight, waist circumference, hip circumference, and neck circumference. The equipment used in this protocol includes a measuring tape and a scale, specifically a Shekel stadiometer (Shekel Ultrasonic Physician BMI Scale h 120-4). The stadiometer used is shown in the figure below. 
 
-![image alt](anthro_intro.png)
+![image alt](002-anthropometrics/anthro_intro.png)
 
 For measuring height, participants are asked to stand with their face against the scale, legs parallel to each other, toes pointing forward, and soles flat on the floor. Ensure participant's posture is unsupported, to stand as tall as possible, completely standing on the scale with legs straight. The height is recorded in centimeters. 
 
@@ -36,5 +36,5 @@ A data frame of tabular data containing individual level body measurement record
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/002-anthropometrics.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/2)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/002-anthropometrics.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/2)

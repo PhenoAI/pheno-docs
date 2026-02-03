@@ -1,4 +1,4 @@
-# RNA-Seq dataset
+# RNA-Seq
 
 ### Description 
 
@@ -31,7 +31,7 @@ Following fragmentation, samples were pooled, and a final round of PCR amplifica
 #### Sequencing
 The prepared RNA libraries were sequenced on the Illumina NovaSeq platform with an average read depth of 5 million reads per sample. Read 1 (R1) is 20 base pairs (bp) long (after removing the sample barcode) and contains the UMI and poly-T tail. Read 2 (R2) is 66bp long and contains the cDNA and possibly poly-A tail. PhiX control libraries were spiked into the sequencing runs to enhance sequence diversity. The sequencing generated high-quality 3' RNA-seq data, suitable for downstream bioinformatic analysis.
 
-![library structure](library_structure.png)
+![library structure](024-rna_seq/library_structure.png)
 
 Figure 1: library structure
 
@@ -61,9 +61,9 @@ counts --> metadata
 - BAM: aligned to genome, and after UMI deduplication.
 - Reference: accessions and coordinates of the annotated transcripts.
 
-![availbale data](rna_data.png)
+![availbale data](024-rna_seq/rna_data.png)
 
 ### Relevant links
 
-* [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/024-rna_seq.html)
-* [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/24)
+- [Pheno Knowledgebase](https://knowledgebase.pheno.ai/datasets/024-rna_seq.html)
+- [Pheno Data Browser](https://pheno-demo-app.vercel.app/folder/24)
