@@ -14,6 +14,7 @@ Every research study requires a well-organized data structure that tracks partic
 
 - **[Population](datasets/000-population.html)** - Core participant demographics, enrollment information, and study status
 - **[Events](datasets/001-events.html)** - Study visit schedule, completed assessments, and timeline information
+- **[Curated Phenotypes](datasets/100-curated_phenotypes.html)** - Expert-curated derived phenotypes and clinical outcomes based on integrated data analysis
 
 ## Measurement Protocol
 

@@ -21,35 +21,61 @@ The information is stored in 2 parquets file: `initial_medical.parquet`, `follow
 The dataset includes comprehensive information about medical procedures categorized into several groups. The following are examples of the types of procedures tracked (many additional procedures are also recorded):
 
 **Surgical Procedures (examples):**
+
 - Appendectomy, cholecystectomy, tonsillectomy, adenoidectomy
+
 - Thyroidectomy (total or partial)
+
 - Hysterectomy, oophorectomy, myomectomy, conization of cervix
+
 - Prostatectomy, varicocele or hydrocele repair, nephrectomy
+
 - FESS (Functional Endoscopic Sinus Surgery)
+
 - Cataract surgery
+
 - Cesarean section
+
 - Endometriosis surgery
+
 - Trauma-related surgery, orthopedic surgery
+
 - Splenectomy
+
 - BCC or SCC resection
+
 - Meningioma resection
+
 - Ablation of atrial fibrillation or flutter
+
 - Plastic surgery
 
 **Diagnostic and Therapeutic Procedures:**
+
 - Resting and stress echocardiography
+
 - Ergometric stress testing
+
 - Myocardial perfusion imaging
+
 - Cardiac catheterization
+
 - Carotid ultrasound
+
 - Cardiac CT and MRI
+
 - Brain imaging (CT or MRI)
+
 - Pulmonary function tests
+
 - Mole biopsy
 
 **Other Medical Interventions:**
+
 - Fertility treatments
+
 - Triple antibiotic treatment
+
 - Hospitalization records (frequency and timing)
 
 Each procedure record includes the year of occurrence, allowing for temporal analysis of medical interventions throughout a participant's life.

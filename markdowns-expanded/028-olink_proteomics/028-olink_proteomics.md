@@ -1,5 +1,3 @@
-# Olink Proteomics dataset  
-
 ### Description
 
 The HPP Olink dataset contains relative protein expression profiles for thousands of proteins measured in plasma from HPP participants, using Olink Reveal, an NGS‑based Proximity Extension Assay (PEA) platform. Each assay uses pairs of antibodies coupled to DNA oligos: when both antibodies bind the same protein, their oligos come into proximity, are extended, PCR‑amplified, and quantified via Illumina sequencing ([Multiplex high-throughput proteomics with exceptional analytical specificity |  illumina in collaboration with Olink](https://www.illumina.com/content/dam/illumina/gcs/assembled-assets/marketing-literature/olink-proteomics-tech-note-m-us-00196/olink-proteomics-tech-note-m-us-00196.pdf), [Wik, Lotta, et al, 2021](https://www.sciencedirect.com/science/article/pii/S1535947621001407)).

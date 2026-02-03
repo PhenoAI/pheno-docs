@@ -15,11 +15,13 @@ The Human Phenotype Project employs cutting-edge omics technologies to profile p
 ### Metabolomics and Lipidomics
 
 - **[Serum Lipidomics](datasets/008-serum_lipidomics.html)** - Comprehensive lipid profiling in blood serum
+- **[Olink Proteomics](datasets/028-olink_proteomics.html)** - Proximity extension assay-based protein biomarker profiling
 - **[Nightingale Metabolomics](datasets/029-nightingale_metabolomics.html)** - NMR-based metabolic profiling including lipoproteins, amino acids, and glycolysis markers
 
 ### Microbiome Analysis
 
 - **[Gut Microbiome](datasets/013-gut_microbiome.html)** - 16S rRNA and metagenomic sequencing of intestinal microbial communities
+- **[Vaginal Microbiome](datasets/030-vaginal_microbiome.html)** - Microbial profiling of the vaginal microbiome
 - **[Oral Microbiome](datasets/070-oral_microbiome.html)** - Microbial profiling of the oral cavity
 
 ### Genomics and Transcriptomics
