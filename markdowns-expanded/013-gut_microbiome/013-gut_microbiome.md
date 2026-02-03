@@ -1,4 +1,3 @@
-# Gut microbiome  
 
 ### Description 
 <!-- just for gut microbiome: shortened from the original introduction in the data doc -->
@@ -57,8 +56,6 @@ graph LR;
 4. URS relative abundances of 3594 representative gut microbes.
 5. MetaPhlAn 4 relative abundances, separated by taxonomic levels.
     - The data browser displays the relative abundances of a subset of 300 bacterial species.
-
-![available data](013-gut_microbiome/gutmb_data.png)
 
 ### Relevant links
 

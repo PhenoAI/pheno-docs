@@ -1,4 +1,3 @@
-# Oral microbiome  
 
 ### Description 
 
@@ -48,8 +47,6 @@ graph LR;
 - Bacterial
     - HumanN (3.6) output
     - MetaPhlAn4 (vJan21) output
-
-![available data](070-oral_microbiome/oralmb_data.png)
 
 ### Relevant links
 

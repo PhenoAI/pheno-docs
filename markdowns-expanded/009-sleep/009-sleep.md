@@ -1,4 +1,3 @@
-# Sleep monitoring  
 
 ### Description
 
@@ -55,8 +54,6 @@ The data comprises of 3 levels of processing:
 1. Raw channels: A data frame of temporal data - values and times - for each of 12 source channels.
 2. Events: A data frame of annotated events based on the manufacturer’s analysis of the raw channels. Each row contains the event, its main source channel, its start time and end time.
 3. Summary statistics: A data frame of computed features provided by the manufacturer based on the above channels and events. Some of the summary stats are also computed separately for different sleep stages and body positions. Additional computed features, such as the ones related to heart rate variability (HRV, using NeuroKit2) and sleep fragmentation, are computed by Pheno.ai.
-
-![available data](009-sleep/sleep_data.png)
 
 ### Relevant links
 

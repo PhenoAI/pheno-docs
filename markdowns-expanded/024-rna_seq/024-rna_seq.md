@@ -1,4 +1,3 @@
-# RNA-Seq
 
 ### Description 
 
@@ -60,8 +59,6 @@ counts --> metadata
 - FASTQ: raw, and trimmed.
 - BAM: aligned to genome, and after UMI deduplication.
 - Reference: accessions and coordinates of the annotated transcripts.
-
-![availbale data](024-rna_seq/rna_data.png)
 
 ### Relevant links
 

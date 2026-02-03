@@ -1,4 +1,3 @@
-# Human genetics 
 
 ### Description 
 
@@ -59,8 +58,6 @@ Notably, we do not provide the raw data of samples who failed Gencove QC or for 
 #### Post-genotyping QC data
 - We provide the QC genotyped data in PLINK format as explained above. The post-genotyping QC procedure resulted in genotypes for ~99.98% of total samples, and 5,770,633 variants that passed variant QC (~15.36% of the total variants). 
 - In addition to the genotype data we provide auxiliary tabulated datasets such as : variants and sample QC metrics, principal component projection, and familial relationships estimates.
-
-![availbale data](014-human_genetics/genetics_data.png)
 
 ### Relevant links
 
