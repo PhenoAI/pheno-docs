@@ -38,7 +38,7 @@ A vaginal swab sample is collected from every female HPP participant. To date, 1
 - **Kraken2 report**: A tab-delimited file summarizing taxonomic classification results. Each row represents a taxon and includes the percentage of reads assigned, number of reads assigned directly and to the clade, taxonomic rank (Domain, Phylum, Class, Order, Family, Genus, Species), taxonomic ID, and taxon name.
 
 - **Kraken2 output**: A per-read classification file where each row represents a single sequencing read. Columns indicate classification status (C = classified, U = unclassified), read ID, assigned taxonomic ID, read length, and k-mer mapping information showing how the read was classified across its length.
-```mermaid
+```{mermaid}
 graph LR;
     A(Raw FASTQ File) --> |Trimmomatic| B(Clean FASTQ File)
     B --> |Bowtie CHM13v2| C(Non Human Reads)
