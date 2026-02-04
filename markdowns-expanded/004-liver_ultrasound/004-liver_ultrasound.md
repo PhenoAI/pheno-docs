@@ -14,7 +14,7 @@ Ultrasound-based liver measurements were performed using ShearWave Elastography 
 <!-- long measurment protocol for the data browser -->
 All patients were examined in supine position, with the right arm elevated above the head, by an intercostal approach, in the right liver lobe. Acquisitions were performed during neutral respiratory apnea. Initially the Attenuation and Speed of Sound were measured from a homogeneous area of the liver parenchyma free of vessels or other structures. Measurements were performed from 3 different liver regions. 2D-SWE and viscosity were then measured from 3 different locations in an area of relative uniform elasticity, at a depth of 3–5 cm using stability index tool (SI) derived from the spatial and temporal stiffness stability at a stability index >90%. 
 
-![Liver US example](liver_ultrasound_swe_and_vi_image.png)
+![Liver US example](004-liver_ultrasound/liver_ultrasound_swe_and_vi_image.png)
 
 ### Data availability 
 <!-- for the example notebooks -->
