@@ -14,14 +14,14 @@ Nutritional epidemiology is a sub-discipline of epidemiology that provides data 
 <!-- long measurment protocol for the data browser -->
 Participants in the Human Phenotype Project are asked to log their food for a period of at least two weeks following each visit to the assessment center or a followup call. The figure below shows the process of logging a food item through the diet logging app.
 
-![image alt](005-diet_logging/diet_logging_eng.png)
+![image alt](diet_logging_eng.png)
 
 Participants are asked to download the app and start logging data one day before the visit to the assessment center. Participants are asked to log everything they eat and drink and to include as one “meal” all the items they have consumed within a 30 minute interval. While participants are asked to log their meals for at least 14 days after each visit, the logging app is open for the whole study period and participants are encouraged to document their diets beyond this time. 
 
 
 ### Data availability:  
 <!-- for the example notebooks -->
-The information is stored in 3 parquet files: `diet_logging.parquet`, `diet_logging_events.parquet`,  `raw_diet_logging_events.parquet `which contains summary information, processed diet logging data and raw diet logging data respectively.
+The information is stored in 3 parquet files: `diet_logging.parquet`, `diet_logging_events.parquet`,  `raw_diet_logging_events.parquet `which contain summary information, processed diet logging data and raw diet logging data, respectively.
 
 ### Summary of available data 
 <!-- for the data browser -->
