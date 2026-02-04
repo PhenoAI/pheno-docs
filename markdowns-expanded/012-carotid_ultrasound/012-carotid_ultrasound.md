@@ -14,7 +14,7 @@ The ultrasound probe is placed on the skin over the carotid artery and high-freq
 <!-- long measurment protocol for the data browser -->
 Carotid US was performed using the Supersonic Aixplorer MACH 30 (Hologic, USA). Carotid Intima Media (CIMT) was measured using the L10-2 transducer from both carotid arteries while the subject in supine position with head rotated to the opposite side of the measured artery. Evaluation was performed using an automatic computerized system (Aixplorer Mach 30). The intima and media are automatically traced within the box of interest. Mean CIMT was recorded over a length of 1 cm at the far wall of each carotid artery. One measurement was obtained from each carotid artery. Only parts of the carotid artery without plaques were included in the IMT analysis.
 
-![IMT example](012-carotid_ultrasound/imt_lt_sample.png)
+![IMT example](imt_lt_sample.png)
 
 ### Data availability 
 <!-- for the example notebooks -->
@@ -23,8 +23,9 @@ The information is stored in 1 parquet file: `carotid_ultrasound.parquet`
 ### Summary of available data 
 <!-- for the data browser -->
 1. Ultrasound images of the left and right carotid arteries.
-2. Right and left Intima Media Thickness
-3. Percentages of the box of interest for which the IMT is calculated
+2. DICOM files of the test.
+3. Right and left Intima Media Thickness.
+4. Percentages of fit and width of the box of interest for which the IMT is calculated.
 
 ### Relevant links
 
